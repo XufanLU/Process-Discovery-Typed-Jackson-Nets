@@ -31,9 +31,9 @@ def apply_inductive_miner(log_file_path):
 
     net,im,fm=pm4py.convert_to_petri_net(process_tree)
 
-    view_petri_net(net,im,fm) 
+   # view_petri_net(net,im,fm) 
     #save the Petri net to a file
-    write_pnml(net, im, fm, f"./data/projected_pnml/petri_net_{log_file_path.split('/')[-1].split('.')[0]}.pnml")
+    write_pnml(net, im, fm, f"./data/projected_pnml/{log_file_path.split('/')[-1].split('.')[0]}.pnml")
 
     return net, im, fm
 
@@ -78,8 +78,8 @@ def post_processing(log_file_path):
     im_edited=discover_initial_marking(net_edited)
     fm_edited=discover_final_marking(net_edited)
 
-    view_petri_net(net_edited,im_edited,fm_edited)
-    write_pnml(net, im, fm, f"./data/post_processed_pnml/petri_net_{log_file_path.split('/')[-1].split('.')[0]}.pnml")
+  #  view_petri_net(net_edited,im_edited,fm_edited)
+    write_pnml(net, im, fm, f"./data/post_processed_pnml/{log_file_path.split('/')[-1].split('.')[0]}.pnml")
 
     return net
     
@@ -87,13 +87,49 @@ def post_processing(log_file_path):
 def t_jn_check():
     '''check if the Workflow is t-JN '''
     #TODO impliment the rules that's in def 10 
+
+
+
+
+
+
     pass 
 
 
-def add_identifiers():
-    '''add identifiers for each place (circle) and arc (arrow) in the Petri net'''
-    #TODO 
-    pass
+def add_identifiers(log_file_path, org):
+
+    '''add types / identifiers for each place (circle) and arc (arrow) in the Petri net
+    place: place type
+    arc: multi set of identifiers
+
+    '''
+
+    net,im,fm=read_pnml(log_file_path)
+
+    for arc in net.arcs:
+        # add identifiers to the arc
+        if "identifiers" not in arc.properties:
+            arc.properties["identifiers"] = []
+        arc.properties["identifiers"].append(org)
+
+    for place in net.places:
+            # add type to the place
+        if "jt_type" not in place.properties:
+            place.properties["jn_type"] = "organization"
+        place.properties["jn_type"] = org
+        # todo 
+
+        # save the Petri net with identifiers to a file
+   
+
+        # When viewing, show the type as the place label
+    # for place in net.places:
+    #         if "type" in place.properties:
+    #             place.name = f"{place.name}\n({place.properties['org']})"
+    write_pnml(net, im, fm, f"./data/identified_pnml/{log_file_path.split('/')[-1].split('.')[0]}.pnml")
+
+    view_petri_net(net, im, fm, debug=True)
+
 
 
 def compose():
@@ -121,4 +157,5 @@ if __name__ == "__main__":
     for org in orgs:
         print(f"Applying inductive miner for organization {org}")
         net,im, fm =apply_inductive_miner(log_file_path=f"./data/filtered_log_{org}.xes")
-        post_processing(log_file_path=f"./data/projected_pnml/petri_net_filtered_log_{org}.pnml")
+       # post_processing(log_file_path=f"./data/projected_pnml/filtered_log_{org}.pnml")
+        add_identifiers(log_file_path=f"./data/projected_pnml/filtered_log_{org}.pnml", org=org)
