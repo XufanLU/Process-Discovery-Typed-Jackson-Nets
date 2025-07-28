@@ -19,6 +19,9 @@ from pm4py.objects.petri_net.utils.initial_marking import discover_initial_marki
 from pm4py.objects.petri_net.utils.final_marking import discover_final_marking
 from pm4py.objects.petri_net.obj import PetriNet, Marking
 
+from copy import deepcopy
+
+
 
 
 def apply_inductive_miner(log_file_path):
@@ -129,14 +132,13 @@ def custom_petri_net_visualization(file_name,title="Petri Net with Organization 
             )
 
         # Save SVG and DOT
-        output_dir = "./data/edited_processed_pnml"
+        output_dir = "./data/images"
         os.makedirs(output_dir, exist_ok=True)
         base_filename = os.path.splitext(os.path.basename(file_name))[0]
-        output_file = os.path.join(output_dir, f"{base_filename}_")
+        output_file = os.path.join(output_dir, f"{base_filename}")
 
         dot.render(output_file, format='svg', view=True, cleanup=True)
-        dot.save(f"{output_file}.dot")
-
+    
         print(f"Visualization saved to: {output_file}.svg and .dot")
         return True
 
@@ -241,81 +243,114 @@ def post_processing_customized(log_file_path):
 
     
 
-
-def get_shared_places_and_arcs(pnml_files):
+def get_shared_arcs(pnml_files):
     """
-    Identify shared places and arcs across multiple PNML files
+    Detect arcs with same source and target but different identifier values.
     """
-    shared_places = set()
-    shared_arcs = set()
+    arc_map = {}  # key: (source, target), value: set of identifiers
 
     for file_path in pnml_files:
-        net, im, fm = read_pnml(file_path)
-        for place in net.places:
-            shared_places.add(place.name)
-        for arc in net.arcs:
-            shared_arcs.add((arc.source.name, arc.target.name))
+        tree = ET.parse(file_path)
+        root = tree.getroot()
+        arcs = root.findall(".//arc")
 
-    return shared_places, shared_arcs   
+        for arc in arcs:
+            source = arc.get("source")
+            target = arc.get("target")
+            key = (source, target)
+
+            # Get identifier value
+            identifier_node = arc.find("identifier/text")
+            identifier = identifier_node.text.strip() if identifier_node is not None else "no_id"
+
+            if key not in arc_map:
+                arc_map[key] = set()
+            arc_map[key].add(identifier)
+
+    # Report duplicates
+    conflicts = {k: v for k, v in arc_map.items() if len(v) > 1}
+
+    if conflicts:
+        print("⚠️ Common arcs found (same source & target, different identifiers):")
+        for (src, tgt), ids in conflicts.items():
+            print(f"  {src} -> {tgt}: {ids}")
+    else:
+        print("✅ No common arcs with same source and target found.")
+
+    return conflicts
 
 
-def compose(pnml_files,org):
-    '''Compose the sub models into a single model.'''
-    # Combine the Petri nets together.
-    # Find out the shared places and arcs.
-    # Add the shared places and arcs to the new Petri net.
-    # Remove the minor places and arcs.
-    # Final model.
 
-    # When you compose them together, you could also
-    # find out those arcs that are not unique.
-    # Then find out the arcs with the same source and
-    # target.
 
-    total_places = set()
-    total_arcs = set()
-    total_transitions = set()
+def parse_pnml_et(file_path):
+    tree = ET.parse(file_path)
+    root = tree.getroot()
+    net = root.find(".//net")
+    return net
+
+def compose(pnml_files, name="composed"):
+    '''Compose the submodels into a single PNML Petri net using ET (no PM4Py).'''
+
+    all_places = {}
+    all_transitions = {}
+    all_arcs = []
+    all_initials = []
+    all_finals = []
+
+    print(f"Composing PNML files: {pnml_files}")
 
     for file_path in pnml_files:
-        net, marking_in, marking_out = read_pnml(file_path)
-        # Process the net, marking_in, marking_out as needed.
-        # For example, you can print the places and transitions.
-        print(f"Processing {file_path}:")
-        print(f"Places: {[place.name for place in net.places]}")
-        print(f"Transitions: {[transition.label for transition in net.transitions]}")
-        total_places.update(place for place in net.places)
-        total_arcs.update(arc for arc in net.arcs)
-        total_transitions.update(transition for transition in net.transitions)
+        net = parse_pnml_et(file_path)
 
-    # Create a new Petri net with the combined places, transitions, and arcs.
-    new_net = PetriNet("composed_net")
-    for place in total_places:
-        new_net.places.add(place)
-    for transition in total_transitions:
-        new_net.transitions.add(transition)
-    for arc in total_arcs:
-        new_net.arcs.add(arc)
+        # Extract <place>, <transition>, <arc>
+        for place in net.findall(".//place"):
+            pid = place.get("id")
+            if pid not in all_places:
+                all_places[pid] = deepcopy(place)
 
-    # Collect initial and final markings from all nets.
-    composed_initial_marking = Marking()
-    composed_final_marking = Marking()
-    for file_path in pnml_files:
-        _, marking_in, marking_out = read_pnml(file_path)
-        if marking_in is not None:
-            for place, tokens in marking_in.items():
-                composed_initial_marking[place] = composed_initial_marking.get(place, 0) + tokens
-        if marking_out is not None:
-            for place, tokens in marking_out.items():
-                composed_final_marking[place] = composed_final_marking.get(place, 0) + tokens
+        for trans in net.findall(".//transition"):
+            tid = trans.get("id")
+            if tid not in all_transitions:
+                all_transitions[tid] = deepcopy(trans)
 
-    write_pnml(new_net, composed_initial_marking, composed_final_marking, f"./data/composed_pnml/composed_net.pnml")
+        for arc in net.findall(".//arc"):
+            # Normalize arcs based on (source, target) to remove duplicates
+            src = arc.get("source")
+            tgt = arc.get("target")
+            arc_id = arc.get("id")
+            key = (src, tgt)
+            if key not in [(a.get("source"), a.get("target")) for a in all_arcs]:
+                all_arcs.append(deepcopy(arc))
 
-   
+        # Handle markings inside <place>
+        for place in net.findall(".//place"):
+            if place.find("initialMarking") is not None:
+                all_initials.append(deepcopy(place.find("initialMarking")))
+            if place.find("finalMarking") is not None:
+                all_finals.append(deepcopy(place.find("finalMarking")))
 
-    
-    return new_net, composed_initial_marking, composed_final_marking
+    # Create new PNML structure
+    pnml = ET.Element("pnml")
+    net_elem = ET.SubElement(pnml, "net", id="composed_net", type="http://www.pnml.org/version-2009/grammar/ptnet")
+    page = ET.SubElement(net_elem, "page", id="page0")
 
-    return new_net, initial_marking, final_marking
+    for place in all_places.values():
+        page.append(place)
+    for transition in all_transitions.values():
+        page.append(transition)
+    for arc in all_arcs:
+        page.append(arc)
+
+    # Save to file
+    output_dir = "./data/composed_pnml"
+    os.makedirs(output_dir, exist_ok=True)
+    output_path = os.path.join(output_dir, f"composed_{name}.pnml")
+    ET.ElementTree(pnml).write(output_path, encoding="utf-8", xml_declaration=True)
+
+    print(f"Composed PNML saved to: {output_path}")
+    return output_path
+
+
 
 
 
@@ -328,10 +363,13 @@ if __name__ == "__main__":
     parameters = {
             'MAX_TRACES': 100
         }
-    raw_log = xes_importer.apply('data/IP-1_initial_log.xes')
+    original_file_path= "./data/IP-1_initial_log.xes"
+    original_file_name = original_file_path.split("/")[-1].split(".")[0]    
+    raw_log = xes_importer.apply(original_file_path)
     orgs=projection_based_on_organization(raw_log)
 
     print(f"Processing {len(orgs)} organizations: {orgs}")
+    composed_pnml_files = []
     
     for org in orgs:
         print(f"\n--- Processing {org} ---")
@@ -339,3 +377,12 @@ if __name__ == "__main__":
         
         add_identifiers(log_file_path=f"./data/first_pnml/{org}.pnml", org=org)
         custom_petri_net_visualization(file_name=f"./data/post_processed_pnml/{org}.pnml", title=f"Petri Net for {org}")
+        composed_pnml_files.append(f"./data/post_processed_pnml/{org}.pnml")
+
+    # compose_pnml_files = [
+    #     "./data/post_processed_pnml/Agent 1.pnml",
+    #     "./data/post_processed_pnml/Agent 2.pnml"]
+    #
+    compose(composed_pnml_files, name=original_file_name)
+    custom_petri_net_visualization(file_name=f"./data/composed_pnml/composed_{original_file_name}.pnml", title="Composed Petri Net")
+    get_shared_arcs(composed_pnml_files)

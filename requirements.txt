@@ -1,2 +1,6 @@
 pm4py==2.7.15.3
 graphviz
+#web App 
+uvicorn
+fastapi[standard]
+logfire[fastapi]

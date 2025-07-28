@@ -44,6 +44,9 @@ app = fastapi.FastAPI(title="Process Discovery TJN API")
 # Mount visualizations directory to serve SVG files
 if os.path.exists("../data/composed_pnml"):
     app.mount("/static/visualizations", StaticFiles(directory="../data/edited_processed_pnml"), name="visualizations")
+
+# Mount webapp directory to serve JavaScript and other static files
+app.mount("/static", StaticFiles(directory=str(THIS_DIR)), name="static")
 logfire.instrument_fastapi(app)
 
 @app.get('/')
