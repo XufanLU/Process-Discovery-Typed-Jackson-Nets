@@ -25,7 +25,7 @@ Note: graphviz also needs to be installed on the device
 ```
 python main.py
 ```
-### 4. run webapp
+### 4. Run webapp
 ```
 python webapp/main.py
 ```
