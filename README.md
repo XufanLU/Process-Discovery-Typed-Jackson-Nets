@@ -20,3 +20,12 @@ pip install -r requirements.txt
 ```
 
 Note: graphviz also needs to be installed on the device 
+
+### 3. Run process discovery 
+```
+python main.py
+```
+### 4. run webapp
+```
+python webapp/main.py
+```
