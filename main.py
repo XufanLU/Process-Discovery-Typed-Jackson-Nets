@@ -1,3 +1,4 @@
+from numpy import save
 from pm4py.algo.discovery.inductive import algorithm as im_algorithm
 from pm4py.algo.discovery.inductive.variants import im, imd, imf
 from pm4py.objects.log.importer.xes import importer as xes_importer
@@ -16,6 +17,7 @@ from pm4py.objects.petri_net.utils.check_soundness import check_sink_place_prese
 
 from pm4py.objects.petri_net.utils.initial_marking import discover_initial_marking
 from pm4py.objects.petri_net.utils.final_marking import discover_final_marking
+from pm4py.objects.petri_net.obj import PetriNet, Marking
 
 
 def apply_inductive_miner(log_file_path):
@@ -82,18 +84,48 @@ def post_processing(log_file_path):
 
   #  view_petri_net(net_edited,im_edited,fm_edited)
     # Save the edited Petri net to a file
-    new_path=f'./data/post_processed_pnml/{log_file_path.split("/")[-1].split(".")[0]}.pnml'
+    new_path=f'./data/post_processed/{log_file_path.split("/")[-1].split(".")[0]}.pnml'
     write_pnml(net_edited, im_edited, fm_edited, new_path)
 
-    return new_path
+    return net_edited, im_edited, fm_edited
+
+def post_processing_customized(log_file_path):
+        try:
+            tree = ET.parse(log_file_path   )
+            root = tree.getroot()
+            for net in root.findall('.//net'):
+                for fm in net.findall('finalmarkings'):
+                    net.remove(fm)
+                for im in net.findall('initialmarkings'):
+                    net.remove(im)
+
+                for page in net.findall('page'):
+                    # Remove source/sink places
+                    for place in page.findall('place'):
+                        if place.get('id') in ['source', 'sink']:
+                            page.remove(place)
+
+                    # Remove arcs linked to source/sink
+                    for arc in page.findall('arc'):
+                        if arc.get('source') in ['source', 'sink'] or arc.get('target') in ['source', 'sink']:
+                            page.remove(arc)
+            
+            pnml_file_path = f'./data/post_processed_pnml/{log_file_path.split("/")[-1].split(".")[0]}_edited.pnml'  
+
+            tree.write(pnml_file_path, encoding='UTF-8', xml_declaration=True)
+            return True
+        except Exception as e:
+            print(f"Failed to add type properties to {pnml_file_path}: {e}")
+            return False
+
+
     
-
-
 def custom_petri_net_visualization(net, im, fm, org, title="Petri Net with Organization Labels"):
     """
     Create a custom Petri net visualization using Graphviz that shows arc identifiers and place types
     """
     try:
+        print(f"Creating custom Petri net visualization for {org}...")
         # Create a new directed graph
         dot = graphviz.Digraph(comment=f'Petri Net for {org}')
         dot.attr(rankdir='LR')
@@ -101,12 +133,15 @@ def custom_petri_net_visualization(net, im, fm, org, title="Petri Net with Organ
         
         # Add places (circles)
         for place in net.places:
-            jn_type = place.properties.get('jn_type')
+
+            type = place.properties.get('type', [])
+
             # Create label with place name and organization info
             place_name = place.name
-            place_label = f"{place_name}\\n[{jn_type}]"
+           # place_label = f"{place_name}\\n{type}"
+            place_label = f"{','.join( type)}" if type else f"no type"
+            place_label = f"{place_name}\\n{place_label}"
 
-            
             # Style for places
             dot.node(
                 str(id(place)), 
@@ -132,7 +167,7 @@ def custom_petri_net_visualization(net, im, fm, org, title="Petri Net with Organ
         # Add arcs with labels
         for arc in net.arcs:
             identifiers = arc.properties.get('identifiers', [])
-            arc_label = f"{','.join(identifiers)}" if identifiers else f"{org}"
+            arc_label = f"{','.join(identifiers)}" if identifiers else f"no identifier"
             
             dot.edge(
                 str(id(arc.source)),
@@ -151,17 +186,21 @@ def custom_petri_net_visualization(net, im, fm, org, title="Petri Net with Organ
         
         output_file = os.path.join(output_dir, f'filtered_log_{org}')
         
-        # Render as SVG
-        dot.render(output_file, format='svg', view=True, cleanup=False)
-        
+        # Render as SVG and open automatically
+        dot.render(output_file, format='svg', view=True, cleanup=True)
+
+        # O
+        # I want to save the dot file to pnml 
         # Save PNML format to edited_processed_pnml directory
-        edited_dir = "./data/edited_processed_pnml"
-        if not os.path.exists(edited_dir):
-            os.makedirs(edited_dir)
+
+    #     # Save PNML format to edited_processed_pnml directory
+    #     edited_dir = "./data/edited_processed_pnml"
+    #     if not os.path.exists(edited_dir):
+    #         os.makedirs(edited_dir)
         
-        pnml_output_file = os.path.join(edited_dir, f'filtered_log_{org}.pnml')
-        write_pnml(net, im, fm, pnml_output_file)
-    #     #view_petri_net(net, im, fm)
+    #     pnml_output_file = os.path.join(edited_dir, f'filtered_log_{org}.pnml')
+    #     write_pnml(net, im, fm, pnml_output_file)
+    # #     #view_petri_net(net, im, fm)
         
     #     # Add type properties to places in the PNML file
     #    # add_type_properties_to_pnml(pnml_output_file, org)
@@ -192,26 +231,28 @@ def add_identifiers(log_file_path, org):
         place: place type (jn_type)
         arc: multi set of identifiers
         '''
-
+        
         add_type_properties_to_pnml(log_file_path, org)
-        new_path=post_processing(log_file_path)
-        net, im, fm = read_pnml(new_path)
+        add_identifier_properties_to_pnml(log_file_path, org)
+        #net, im, fm=post_processing(log_file_path) todo customize post processing 
+        post_processing_customized(log_file_path)
 
+        net, im, fm = read_pnml(log_file_path)
+
+        # 
         # Add identifiers to arcs
         for arc in net.arcs:
             if "identifiers" not in arc.properties:
                 arc.properties["identifiers"] = []
             arc.properties["identifiers"].append(org)
 
-        # Add type (jn_type) directly to place properties
+        # Add type (type) directly to place properties
         for place in net.places:
-            place.properties["jn_type"] = org
-            # Optionally update the place name for visualization
-#
-        # Use custom visualization to show arc identifiers and place types
+            if "type" not in place.properties:
+                place.properties["type"] = []
+            place.properties["type"].append(org)
 
 
-        
         success = custom_petri_net_visualization(net, im, fm, org)
 
         if not success:
@@ -238,18 +279,100 @@ def add_type_properties_to_pnml(pnml_file_path, org):
             return False
 
 
+def add_identifier_properties_to_pnml(pnml_file_path, org):
+        """
+        Add <identifier> properties to arcs in a PNML file (for tools that read PNML directly)
+        """
+        try:
+            tree = ET.parse(pnml_file_path)
+            root = tree.getroot()
+            for arc in root.findall('.//arc'):
+                type_elem = ET.SubElement(arc, 'identifier')
+                type_text = ET.SubElement(type_elem, 'text')
+                type_text.text = org
+            tree.write(pnml_file_path, encoding='UTF-8', xml_declaration=True)
+            return True
+        except Exception as e:
+            print(f"Failed to add type properties to {pnml_file_path}: {e}")
+            return False
 
-def compose():
-    '''compose the sub models into a single model'''
-    #TODO 
-    # first compose the petrinet together
-    # find out the shared places and arcs
-    #add the shared places and arcs to the new Petri net
-    #remove the minor places and arcs
-    #final model
 
 
-    pass
+
+def get_shared_places_and_arcs(pnml_files):
+    """
+    Identify shared places and arcs across multiple PNML files
+    """
+    shared_places = set()
+    shared_arcs = set()
+
+    for file_path in pnml_files:
+        net, im, fm = read_pnml(file_path)
+        for place in net.places:
+            shared_places.add(place.name)
+        for arc in net.arcs:
+            shared_arcs.add((arc.source.name, arc.target.name))
+
+    return shared_places, shared_arcs   
+
+
+def compose(pnml_files,org):
+    '''Compose the sub models into a single model.'''
+    # Combine the Petri nets together.
+    # Find out the shared places and arcs.
+    # Add the shared places and arcs to the new Petri net.
+    # Remove the minor places and arcs.
+    # Final model.
+
+    # When you compose them together, you could also
+    # find out those arcs that are not unique.
+    # Then find out the arcs with the same source and
+    # target.
+
+    total_places = set()
+    total_arcs = set()
+    total_transitions = set()
+
+    for file_path in pnml_files:
+        net, marking_in, marking_out = read_pnml(file_path)
+        # Process the net, marking_in, marking_out as needed.
+        # For example, you can print the places and transitions.
+        print(f"Processing {file_path}:")
+        print(f"Places: {[place.name for place in net.places]}")
+        print(f"Transitions: {[transition.label for transition in net.transitions]}")
+        total_places.update(place for place in net.places)
+        total_arcs.update(arc for arc in net.arcs)
+        total_transitions.update(transition for transition in net.transitions)
+
+    # Create a new Petri net with the combined places, transitions, and arcs.
+    new_net = PetriNet("composed_net")
+    for place in total_places:
+        new_net.places.add(place)
+    for transition in total_transitions:
+        new_net.transitions.add(transition)
+    for arc in total_arcs:
+        new_net.arcs.add(arc)
+
+    # Collect initial and final markings from all nets.
+    composed_initial_marking = Marking()
+    composed_final_marking = Marking()
+    for file_path in pnml_files:
+        _, marking_in, marking_out = read_pnml(file_path)
+        if marking_in is not None:
+            for place, tokens in marking_in.items():
+                composed_initial_marking[place] = composed_initial_marking.get(place, 0) + tokens
+        if marking_out is not None:
+            for place, tokens in marking_out.items():
+                composed_final_marking[place] = composed_final_marking.get(place, 0) + tokens
+
+    write_pnml(new_net, composed_initial_marking, composed_final_marking, f"./data/composed_pnml/composed_net.pnml")
+
+   
+
+    
+    return new_net, composed_initial_marking, composed_final_marking
+
+    return new_net, initial_marking, final_marking
 
 
 
@@ -259,19 +382,24 @@ if __name__ == "__main__":
     # second: base_pnml
     # third: edited_processed_pnml
 
-    parameters = {
-            'MAX_TRACES': 100
-        }
-    raw_log = xes_importer.apply('data/IP-1_initial_log.xes')
-    orgs=projection_based_on_organization(raw_log)
+    # parameters = {
+    #         'MAX_TRACES': 100
+    #     }
+    # raw_log = xes_importer.apply('data/IP-1_initial_log.xes')
+    # orgs=projection_based_on_organization(raw_log)
 
-    print(f"Processing {len(orgs)} organizations: {orgs}")
+    # print(f"Processing {len(orgs)} organizations: {orgs}")
     
-    for org in orgs:
-        print(f"\n--- Processing {org} ---")
-        net,im, fm =apply_inductive_miner(log_file_path=f"./data/projected_xes/filtered_log_{org}.xes")
+    # for org in orgs:
+    #     print(f"\n--- Processing {org} ---")
+    #     net,im, fm =apply_inductive_miner(log_file_path=f"./data/projected_xes/filtered_log_{org}.xes")
         
-        net_with_ids, im_with_ids, fm_with_ids = add_identifiers(log_file_path=f"./data/first_pnml/filtered_log_{org}.pnml", org=org)
-       # net, im,fm=  post_processing(log_file_path=f"./data/edited_processed_pnml/filtered_log_{org}.pnml")
-        #custom_petri_net_visualization(net,im,fm,org)
+    #     net_with_ids, im_with_ids, fm_with_ids = add_identifiers(log_file_path=f"./data/first_pnml/filtered_log_{org}.pnml", org=org)
+    #    # net, im,fm=  post_processing(log_file_path=f"./data/first_pnml/filtered_log_{org}.pnml")
+     #   custom_petri_net_visualization(net,im,fm,org)
+     #   save_files(dot, net, im, fm, org)
+    # orgs = ['Agent 1', 'Agent 2']  # Example organizations
         
+    # compose_pnml_files = [f"./data/edited_processed_pnml/filtered_log_{org}.pnml" for org in orgs]
+    # composed_net, initial_marking, final_marking = compose(compose_pnml_files, orgs)  
+    post_processing_customized(log_file_path=f"./data/first_pnml/filtered_log_Agent 1.pnml")
