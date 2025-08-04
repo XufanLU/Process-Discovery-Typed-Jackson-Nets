@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_1754313735.137672" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1754313735.137672</text>
+    </name>
+    <page id="n0">
+      <place id="p_18">
+        <name>
+          <text>p_18</text>
+        </name>
+      <type><text>Agent 1</text></type></place>
+      <place id="source">
+        <name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      <type><text>Agent 1</text></type></place>
+      <place id="p_20">
+        <name>
+          <text>p_20</text>
+        </name>
+      <type><text>Agent 1</text></type></place>
+      <place id="p_10">
+        <name>
+          <text>p_10</text>
+        </name>
+      <type><text>Agent 1</text></type></place>
+      <place id="p_9">
+        <name>
+          <text>p_9</text>
+        </name>
+      <type><text>Agent 1</text></type></place>
+      <place id="p_8">
+        <name>
+          <text>p_8</text>
+        </name>
+      <type><text>Agent 1</text></type></place>
+      <place id="p_13">
+        <name>
+          <text>p_13</text>
+        </name>
+      <type><text>Agent 1</text></type></place>
+      <place id="p_11">
+        <name>
+          <text>p_11</text>
+        </name>
+      <type><text>Agent 1</text></type></place>
+      <place id="p_17">
+        <name>
+          <text>p_17</text>
+        </name>
+      <type><text>Agent 1</text></type></place>
+      <place id="p_19">
+        <name>
+          <text>p_19</text>
+        </name>
+      <type><text>Agent 1</text></type></place>
+      <place id="p_14">
+        <name>
+          <text>p_14</text>
+        </name>
+      <type><text>Agent 1</text></type></place>
+      <place id="p_5">
+        <name>
+          <text>p_5</text>
+        </name>
+      <type><text>Agent 1</text></type></place>
+      <place id="sink">
+        <name>
+          <text>sink</text>
+        </name>
+      <type><text>Agent 1</text></type></place>
+      <place id="p_6">
+        <name>
+          <text>p_6</text>
+        </name>
+      <type><text>Agent 1</text></type></place>
+      <place id="p_7">
+        <name>
+          <text>p_7</text>
+        </name>
+      <type><text>Agent 1</text></type></place>
+      <place id="p_12">
+        <name>
+          <text>p_12</text>
+        </name>
+      <type><text>Agent 1</text></type></place>
+      <transition id="df128e63-cce3-4a09-9fca-0a6d4ff1ae6e">
+        <name>
+          <text>t6</text>
+        </name>
+      </transition>
+      <transition id="96a202fa-b72d-4dc7-86af-3adb0cd89172">
+        <name>
+          <text>t13</text>
+        </name>
+      </transition>
+      <transition id="e9d3499f-c3fb-4b60-8333-b78041b15761">
+        <name>
+          <text>t12</text>
+        </name>
+      </transition>
+      <transition id="c391f90e-6769-429a-a16a-2792663a5cb9">
+        <name>
+          <text>t11</text>
+        </name>
+      </transition>
+      <transition id="65760167-3ac3-4b7b-b797-ae74c87ed369">
+        <name>
+          <text>t1</text>
+        </name>
+      </transition>
+      <transition id="4a95fb28-5c0e-4206-9aa1-43cf576b225f">
+        <name>
+          <text>t2</text>
+        </name>
+      </transition>
+      <transition id="9f89e6b0-4ce5-4712-b8df-62f37105910c">
+        <name>
+          <text>t3</text>
+        </name>
+      </transition>
+      <transition id="f2cfdd73-a8ad-4d7b-940d-bb973b14f645">
+        <name>
+          <text>t4</text>
+        </name>
+      </transition>
+      <transition id="524b77f6-e976-4493-ac63-796b13cb2cdf">
+        <name>
+          <text>t5</text>
+        </name>
+      </transition>
+      <transition id="53e27247-14e9-487f-be3a-69a4db8953af">
+        <name>
+          <text>a!_1</text>
+        </name>
+      </transition>
+      <transition id="dd070882-bca4-4d1e-b231-515560d3d482">
+        <name>
+          <text>t9</text>
+        </name>
+      </transition>
+      <transition id="71078776-d85b-4336-8fc5-e1e25dd25c1c">
+        <name>
+          <text>t10</text>
+        </name>
+      </transition>
+      <transition id="1336cb7d-c06d-461a-a1fb-256a0bb6397a">
+        <name>
+          <text>t14</text>
+        </name>
+      </transition>
+      <transition id="ba59e141-bde9-4cb3-b995-ae82c6b748dc">
+        <name>
+          <text>a!_2</text>
+        </name>
+      </transition>
+      <arc id="5930585808" source="p_19" target="e9d3499f-c3fb-4b60-8333-b78041b15761"><identifier><text>Agent 1</text></identifier></arc>
+      <arc id="5930585936" source="e9d3499f-c3fb-4b60-8333-b78041b15761" target="p_20"><identifier><text>Agent 1</text></identifier></arc>
+      <arc id="5931307536" source="524b77f6-e976-4493-ac63-796b13cb2cdf" target="p_10"><identifier><text>Agent 1</text></identifier></arc>
+      <arc id="5931315728" source="53e27247-14e9-487f-be3a-69a4db8953af" target="p_11"><identifier><text>Agent 1</text></identifier></arc>
+      <arc id="5931317904" source="p_11" target="dd070882-bca4-4d1e-b231-515560d3d482"><identifier><text>Agent 1</text></identifier></arc>
+      <arc id="5931304720" source="p_7" target="4a95fb28-5c0e-4206-9aa1-43cf576b225f"><identifier><text>Agent 1</text></identifier></arc>
+      <arc id="5931307792" source="4a95fb28-5c0e-4206-9aa1-43cf576b225f" target="p_8"><identifier><text>Agent 1</text></identifier></arc>
+      <arc id="4557723152" source="source" target="65760167-3ac3-4b7b-b797-ae74c87ed369"><identifier><text>Agent 1</text></identifier></arc>
+      <arc id="5930586640" source="65760167-3ac3-4b7b-b797-ae74c87ed369" target="p_7"><identifier><text>Agent 1</text></identifier></arc>
+      <arc id="5930587280" source="p_6" target="f2cfdd73-a8ad-4d7b-940d-bb973b14f645"><identifier><text>Agent 1</text></identifier></arc>
+      <arc id="5931310992" source="9f89e6b0-4ce5-4712-b8df-62f37105910c" target="p_6"><identifier><text>Agent 1</text></identifier></arc>
+      <arc id="5930586512" source="65760167-3ac3-4b7b-b797-ae74c87ed369" target="p_5"><identifier><text>Agent 1</text></identifier></arc>
+      <arc id="5930586320" source="1336cb7d-c06d-461a-a1fb-256a0bb6397a" target="sink"><identifier><text>Agent 1</text></identifier></arc>
+      <arc id="5931318032" source="dd070882-bca4-4d1e-b231-515560d3d482" target="p_12"><identifier><text>Agent 1</text></identifier></arc>
+      <arc id="5931318288" source="p_12" target="71078776-d85b-4336-8fc5-e1e25dd25c1c"><identifier><text>Agent 1</text></identifier></arc>
+      <arc id="5931318416" source="71078776-d85b-4336-8fc5-e1e25dd25c1c" target="sink"><identifier><text>Agent 1</text></identifier></arc>
+      <arc id="5931318928" source="p_9" target="df128e63-cce3-4a09-9fca-0a6d4ff1ae6e"><identifier><text>Agent 1</text></identifier></arc>
+      <arc id="5931319056" source="df128e63-cce3-4a09-9fca-0a6d4ff1ae6e" target="p_13"><identifier><text>Agent 1</text></identifier></arc>
+      <arc id="5931308240" source="f2cfdd73-a8ad-4d7b-940d-bb973b14f645" target="p_9"><identifier><text>Agent 1</text></identifier></arc>
+      <arc id="5931310032" source="p_5" target="9f89e6b0-4ce5-4712-b8df-62f37105910c"><identifier><text>Agent 1</text></identifier></arc>
+      <arc id="5931308368" source="p_9" target="524b77f6-e976-4493-ac63-796b13cb2cdf"><identifier><text>Agent 1</text></identifier></arc>
+      <arc id="5930582352" source="p_13" target="ba59e141-bde9-4cb3-b995-ae82c6b748dc"><identifier><text>Agent 1</text></identifier></arc>
+      <arc id="5930582480" source="ba59e141-bde9-4cb3-b995-ae82c6b748dc" target="p_14"><identifier><text>Agent 1</text></identifier></arc>
+      <arc id="5931315600" source="p_10" target="53e27247-14e9-487f-be3a-69a4db8953af"><identifier><text>Agent 1</text></identifier></arc>
+      <arc id="5930586768" source="c391f90e-6769-429a-a16a-2792663a5cb9" target="p_17"><identifier><text>Agent 1</text></identifier></arc>
+      <arc id="5930584784" source="p_17" target="96a202fa-b72d-4dc7-86af-3adb0cd89172"><identifier><text>Agent 1</text></identifier></arc>
+      <arc id="5930586896" source="c391f90e-6769-429a-a16a-2792663a5cb9" target="p_19"><identifier><text>Agent 1</text></identifier></arc>
+      <arc id="5930584912" source="96a202fa-b72d-4dc7-86af-3adb0cd89172" target="p_18"><identifier><text>Agent 1</text></identifier></arc>
+      <arc id="5930582928" source="p_14" target="c391f90e-6769-429a-a16a-2792663a5cb9"><identifier><text>Agent 1</text></identifier></arc>
+      <arc id="5930587024" source="p_18" target="1336cb7d-c06d-461a-a1fb-256a0bb6397a"><identifier><text>Agent 1</text></identifier></arc>
+      <arc id="5930587152" source="p_20" target="1336cb7d-c06d-461a-a1fb-256a0bb6397a"><identifier><text>Agent 1</text></identifier></arc>
+      <arc id="5930587408" source="p_8" target="f2cfdd73-a8ad-4d7b-940d-bb973b14f645"><identifier><text>Agent 1</text></identifier></arc>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink">
+          <text>1</text>
+        <type><text>Agent 1</text></type></place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

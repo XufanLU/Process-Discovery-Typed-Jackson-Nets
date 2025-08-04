@@ -24,7 +24,7 @@ from copy import deepcopy
 
 
 
-def apply_inductive_miner(log_file_path):
+def apply_inductive_miner(log_file_path, original_file_name=None):
     '''
     apply the inductive miner( basic algorithm) to a log file
 
@@ -43,19 +43,19 @@ def apply_inductive_miner(log_file_path):
 
    # view_petri_net(net,im,fm) 
     #save the Petri net to a file
-    write_pnml(net, im, fm, f"./data/first_pnml/{log_file_path.split('/')[-1].split('.')[0]}.pnml")
+    write_pnml(net, im, fm, f"./data/{original_file_name}/first_pnml/{log_file_path.split('/')[-1].split('.')[0]}.pnml")
 
     return net, im, fm
 
 
-def projection_based_on_organization(raw_log=None):
+def projection_based_on_organization(raw_log=None,original_file_name=None):
 
     org_list= get_event_labels(raw_log, key="org:resource")# TODO check if this is the same for all logs 
 
     for org in org_list:
         filtered_log = pm4py.filter_event_attribute_values(raw_log, values=org, level='event', attribute_key="org:resource")
         # save the filtered log to a file
-        pm4py.write_xes(filtered_log, f"./data/projected_xes/{org}.xes")
+        pm4py.write_xes(filtered_log, f"./data/{original_file_name}/projected_xes/{org}.xes")
 
     return org_list
 
@@ -63,7 +63,7 @@ def projection_based_on_organization(raw_log=None):
 
 
 
-def custom_petri_net_visualization(file_name,title="Petri Net with Organization Labels"):
+def custom_petri_net_visualization(file_name,title="Petri Net with Organization Labels",original_file_name=None ):
     try:
         print(f"Creating custom Petri net visualization for ...")
 
@@ -99,12 +99,26 @@ def custom_petri_net_visualization(file_name,title="Petri Net with Organization 
 
         # Visualize Transitions
         for transition in root.findall(".//transition"):
+
             trans_id = transition.get("id")
 
             label_node = transition.find("name/text")
             label = label_node.text if label_node is not None else "τ"
 
-            dot.node(
+            if 'tau'in transition.get("id"):
+                label = "τ"
+
+                dot.node(
+                trans_id,
+                label=label,
+                shape='box',
+                style='filled',
+                fillcolor='black',
+                fontsize='10',
+                width='1.0'
+            )
+            else:
+                dot.node(
                 trans_id,
                 label=label,
                 shape='box',
@@ -132,7 +146,7 @@ def custom_petri_net_visualization(file_name,title="Petri Net with Organization 
             )
 
         # Save SVG and DOT
-        output_dir = "./data/images"
+        output_dir = f"./data/{original_file_name}/images"
         os.makedirs(output_dir, exist_ok=True)
         base_filename = os.path.splitext(os.path.basename(file_name))[0]
         output_file = os.path.join(output_dir, f"{base_filename}")
@@ -157,7 +171,7 @@ def t_jn_check():
 
 
 
-def add_identifiers(log_file_path, org):
+def add_identifiers(log_file_path, org, original_file_name):
         '''
         Add types / identifiers for each place (circle) and arc (arrow) in the Petri net
         place: place type (jn_type)
@@ -165,7 +179,7 @@ def add_identifiers(log_file_path, org):
         '''
         add_type_properties_to_pnml(log_file_path, org)
         add_identifier_properties_to_pnml(log_file_path, org)
-        post_processing_customized(log_file_path)
+        post_processing_customized(log_file_path, original_file_name)
 
         return True
 
@@ -210,9 +224,9 @@ def add_identifier_properties_to_pnml(pnml_file_path, org):
             return False
 
 
-def post_processing_customized(log_file_path):
+def post_processing_customized(log_file_path, original_file_name):
         try:
-            tree = ET.parse(log_file_path   )
+            tree = ET.parse(log_file_path)
             root = tree.getroot()
             for net in root.findall('.//net'):
                 for fm in net.findall('finalmarkings'):
@@ -231,7 +245,7 @@ def post_processing_customized(log_file_path):
                         if arc.get('source') in ['source', 'sink'] or arc.get('target') in ['source', 'sink']:
                             page.remove(arc)
             
-            pnml_file_path = f'./data/post_processed_pnml/{log_file_path.split("/")[-1].split(".")[0]}.pnml'  
+            pnml_file_path = f'./data/{original_file_name}/post_processed_pnml/{log_file_path.split("/")[-1].split(".")[0]}.pnml'  
 
             tree.write(pnml_file_path, encoding='UTF-8', xml_declaration=True)
             return True
@@ -239,8 +253,6 @@ def post_processing_customized(log_file_path):
             print(f"Failed to add type properties to {pnml_file_path}: {e}")
             return False
         
-
-
     
 
 def get_shared_arcs(pnml_files):
@@ -271,11 +283,11 @@ def get_shared_arcs(pnml_files):
     conflicts = {k: v for k, v in arc_map.items() if len(v) > 1}
 
     if conflicts:
-        print("⚠️ Common arcs found (same source & target, different identifiers):")
+        print(" Common arcs found (same source & target, different identifiers):")
         for (src, tgt), ids in conflicts.items():
             print(f"  {src} -> {tgt}: {ids}")
     else:
-        print("✅ No common arcs with same source and target found.")
+        print(" No common arcs with same source and target found.")
 
     return conflicts
 
@@ -288,67 +300,174 @@ def parse_pnml_et(file_path):
     net = root.find(".//net")
     return net
 
-def compose(pnml_files, name="composed"):
-    '''Compose the submodels into a single PNML Petri net using ET (no PM4Py).'''
-
-    all_places = {}
-    all_transitions = {}
-    all_arcs = []
-    all_initials = []
-    all_finals = []
-
-    print(f"Composing PNML files: {pnml_files}")
-
+def compose(pnml_files, original_file_name ="composed"):
+    '''Compose the submodels into a single PNML Petri net using ET (no PM4Py).
+    
+    This function merges multiple PNML files by:
+    1. Sharing transitions with the same name across different agents
+    2. Keeping places separate (maintaining agent-specific identifiers)
+    3. Updating arcs to connect to shared transitions
+    '''
+    if not pnml_files:
+        print("No PNML files provided for composition")
+        return False
+    
+    print(f"Composing {len(pnml_files)} PNML files...")
+    
+    # Parse all input files and extract agent names
+    trees = []
+    nets = []
+    agent_names = []
     for file_path in pnml_files:
-        net = parse_pnml_et(file_path)
-
-        # Extract <place>, <transition>, <arc>
-        for place in net.findall(".//place"):
-            pid = place.get("id")
-            if pid not in all_places:
-                all_places[pid] = deepcopy(place)
-
-        for trans in net.findall(".//transition"):
-            tid = trans.get("id")
-            if tid not in all_transitions:
-                all_transitions[tid] = deepcopy(trans)
-
-        for arc in net.findall(".//arc"):
-            # Normalize arcs based on (source, target) to remove duplicates
-            src = arc.get("source")
-            tgt = arc.get("target")
-            arc_id = arc.get("id")
-            key = (src, tgt)
-            if key not in [(a.get("source"), a.get("target")) for a in all_arcs]:
-                all_arcs.append(deepcopy(arc))
-
-        # Handle markings inside <place>
-        for place in net.findall(".//place"):
-            if place.find("initialMarking") is not None:
-                all_initials.append(deepcopy(place.find("initialMarking")))
-            if place.find("finalMarking") is not None:
-                all_finals.append(deepcopy(place.find("finalMarking")))
-
-    # Create new PNML structure
-    pnml = ET.Element("pnml")
-    net_elem = ET.SubElement(pnml, "net", id="composed_net", type="http://www.pnml.org/version-2009/grammar/ptnet")
-    page = ET.SubElement(net_elem, "page", id="page0")
-
-    for place in all_places.values():
-        page.append(place)
-    for transition in all_transitions.values():
-        page.append(transition)
-    for arc in all_arcs:
-        page.append(arc)
-
-    # Save to file
-    output_dir = "./data/composed_pnml"
-    os.makedirs(output_dir, exist_ok=True)
-    output_path = os.path.join(output_dir, f"composed_{name}.pnml")
-    ET.ElementTree(pnml).write(output_path, encoding="utf-8", xml_declaration=True)
-
+        tree = ET.parse(file_path)
+        trees.append(tree)
+        net = tree.getroot().find(".//net")
+        nets.append(net)
+        
+        # Extract agent name from file path (e.g., "Agent 1.pnml" -> "Agent_1")
+        agent_name = os.path.splitext(os.path.basename(file_path))[0].replace(" ", "_")
+        agent_names.append(agent_name)
+    
+    # Create the root structure for composed PNML
+    composed_root = ET.Element("pnml")
+    composed_net = ET.SubElement(composed_root, "net")
+    composed_net.set("id", f"composed_{original_file_name}")
+    composed_net.set("type", "http://www.pnml.org/version-2009/grammar/pnmlcoremodel")
+    
+    # Add net name
+    net_name = ET.SubElement(composed_net, "name")
+    net_name_text = ET.SubElement(net_name, "text")
+    net_name_text.text = f"composed_{original_file_name}"
+    
+    # Add page
+    composed_page = ET.SubElement(composed_net, "page")
+    composed_page.set("id", "composed_page")
+    
+    # Collect all transitions and group by name
+    transition_groups = {}  # transition_name -> [(transition_element, agent_name), ...]
+    all_places = []  # (place_element, agent_name)
+    all_arcs = []   # (arc_element, agent_name)
+    
+    for agent_name, net in zip(agent_names, nets):
+        page = net.find("page")
+        if page is None:
+            continue
+            
+        # Collect places (keep all separate)
+        for place in page.findall("place"):
+            all_places.append((place, agent_name))
+        
+        # Collect transitions and group by name
+        for transition in page.findall("transition"):
+            name_elem = transition.find("name/text")
+            trans_name = name_elem.text if name_elem is not None else f"unnamed_{transition.get('id')}"
+            
+            if trans_name not in transition_groups:
+                transition_groups[trans_name] = []
+            transition_groups[trans_name].append((transition, agent_name))
+        
+        # Collect arcs
+        for arc in page.findall("arc"):
+            all_arcs.append((arc, agent_name))
+    
+    # Add all places to composed model (keeping them separate)
+    place_id_mapping = {}  # (original_id, agent_name) -> new_id
+    for place, agent_name in all_places:
+        new_place = ET.SubElement(composed_page, "place")
+        original_id = place.get("id")
+        new_id = f"{original_id}_{agent_name}"
+        new_place.set("id", new_id)
+        
+        place_id_mapping[(original_id, agent_name)] = new_id
+        
+        # Copy all child elements (name, type, etc.)
+        for child in place:
+            new_place.append(deepcopy(child))
+    
+    # Create shared transitions and mapping
+    shared_transition_mapping = {}  # (original_id, agent_name) -> shared_id
+    
+    for trans_name, transition_list in transition_groups.items():
+        if len(transition_list) > 1:
+            # This transition appears in multiple files - create shared transition
+            shared_id = f"shared_{trans_name}"
+            shared_transition = ET.SubElement(composed_page, "transition")
+            shared_transition.set("id", shared_id)
+            
+            # Use the first transition as template
+            first_transition = transition_list[0][0]
+            for child in first_transition:
+                shared_transition.append(deepcopy(child))
+            
+            # Map all instances to this shared transition
+            for transition, agent_name in transition_list:
+                original_id = transition.get("id")
+                shared_transition_mapping[(original_id, agent_name)] = shared_id
+            
+            agent_list = [agent_name for _, agent_name in transition_list]
+            print(f"Created shared transition '{trans_name}' (used by agents: {', '.join(agent_list)})")
+        
+        else:
+            # This transition appears in only one file - keep it separate
+            transition, agent_name = transition_list[0]
+            new_transition = ET.SubElement(composed_page, "transition")
+            original_id = transition.get("id")
+            new_id = f"{original_id}_{agent_name}"
+            new_transition.set("id", new_id)
+            
+            shared_transition_mapping[(original_id, agent_name)] = new_id
+            
+            # Copy all child elements
+            for child in transition:
+                new_transition.append(deepcopy(child))
+    
+    # Add arcs with updated source/target references
+    for arc, agent_name in all_arcs:
+        new_arc = ET.SubElement(composed_page, "arc")
+        original_source = arc.get("source")
+        original_target = arc.get("target")
+        original_id = arc.get("id")
+        
+        # Generate new arc ID
+        new_arc_id = f"{original_id}_{agent_name}"
+        new_arc.set("id", new_arc_id)
+        
+        # Update source reference
+        if (original_source, agent_name) in place_id_mapping:
+            new_source = place_id_mapping[(original_source, agent_name)]
+        elif (original_source, agent_name) in shared_transition_mapping:
+            new_source = shared_transition_mapping[(original_source, agent_name)]
+        else:
+            new_source = f"{original_source}_{agent_name}"
+        
+        # Update target reference
+        if (original_target, agent_name) in place_id_mapping:
+            new_target = place_id_mapping[(original_target, agent_name)]
+        elif (original_target, agent_name) in shared_transition_mapping:
+            new_target = shared_transition_mapping[(original_target, agent_name)]
+        else:
+            new_target = f"{original_target}_{agent_name}"
+        
+        new_arc.set("source", new_source)
+        new_arc.set("target", new_target)
+        
+        # Copy all child elements (identifier, etc.)
+        for child in arc:
+            new_arc.append(deepcopy(child))
+    
+    # Write the composed PNML file
+    output_path = f"./data/{original_file_name}/composed_pnml/composed_{original_file_name}.pnml"
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    
+    composed_tree = ET.ElementTree(composed_root)
+    composed_tree.write(output_path, encoding='UTF-8', xml_declaration=True)
+    
     print(f"Composed PNML saved to: {output_path}")
-    return output_path
+    print(f"Total shared transitions: {sum(1 for transitions in transition_groups.values() if len(transitions) > 1)}")
+    print(f"Total places: {len(all_places)}")
+    print(f"Total arcs: {len(all_arcs)}")
+    
+    return True
 
 
 
@@ -356,33 +475,44 @@ def compose(pnml_files, name="composed"):
 
 if __name__ == "__main__":
 
-    # first: projected_xes
-    # second: base_pnml
-    # third: edited_processed_pnml
+    # generation order: projected_xes, first_pnml, post_processed_pnml, composed_pnml, images
 
-    parameters = {
-            'MAX_TRACES': 100
-        }
-    original_file_path= "./data/IP-1_initial_log.xes"
+    original_file_path= "./data/original_xes_file/IP-1_initial_log.xes"
+    #original_file_path= "./data/original_xes_file/IP-4_init_log.xes"
+
     original_file_name = original_file_path.split("/")[-1].split(".")[0]    
+ 
+
+    # Create necessary directories
+    if not os.path.exists(f"./data/{original_file_name}/first_pnml"):
+        os.makedirs(f"./data/{original_file_name}/first_pnml")
+    if not os.path.exists(f"./data/{original_file_name}/post_processed_pnml"):
+        os.makedirs(f"./data/{original_file_name}/post_processed_pnml")     
+    if not os.path.exists(f"./data/{original_file_name}/projected_xes"):
+        os.makedirs(f"./data/{original_file_name}/projected_xes")       
+    if not os.path.exists(f"./data/{original_file_name}/composed_pnml"):
+        os.makedirs(f"./data/{original_file_name}/composed_pnml")
+    if not os.path.exists(f"./data/{original_file_name}/images"):
+        os.makedirs(f"./data/{original_file_name}/images")
+
+
     raw_log = xes_importer.apply(original_file_path)
-    orgs=projection_based_on_organization(raw_log)
+    orgs=projection_based_on_organization(raw_log,original_file_name=original_file_name)
 
     print(f"Processing {len(orgs)} organizations: {orgs}")
     composed_pnml_files = []
-    
+
+  
+
     for org in orgs:
         print(f"\n--- Processing {org} ---")
-        net,im, fm =apply_inductive_miner(log_file_path=f"./data/projected_xes/{org}.xes")
-        
-        add_identifiers(log_file_path=f"./data/first_pnml/{org}.pnml", org=org)
-        custom_petri_net_visualization(file_name=f"./data/post_processed_pnml/{org}.pnml", title=f"Petri Net for {org}")
-        composed_pnml_files.append(f"./data/post_processed_pnml/{org}.pnml")
+        net,im, fm =apply_inductive_miner(log_file_path=f"./data/{original_file_name}/projected_xes/{org}.xes", original_file_name=original_file_name)
 
-    # compose_pnml_files = [
-    #     "./data/post_processed_pnml/Agent 1.pnml",
-    #     "./data/post_processed_pnml/Agent 2.pnml"]
-    #
-    compose(composed_pnml_files, name=original_file_name)
-    custom_petri_net_visualization(file_name=f"./data/composed_pnml/composed_{original_file_name}.pnml", title="Composed Petri Net")
+        add_identifiers(log_file_path=f"./data/{original_file_name}/first_pnml/{org}.pnml", org=org,original_file_name=original_file_name)
+        custom_petri_net_visualization(file_name=f"./data/{original_file_name}/post_processed_pnml/{org}.pnml", title=f"Petri Net for {org}", original_file_name=original_file_name)
+        composed_pnml_files.append(f"./data/{original_file_name}/post_processed_pnml/{org}.pnml")
+
+ 
+    compose(composed_pnml_files, original_file_name=original_file_name)
+    custom_petri_net_visualization(file_name=f"./data/{original_file_name}/composed_pnml/composed_{original_file_name}.pnml", title="Composed Petri Net", original_file_name=original_file_name)
     get_shared_arcs(composed_pnml_files)
