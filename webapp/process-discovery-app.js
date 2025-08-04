@@ -28,33 +28,7 @@ class ProcessDiscoveryApp {
   
 
   initializeEventListeners() {
-    // Base technique selection for TJN
-    document.getElementById('base-technique').addEventListener('change', (e) => {
-      this.showParametersForBaseTechnique(e.target.value);
-    });
-
-    // Range inputs
-    document.getElementById('noise-threshold')?.addEventListener('input', (e) => {
-      document.getElementById('noise-value').textContent = e.target.value;
-    });
-
-    document.getElementById('collab-threshold')?.addEventListener('input', (e) => {
-      document.getElementById('collab-value').textContent = e.target.value;
-    });
-
-    // Collaboration filters
-    document.querySelectorAll('.filter-chip').forEach(chip => {
-      chip.addEventListener('click', (e) => {
-        document.querySelectorAll('.filter-chip').forEach(c => c.classList.remove('active'));
-        e.target.classList.add('active');
-        this.filterCollaborationConcepts(e.target.dataset.type);
-      });
-    });
-
-    // Control buttons
-    document.getElementById('discover-button').addEventListener('click', () => this.startDiscovery());
-    document.getElementById('reset-button').addEventListener('click', () => this.resetConfiguration());
-
+    
     // Zoom controls
     document.getElementById('zoom-in').addEventListener('click', () => this.zoomIn());
     document.getElementById('zoom-out').addEventListener('click', () => this.zoomOut());
@@ -156,80 +130,6 @@ class ProcessDiscoveryApp {
       this.currentZoom = Math.max(0.1, Math.min(5, this.currentZoom));
       this.updateViewTransform();
     });
-  }
-
-  showParametersForBaseTechnique(baseTechnique) {
-    // Hide all conditional parameter sections
-    document.getElementById('noise-threshold-container').style.display = 'none';
-    document.getElementById('split-params-container').style.display = 'none';
-    
-    // Show relevant parameters based on base technique
-    if (baseTechnique === 'imf') {
-      document.getElementById('noise-threshold-container').style.display = 'block';
-    } else if (baseTechnique === 'split') {
-      document.getElementById('split-params-container').style.display = 'block';
-    }
-  }
-
-  async startDiscovery() {
-    if (!this.selectedFile) {
-      this.showError('Please select an event log file first.');
-      return;
-    }
-
-    const technique = 'tjn'; // Always TJN
-    const parameters = this.getParametersForTJN();
-
-    this.updateStatus('processing', 'Starting Typed Jackson Nets discovery...');
-    this.showProgress(true);
-
-    try {
-      const formData = new FormData();
-      formData.append('file', this.selectedFile);
-      formData.append('technique', technique);
-      formData.append('parameters', JSON.stringify(parameters));
-
-      const response = await fetch('/discover', {
-        method: 'POST',
-        body: formData
-      });
-
-      if (!response.ok) {
-        throw new Error('Discovery failed');
-      }
-
-      const result = await response.json();
-      this.currentModel = result.model;
-      this.renderModel(result.model);
-      this.updateModelStatistics(result.model);
-      this.updateStatus('ready', 'TJN discovery completed successfully');
-      this.enableExportButtons();
-
-    } catch (error) {
-      this.showError('Discovery failed: ' + error.message);
-      this.updateStatus('error', 'Discovery failed');
-    } finally {
-      this.showProgress(false);
-    }
-  }
-
-  getParametersForTJN() {
-    const params = {
-      collaboration_threshold: parseFloat(document.getElementById('collab-threshold').value),
-      agent_detection: document.getElementById('agent-detection').value,
-      base_technique: document.getElementById('base-technique').value
-    };
-    
-    // Add parameters specific to the base technique
-    const baseTechnique = document.getElementById('base-technique').value;
-    if (baseTechnique === 'imf') {
-      params.noise_threshold = parseFloat(document.getElementById('noise-threshold').value);
-    } else if (baseTechnique === 'split') {
-      params.epsilon = parseFloat(document.getElementById('epsilon').value);
-      params.eta = parseFloat(document.getElementById('eta').value);
-    }
-    
-    return params;
   }
 
   renderModel(modelData) {
@@ -515,29 +415,6 @@ class ProcessDiscoveryApp {
       agentDetection.value = 'resource';
     }
     
-    const baseTechnique = document.getElementById('base-technique');
-    if (baseTechnique) {
-      baseTechnique.value = 'im';
-    }
-    
-    const noiseThreshold = document.getElementById('noise-threshold');
-    if (noiseThreshold) {
-      noiseThreshold.value = '0.2';
-      document.getElementById('noise-value').textContent = '0.2';
-    }
-    
-    const epsilon = document.getElementById('epsilon');
-    if (epsilon) {
-      epsilon.value = '0.1';
-    }
-    
-    const eta = document.getElementById('eta');
-    if (eta) {
-      eta.value = '0.4';
-    }
-    
-    // Reset parameter visibility
-    this.showParametersForBaseTechnique('im');
     
     // Reset model view
     document.getElementById('placeholder').style.display = 'flex';
@@ -1050,7 +927,7 @@ window.viewSVGDirect = function(modelId) {
 document.addEventListener('DOMContentLoaded', () => {
   window.app = new ProcessDiscoveryApp();
   // Initialize with default parameters
-  window.app.showParametersForBaseTechnique('im');
+ // window.app.showParametersForBaseTechnique('im');
 });
 
 

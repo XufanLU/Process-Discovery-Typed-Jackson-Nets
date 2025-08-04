@@ -371,85 +371,8 @@
             </div>
           </div>    
           
-          <!-- Process Discovery Technique -->
-          <div class="form-section">
-            <h5 class="section-title">
-              <i class="fas fa-cogs me-2"></i>Typed Jackson Nets Configuration
-            </h5>
-
-
-            <!-- Parameters for TJN technique -->
-            <div id="tjn-params" class="parameter-group">
-              <!-- <label class="form-label">TJN Parameters</label> -->
-              <!-- <div class="mb-2">
-                <label class="form-label small">Collaboration Threshold</label>
-                <input type="range" class="form-range" min="0" max="1" step="0.05" value="0.3" id="collab-threshold">
-                <span class="small text-muted" id="collab-value">0.3</span>
-              </div>
-              <div class="mb-2">
-                <label class="form-label small">Agent Detection</label>
-                <select class="form-select form-select-sm" id="agent-detection">
-                  <option value="resource">By Resource</option>
-                  <option value="role">By Role</option>
-                  <option value="department">By Department</option>
-                </select>
-              </div> -->
-              <div class="mb-2">
-                <label class="form-label small">Process Mining Technique</label>
-                <select class="form-select form-select-sm" id="base-technique">
-                  <option value="im">Inductive Miner (IM)</option>
-                  <option value="imf">Inductive Miner - infrequent (IMf)</option>
-                  <!-- <option value="split">Split Miner</option> -->
-                </select>
-              </div>
-              <div class="mb-2" id="noise-threshold-container" style="display: none;">
-                <label class="form-label small">Noise Threshold (for IMf)</label>
-                <input type="range" class="form-range" min="0" max="1" step="0.1" value="0.2" id="noise-threshold">
-                <span class="small text-muted" id="noise-value">0.2</span>
-              </div>
-              <div id="split-params-container" style="display: none;">
-                <div class="mb-2">
-                  <label class="form-label small">Epsilon (for Split Miner)</label>
-                  <input type="number" class="form-control form-control-sm" value="0.1" step="0.01" min="0" max="1" id="epsilon">
-                </div>
-                <!-- <div class="mb-2">
-                  <label class="form-label small">Eta (for Split Miner)</label>
-                  <input type="number" class="form-control form-control-sm" value="0.4" step="0.01" min="0" max="1" id="eta">
-                </div> -->
-              </div>
-            </div>
-          </div>
-
-          <!-- Collaboration Concepts Filter -->
-          <!-- <div class="form-section">
-            <h5 class="section-title">
-              <i class="fas fa-users me-2"></i>Collaboration Concepts
-            </h5>
-                        <div class="collaboration-filter">
-              <div class="filter-chip active" data-type="all">
-                <i class="fas fa-globe me-1"></i>All
-              </div>
-              <div class="filter-chip" data-type="agent">
-                <i class="fas fa-user me-1"></i>Agents
-              </div>
-              <div class="filter-chip" data-type="service">
-                <i class="fas fa-cog me-1"></i>Services
-              </div>
-              <div class="filter-chip" data-type="partner">
-                <i class="fas fa-handshake me-1"></i>Partners
-              </div>
-            </div>
-          </div> -->
-
-          <!-- Control Buttons -->
-          <div class="d-grid gap-2">
-            <button class="btn btn-primary" id="discover-button">
-              <i class="fas fa-play me-2"></i>Start Discovery
-            </button>
-            <button class="btn btn-outline-primary" id="reset-button">
-              <i class="fas fa-refresh me-2"></i>Reset Configuration
-            </button>
-          </div>
+         
+        
 
           <!-- Progress Indicator -->
           <div class="progress-container" id="progress-container">

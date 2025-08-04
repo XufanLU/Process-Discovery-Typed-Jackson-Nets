@@ -17,14 +17,13 @@ import glob
 # Add parent directory to path to import project modules
 sys.path.append(str(Path(__file__).parent.parent))
 
+
 try:
   # from pd import process_discovery_pipeline
     from pnml import export_to_pnml
     from eval import evaluate_model
     # Import the main processing functions from the parent main.py
     from main import apply_inductive_miner, projection_based_on_organization, add_identifiers, post_processing
-    from pm4py.objects.log.importer.xes import importer as xes_importer
-    from pm4py import read_pnml
 except ImportError:
     # Fallback if modules are not available
     print("Warning: Could not import project modules. Using mock functions.")
@@ -53,45 +52,6 @@ logfire.instrument_fastapi(app)
 async def index() -> FileResponse:
     return FileResponse((THIS_DIR / 'chat_app.html'), media_type='text/html')
 
-@app.post('/discover')
-async def discover_process(
-    file: UploadFile = File(...),
-    technique: str = Form(...),
-    parameters: str = Form(...)
-):
-    """
-    Main process discovery endpoint for Typed Jackson Nets (TJN)
-    """
-    try:
-        # Parse parameters
-        params = json.loads(parameters)
-        
-        # Validate that only TJN is being used
-        if technique != 'tjn':
-            raise HTTPException(status_code=400, detail=f"Only Typed Jackson Nets (TJN) is supported, got: {technique}")
-        
-        # Save uploaded file temporarily
-        with tempfile.NamedTemporaryFile(delete=False, suffix='.xes') as tmp_file:
-            content = await file.read()
-            tmp_file.write(content)
-            tmp_file_path = tmp_file.name
-        
-        # Execute TJN process discovery
-        result = discover_typed_jackson_nets(tmp_file_path, params)
-        
-        # Clean up temporary file
-        os.unlink(tmp_file_path)
-        
-        return {
-            "status": "success",
-            "technique": "tjn",
-            "parameters": params,
-            "model": result,
-            "statistics": calculate_model_statistics(result)
-        }
-        
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"TJN discovery failed: {str(e)}")
 
 @app.post('/export/pnml')
 async def export_model_pnml(model_data: dict):
@@ -215,6 +175,12 @@ async def get_available_xes_files():
         # If running from parent directory, use relative path
         if not os.path.exists(xes_dir):
             xes_dir = "./data/original_xes_file"
+        
+        # Additional fallback for different working directories
+        if not os.path.exists(xes_dir):
+            # Try absolute path based on current file location
+            current_dir = os.path.dirname(os.path.abspath(__file__))
+            xes_dir = os.path.join(os.path.dirname(current_dir), "data", "original_xes_file")
 
         print(f"XES directory path: {xes_dir}")
         print(f"Directory exists: {os.path.exists(xes_dir)}")
@@ -223,11 +189,11 @@ async def get_available_xes_files():
         if os.path.exists(xes_dir):
             print("Checking for XES files in:",  xes_dir)
             file_patterns = glob.glob(f"{xes_dir}/*.xes")
-            print('292')
+            print(f"Found {len(file_patterns)} XES files")
             for xes_file in file_patterns:
                 filename = os.path.basename(xes_file)
                 file_name_without_ext = filename.replace('.xes', '')
-                print('{xes_file}')
+                print(f'Processing XES file: {xes_file}')
                 
                 # Get file statistics
                 file_stats = os.stat(xes_file)
@@ -235,32 +201,7 @@ async def get_available_xes_files():
                 
                 # Try to get basic log statistics if possible
                 log_stats = {"error": "Statistics unavailable"}
-                try:
-                    # Try to load the log and get basic stats
-                    log = xes_importer.apply(xes_file)
-                    
-                    # Get unique activities and resources
-                    activities = set()
-                    resources = set()
-                    total_events = 0
-                    
-                    for trace in log:
-                        for event in trace:
-                            activities.add(event.get('concept:name', 'Unknown'))
-                            resources.add(event.get('org:resource', 'Unknown'))
-                            total_events += 1
-                    
-                    log_stats = {
-                        "traces": len(log),
-                        "events": total_events,
-                        "unique_activities": len(activities),
-                        "unique_resources": len(resources),
-                        "sample_activities": list(activities)[:5],  # First 5 activities as preview
-                        "sample_resources": list(resources)[:5]     # First 5 resources as preview
-                    }
-                except Exception as e:
-                    print(f"Could not analyze log {xes_file}: {e}")
-                    log_stats = {"error": f"Could not analyze: {str(e)}"}
+
                 
                 xes_files.append({
                     "id": file_name_without_ext,
@@ -496,9 +437,7 @@ async def get_initial_log_info():
         raise HTTPException(status_code=500, detail=f"Failed to get initial log info: {str(e)}")
 
 
-def discover_typed_jackson_nets(file_path: str, params: dict):# TODO change this to backend connec
-    """Discover process model using Typed Jackson Nets"""
-    pass
+
 
 
 def calculate_model_statistics(model_data):
