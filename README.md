@@ -1,4 +1,4 @@
-# Process-Discovery-Typed-Jackson-Nets-r 
+# Process-Discovery-Typed-Jackson-Nets
 
 Enter the repository
 

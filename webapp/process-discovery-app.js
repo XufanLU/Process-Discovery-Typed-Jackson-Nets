@@ -465,13 +465,6 @@ class ProcessDiscoveryApp {
 
   async loadAnalyzedModels() {
     try {
-      const response = await fetch('/analyzed-models');
-      if (!response.ok) {
-        throw new Error('Failed to load analyzed models');
-      }
-
-      const data = await response.json();
-      this.analyzedModels = data.models;
       this.renderAnalyzedModels();
       this.updateAnalyzedModelsTitle('Previously Analyzed Models');
 
@@ -530,23 +523,7 @@ class ProcessDiscoveryApp {
         </div>
       </div>
     `).join('');
-    
-    // Add event listeners for the view model buttons
-    console.log('Adding event listeners to model buttons...');
-    const viewButtons = container.querySelectorAll('.model-view-btn');
-    console.log('Found view buttons:', viewButtons.length);
-    
-    viewButtons.forEach((button, index) => {
-      const modelId = button.dataset.modelId;
-      console.log(`Setting up button ${index} for model:`, modelId);
-      
-      button.addEventListener('click', (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        console.log('View button clicked for model:', modelId);
-        this.loadModel(modelId);
-      });
-    });
+
   }
 
   async loadAvailableXESFiles() {
@@ -693,25 +670,6 @@ class ProcessDiscoveryApp {
     }
   }
 
-  async loadModel(modelId) {
-    console.log('loadModel called with:', modelId);
-    try {
-      const response = await fetch(`/model/${modelId}`);
-      console.log('Response status:', response.status);
-      if (!response.ok) {
-        throw new Error('Failed to load model');
-      }
-
-      const data = await response.json();
-      console.log('Model data received:', data);
-      this.updateModelDisplay(data);
-      
-      
-    } catch (error) {
-      console.error('Error loading model:', error);
-      this.showError('Failed to load selected model');
-    }
-  }
 
   updateModelDisplay(data) {
     // Update the model visualization if SVG is available
@@ -767,7 +725,7 @@ class ProcessDiscoveryApp {
     const container = document.getElementById('analyzed-models-container');
     
     if (this.analyzedModels.length === 0) {
-      container.innerHTML = '<div class="text-muted small">No analyzed models found</div>';
+      container.innerHTML = '<div class="text-muted small">No analyzed models selected</div>';
       return;
     }
 
@@ -825,22 +783,23 @@ class ProcessDiscoveryApp {
       }
 
       const data = await response.json();
+      console.log('Analyzed model data:', data);
       
       // Update selected model in UI
-      document.querySelectorAll('.analyzed-model-item').forEach(item => {
-        item.classList.remove('selected');
-      });
-      document.querySelector(`[data-model-id="${modelId}"]`).classList.add('selected');
+      // document.querySelectorAll('.analyzed-model-item').forEach(item => {
+      //   item.classList.remove('selected');
+      // });
+      // document.querySelector(`[data-model-id="${modelId}"]`).classList.add('selected');
       
-      // Render the model
-      this.selectedAnalyzedModel = modelId;
-      this.currentModel = data.model;
-      this.renderModel(data.model);
-      this.updateModelStatistics(data.model);
-      this.enableExportButtons();
+      // // Render the model
+      // this.selectedAnalyzedModel = modelId;
+      // this.currentModel = data.model;
+      // this.renderModel(data.model);
+      // this.updateModelStatistics(data.model);
+      // this.enableExportButtons();
       
-      this.updateStatus('ready', `Loaded: ${data.organization || data.name || modelId}`);
-      this.showSuccess(`Model ${modelId} loaded successfully`);
+      // this.updateStatus('ready', `Loaded: ${data.organization || data.name || modelId}`);
+      // this.showSuccess(`Model ${modelId} loaded successfully`);
 
     } catch (error) {
       this.showError('Failed to load analyzed model: ' + error.message);

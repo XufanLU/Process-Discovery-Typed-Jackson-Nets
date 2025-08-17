@@ -80,88 +80,6 @@ async def startup_event():
     except Exception as e:
         print(f"Error during startup processing: {e}")
 
-@app.get('/analyzed-models')
-async def get_analyzed_models():
-    """Get all previously analyzed models from edited_processed_pnml folder"""
-    try:
-        models = []
-        
-        # Check the edited_processed_pnml directory for existing models
-        pnml_dir = "../data/edited_processed_pnml"
-        if not os.path.exists(pnml_dir):
-            pnml_dir = "./data/edited_processed_pnml"
-        if os.path.exists(pnml_dir):
-            pnml_files = glob.glob(f"{pnml_dir}/*.pnml")
-            
-            for pnml_file in pnml_files:
-                filename = os.path.basename(pnml_file)
-                model_name = filename.replace('.pnml', '')
-                
-                # Extract organization name (Agent 1, Agent 2, etc.)
-                org_name = model_name.replace('filtered_log_', '')
-                
-                # Check for corresponding SVG file
-                svg_file = pnml_file.replace('.pnml', '.svg')
-                has_svg = os.path.exists(svg_file)
-                
-                try:
-                    # Try to read PNML to get basic statistics using PM4Py if available
-                    statistics = {"error": "Statistics unavailable"}
-                    try:
-                        net, im, fm = read_pnml(pnml_file)
-                        statistics = {
-                            "places": len(net.places),
-                            "transitions": len(net.transitions),
-                            "arcs": len(net.arcs)
-                        }
-                    except:
-                        # If PM4Py is not available, try to parse PNML manually for basic info
-                        with open(pnml_file, 'r', encoding='utf-8') as f:
-                            content = f.read()
-                            place_count = content.count('<place')
-                            transition_count = content.count('<transition')
-                            arc_count = content.count('<arc')
-                            statistics = {
-                                "places": place_count,
-                                "transitions": transition_count,
-                                "arcs": arc_count
-                            }
-                    
-                    models.append({
-                        "id": model_name,
-                        "name": model_name,
-                        "organization": org_name,
-                        "organizations": [org_name],
-                        "pnml_path": pnml_file,
-                        "svg_path": svg_file if has_svg else None,
-                        "has_visualization": has_svg,
-                        "statistics": statistics,
-                        "file_size": round(os.path.getsize(pnml_file) / 1024, 2)  # KB
-                    })
-                except Exception as e:
-                    print(f"Error reading {pnml_file}: {e}")
-                    # Still add the model even if we can't read it
-                    models.append({
-                        "id": model_name,
-                        "name": model_name,
-                        "organization": org_name,
-                        "organizations": [org_name],
-                        "pnml_path": pnml_file,
-                        "svg_path": svg_file if has_svg else None,
-                        "has_visualization": has_svg,
-                        "statistics": {"error": "Could not read model"},
-                        "file_size": round(os.path.getsize(pnml_file) / 1024, 2)
-                    })
-        
-        return JSONResponse({
-            "status": "success",
-            "models": models,
-            "count": len(models)
-        })
-        
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Failed to get analyzed models: {str(e)}")
-
 @app.get('/available-xes-files')
 async def get_available_xes_files():
     """Get all available XES files from the original_xes_file directory"""
@@ -193,7 +111,7 @@ async def get_available_xes_files():
             for xes_file in file_patterns:
                 filename = os.path.basename(xes_file)
                 file_name_without_ext = filename.replace('.xes', '')
-                print(f'Processing XES file: {xes_file}')
+              #  print(f'Processing XES file: {xes_file}')
                 
                 # Get file statistics
                 file_stats = os.stat(xes_file)
@@ -276,7 +194,7 @@ async def get_related_models(log_name: str):
             pnml_files = glob.glob(os.path.join(composed_folder, "*.pnml"))
             print(f"Found {len(pnml_files)} composed PNML files")
             for pnml_file in pnml_files:
-                model = create_model_info(pnml_file, "Composed", log_name)
+                model = create_model_info(pnml_file, "composed_pnml", log_name)
                 if model:
                     models.append(model)
         
@@ -286,7 +204,7 @@ async def get_related_models(log_name: str):
             pnml_files = glob.glob(os.path.join(post_processed_folder, "*.pnml"))
             print(f"Found {len(pnml_files)} post-processed PNML files")
             for pnml_file in pnml_files:
-                model = create_model_info(pnml_file, "Post-processed", log_name)
+                model = create_model_info(pnml_file, "post_processed_pnml", log_name)
                 if model:
                     models.append(model)
         
@@ -296,17 +214,7 @@ async def get_related_models(log_name: str):
             pnml_files = glob.glob(os.path.join(first_folder, "*.pnml"))
             print(f"Found {len(pnml_files)} first PNML files")
             for pnml_file in pnml_files:
-                model = create_model_info(pnml_file, "Initial", log_name)
-                if model:
-                    models.append(model)
-        
-        # Check edited_processed_pnml folder (additional fallback)
-        edited_folder = os.path.join(log_folder_path, "edited_processed_pnml")
-        if os.path.exists(edited_folder):
-            pnml_files = glob.glob(os.path.join(edited_folder, "*.pnml"))
-            print(f"Found {len(pnml_files)} edited PNML files")
-            for pnml_file in pnml_files:
-                model = create_model_info(pnml_file, "Edited", log_name)
+                model = create_model_info(pnml_file, "first_pnml", log_name)
                 if model:
                     models.append(model)
         
@@ -322,6 +230,30 @@ async def get_related_models(log_name: str):
     except Exception as e:
         print(f"Error in get_related_models: {str(e)}")
         raise HTTPException(status_code=500, detail=f"Failed to get related models: {str(e)}")
+
+@app.get('/model/{modelId:path}')
+def load_model(modelId: str):
+    """Load a specific model by ID"""
+    try:
+        # Try different path configurations to handle different working directories
+        model_path = f"../data/{modelId}"
+        
+        # If relative path doesn't work, try absolute path
+        if not os.path.exists(model_path):
+            current_dir = os.path.dirname(os.path.abspath(__file__))
+            absolute_model_path = os.path.join(os.path.dirname(current_dir), "data", modelId)
+            if os.path.exists(absolute_model_path):
+                model_path = absolute_model_path
+            else:
+                raise HTTPException(status_code=404, detail=f"Model {modelId} not found")
+        
+        # Return the PNML file
+        return "todo"
+    
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to load model: {str(e)}")
+
 
 def create_model_info(pnml_file, model_type, log_name):
     """Helper function to create model info from PNML file"""
@@ -339,6 +271,8 @@ def create_model_info(pnml_file, model_type, log_name):
         log_folder = os.path.dirname(os.path.dirname(pnml_file))  # Go up two levels from pnml file
         svg_file = os.path.join(log_folder, "images", f"{model_name}.svg")
         has_svg = os.path.exists(svg_file)
+
+        print(f"line 361: {log_name}/{model_type}/{model_name}.pnml")
         
         # Try to get statistics
         statistics = {"error": "Statistics unavailable"}
@@ -361,9 +295,10 @@ def create_model_info(pnml_file, model_type, log_name):
                     "transitions": transition_count,
                     "arcs": arc_count
                 }
+
         
         return {
-            "id": f"{log_name}_{model_type}_{model_name}",
+            "id": f"{log_name}/{model_type}/{model_name}.pnml",
             "name": f"{model_type}: {model_name}",
             "organization": org_name,
             "organizations": [org_name],
