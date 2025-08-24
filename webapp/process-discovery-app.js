@@ -97,11 +97,11 @@ class ProcessDiscoveryApp {
 
   initializeEventListeners() {
     
-    // Zoom controls
-    document.getElementById('zoom-in').addEventListener('click', () => this.zoomIn());
-    document.getElementById('zoom-out').addEventListener('click', () => this.zoomOut());
-    document.getElementById('fit-to-screen').addEventListener('click', () => this.fitToScreen());
-    document.getElementById('reset-view').addEventListener('click', () => this.resetView());
+    // // Zoom controls
+    // document.getElementById('zoom-in').addEventListener('click', () => this.zoomIn());
+    // document.getElementById('zoom-out').addEventListener('click', () => this.zoomOut());
+    // document.getElementById('fit-to-screen').addEventListener('click', () => this.fitToScreen());
+    // document.getElementById('reset-view').addEventListener('click', () => this.resetView());
 
     // Export buttons
     document.getElementById('export-svg').addEventListener('click', () => this.exportSVG());
@@ -828,14 +828,19 @@ class ProcessDiscoveryApp {
             <button class="btn btn-sm btn-outline-secondary" onclick="app.fitPNMLToWindow()" title="Fit to Window">
               <i class="fas fa-expand-arrows-alt"></i>
             </button>
-            <button class="btn btn-sm btn-outline-secondary" onclick="app.resetPNMLZoom()" title="Reset Zoom">
-              <i class="fas fa-home"></i>
-            </button>
             <button class="btn btn-sm btn-outline-secondary" onclick="app.clearPNMLGraph()" title="Clear">
               <i class="fas fa-trash"></i>
             </button>
-            <button class="btn btn-sm btn-outline-primary" onclick="app.downloadPNMLAsSVG()" title="Download SVG">
-              <i class="fas fa-download"></i>
+            <!-- Added visible + and - buttons for zoom -->
+            <button class="btn btn-sm btn-outline-secondary" onclick="app.zoomInPNML()" title="Zoom In">
+              <i class="fas fa-plus"></i>
+            </button>
+            <button class="btn btn-sm btn-outline-secondary" onclick="app.zoomOutPNML()" title="Zoom Out">
+              <i class="fas fa-minus"></i>
+            </button>
+            <!-- Drag-to-pan toggle button -->
+            <button class="btn btn-sm btn-outline-secondary" id="pnml-drag-toggle" title="Enable Drag to Pan">
+              <i class="fas fa-hand-paper"></i> Drag
             </button>
           </div>
         </div>
@@ -855,6 +860,47 @@ class ProcessDiscoveryApp {
     
     // Initialize JointJS if needed and wait for it
     await this.initializeJointJS();
+      // Add drag-to-pan functionality to pnml-holder, toggled by button
+      const pnmlHolder = document.getElementById('pnml-holder');
+      const dragToggleBtn = document.getElementById('pnml-drag-toggle');
+      let dragModeEnabled = false;
+      let isDraggingPNML = false;
+      let lastXPNML = 0;
+      let lastYPNML = 0;
+
+      dragToggleBtn.addEventListener('click', () => {
+        dragModeEnabled = !dragModeEnabled;
+        dragToggleBtn.classList.toggle('active', dragModeEnabled);
+        dragToggleBtn.title = dragModeEnabled ? 'Disable Drag to Pan' : 'Enable Drag to Pan';
+        dragToggleBtn.innerHTML = dragModeEnabled ? '<i class="fas fa-hand-paper"></i> Dragging' : '<i class="fas fa-hand-paper"></i> Drag';
+        pnmlHolder.style.cursor = dragModeEnabled ? 'grab' : 'default';
+      });
+
+      pnmlHolder.addEventListener('mousedown', (e) => {
+        if (!dragModeEnabled) return;
+        isDraggingPNML = true;
+        lastXPNML = e.clientX;
+        lastYPNML = e.clientY;
+        pnmlHolder.style.cursor = 'grabbing';
+      });
+
+      window.addEventListener('mousemove', (e) => {
+        if (isDraggingPNML && dragModeEnabled && this.pnmlPaper) {
+          const dx = e.clientX - lastXPNML;
+          const dy = e.clientY - lastYPNML;
+          let tx = this.pnmlPaper.translate().tx + dx;
+          let ty = this.pnmlPaper.translate().ty + dy;
+          this.pnmlPaper.translate(tx, ty);
+          lastXPNML = e.clientX;
+          lastYPNML = e.clientY;
+        }
+      });
+
+      window.addEventListener('mouseup', () => {
+        if (!dragModeEnabled) return;
+        isDraggingPNML = false;
+        pnmlHolder.style.cursor = dragModeEnabled ? 'grab' : 'default';
+      });
   }
 
   async initializeJointJS() {
@@ -936,8 +982,6 @@ class ProcessDiscoveryApp {
           info += `Type: ${isTau ? 'Tau (Silent) Transition' : 'Regular Transition'}<br>`;
         }
       }
-      
-      document.getElementById('pnml-info').innerHTML = info;
     });
 
     this.pnmlPaper.on('link:pointerclick', (linkView) => {
@@ -960,6 +1004,39 @@ class ProcessDiscoveryApp {
       document.getElementById('pnml-info').innerHTML = info;
     });
   }
+
+  // PNML Zoom In/Out and Movement Controls
+  zoomInPNML() {
+    if (this.pnmlPaper) {
+      let scale = this.pnmlPaper.scale().sx;
+      scale = Math.min(2, scale * 1.2);
+      this.pnmlPaper.scale(scale, scale);
+    }
+  }
+
+  zoomOutPNML() {
+    if (this.pnmlPaper) {
+      let scale = this.pnmlPaper.scale().sx;
+      scale = Math.max(0.1, scale / 1.2);
+      this.pnmlPaper.scale(scale, scale);
+    }
+  }
+
+  movePNML(direction) {
+    if (this.pnmlPaper) {
+      let tx = this.pnmlPaper.translate().tx;
+      let ty = this.pnmlPaper.translate().ty;
+      const step = 50;
+      switch (direction) {
+        case 'up': ty -= step; break;
+        case 'down': ty += step; break;
+        case 'left': tx -= step; break;
+        case 'right': tx += step; break;
+      }
+      this.pnmlPaper.translate(tx, ty);
+    }
+  }
+// ...existing code...
 
   parsePNMLAndVisualize(xmlContent, fileName = 'PNML File') {
     try {
