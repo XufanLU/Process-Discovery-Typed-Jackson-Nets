@@ -821,13 +821,23 @@ class ProcessDiscoveryApp {
       pnmlContainer.id = 'pnml-visualization-container';
       pnmlContainer.style.cssText = 'width: 100%; height: 100%; background: white;';
       
-      // Create the visualization HTML structure similar to test_new.html
+      // Use Bootstrap button styles for controls
       pnmlContainer.innerHTML = `
-        <div id="pnml-controls" style="margin-bottom: 20px; padding: 10px; border: 1px solid #ccc; background-color: #f9f9f9;">
-          <button onclick="app.fitPNMLToWindow()">Fit to Window</button>
-          <button onclick="app.resetPNMLZoom()">Reset Zoom</button>
-          <button onclick="app.clearPNMLGraph()">Clear</button>
-          <button onclick="app.downloadPNMLAsSVG()">Download SVG</button>
+        <div id="pnml-controls" class="visualization-controls" style="position:absolute; top:10px; right:10px; z-index:1000;">
+          <div class="zoom-controls">
+            <button class="btn btn-sm btn-outline-secondary" onclick="app.fitPNMLToWindow()" title="Fit to Window">
+              <i class="fas fa-expand-arrows-alt"></i>
+            </button>
+            <button class="btn btn-sm btn-outline-secondary" onclick="app.resetPNMLZoom()" title="Reset Zoom">
+              <i class="fas fa-home"></i>
+            </button>
+            <button class="btn btn-sm btn-outline-secondary" onclick="app.clearPNMLGraph()" title="Clear">
+              <i class="fas fa-trash"></i>
+            </button>
+            <button class="btn btn-sm btn-outline-primary" onclick="app.downloadPNMLAsSVG()" title="Download SVG">
+              <i class="fas fa-download"></i>
+            </button>
+          </div>
         </div>
         <div id="pnml-holder" style="border: 1px solid #ddd; background-color: white; width: 100%; height: 600px;"></div>
         <div id="pnml-info" style="margin-top: 10px; padding: 10px; background-color: #f0f0f0; border-radius: 5px;">
@@ -1032,16 +1042,13 @@ class ProcessDiscoveryApp {
     // Create place elements
     places.forEach((placeData, index) => {
       const { id, name, type, initialMarking } = placeData;
-      
       const circle = new joint.shapes.standard.Circle();
-      const position = this.calculateElementPosition(id, index, 'place', places, transitions, arcs);
-      circle.position(position.x, position.y);
+      // Initial position, will be arranged later
+      circle.position(0, 0);
       circle.resize(50, 50);
-      
       circle.set('id', id);
       circle.set('pnmlData', placeData);
       circle.set('elementType', 'place');
-      
       circle.attr({
         body: {
           fill: initialMarking ? '#ffeb3b' : 'white',
@@ -1055,27 +1062,22 @@ class ProcessDiscoveryApp {
           fill: 'black'
         }
       });
-      
       circle.addTo(this.pnmlGraph);
       elements.set(id, circle);
     });
-    
+
     // Create transition elements
     transitions.forEach((transitionData, index) => {
       const { id, name } = transitionData;
-      
       const isTau = this.isTauTransition(name, id);
-      
       const rect = new joint.shapes.standard.Rectangle();
-      const position = this.calculateElementPosition(id, index, 'transition', places, transitions, arcs);
-      rect.position(position.x, position.y);
+      // Initial position, will be arranged later
+      rect.position(0, 0);
       rect.resize(60, 30);
-      
       rect.set('id', id);
       rect.set('pnmlData', transitionData);
       rect.set('elementType', 'transition');
       rect.set('isTau', isTau);
-      
       rect.attr({
         body: {
           fill: isTau ? 'black' : 'white',
@@ -1089,17 +1091,18 @@ class ProcessDiscoveryApp {
           fill: isTau ? 'white' : 'black'
         }
       });
-      
       rect.addTo(this.pnmlGraph);
       elements.set(id, rect);
     });
-    
+
+  // Arrange elements visually using hierarchical level logic
+  this.arrangePNMLElementsHierarchical(places, transitions, elements, arcs);
+
     // Create arc connections
     arcs.forEach(arcData => {
       const { source, target, identifier } = arcData;
       const sourceElement = elements.get(source);
       const targetElement = elements.get(target);
-      
       if (sourceElement && targetElement) {
         const link = new joint.shapes.standard.Link();
         link.source(sourceElement);
@@ -1115,7 +1118,6 @@ class ProcessDiscoveryApp {
             }
           }
         });
-        
         if (identifier) {
           link.labels([{
             attrs: {
@@ -1127,10 +1129,56 @@ class ProcessDiscoveryApp {
             }
           }]);
         }
-        
         link.addTo(this.pnmlGraph);
       }
     });
+  }
+
+  // Arrange PNML elements in a grid layout (copied exactly from test_new.html)
+  // Arrange PNML elements using hierarchical levels
+  arrangePNMLElementsHierarchical(places, transitions, elementsMap, arcs) {
+    // Filter out places and transitions with no connections
+    const connectedPlaces = places.filter(p => {
+      const hasIncoming = arcs.some(arc => arc.target === p.id);
+      const hasOutgoing = arcs.some(arc => arc.source === p.id);
+      return hasIncoming || hasOutgoing;
+    });
+    const connectedTransitions = transitions.filter(t => {
+      const hasIncoming = arcs.some(arc => arc.target === t.id);
+      const hasOutgoing = arcs.some(arc => arc.source === t.id);
+      return hasIncoming || hasOutgoing;
+    });
+
+    // Combine connected places and transitions for level calculation
+    const allElements = [
+      ...connectedPlaces.map(p => ({ ...p, type: 'place' })),
+      ...connectedTransitions.map(t => ({ ...t, type: 'transition' }))
+    ];
+
+    // Find max level
+    let maxLevel = 0;
+    allElements.forEach(e => {
+      const lvl = this.getLevel(e.id, arcs);
+      if (lvl > maxLevel) maxLevel = lvl;
+    });
+
+    // For each level, arrange elements left to right (horizontal levels)
+    // Each level is a column, elements at that level are stacked vertically
+    const startX = 100;
+    const startY = 100;
+    const spacingX = 180;
+    const spacingY = 80;
+    for (let level = 0; level <= maxLevel; level++) {
+      const elementsAtLevel = allElements.filter(e => this.getLevel(e.id, arcs) === level);
+      elementsAtLevel.forEach((e, idx) => {
+        const x = startX + level * spacingX;
+        const y = startY + idx * spacingY;
+        const elem = elementsMap.get(e.id);
+        if (elem) {
+          elem.position(x, y);
+        }
+      });
+    }
   }
 
   calculateElementPosition(id, index, elementType, places, transitions, arcs) {
@@ -1150,6 +1198,41 @@ class ProcessDiscoveryApp {
     };
   }
 
+    // Helper: Get the hierarchical level of an element (place/transition)
+    getLevel(elementId, arcs) {
+      // Level 0: no incoming arcs
+      let level = 0;
+      let current = elementId;
+      let visited = new Set();
+      while (true) {
+        let incoming = arcs.filter(arc => arc.target === current);
+        if (incoming.length === 0) break;
+        // Take the first incoming arc's source as parent
+        current = incoming[0].source;
+        if (visited.has(current)) break;
+        visited.add(current);
+        level++;
+      }
+      return level;
+    }
+
+    // Helper: Calculate position within a level
+    calculateLevelPosition(level, index, total, startX = 100, spacingX = 120, startY = 100, spacingY = 100) {
+      const x = startX + index * spacingX;
+      const y = startY + level * spacingY;
+      return { x, y };
+    }
+
+    // Helper: Extract number from string (for sorting, etc)
+    extractNumber(str) {
+      const match = str.match(/\d+/);
+      return match ? parseInt(match[0], 10) : 0;
+    }
+
+    // Helper: Get all elements at a given level
+    getElementsAtLevel(level, elements, arcs) {
+      return elements.filter(e => this.getLevel(e.id, arcs) === level);
+    }
   isTauTransition(name, id) {
     if (!name && !id) return false;
     

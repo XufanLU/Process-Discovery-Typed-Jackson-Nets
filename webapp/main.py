@@ -85,11 +85,6 @@ async def visualizer() -> FileResponse:
     """Serve the PNML visualizer page"""
     return FileResponse((THIS_DIR.parent / 'test_new.html'), media_type='text/html')
 
-@app.get('/test-pnml')
-async def test_pnml() -> FileResponse:
-    """Serve the integrated PNML test page"""
-    return FileResponse((THIS_DIR / 'pnml-test.html'), media_type='text/html')
-
 @app.get('/pnml/{file_path:path}')
 async def serve_pnml(file_path: str):
     """Serve PNML files for the visualizer"""
