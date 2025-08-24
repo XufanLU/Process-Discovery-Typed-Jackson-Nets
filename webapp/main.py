@@ -43,8 +43,8 @@ try:
         # Fallback functions if PM4Py is not available
         def read_pnml(*args, **kwargs):
             raise ImportError("PM4Py not available")
-        def convert_petri_net_to_json(*args, **kwargs):
-            return {"error": "PM4Py not available"}
+        # def convert_petri_net_to_json(*args, **kwargs):
+        #     return {"error": "PM4Py not available"}
         xes_importer = None
         
 except ImportError:
@@ -58,8 +58,8 @@ except ImportError:
         return {"fitness": 0.8, "precision": 0.75}
     def read_pnml(*args, **kwargs):
         raise ImportError("Modules not available")
-    def convert_petri_net_to_json(*args, **kwargs):
-        return {"error": "Modules not available"}
+    # def convert_petri_net_to_json(*args):
+    #     return {"error": "Modules not available"}
     xes_importer = None
 
 logfire.configure(send_to_logfire='if-token-present')

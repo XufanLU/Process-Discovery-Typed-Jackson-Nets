@@ -25,7 +25,6 @@ class ProcessDiscoveryApp {
     this.setupVisualization();
     this.loadAnalyzedModels();
     this.loadAvailableXESFiles();
-    this.loadInitialModel();
     
   }
 
@@ -505,22 +504,7 @@ class ProcessDiscoveryApp {
     this.showSuccess('Configuration reset successfully');
   }
 
-  async loadInitialModel() {
-    // This method can be used to load an initial model on startup
-    // For now, we'll just show the default placeholder
-    this.showDefaultPlaceholder();
-  }
 
-  showDefaultPlaceholder() {
-    const placeholder = document.getElementById('placeholder');
-    placeholder.innerHTML = `
-      <div class="text-center text-muted">
-        <i class="fas fa-project-diagram fa-3x mb-3"></i>
-        <h5>No Model Loaded</h5>
-        <p>Upload an event log file or select from previously analyzed models</p>
-      </div>
-    `;
-  }
 
   showInitialLogInfo(logStats, organizations) {
     // Add a section to show initial log information
