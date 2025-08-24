@@ -24,6 +24,29 @@ try:
     from eval import evaluate_model
     # Import the main processing functions from the parent main.py
     from main import apply_inductive_miner, projection_based_on_organization, add_identifiers, post_processing
+    
+    # Try to import PM4Py for PNML reading
+    try:
+        from pm4py.objects.petri_net.importer import importer as pnml_importer
+        from pm4py.objects.log.importer.xes import importer as xes_importer
+        read_pnml = pnml_importer.apply
+        
+        def convert_petri_net_to_json(net, im, fm, org_name):
+            """Convert Petri net to JSON format"""
+            return {
+                "places": [{"id": str(p), "name": str(p)} for p in net.places],
+                "transitions": [{"id": str(t), "name": str(t)} for t in net.transitions],
+                "arcs": [{"source": str(a.source), "target": str(a.target)} for a in net.arcs],
+                "organization": org_name
+            }
+    except ImportError:
+        # Fallback functions if PM4Py is not available
+        def read_pnml(*args, **kwargs):
+            raise ImportError("PM4Py not available")
+        def convert_petri_net_to_json(*args, **kwargs):
+            return {"error": "PM4Py not available"}
+        xes_importer = None
+        
 except ImportError:
     # Fallback if modules are not available
     print("Warning: Could not import project modules. Using mock functions.")
@@ -33,6 +56,11 @@ except ImportError:
         return "<pnml></pnml>"
     def evaluate_model(*args, **kwargs):
         return {"fitness": 0.8, "precision": 0.75}
+    def read_pnml(*args, **kwargs):
+        raise ImportError("Modules not available")
+    def convert_petri_net_to_json(*args, **kwargs):
+        return {"error": "Modules not available"}
+    xes_importer = None
 
 logfire.configure(send_to_logfire='if-token-present')
 
@@ -51,6 +79,42 @@ logfire.instrument_fastapi(app)
 @app.get('/')
 async def index() -> FileResponse:
     return FileResponse((THIS_DIR / 'chat_app.html'), media_type='text/html')
+
+@app.get('/visualizer')
+async def visualizer() -> FileResponse:
+    """Serve the PNML visualizer page"""
+    return FileResponse((THIS_DIR.parent / 'test_new.html'), media_type='text/html')
+
+@app.get('/test-pnml')
+async def test_pnml() -> FileResponse:
+    """Serve the integrated PNML test page"""
+    return FileResponse((THIS_DIR / 'pnml-test.html'), media_type='text/html')
+
+@app.get('/pnml/{file_path:path}')
+async def serve_pnml(file_path: str):
+    """Serve PNML files for the visualizer"""
+    try:
+        # URL decode the file path to handle spaces and special characters
+        from urllib.parse import unquote
+        decoded_path = unquote(file_path)
+        
+        # Construct the full path
+        full_path = THIS_DIR.parent / decoded_path
+        
+        # Check if file exists and is a PNML file
+        if not full_path.exists():
+            print(f"PNML file not found: {full_path}")
+            raise HTTPException(status_code=404, detail=f"PNML file not found: {decoded_path}")
+        
+        if not str(full_path).endswith('.pnml'):
+            raise HTTPException(status_code=400, detail="Not a PNML file")
+        
+        return FileResponse(full_path, media_type='application/xml')
+    
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error serving PNML file: {str(e)}")
 
 
 @app.post('/export/pnml')

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>PNML Visualizer Test</title>
+    <style>
+        body {
+            font-family: 'Times', serif;
+            margin: 20px;
+            background-color: white;
+        }
+        
+        #controls {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        
+        #pnml-holder {
+            border: 1px solid #ddd;
+            background-color: white;
+            width: 1200px;
+            height: 600px;
+        }
+        
+        .info-panel {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>PNML Visualizer Test</h1>
+    
+    <!-- File upload controls -->
+    <div id="controls">
+        <div style="margin-bottom: 10px;">
+            <label for="pnmlSelect">Select PNML File:</label>
+            <select id="pnmlSelect" onchange="loadSelectedFile()" style="margin-left: 10px; margin-right: 20px;">
+                <option value="">-- Choose a PNML file --</option>
+                <option value="../data/Agent 1.pnml">Agent 1 (sample)</option>
+                <option value="../data/IP-1_initial_log/first_pnml/Agent 1.pnml">IP-1 Agent 1</option>
+                <option value="../data/IP-1_initial_log/first_pnml/Agent 2.pnml">IP-1 Agent 2</option>
+                <option value="../data/IP-1_initial_log/composed_pnml/composed_IP-1_initial_log.pnml">IP-1 Composed</option>
+                <option value="../data/IP2_directly_mined.pnml">IP2 Directly Mined</option>
+            </select>
+        </div>
+        <div>
+            <button onclick="fitToWindow()">Fit to Window</button>
+            <button onclick="resetZoom()">Reset Zoom</button>
+            <button onclick="clearGraph()">Clear</button>
+            <button onclick="downloadAsSVG()">Download SVG</button>
+        </div>
+    </div>
+    
+    <!-- Main visualization area -->
+    <div id="pnml-holder"></div>
+    
+    <!-- Information panel -->
+    <div class="info-panel">
+        <div id="info">Loading JointJS library...</div>
+    </div>
+
+    <!-- dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@joint/core@4.0.1/dist/joint.js"></script>
+
+    <!-- Include the PNML processing class -->
+    <script src="process-discovery-app.js"></script>
+
+    <script type="text/javascript">
+        let app;
+        
+        // Initialize when page loads
+        window.addEventListener('load', function() {
+            initializeVisualization();
+        });
+
+        function initializeVisualization() {
+            try {
+                // Create app instance to use PNML methods
+                app = new ProcessDiscoveryApp();
+                
+                // Initialize the PNML visualization
+                app.initializePNMLVisualization();
+                
+                document.getElementById('info').innerHTML = 
+                    '<strong>Visualizer Ready!</strong><br>' +
+                    'Select a PNML file from the dropdown.<br>' +
+                    'Click on elements to see details.';
+
+            } catch (error) {
+                document.getElementById('info').innerHTML = 
+                    '<strong>Error:</strong> ' + error.message;
+                console.error(error);
+            }
+        }
+
+        // Load selected file from dropdown
+        function loadSelectedFile() {
+            const select = document.getElementById('pnmlSelect');
+            const filePath = select.value;
+            
+            if (filePath && app) {
+                document.getElementById('info').innerHTML = 'Loading ' + filePath + '...';
+                
+                app.visualizePNMLFile(filePath)
+                    .then(() => {
+                        console.log('PNML file loaded successfully');
+                    })
+                    .catch(error => {
+                        document.getElementById('info').innerHTML = 
+                            '<strong>Error:</strong> ' + error.message + '<br>' +
+                            'Please check the file path and try again.';
+                        console.error(error);
+                    });
+            }
+        }
+
+        // Utility functions that delegate to app methods
+        function fitToWindow() {
+            if (app) app.fitPNMLToWindow();
+        }
+
+        function resetZoom() {
+            if (app) app.resetPNMLZoom();
+        }
+
+        function clearGraph() {
+            if (app) app.clearPNMLGraph();
+        }
+
+        function downloadAsSVG() {
+            if (app) app.downloadPNMLAsSVG();
+        }
+    </script>
+</body>
+</html>

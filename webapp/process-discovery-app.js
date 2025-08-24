@@ -17,6 +17,9 @@ class ProcessDiscoveryApp {
     this.selectedAnalyzedModel = null;
     this.initialLogLoaded = false;
     
+    // Initialize with some sample PNML models for testing
+    this.initializeSampleModels();
+    
     this.initializeEventListeners();
     this.setupFileUpload();
     this.setupVisualization();
@@ -24,6 +27,72 @@ class ProcessDiscoveryApp {
     this.loadAvailableXESFiles();
     this.loadInitialModel();
     
+  }
+
+  initializeSampleModels() {
+    // Add sample models that point to existing PNML files
+    this.analyzedModels = [
+      {
+        id: "IP-1_initial_log/first_pnml/Agent 1.pnml",
+        name: "first_pnml: Agent 1",
+        organization: "Agent 1",
+        organizations: ["Agent 1"],
+        type: "first_pnml",
+        pnml_path: "/Users/xufanlu/Projects/Process Mining/Process-Discovery-Typed-Jackson-Nets/data/IP-1_initial_log/first_pnml/Agent 1.pnml",
+        has_visualization: true,
+        statistics: { places: 20, transitions: 15, arcs: 35 },
+        file_size: 12.4,
+        status: "ready"
+      },
+      {
+        id: "IP-1_initial_log/first_pnml/Agent 2.pnml",
+        name: "first_pnml: Agent 2",
+        organization: "Agent 2",
+        organizations: ["Agent 2"],
+        type: "first_pnml",
+        pnml_path: "/Users/xufanlu/Projects/Process Mining/Process-Discovery-Typed-Jackson-Nets/data/IP-1_initial_log/first_pnml/Agent 2.pnml",
+        has_visualization: true,
+        statistics: { places: 25, transitions: 18, arcs: 43 },
+        file_size: 15.2,
+        status: "ready"
+      },
+      {
+        id: "IP-1_initial_log/composed_pnml/composed_IP-1_initial_log.pnml",
+        name: "composed_pnml: composed_IP-1_initial_log",
+        organization: "Composed",
+        organizations: ["Agent 1", "Agent 2"],
+        type: "composed_pnml",
+        pnml_path: "/Users/xufanlu/Projects/Process Mining/Process-Discovery-Typed-Jackson-Nets/data/IP-1_initial_log/composed_pnml/composed_IP-1_initial_log.pnml",
+        has_visualization: true,
+        statistics: { places: 45, transitions: 33, arcs: 78 },
+        file_size: 28.7,
+        status: "ready"
+      },
+      {
+        id: "IP-1_initial_log/post_processed_pnml/Agent 1.pnml",
+        name: "post_processed_pnml: Agent 1",
+        organization: "Agent 1",
+        organizations: ["Agent 1"],
+        type: "post_processed_pnml",
+        pnml_path: "/Users/xufanlu/Projects/Process Mining/Process-Discovery-Typed-Jackson-Nets/data/IP-1_initial_log/post_processed_pnml/Agent 1.pnml",
+        has_visualization: true,
+        statistics: { places: 20, transitions: 15, arcs: 35 },
+        file_size: 13.1,
+        status: "ready"
+      },
+      {
+        id: "IP-1_initial_log/post_processed_pnml/Agent 2.pnml",
+        name: "post_processed_pnml: Agent 2",
+        organization: "Agent 2",
+        organizations: ["Agent 2"],
+        type: "post_processed_pnml",
+        pnml_path: "/Users/xufanlu/Projects/Process Mining/Process-Discovery-Typed-Jackson-Nets/data/IP-1_initial_log/post_processed_pnml/Agent 2.pnml",
+        has_visualization: true,
+        statistics: { places: 25, transitions: 18, arcs: 43 },
+        file_size: 16.0,
+        status: "ready"
+      }
+    ];
   }
   
 
@@ -712,7 +781,449 @@ class ProcessDiscoveryApp {
     this.enableExportButtons();
   }
 
+  async visualizePNMLFile(filePath) {
+    try {
+      // Initialize PNML visualization container if it doesn't exist
+      await this.initializePNMLVisualization();
+      
+      // Construct the proper URL for fetching PNML files through the server endpoint
+      let pnmlUrl;
+      if (filePath.startsWith('../')) {
+        // Remove ../ prefix and add /pnml/ endpoint
+        pnmlUrl = `/pnml/${filePath.substring(3)}`;
+      } else if (filePath.startsWith('data/')) {
+        // Direct data path
+        pnmlUrl = `/pnml/${filePath}`;
+      } else {
+        // Fallback - assume it's a relative path from project root
+        pnmlUrl = `/pnml/${filePath}`;
+      }
+      
+      console.log('Fetching PNML from:', pnmlUrl);
+      
+      // Fetch PNML file content
+      const response = await fetch(pnmlUrl);
+      if (!response.ok) {
+        throw new Error(`Failed to load PNML file: ${response.status} ${response.statusText}`);
+      }
+      
+      const pnmlContent = await response.text();
+      
+      // Parse and visualize the PNML
+      this.parsePNMLAndVisualize(pnmlContent, filePath);
+      
+      this.updateStatus('ready', `Visualizing PNML: ${filePath}`);
+      
+    } catch (error) {
+      console.error('Error visualizing PNML file:', error);
+      throw error;
+    }
+  }
 
+  async initializePNMLVisualization() {
+    // Hide other containers
+    const placeholder = document.getElementById('placeholder');
+    const canvas = document.getElementById('model-canvas');
+    let svgContainer = document.getElementById('svg-display-container');
+    
+    if (placeholder) placeholder.style.display = 'none';
+    if (canvas) canvas.style.display = 'none';
+    if (svgContainer) svgContainer.style.display = 'none';
+    
+    // Create or get PNML visualization container
+    let pnmlContainer = document.getElementById('pnml-visualization-container');
+    if (!pnmlContainer) {
+      pnmlContainer = document.createElement('div');
+      pnmlContainer.id = 'pnml-visualization-container';
+      pnmlContainer.style.cssText = 'width: 100%; height: 100%; background: white;';
+      
+      // Create the visualization HTML structure similar to test_new.html
+      pnmlContainer.innerHTML = `
+        <div id="pnml-controls" style="margin-bottom: 20px; padding: 10px; border: 1px solid #ccc; background-color: #f9f9f9;">
+          <button onclick="app.fitPNMLToWindow()">Fit to Window</button>
+          <button onclick="app.resetPNMLZoom()">Reset Zoom</button>
+          <button onclick="app.clearPNMLGraph()">Clear</button>
+          <button onclick="app.downloadPNMLAsSVG()">Download SVG</button>
+        </div>
+        <div id="pnml-holder" style="border: 1px solid #ddd; background-color: white; width: 100%; height: 600px;"></div>
+        <div id="pnml-info" style="margin-top: 10px; padding: 10px; background-color: #f0f0f0; border-radius: 5px;">
+          Ready to load PNML file...
+        </div>
+      `;
+      
+      const visualizationContainer = document.getElementById('visualization-container');
+      if (visualizationContainer) {
+        visualizationContainer.appendChild(pnmlContainer);
+      }
+    }
+    
+    pnmlContainer.style.display = 'block';
+    
+    // Initialize JointJS if needed and wait for it
+    await this.initializeJointJS();
+  }
+
+  async initializeJointJS() {
+    return new Promise((resolve, reject) => {
+      // Check if JointJS is already loaded
+      if (typeof joint === 'undefined') {
+        // Load JointJS dynamically
+        const script = document.createElement('script');
+        script.src = 'https://cdn.jsdelivr.net/npm/@joint/core@4.0.1/dist/joint.js';
+        script.onload = () => {
+          this.setupPNMLPaper();
+          resolve();
+        };
+        script.onerror = () => {
+          reject(new Error('Failed to load JointJS library'));
+        };
+        document.head.appendChild(script);
+      } else {
+        this.setupPNMLPaper();
+        resolve();
+      }
+    });
+  }
+
+  setupPNMLPaper() {
+    if (this.pnmlGraph && this.pnmlPaper) {
+      // Already initialized
+      return;
+    }
+    
+    const holderElement = document.getElementById('pnml-holder');
+    if (!holderElement) {
+      console.error('pnml-holder element not found');
+      return;
+    }
+    
+    const namespace = joint.shapes;
+    this.pnmlGraph = new joint.dia.Graph({}, { cellNamespace: namespace });
+
+    this.pnmlPaper = new joint.dia.Paper({
+      el: holderElement,
+      model: this.pnmlGraph,
+      width: 2200,
+      height: 600,
+      gridSize: 10,
+      drawGrid: true,
+      background: { color: 'white' },
+      cellViewNamespace: namespace,
+      interactive: true
+    });
+
+    // Add event listeners for interaction
+    this.setupPNMLEventListeners();
+  }
+
+  setupPNMLEventListeners() {
+    if (!this.pnmlPaper) return;
+    
+    // Click handlers for interaction
+    this.pnmlPaper.on('element:pointerclick', (elementView) => {
+      const element = elementView.model;
+      const pnmlData = element.get('pnmlData');
+      const elementType = element.get('elementType');
+      
+      let info = '<strong>Element Details:</strong><br>';
+      
+      if (pnmlData) {
+        info += `Type: ${elementType}<br>`;
+        info += `PNML ID: ${pnmlData.id}<br>`;
+        info += `Name: ${pnmlData.name}<br>`;
+        
+        if (elementType === 'place') {
+          info += `Agent Type: ${pnmlData.type}<br>`;
+          if (pnmlData.initialMarking) {
+            info += `Initial Marking: ${pnmlData.initialMarking}<br>`;
+          }
+        } else if (elementType === 'transition') {
+          const isTau = element.get('isTau');
+          info += `Type: ${isTau ? 'Tau (Silent) Transition' : 'Regular Transition'}<br>`;
+        }
+      }
+      
+      document.getElementById('pnml-info').innerHTML = info;
+    });
+
+    this.pnmlPaper.on('link:pointerclick', (linkView) => {
+      const link = linkView.model;
+      
+      let info = '<strong>Arc Details:</strong><br>';
+      info += `Type: Arc<br>`;
+      
+      const source = link.getSourceElement();
+      const target = link.getTargetElement();
+      
+      if (source && target) {
+        const sourcePnml = source.get('pnmlData');
+        const targetPnml = target.get('pnmlData');
+        
+        info += `From: ${sourcePnml ? sourcePnml.name : source.id}<br>`;
+        info += `To: ${targetPnml ? targetPnml.name : target.id}<br>`;
+      }
+      
+      document.getElementById('pnml-info').innerHTML = info;
+    });
+  }
+
+  parsePNMLAndVisualize(xmlContent, fileName = 'PNML File') {
+    try {
+      const parser = new DOMParser();
+      const xmlDoc = parser.parseFromString(xmlContent, 'text/xml');
+      
+      // Check for XML parsing errors
+      const parserError = xmlDoc.querySelector('parsererror');
+      if (parserError) {
+        throw new Error('XML parsing error: ' + parserError.textContent);
+      }
+      
+      // Ensure the graph is initialized before clearing
+      if (!this.pnmlGraph) {
+        console.warn('PNML graph not initialized, setting up now...');
+        this.setupPNMLPaper();
+      }
+      
+      // Clear existing graph
+      if (this.pnmlGraph) {
+        this.pnmlGraph.clear();
+      }
+      
+      const elements = new Map();
+      
+      // Extract net name
+      const net = xmlDoc.querySelector('net');
+      const netName = net?.querySelector('name text')?.textContent || fileName;
+      
+      // Parse PNML content (similar to test_new.html)
+      const places = [];
+      const transitions = [];
+      const arcs = [];
+      
+      // Collect places
+      xmlDoc.querySelectorAll('place').forEach(place => {
+        const id = place.getAttribute('id');
+        const name = place.querySelector('name text')?.textContent || id;
+        const type = place.querySelector('type text')?.textContent || '';
+        const initialMarking = place.querySelector('initialMarking text')?.textContent || '';
+        places.push({ id, name, type, initialMarking });
+      });
+      
+      // Collect transitions
+      xmlDoc.querySelectorAll('transition').forEach(transition => {
+        const id = transition.getAttribute('id');
+        const name = transition.querySelector('name text')?.textContent || id;
+        transitions.push({ id, name });
+      });
+      
+      // Collect arcs
+      xmlDoc.querySelectorAll('arc').forEach(arc => {
+        const source = arc.getAttribute('source');
+        const target = arc.getAttribute('target');
+        const identifier = arc.querySelector('identifier text')?.textContent || '';
+        arcs.push({ source, target, identifier });
+      });
+      
+      // Create visual elements
+      this.createPNMLVisualElements(places, transitions, arcs, elements);
+      
+      // Update info
+      document.getElementById('pnml-info').innerHTML = 
+        `<strong>${netName}</strong><br>` +
+        `Places: ${places.length}, Transitions: ${transitions.length}, Arcs: ${arcs.length}<br>` +
+        'Click on elements to see details.';
+      
+      // Auto-fit after a short delay
+      setTimeout(() => this.fitPNMLToWindow(), 100);
+      
+    } catch (error) {
+      document.getElementById('pnml-info').innerHTML = 
+        '<strong>Error parsing PNML file:</strong><br>' + error.message;
+      console.error(error);
+      throw error;
+    }
+  }
+
+  createPNMLVisualElements(places, transitions, arcs, elements) {
+    // Create place elements
+    places.forEach((placeData, index) => {
+      const { id, name, type, initialMarking } = placeData;
+      
+      const circle = new joint.shapes.standard.Circle();
+      const position = this.calculateElementPosition(id, index, 'place', places, transitions, arcs);
+      circle.position(position.x, position.y);
+      circle.resize(50, 50);
+      
+      circle.set('id', id);
+      circle.set('pnmlData', placeData);
+      circle.set('elementType', 'place');
+      
+      circle.attr({
+        body: {
+          fill: initialMarking ? '#ffeb3b' : 'white',
+          stroke: 'black',
+          strokeWidth: 2
+        },
+        label: {
+          text: name,
+          fontSize: 10,
+          fontFamily: 'Times, serif',
+          fill: 'black'
+        }
+      });
+      
+      circle.addTo(this.pnmlGraph);
+      elements.set(id, circle);
+    });
+    
+    // Create transition elements
+    transitions.forEach((transitionData, index) => {
+      const { id, name } = transitionData;
+      
+      const isTau = this.isTauTransition(name, id);
+      
+      const rect = new joint.shapes.standard.Rectangle();
+      const position = this.calculateElementPosition(id, index, 'transition', places, transitions, arcs);
+      rect.position(position.x, position.y);
+      rect.resize(60, 30);
+      
+      rect.set('id', id);
+      rect.set('pnmlData', transitionData);
+      rect.set('elementType', 'transition');
+      rect.set('isTau', isTau);
+      
+      rect.attr({
+        body: {
+          fill: isTau ? 'black' : 'white',
+          stroke: 'black',
+          strokeWidth: 2
+        },
+        label: {
+          text: isTau ? 'τ' : name,
+          fontSize: 10,
+          fontFamily: 'Times, serif',
+          fill: isTau ? 'white' : 'black'
+        }
+      });
+      
+      rect.addTo(this.pnmlGraph);
+      elements.set(id, rect);
+    });
+    
+    // Create arc connections
+    arcs.forEach(arcData => {
+      const { source, target, identifier } = arcData;
+      const sourceElement = elements.get(source);
+      const targetElement = elements.get(target);
+      
+      if (sourceElement && targetElement) {
+        const link = new joint.shapes.standard.Link();
+        link.source(sourceElement);
+        link.target(targetElement);
+        link.attr({
+          line: {
+            stroke: 'black',
+            strokeWidth: 1,
+            targetMarker: {
+              type: 'path',
+              d: 'M 10 -5 0 0 10 5 z',
+              fill: 'black'
+            }
+          }
+        });
+        
+        if (identifier) {
+          link.labels([{
+            attrs: {
+              text: {
+                text: identifier,
+                fontSize: 8,
+                fontFamily: 'Times, serif',
+              }
+            }
+          }]);
+        }
+        
+        link.addTo(this.pnmlGraph);
+      }
+    });
+  }
+
+  calculateElementPosition(id, index, elementType, places, transitions, arcs) {
+    // Simple grid layout for now - can be enhanced with graph topology later
+    const cols = 5;
+    const startX = elementType === 'place' ? 100 : 200;
+    const startY = 100;
+    const spacingX = 150;
+    const spacingY = 100;
+    
+    const col = index % cols;
+    const row = Math.floor(index / cols);
+    
+    return {
+      x: startX + col * spacingX,
+      y: startY + row * spacingY
+    };
+  }
+
+  isTauTransition(name, id) {
+    if (!name && !id) return false;
+    
+    const text = (name || id).toLowerCase().trim();
+    
+    return text === 'tau' || 
+           text === 'τ' || 
+           text === 'silent' || 
+           text === '' || 
+           text === 'skip' ||
+           text === 'epsilon' ||
+           text === 'ε' ||
+           text.startsWith('tau') ||
+           text.startsWith('τ_') ||
+           text.includes('silent');
+  }
+
+  fitPNMLToWindow() {
+    if (this.pnmlPaper) {
+      const contentBBox = this.pnmlPaper.getContentArea();
+      this.pnmlPaper.scaleContentToFit({
+        padding: 50,
+        maxScale: 1.5,
+        minScale: 0.1
+      });
+    }
+  }
+
+  resetPNMLZoom() {
+    if (this.pnmlPaper) {
+      this.pnmlPaper.scale(1, 1);
+      this.pnmlPaper.translate(0, 0);
+    }
+  }
+
+  clearPNMLGraph() {
+    if (this.pnmlGraph) {
+      this.pnmlGraph.clear();
+      document.getElementById('pnml-info').innerHTML = 
+        '<strong>Graph Cleared</strong><br>Select a PNML file to visualize.';
+    }
+  }
+
+  downloadPNMLAsSVG() {
+    if (this.pnmlPaper) {
+      const svgContent = this.pnmlPaper.svg;
+      const blob = new Blob([svgContent], { type: 'image/svg+xml' });
+      const url = URL.createObjectURL(blob);
+      
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'petri-net.svg';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+  }
 
   viewSVG(modelId) {
     // Open SVG visualization in a new window/tab
@@ -777,29 +1288,53 @@ class ProcessDiscoveryApp {
     try {
       this.updateStatus('processing', 'Loading analyzed model...');
       
-      const response = await fetch(`/model/${modelId}`);
-      if (!response.ok) {
-        throw new Error('Failed to load model');
-      }
+      // Find the model in our current analyzed models
+      const model = this.analyzedModels.find(m => m.id === modelId);
 
-      const data = await response.json();
-      console.log('Analyzed model data:', data);
-      
-      // Update selected model in UI
-      // document.querySelectorAll('.analyzed-model-item').forEach(item => {
-      //   item.classList.remove('selected');
-      // });
-      // document.querySelector(`[data-model-id="${modelId}"]`).classList.add('selected');
-      
-      // // Render the model
-      // this.selectedAnalyzedModel = modelId;
-      // this.currentModel = data.model;
-      // this.renderModel(data.model);
-      // this.updateModelStatistics(data.model);
-      // this.enableExportButtons();
-      
-      // this.updateStatus('ready', `Loaded: ${data.organization || data.name || modelId}`);
-      // this.showSuccess(`Model ${modelId} loaded successfully`);
+      console.log(modelId);
+      if (model && model.pnml_path) {
+        // Use the new PNML visualization
+        try {
+          // Convert absolute path to relative path from webapp
+          const relativePath = model.pnml_path.replace('/Users/xufanlu/Projects/Process Mining/Process-Discovery-Typed-Jackson-Nets/', '../');
+          console.log('Loading model:', model.name);
+          console.log('Original path:', model.pnml_path);
+          console.log('Relative path:', relativePath);
+          
+          await this.visualizePNMLFile(relativePath);
+          
+          // Update selected model in UI
+          document.querySelectorAll('.model-item').forEach(item => {
+            item.classList.remove('selected');
+          });
+          const modelElement = document.querySelector(`[data-model-id="${modelId}"]`);
+          if (modelElement) {
+            modelElement.classList.add('selected');
+          }
+          console.log(this.selectedAnalyzedModel)
+          console.log('Selected model updated to:', modelId);
+          
+          this.selectedAnalyzedModel = modelId;
+          this.updateStatus('ready', `Visualizing: ${model.name}`);
+          this.showSuccess(`Model ${model.name} loaded successfully`);
+          
+        } catch (vizError) {
+          console.error('PNML visualization error:', vizError);
+          this.showError('PNML visualizer error: ' + vizError.message);
+        }
+      } else {
+        // Fallback: try to fetch from server
+        const response = await fetch(`/model/${modelId}`);
+        if (!response.ok) {
+          throw new Error('Failed to load model from server');
+        }
+
+        const data = await response.json();
+        console.log('Analyzed model data:', data);
+        
+        this.updateStatus('ready', `Loaded: ${data.organization || data.name || modelId}`);
+        this.showSuccess(`Model ${modelId} loaded from server`);
+      }
 
     } catch (error) {
       this.showError('Failed to load analyzed model: ' + error.message);
@@ -841,10 +1376,25 @@ class ProcessDiscoveryApp {
   async viewVisualization(modelId) {
     try {
       const model = this.analyzedModels.find(m => m.id === modelId);
-      if (model && model.svg_path) {
-        // Open SVG in a new window/tab
-        const svgUrl = `/static/visualizations/${model.organization}.svg`;
-        window.open(svgUrl, '_blank');
+      if (model && model.pnml_path) {
+        // Use the new PNML visualization
+        try {
+          // Convert absolute path to relative path from webapp
+          const relativePath = model.pnml_path.replace('/Users/xufanlu/Projects/Process Mining/Process-Discovery-Typed-Jackson-Nets/', '../');
+          await this.visualizePNMLFile(relativePath);
+          this.showSuccess(`Visualizing: ${model.name}`);
+        } catch (vizError) {
+          console.error('PNML visualization error:', vizError);
+          // Fallback to SVG if PNML visualizer fails
+          if (model.svg_path) {
+            const svgUrl = `/static/visualizations/${model.organization}.svg`;
+            window.open(svgUrl, '_blank');
+          } else {
+            this.showError('No visualization available for this model');
+          }
+        }
+      } else {
+        this.showError('Model or PNML file not found');
       }
     } catch (error) {
       this.showError('Failed to open visualization: ' + error.message);
