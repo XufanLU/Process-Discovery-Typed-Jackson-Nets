@@ -41,11 +41,29 @@
     
     <!-- File upload controls -->
     <div id="controls">
-        <input type="file" id="fileInput" accept=".pnml,.xml" />
-        <button onclick="loadSampleFile()">Load Sample</button>
-        <button onclick="fitToWindow()">Fit to Window</button>
-        <button onclick="resetZoom()">Reset Zoom</button>
-        <button onclick="clearGraph()">Clear</button>
+        <div style="margin-bottom: 10px;">
+            <label for="pnmlSelect">Select PNML File:</label>
+            <select id="pnmlSelect" onchange="loadSelectedFile()" style="margin-left: 10px; margin-right: 20px;">
+                <option value="">-- Choose a PNML file --</option>
+                <option value="data/Agent 1.pnml">Agent 1 (sample)</option>
+                <option value="data/IP-1_initial_log/first_pnml/Agent 1.pnml">IP-1 Agent 1</option>
+                <option value="data/IP-1_initial_log/first_pnml/Agent 2.pnml">IP-1 Agent 2</option>
+                <option value="data/IP-1_initial_log/composed_pnml/composed_IP-1_initial_log.pnml">IP-1 Composed</option>
+                <option value="data/IP-10_init_log/first_pnml/Ag1.pnml">IP-10 Agent 1</option>
+                <option value="data/IP-10_init_log/first_pnml/Ag2.pnml">IP-10 Agent 2</option>
+                <option value="data/IP-10_init_log/composed_pnml/composed_IP-10_init_log.pnml">IP-10 Composed</option>
+                <option value="data/IP2_directly_mined.pnml">IP2 Directly Mined</option>
+                <option value="data/IP2_composition_mined.pnml">IP2 Composition Mined</option>
+                <option value="data/IP2_ref_model.pnml">IP2 Reference Model</option>
+            </select>
+            <input type="file" id="fileInput" accept=".pnml,.xml" style="margin-right: 10px;" />
+        </div>
+        <div>
+            <button onclick="fitToWindow()">Fit to Window</button>
+            <button onclick="resetZoom()">Reset Zoom</button>
+            <button onclick="clearGraph()">Clear</button>
+            <button onclick="downloadAsSVG()">Download SVG</button>
+        </div>
     </div>
     
     <!-- Main visualization area -->
@@ -83,8 +101,8 @@
                 paper = new joint.dia.Paper({
                     el: document.getElementById('myholder'),
                     model: graph,
-                    width: 1200,
-                    height: 600,
+                    width: 2200,  // Wide enough for the full layout
+                    height: 350,  // Height matching the SVG proportions
                     gridSize: 10,
                     drawGrid: true,
                     background: { color: 'white' },
@@ -95,7 +113,8 @@
                 // Show success message
                 document.getElementById('info').innerHTML = 
                     '<strong>Visualizer Ready!</strong><br>' +
-                    'Click "Load Sample" to see a Petri net or upload your own PNML file.';
+                    'Select a PNML file from the dropdown or upload your own file.<br>' +
+                    'Click on elements to see details.';
 
                 // Add event listeners
                 setupEventListeners();
@@ -115,7 +134,7 @@
                     const reader = new FileReader();
                     reader.onload = function(e) {
                         try {
-                            parsePNML(e.target.result);
+                            parsePNML(e.target.result, file.name);
                         } catch (error) {
                             alert('Error parsing PNML file: ' + error.message);
                         }
@@ -127,14 +146,33 @@
             // Click handlers for interaction
             paper.on('element:pointerclick', function(elementView) {
                 const element = elementView.model;
-                const attrs = element.attributes.attrs;
+                const pnmlData = element.get('pnmlData');
+                const elementType = element.get('elementType');
                 
                 let info = '<strong>Element Details:</strong><br>';
-                info += `Type: ${element.get('type')}<br>`;
-                info += `ID: ${element.id}<br>`;
                 
-                if (attrs && attrs.label && attrs.label.text) {
-                    info += `Label: ${attrs.label.text}<br>`;
+                if (pnmlData) {
+                    info += `Type: ${elementType}<br>`;
+                    info += `PNML ID: ${pnmlData.id}<br>`;
+                    info += `Name: ${pnmlData.name}<br>`;
+                    
+                    if (elementType === 'place') {
+                        info += `Agent Type: ${pnmlData.type}<br>`;
+                        if (pnmlData.initialMarking) {
+                            info += `Initial Marking: ${pnmlData.initialMarking}<br>`;
+                        }
+                    } else if (elementType === 'transition') {
+                        const isTau = element.get('isTau');
+                        info += `Type: ${isTau ? 'Tau (Silent) Transition' : 'Regular Transition'}<br>`;
+                    }
+                } else {
+                    // Fallback for elements without PNML data
+                    info += `Type: ${element.get('type')}<br>`;
+                    info += `ID: ${element.id}<br>`;
+                    const attrs = element.attributes.attrs;
+                    if (attrs && attrs.label && attrs.label.text) {
+                        info += `Label: ${attrs.label.text}<br>`;
+                    }
                 }
                 
                 document.getElementById('info').innerHTML = info;
@@ -145,129 +183,135 @@
                 
                 let info = '<strong>Arc Details:</strong><br>';
                 info += `Type: Arc<br>`;
-                info += `ID: ${link.id}<br>`;
+                
+                // Get source and target element info
+                const source = link.getSourceElement();
+                const target = link.getTargetElement();
+                
+                if (source && target) {
+                    const sourcePnml = source.get('pnmlData');
+                    const targetPnml = target.get('pnmlData');
+                    
+                    info += `From: ${sourcePnml ? sourcePnml.name : source.id}<br>`;
+                    info += `To: ${targetPnml ? targetPnml.name : target.id}<br>`;
+                }
                 
                 const labels = link.get('labels');
                 if (labels && labels.length > 0 && labels[0].attrs && labels[0].attrs.text) {
-                    info += `Label: ${labels[0].attrs.text.text}<br>`;
+                    info += `Agent: ${labels[0].attrs.text.text}<br>`;
                 }
                 
                 document.getElementById('info').innerHTML = info;
             });
         }
 
-        // Load sample PNML data
-        function loadSampleFile() {
-            const samplePNML = `<?xml version='1.0' encoding='UTF-8'?>
-<pnml>
-  <net id="imdf_net_sample" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
-    <name><text>Agent 1 Sample</text></name>
-    <page id="n0">
-      <place id="source">
-        <name><text>source</text></name>
-        <initialMarking><text>1</text></initialMarking>
-        <type><text>Agent 1</text></type>
-      </place>
-      <place id="p_5">
-        <name><text>p_5</text></name>
-        <type><text>Agent 1</text></type>
-      </place>
-      <place id="p_6">
-        <name><text>p_6</text></name>
-        <type><text>Agent 1</text></type>
-      </place>
-      <place id="p_7">
-        <name><text>p_7</text></name>
-        <type><text>Agent 1</text></type>
-      </place>
-      <place id="p_8">
-        <name><text>p_8</text></name>
-        <type><text>Agent 1</text></type>
-      </place>
-      <place id="p_9">
-        <name><text>p_9</text></name>
-        <type><text>Agent 1</text></type>
-      </place>
-      <place id="sink">
-        <name><text>sink</text></name>
-        <type><text>Agent 1</text></type>
-      </place>
-      <transition id="t1">
-        <name><text>t1</text></name>
-      </transition>
-      <transition id="t2">
-        <name><text>t2</text></name>
-      </transition>
-      <transition id="t3">
-        <name><text>t3</text></name>
-      </transition>
-      <transition id="t4">
-        <name><text>t4</text></name>
-      </transition>
-      <arc id="a1" source="source" target="t1">
-        <identifier><text>Agent 1</text></identifier>
-      </arc>
-      <arc id="a2" source="t1" target="p_5">
-        <identifier><text>Agent 1</text></identifier>
-      </arc>
-      <arc id="a3" source="t1" target="p_7">
-        <identifier><text>Agent 1</text></identifier>
-      </arc>
-      <arc id="a4" source="p_5" target="t3">
-        <identifier><text>Agent 1</text></identifier>
-      </arc>
-      <arc id="a5" source="p_7" target="t2">
-        <identifier><text>Agent 1</text></identifier>
-      </arc>
-      <arc id="a6" source="t2" target="p_8">
-        <identifier><text>Agent 1</text></identifier>
-      </arc>
-      <arc id="a7" source="t3" target="p_6">
-        <identifier><text>Agent 1</text></identifier>
-      </arc>
-      <arc id="a8" source="p_6" target="t4">
-        <identifier><text>Agent 1</text></identifier>
-      </arc>
-      <arc id="a9" source="p_8" target="t4">
-        <identifier><text>Agent 1</text></identifier>
-      </arc>
-      <arc id="a10" source="t4" target="p_9">
-        <identifier><text>Agent 1</text></identifier>
-      </arc>
-      <arc id="a11" source="p_9" target="sink">
-        <identifier><text>Agent 1</text></identifier>
-      </arc>
-    </page>
-  </net>
-</pnml>`;
+        // Load selected file from dropdown
+        function loadSelectedFile() {
+            const select = document.getElementById('pnmlSelect');
+            const filePath = select.value;
             
-            parsePNML(samplePNML);
+            if (filePath) {
+                document.getElementById('info').innerHTML = 'Loading ' + filePath + '...';
+                
+                fetch(filePath)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Could not load file: ' + filePath);
+                        }
+                        return response.text();
+                    })
+                    .then(data => {
+                        parsePNML(data, filePath);
+                    })
+                    .catch(error => {
+                        document.getElementById('info').innerHTML = 
+                            '<strong>Error:</strong> ' + error.message + '<br>' +
+                            'Please try uploading the file directly using the file input.';
+                        console.error(error);
+                    });
+            }
         }
 
         // Parse PNML content
-        function parsePNML(xmlContent) {
+        function parsePNML(xmlContent, fileName = 'PNML File') {
             try {
+                // Clear memoization for new file
+                if (calculateElementLevel.memo) {
+                    calculateElementLevel.memo.clear();
+                }
+                
                 const parser = new DOMParser();
                 const xmlDoc = parser.parseFromString(xmlContent, 'text/xml');
+                
+                // Check for XML parsing errors
+                const parserError = xmlDoc.querySelector('parsererror');
+                if (parserError) {
+                    throw new Error('XML parsing error: ' + parserError.textContent);
+                }
                 
                 // Clear existing graph
                 graph.clear();
                 
                 const elements = new Map();
                 
-                // Extract places
+                // Extract net name
+                const net = xmlDoc.querySelector('net');
+                const netName = net?.querySelector('name text')?.textContent || fileName;
+                
+                // First pass: collect all places, transitions, and arcs for topology analysis
+                const placesList = [];
+                const transitionsList = [];
+                const arcsList = [];
+                
+                // Collect places
                 const places = xmlDoc.querySelectorAll('place');
-                places.forEach((place, index) => {
+                places.forEach(place => {
                     const id = place.getAttribute('id');
                     const name = place.querySelector('name text')?.textContent || id;
                     const type = place.querySelector('type text')?.textContent || '';
                     const initialMarking = place.querySelector('initialMarking text')?.textContent || '';
+                    placesList.push({ id, name, type, initialMarking });
+                });
+                
+                // Collect transitions
+                const transitions = xmlDoc.querySelectorAll('transition');
+                transitions.forEach(transition => {
+                    const id = transition.getAttribute('id');
+                    const name = transition.querySelector('name text')?.textContent || id;
+                    transitionsList.push({ id, name });
+                });
+                
+                // Collect arcs
+                const arcs = xmlDoc.querySelectorAll('arc');
+                arcs.forEach(arc => {
+                    const source = arc.getAttribute('source');
+                    const target = arc.getAttribute('target');
+                    const identifier = arc.querySelector('identifier text')?.textContent || '';
+                    arcsList.push({ source, target, identifier });
+                });
+                
+                // Second pass: create visual elements with dynamic positioning
+                // Filter out places with no connections (they might be invalid)
+                const connectedPlaces = placesList.filter(p => {
+                    const hasIncoming = arcsList.some(arc => arc.target === p.id);
+                    const hasOutgoing = arcsList.some(arc => arc.source === p.id);
+                    return hasIncoming || hasOutgoing;
+                });
+                
+                connectedPlaces.forEach((placeData, index) => {
+                    const { id, name, type, initialMarking } = placeData;
                     
                     // Create place element
                     const circle = new joint.shapes.standard.Circle();
-                    const position = getPlacePosition(id, index);
+                    const position = getPlacePosition(id, index, connectedPlaces.length, connectedPlaces, transitionsList, arcsList);
                     circle.position(position.x, position.y);
                     circle.resize(50, 50);
+                    
+                    // Set the PNML ID and store PNML data
+                    circle.set('id', id);
+                    circle.set('pnmlData', placeData);
+                    circle.set('elementType', 'place');
+                    
                     circle.attr({
                         body: {
                             fill: initialMarking ? '#ffeb3b' : 'white',
@@ -285,41 +329,45 @@
                     elements.set(id, circle);
                 });
                 
-                // Extract transitions
-                const transitions = xmlDoc.querySelectorAll('transition');
-                transitions.forEach((transition, index) => {
-                    const id = transition.getAttribute('id');
-                    const name = transition.querySelector('name text')?.textContent || id;
+                // Create transition elements
+                transitionsList.forEach((transitionData, index) => {
+                    const { id, name } = transitionData;
+                    
+                    // Detect tau (silent) transitions
+                    const isTau = isTauTransition(name, id);
                     
                     // Create transition element
                     const rect = new joint.shapes.standard.Rectangle();
-                    const position = getTransitionPosition(id, index);
+                    const position = getTransitionPosition(id, index, transitionsList.length, placesList, transitionsList, arcsList);
                     rect.position(position.x, position.y);
                     rect.resize(60, 30);
+                    
+                    // Set the PNML ID and store PNML data
+                    rect.set('id', id);
+                    rect.set('pnmlData', transitionData);
+                    rect.set('elementType', 'transition');
+                    rect.set('isTau', isTau);
+                    
                     rect.attr({
                         body: {
-                            fill: 'white',
+                            fill: isTau ? 'black' : 'white',
                             stroke: 'black',
                             strokeWidth: 2
                         },
                         label: {
-                            text: name,
+                            text: isTau ? 'τ' : name,  // Use tau symbol for tau transitions
                             fontSize: 10,
                             fontFamily: 'Times, serif',
-                            fill: 'black'
+                            fill: isTau ? 'white' : 'black'  // White text on black background for tau
                         }
                     });
                     rect.addTo(graph);
                     elements.set(id, rect);
                 });
                 
-                // Extract arcs
-                const arcs = xmlDoc.querySelectorAll('arc');
-                arcs.forEach(arc => {
-                    const source = arc.getAttribute('source');
-                    const target = arc.getAttribute('target');
-                    const identifier = arc.querySelector('identifier text')?.textContent || '';
-                    
+                // Create arc connections
+                arcsList.forEach(arcData => {
+                    const { source, target, identifier } = arcData;
                     const sourceElement = elements.get(source);
                     const targetElement = elements.get(target);
                     
@@ -358,51 +406,235 @@
                 
                 // Update info
                 document.getElementById('info').innerHTML = 
-                    '<strong>PNML Loaded Successfully!</strong><br>' +
-                    `Places: ${places.length}, Transitions: ${transitions.length}, Arcs: ${arcs.length}<br>` +
+                    `<strong>${netName}</strong><br>` +
+                    `Places: ${connectedPlaces.length}, Transitions: ${transitionsList.length}, Arcs: ${arcsList.length}<br>` +
                     'Click on elements to see details.';
                 
                 // Auto-fit after a short delay
                 setTimeout(() => fitToWindow(), 100);
                 
             } catch (error) {
-                alert('Error parsing PNML file: ' + error.message);
+                document.getElementById('info').innerHTML = 
+                    '<strong>Error parsing PNML file:</strong><br>' + error.message;
                 console.error(error);
             }
         }
 
-        // Layout functions
-        function getPlacePosition(id, index) {
-            const positions = {
-                'source': { x: 50, y: 200 },
-                'p_5': { x: 200, y: 150 },
-                'p_7': { x: 200, y: 250 },
-                'p_6': { x: 400, y: 150 },
-                'p_8': { x: 400, y: 250 },
-                'p_9': { x: 600, y: 200 },
-                'sink': { x: 750, y: 200 }
-            };
-            return positions[id] || { x: 100 + (index * 80), y: 150 + (index % 3) * 80 };
+        // Dynamic layout functions - automatic left-to-right, top-to-bottom arrangement
+        function getPlacePosition(id, index, totalPlaces, placesList = [], transitionsList = [], arcsList = []) {
+            // Try to determine position based on graph topology
+            const level = calculateElementLevel(id, placesList, transitionsList, arcsList, 'place');
+            const positionInLevel = calculatePositionInLevel(id, level, placesList, transitionsList, arcsList, 'place');
+            
+            // Layout parameters
+            const stageWidth = 300;   // Horizontal spacing between levels
+            const startX = 100;       // Left margin
+            const baseY = 200;        // Center Y position
+            const verticalSpacing = 100; // Vertical spacing between elements at same level
+            
+            // Calculate position
+            const x = startX + level * stageWidth;
+            const y = baseY + (positionInLevel - getElementsAtLevel(level, placesList, transitionsList, arcsList, 'place') / 2) * verticalSpacing;
+            
+            return { x, y };
         }
 
-        function getTransitionPosition(id, index) {
-            const positions = {
-                't1': { x: 120, y: 185 },
-                't2': { x: 300, y: 235 },
-                't3': { x: 300, y: 135 },
-                't4': { x: 500, y: 185 }
-            };
-            return positions[id] || { x: 150 + (index * 100), y: 185 };
+        function getTransitionPosition(id, index, totalTransitions, placesList = [], transitionsList = [], arcsList = []) {
+            // Try to determine position based on graph topology  
+            const level = calculateElementLevel(id, placesList, transitionsList, arcsList, 'transition');
+            const positionInLevel = calculatePositionInLevel(id, level, placesList, transitionsList, arcsList, 'transition');
+            
+            // Layout parameters (offset from places)
+            const stageWidth = 300;
+            const startX = 200;       // Offset from places
+            const baseY = 200;
+            const verticalSpacing = 80;
+            
+            // Calculate position
+            const x = startX + level * stageWidth;
+            const y = baseY + (positionInLevel - getElementsAtLevel(level, placesList, transitionsList, arcsList, 'transition') / 2) * verticalSpacing;
+            
+            return { x, y };
+        }
+
+        // Calculate the "level" (left-to-right position) of an element based on graph topology
+        function calculateElementLevel(elementId, places, transitions, arcs, elementType) {
+            // Memoization to avoid recalculating levels
+            if (!calculateElementLevel.memo) {
+                calculateElementLevel.memo = new Map();
+            }
+            
+            const memoKey = `${elementId}_${elementType}`;
+            if (calculateElementLevel.memo.has(memoKey)) {
+                return calculateElementLevel.memo.get(memoKey);
+            }
+            
+            // Build adjacency information
+            const incoming = new Set();
+            const outgoing = new Set();
+            
+            arcs.forEach(arc => {
+                if (arc.target === elementId) {
+                    incoming.add(arc.source);
+                } else if (arc.source === elementId) {
+                    outgoing.add(arc.target);
+                }
+            });
+            
+            // If no incoming connections, this is a start element (level 0)
+            if (incoming.size === 0) {
+                calculateElementLevel.memo.set(memoKey, 0);
+                return 0;
+            }
+            
+            // Calculate level based on maximum incoming element level + 1
+            let maxIncomingLevel = -1;
+            incoming.forEach(sourceId => {
+                // Determine if source is place or transition
+                const isSourcePlace = places.some(p => p.id === sourceId);
+                const sourceType = isSourcePlace ? 'place' : 'transition';
+                
+                // Recursively calculate source level (with cycle detection)
+                if (sourceId !== elementId) { // Avoid self-loops
+                    const sourceLevel = calculateElementLevel(sourceId, places, transitions, arcs, sourceType);
+                    maxIncomingLevel = Math.max(maxIncomingLevel, sourceLevel);
+                }
+            });
+            
+            // For transitions after places, or places after transitions, increment level
+            const level = maxIncomingLevel + 1;
+            calculateElementLevel.memo.set(memoKey, level);
+            return level;
+        }
+
+        // Calculate position within a level (top-to-bottom ordering)
+        function calculatePositionInLevel(elementId, level, places, transitions, arcs, elementType) {
+            // Get all elements at this level
+            const elementsAtLevel = [];
+            
+            if (elementType === 'place') {
+                places.forEach((place, originalIndex) => {
+                    if (calculateElementLevel(place.id, places, transitions, arcs, 'place') === level) {
+                        elementsAtLevel.push({ 
+                            id: place.id, 
+                            originalIndex: originalIndex,
+                            name: place.name || place.id
+                        });
+                    }
+                });
+            } else {
+                transitions.forEach((transition, originalIndex) => {
+                    if (calculateElementLevel(transition.id, places, transitions, arcs, 'transition') === level) {
+                        elementsAtLevel.push({ 
+                            id: transition.id, 
+                            originalIndex: originalIndex,
+                            name: transition.name || transition.id
+                        });
+                    }
+                });
+            }
+            
+            // Sort elements by: 1) order in PNML, 2) numeric value in name/id, 3) alphabetical
+            elementsAtLevel.sort((a, b) => {
+                // Rule 1: Order they appear in PNML (original index)
+                if (a.originalIndex !== b.originalIndex) {
+                    return a.originalIndex - b.originalIndex;
+                }
+                
+                // Rule 2: Consider numeric values in the name/id
+                const aNum = extractNumber(a.name) ?? extractNumber(a.id);
+                const bNum = extractNumber(b.name) ?? extractNumber(b.id);
+                
+                if (aNum !== null && bNum !== null && aNum !== bNum) {
+                    return aNum - bNum;
+                }
+                
+                // Rule 3: Alphabetical fallback
+                return a.id.localeCompare(b.id);
+            });
+            
+            const elementIndex = elementsAtLevel.findIndex(elem => elem.id === elementId);
+            return elementIndex;
+        }
+
+        // Extract numeric value from a string (e.g., "p_14" -> 14, "t2" -> 2)
+        function extractNumber(str) {
+            if (!str) return null;
+            
+            // Look for numbers in the string
+            const matches = str.match(/\d+/g);
+            if (matches && matches.length > 0) {
+                // Return the first number found
+                return parseInt(matches[0], 10);
+            }
+            
+            return null;
+        }
+
+        // Detect if a transition is a tau (silent) transition
+        function isTauTransition(name, id) {
+            if (!name && !id) return false;
+            
+            const text = (name || id).toLowerCase().trim();
+            
+            // Common tau transition indicators
+            return text === 'tau' || 
+                   text === 'τ' || 
+                   text === 'silent' || 
+                   text === '' || 
+                   text === 'skip' ||
+                   text === 'epsilon' ||
+                   text === 'ε' ||
+                   text.startsWith('tau') ||
+                   text.startsWith('τ_') ||
+                   text.includes('silent') ||
+                   // Sometimes tau transitions have no name/empty name
+                   (name === id && text.length === 0);
+        }
+
+        // Count elements at a specific level
+        function getElementsAtLevel(level, places, transitions, arcs, elementType) {
+            let count = 0;
+            
+            if (elementType === 'place') {
+                places.forEach(place => {
+                    if (calculateElementLevel(place.id, places, transitions, arcs, 'place') === level) {
+                        count++;
+                    }
+                });
+            } else {
+                transitions.forEach(transition => {
+                    if (calculateElementLevel(transition.id, places, transitions, arcs, 'transition') === level) {
+                        count++;
+                    }
+                });
+            }
+            
+            return count;
         }
 
         // Utility functions
         function fitToWindow() {
             if (paper) {
+                // First, get the content area
+                const contentBBox = paper.getContentArea();
+                
+                // Add some padding
+                const padding = 50;
+                
+                // Scale to fit the content with padding
                 paper.scaleContentToFit({
-                    padding: 20,
-                    maxScale: 2,
-                    minScale: 0.2
+                    padding: padding,
+                    maxScale: 1.5,  // Don't scale too large
+                    minScale: 0.1   // Allow more zoom out for wide layouts
                 });
+                
+                // Center the content horizontally if it's smaller than the viewport
+                const paperSize = paper.getComputedSize();
+                if (contentBBox.width + 2 * padding < paperSize.width) {
+                    const offsetX = (paperSize.width - contentBBox.width) / 2 - contentBBox.x;
+                    paper.translate(offsetX, 0);
+                }
             }
         }
 
@@ -417,7 +649,24 @@
             if (graph) {
                 graph.clear();
                 document.getElementById('info').innerHTML = 
-                    '<strong>Graph Cleared</strong><br>Load a PNML file to visualize.';
+                    '<strong>Graph Cleared</strong><br>Select a PNML file to visualize.';
+                document.getElementById('pnmlSelect').value = '';
+            }
+        }
+
+        function downloadAsSVG() {
+            if (paper) {
+                const svgContent = paper.svg;
+                const blob = new Blob([svgContent], { type: 'image/svg+xml' });
+                const url = URL.createObjectURL(blob);
+                
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'petri-net.svg';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
             }
         }
     </script>
