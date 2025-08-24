@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>PNML Petri Net Visualizer</title>
+    <style>
+        body {
+            font-family: 'Times', serif;
+            margin: 20px;
+            background-color: white;
+        }
+        
+        #controls {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        
+        #fileInput {
+            margin-right: 10px;
+        }
+        
+        #myholder {
+            border: 1px solid #ddd;
+            background-color: white;
+            width: 1200px;
+            height: 600px;
+        }
+        
+        .info-panel {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>PNML Petri Net Visualizer</h1>
+    
+    <!-- File upload controls -->
+    <div id="controls">
+        <input type="file" id="fileInput" accept=".pnml,.xml" />
+        <button onclick="loadSampleFile()">Load Sample</button>
+        <button onclick="fitToWindow()">Fit to Window</button>
+        <button onclick="resetZoom()">Reset Zoom</button>
+        <button onclick="clearGraph()">Clear</button>
+    </div>
+    
+    <!-- Main visualization area -->
+    <div id="myholder"></div>
+    
+    <!-- Information panel -->
+    <div class="info-panel">
+        <div id="info">Loading JointJS library...</div>
+    </div>
+
+    <!-- dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@joint/core@4.0.1/dist/joint.js"></script>
+
+    <!-- code -->
+    <script type="text/javascript">
+        let graph, paper;
+        
+        // Wait for page to load
+        window.addEventListener('load', function() {
+            initializeVisualization();
+        });
+
+        function initializeVisualization() {
+            try {
+                // Check if JointJS loaded
+                if (typeof joint === 'undefined') {
+                    document.getElementById('info').innerHTML = 
+                        '<strong>Error:</strong> JointJS library failed to load.';
+                    return;
+                }
+
+                var namespace = joint.shapes;
+                graph = new joint.dia.Graph({}, { cellNamespace: namespace });
+
+                paper = new joint.dia.Paper({
+                    el: document.getElementById('myholder'),
+                    model: graph,
+                    width: 1200,
+                    height: 600,
+                    gridSize: 10,
+                    drawGrid: true,
+                    background: { color: 'white' },
+                    cellViewNamespace: namespace,
+                    interactive: true
+                });
+
+                // Show success message
+                document.getElementById('info').innerHTML = 
+                    '<strong>Visualizer Ready!</strong><br>' +
+                    'Click "Load Sample" to see a Petri net or upload your own PNML file.';
+
+                // Add event listeners
+                setupEventListeners();
+
+            } catch (error) {
+                document.getElementById('info').innerHTML = 
+                    '<strong>Error:</strong> ' + error.message;
+                console.error(error);
+            }
+        }
+
+        function setupEventListeners() {
+            // File input handler
+            document.getElementById('fileInput').addEventListener('change', function(event) {
+                const file = event.target.files[0];
+                if (file) {
+                    const reader = new FileReader();
+                    reader.onload = function(e) {
+                        try {
+                            parsePNML(e.target.result);
+                        } catch (error) {
+                            alert('Error parsing PNML file: ' + error.message);
+                        }
+                    };
+                    reader.readAsText(file);
+                }
+            });
+
+            // Click handlers for interaction
+            paper.on('element:pointerclick', function(elementView) {
+                const element = elementView.model;
+                const attrs = element.attributes.attrs;
+                
+                let info = '<strong>Element Details:</strong><br>';
+                info += `Type: ${element.get('type')}<br>`;
+                info += `ID: ${element.id}<br>`;
+                
+                if (attrs && attrs.label && attrs.label.text) {
+                    info += `Label: ${attrs.label.text}<br>`;
+                }
+                
+                document.getElementById('info').innerHTML = info;
+            });
+
+            paper.on('link:pointerclick', function(linkView) {
+                const link = linkView.model;
+                
+                let info = '<strong>Arc Details:</strong><br>';
+                info += `Type: Arc<br>`;
+                info += `ID: ${link.id}<br>`;
+                
+                const labels = link.get('labels');
+                if (labels && labels.length > 0 && labels[0].attrs && labels[0].attrs.text) {
+                    info += `Label: ${labels[0].attrs.text.text}<br>`;
+                }
+                
+                document.getElementById('info').innerHTML = info;
+            });
+        }
+
+        // Load sample PNML data
+        function loadSampleFile() {
+            const samplePNML = `<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_sample" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name><text>Agent 1 Sample</text></name>
+    <page id="n0">
+      <place id="source">
+        <name><text>source</text></name>
+        <initialMarking><text>1</text></initialMarking>
+        <type><text>Agent 1</text></type>
+      </place>
+      <place id="p_5">
+        <name><text>p_5</text></name>
+        <type><text>Agent 1</text></type>
+      </place>
+      <place id="p_6">
+        <name><text>p_6</text></name>
+        <type><text>Agent 1</text></type>
+      </place>
+      <place id="p_7">
+        <name><text>p_7</text></name>
+        <type><text>Agent 1</text></type>
+      </place>
+      <place id="p_8">
+        <name><text>p_8</text></name>
+        <type><text>Agent 1</text></type>
+      </place>
+      <place id="p_9">
+        <name><text>p_9</text></name>
+        <type><text>Agent 1</text></type>
+      </place>
+      <place id="sink">
+        <name><text>sink</text></name>
+        <type><text>Agent 1</text></type>
+      </place>
+      <transition id="t1">
+        <name><text>t1</text></name>
+      </transition>
+      <transition id="t2">
+        <name><text>t2</text></name>
+      </transition>
+      <transition id="t3">
+        <name><text>t3</text></name>
+      </transition>
+      <transition id="t4">
+        <name><text>t4</text></name>
+      </transition>
+      <arc id="a1" source="source" target="t1">
+        <identifier><text>Agent 1</text></identifier>
+      </arc>
+      <arc id="a2" source="t1" target="p_5">
+        <identifier><text>Agent 1</text></identifier>
+      </arc>
+      <arc id="a3" source="t1" target="p_7">
+        <identifier><text>Agent 1</text></identifier>
+      </arc>
+      <arc id="a4" source="p_5" target="t3">
+        <identifier><text>Agent 1</text></identifier>
+      </arc>
+      <arc id="a5" source="p_7" target="t2">
+        <identifier><text>Agent 1</text></identifier>
+      </arc>
+      <arc id="a6" source="t2" target="p_8">
+        <identifier><text>Agent 1</text></identifier>
+      </arc>
+      <arc id="a7" source="t3" target="p_6">
+        <identifier><text>Agent 1</text></identifier>
+      </arc>
+      <arc id="a8" source="p_6" target="t4">
+        <identifier><text>Agent 1</text></identifier>
+      </arc>
+      <arc id="a9" source="p_8" target="t4">
+        <identifier><text>Agent 1</text></identifier>
+      </arc>
+      <arc id="a10" source="t4" target="p_9">
+        <identifier><text>Agent 1</text></identifier>
+      </arc>
+      <arc id="a11" source="p_9" target="sink">
+        <identifier><text>Agent 1</text></identifier>
+      </arc>
+    </page>
+  </net>
+</pnml>`;
+            
+            parsePNML(samplePNML);
+        }
+
+        // Parse PNML content
+        function parsePNML(xmlContent) {
+            try {
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(xmlContent, 'text/xml');
+                
+                // Clear existing graph
+                graph.clear();
+                
+                const elements = new Map();
+                
+                // Extract places
+                const places = xmlDoc.querySelectorAll('place');
+                places.forEach((place, index) => {
+                    const id = place.getAttribute('id');
+                    const name = place.querySelector('name text')?.textContent || id;
+                    const type = place.querySelector('type text')?.textContent || '';
+                    const initialMarking = place.querySelector('initialMarking text')?.textContent || '';
+                    
+                    // Create place element
+                    const circle = new joint.shapes.standard.Circle();
+                    const position = getPlacePosition(id, index);
+                    circle.position(position.x, position.y);
+                    circle.resize(50, 50);
+                    circle.attr({
+                        body: {
+                            fill: initialMarking ? '#ffeb3b' : 'white',
+                            stroke: 'black',
+                            strokeWidth: 2
+                        },
+                        label: {
+                            text: name,
+                            fontSize: 10,
+                            fontFamily: 'Times, serif',
+                            fill: 'black'
+                        }
+                    });
+                    circle.addTo(graph);
+                    elements.set(id, circle);
+                });
+                
+                // Extract transitions
+                const transitions = xmlDoc.querySelectorAll('transition');
+                transitions.forEach((transition, index) => {
+                    const id = transition.getAttribute('id');
+                    const name = transition.querySelector('name text')?.textContent || id;
+                    
+                    // Create transition element
+                    const rect = new joint.shapes.standard.Rectangle();
+                    const position = getTransitionPosition(id, index);
+                    rect.position(position.x, position.y);
+                    rect.resize(60, 30);
+                    rect.attr({
+                        body: {
+                            fill: 'white',
+                            stroke: 'black',
+                            strokeWidth: 2
+                        },
+                        label: {
+                            text: name,
+                            fontSize: 10,
+                            fontFamily: 'Times, serif',
+                            fill: 'black'
+                        }
+                    });
+                    rect.addTo(graph);
+                    elements.set(id, rect);
+                });
+                
+                // Extract arcs
+                const arcs = xmlDoc.querySelectorAll('arc');
+                arcs.forEach(arc => {
+                    const source = arc.getAttribute('source');
+                    const target = arc.getAttribute('target');
+                    const identifier = arc.querySelector('identifier text')?.textContent || '';
+                    
+                    const sourceElement = elements.get(source);
+                    const targetElement = elements.get(target);
+                    
+                    if (sourceElement && targetElement) {
+                        const link = new joint.shapes.standard.Link();
+                        link.source(sourceElement);
+                        link.target(targetElement);
+                        link.attr({
+                            line: {
+                                stroke: 'black',
+                                strokeWidth: 1,
+                                targetMarker: {
+                                    type: 'path',
+                                    d: 'M 10 -5 0 0 10 5 z',
+                                    fill: 'black'
+                                }
+                            }
+                        });
+                        
+                        if (identifier) {
+                            link.labels([{
+                                attrs: {
+                                    text: {
+                                        text: identifier,
+                                        fontSize: 8,
+                                        fontFamily: 'Times, serif',
+                                        fill: 'black'
+                                    }
+                                }
+                            }]);
+                        }
+                        
+                        link.addTo(graph);
+                    }
+                });
+                
+                // Update info
+                document.getElementById('info').innerHTML = 
+                    '<strong>PNML Loaded Successfully!</strong><br>' +
+                    `Places: ${places.length}, Transitions: ${transitions.length}, Arcs: ${arcs.length}<br>` +
+                    'Click on elements to see details.';
+                
+                // Auto-fit after a short delay
+                setTimeout(() => fitToWindow(), 100);
+                
+            } catch (error) {
+                alert('Error parsing PNML file: ' + error.message);
+                console.error(error);
+            }
+        }
+
+        // Layout functions
+        function getPlacePosition(id, index) {
+            const positions = {
+                'source': { x: 50, y: 200 },
+                'p_5': { x: 200, y: 150 },
+                'p_7': { x: 200, y: 250 },
+                'p_6': { x: 400, y: 150 },
+                'p_8': { x: 400, y: 250 },
+                'p_9': { x: 600, y: 200 },
+                'sink': { x: 750, y: 200 }
+            };
+            return positions[id] || { x: 100 + (index * 80), y: 150 + (index % 3) * 80 };
+        }
+
+        function getTransitionPosition(id, index) {
+            const positions = {
+                't1': { x: 120, y: 185 },
+                't2': { x: 300, y: 235 },
+                't3': { x: 300, y: 135 },
+                't4': { x: 500, y: 185 }
+            };
+            return positions[id] || { x: 150 + (index * 100), y: 185 };
+        }
+
+        // Utility functions
+        function fitToWindow() {
+            if (paper) {
+                paper.scaleContentToFit({
+                    padding: 20,
+                    maxScale: 2,
+                    minScale: 0.2
+                });
+            }
+        }
+
+        function resetZoom() {
+            if (paper) {
+                paper.scale(1, 1);
+                paper.translate(0, 0);
+            }
+        }
+
+        function clearGraph() {
+            if (graph) {
+                graph.clear();
+                document.getElementById('info').innerHTML = 
+                    '<strong>Graph Cleared</strong><br>Load a PNML file to visualize.';
+            }
+        }
+    </script>
+</body>
+</html>
