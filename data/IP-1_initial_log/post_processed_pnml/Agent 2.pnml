@@ -1,73 +1,13 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <pnml>
-  <net id="imdf_net_1754313736.323064" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+  <net id="imdf_net_1755940866.241895" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
     <name>
-      <text>imdf_net_1754313736.323064</text>
+      <text>imdf_net_1755940866.241895</text>
     </name>
     <page id="n0">
-      <place id="p_12">
-        <name>
-          <text>p_12</text>
-        </name>
-      <type><text>Agent 2</text></type></place>
-      <place id="p_14">
-        <name>
-          <text>p_14</text>
-        </name>
-      <type><text>Agent 2</text></type></place>
-      <place id="p_15">
-        <name>
-          <text>p_15</text>
-        </name>
-      <type><text>Agent 2</text></type></place>
-      <place id="p_16">
-        <name>
-          <text>p_16</text>
-        </name>
-      <type><text>Agent 2</text></type></place>
-      <place id="p_7">
-        <name>
-          <text>p_7</text>
-        </name>
-      <type><text>Agent 2</text></type></place>
-      <place id="p_13">
-        <name>
-          <text>p_13</text>
-        </name>
-      <type><text>Agent 2</text></type></place>
-      <place id="p_10">
-        <name>
-          <text>p_10</text>
-        </name>
-      <type><text>Agent 2</text></type></place>
-      <place id="p_22">
-        <name>
-          <text>p_22</text>
-        </name>
-      <type><text>Agent 2</text></type></place>
       <place id="p_25">
         <name>
           <text>p_25</text>
-        </name>
-      <type><text>Agent 2</text></type></place>
-      <place id="p_23">
-        <name>
-          <text>p_23</text>
-        </name>
-      <type><text>Agent 2</text></type></place>
-      <place id="p_24">
-        <name>
-          <text>p_24</text>
-        </name>
-      <type><text>Agent 2</text></type></place>
-      <place id="p_17">
-        <name>
-          <text>p_17</text>
-        </name>
-      <type><text>Agent 2</text></type></place>
-      <place id="p_19">
-        <name>
-          <text>p_19</text>
         </name>
       <type><text>Agent 2</text></type></place>
       <place id="p_11">
@@ -75,14 +15,19 @@
           <text>p_11</text>
         </name>
       <type><text>Agent 2</text></type></place>
-      <place id="p_5">
+      <place id="p_17">
         <name>
-          <text>p_5</text>
+          <text>p_17</text>
         </name>
       <type><text>Agent 2</text></type></place>
-      <place id="p_4">
+      <place id="p_18">
         <name>
-          <text>p_4</text>
+          <text>p_18</text>
+        </name>
+      <type><text>Agent 2</text></type></place>
+      <place id="p_19">
+        <name>
+          <text>p_19</text>
         </name>
       <type><text>Agent 2</text></type></place>
       <place id="p_6">
@@ -95,83 +40,133 @@
           <text>p_9</text>
         </name>
       <type><text>Agent 2</text></type></place>
-      <place id="p_18">
+      <place id="p_10">
         <name>
-          <text>p_18</text>
+          <text>p_10</text>
         </name>
       <type><text>Agent 2</text></type></place>
-      <transition id="f857452d-f767-4d8d-96d8-12c2a03b0c2e">
+      <place id="p_23">
         <name>
-          <text>a?_2</text>
+          <text>p_23</text>
+        </name>
+      <type><text>Agent 2</text></type></place>
+      <place id="p_24">
+        <name>
+          <text>p_24</text>
+        </name>
+      <type><text>Agent 2</text></type></place>
+      <place id="p_16">
+        <name>
+          <text>p_16</text>
+        </name>
+      <type><text>Agent 2</text></type></place>
+      <place id="p_13">
+        <name>
+          <text>p_13</text>
+        </name>
+      <type><text>Agent 2</text></type></place>
+      <place id="p_12">
+        <name>
+          <text>p_12</text>
+        </name>
+      <type><text>Agent 2</text></type></place>
+      <place id="p_15">
+        <name>
+          <text>p_15</text>
+        </name>
+      <type><text>Agent 2</text></type></place>
+      <place id="p_5">
+        <name>
+          <text>p_5</text>
+        </name>
+      <type><text>Agent 2</text></type></place>
+      <place id="p_4">
+        <name>
+          <text>p_4</text>
+        </name>
+      <type><text>Agent 2</text></type></place>
+      <place id="p_7">
+        <name>
+          <text>p_7</text>
+        </name>
+      <type><text>Agent 2</text></type></place>
+      <place id="p_14">
+        <name>
+          <text>p_14</text>
+        </name>
+      <type><text>Agent 2</text></type></place>
+      <place id="p_22">
+        <name>
+          <text>p_22</text>
+        </name>
+      <type><text>Agent 2</text></type></place>
+      <transition id="73a920a8-1a77-4836-87fd-1a981913030b">
+        <name>
+          <text>a?_1</text>
         </name>
       </transition>
-      <transition id="2319f09e-6029-40db-9f24-45b3d34705ab">
-        <name>
-          <text>e14</text>
-        </name>
-      </transition>
-      <transition id="901f2758-9fa4-403a-b459-db96ad5350bd">
-        <name>
-          <text>e1</text>
-        </name>
-      </transition>
-      <transition id="393e41f9-2b39-495d-80db-f95f7d76a91c">
-        <name>
-          <text>e3</text>
-        </name>
-      </transition>
-      <transition id="6923d158-9658-41d7-a2ea-f00414640e31">
-        <name>
-          <text>e5</text>
-        </name>
-      </transition>
-      <transition id="20585c9d-1595-48a6-af21-3e477d351bda">
-        <name>
-          <text>e7</text>
-        </name>
-      </transition>
-      <transition id="620686d3-8752-46ef-bcb2-939c3a79b4f9">
-        <name>
-          <text>e9</text>
-        </name>
-      </transition>
-      <transition id="f5c23990-172d-4b78-92fb-cf7542915e46">
-        <name>
-          <text>e11</text>
-        </name>
-      </transition>
-      <transition id="4df11dd2-875e-4ae8-bf0f-b5e28645c31c">
-        <name>
-          <text>e12</text>
-        </name>
-      </transition>
-      <transition id="1e746926-bddd-443c-bb05-e30d8e2cd14e">
-        <name>
-          <text>e13</text>
-        </name>
-      </transition>
-      <transition id="5be4a1e2-6d49-4605-97a4-93406a36269f">
-        <name>
-          <text>e8</text>
-        </name>
-      </transition>
-      <transition id="cbcb540d-8f0c-4d55-9d0a-c1f8afb616f8">
+      <transition id="53c23e77-350a-4ffb-99ab-6859cb0517b9">
         <name>
           <text>e10</text>
         </name>
       </transition>
-      <transition id="ceb6187f-100a-402b-8c51-aa4021c11959">
+      <transition id="967340b0-5fdc-49c0-9101-daf38a3d131b">
         <name>
-          <text>a?_1</text>
+          <text>e6</text>
+        </name>
+      </transition>
+      <transition id="e87a5096-8ba4-46d9-9125-9679879432b2">
+        <name>
+          <text>e4</text>
+        </name>
+      </transition>
+      <transition id="566fa724-7d3f-48d3-8919-67f46b134005">
+        <name>
+          <text>e13</text>
+        </name>
+      </transition>
+      <transition id="0f38e6cd-8741-480f-835e-923c0e49240f">
+        <name>
+          <text>e8</text>
+        </name>
+      </transition>
+      <transition id="48769135-fd52-45ac-a5e6-ecbcc12777fc">
+        <name>
+          <text>e12</text>
+        </name>
+      </transition>
+      <transition id="fcaed6fe-b4ad-4a1a-911d-c82e22294f0a">
+        <name>
+          <text>e11</text>
+        </name>
+      </transition>
+      <transition id="9d12f178-76d1-42bc-b1f7-7db45b984ae2">
+        <name>
+          <text>a?_2</text>
+        </name>
+      </transition>
+      <transition id="97edc808-d6c4-4b30-b474-ec2cbe44f4fe">
+        <name>
+          <text>e14</text>
+        </name>
+      </transition>
+      <transition id="4b056e09-61f6-4195-bd55-197e09c9be6f">
+        <name>
+          <text>e9</text>
         </name>
       </transition>
       <transition id="tauSplit_1">
         <name>
           <text>tauSplit_1</text>
         </name>
-        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="723a2c18-197f-4d60-b0ee-1580de42befe" />
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="5d6b96c2-ab7e-40e0-bcc9-28facc9051cb" />
       </transition>
-      <transition id="64fcd53d-27db-415f-8753-5551442e088f">
+      <transition id="800ac67d-88c9-4228-85ac-7ef831bf368f">
+        <name>
+          <text>e1</text>
+        </name>
+      </transition>
+      <transition id="bc7cc6b9-1a19-431d-b18b-15a3c1a4a8cb">
         <name>
           <text>e2</text>
         </name>
@@ -180,63 +175,68 @@
         <name>
           <text>tauJoin_2</text>
         </name>
-        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="dba2a8b3-ac99-4f5e-ad9e-26ffbb76849e" />
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="1ddba296-d000-4534-b0f9-e8cb261102d1" />
       </transition>
-      <transition id="684c6fdf-6970-4fdc-bad2-5b733259858d">
+      <transition id="93a50392-d8d2-4bf2-9f9b-f67c4b12565d">
         <name>
-          <text>e4</text>
+          <text>e3</text>
         </name>
       </transition>
-      <transition id="508ca3ea-4180-4705-b5a2-c9a2909e3f80">
+      <transition id="d8636f27-2a80-42f7-b0bb-a46ab053ac2c">
         <name>
-          <text>e6</text>
+          <text>e5</text>
         </name>
       </transition>
-      <transition id="3732d1f1-271f-4579-b22c-7ee64e25e001">
+      <transition id="d58cc6ef-6ee6-41b8-921c-2771ce58b800">
+        <name>
+          <text>e7</text>
+        </name>
+      </transition>
+      <transition id="ebe94b80-6f1a-45fb-b382-2b86e3194830">
         <name>
           <text>e15</text>
         </name>
       </transition>
-      <arc id="5960851152" source="p_19" target="5be4a1e2-6d49-4605-97a4-93406a36269f"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960849168" source="p_17" target="2319f09e-6029-40db-9f24-45b3d34705ab"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960845072" source="p_11" target="393e41f9-2b39-495d-80db-f95f7d76a91c"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960802832" source="p_5" target="tauJoin_2"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960802960" source="p_4" target="64fcd53d-27db-415f-8753-5551442e088f"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960803472" source="tauSplit_1" target="p_6"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960855440" source="tauJoin_2" target="p_11"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960855312" source="tauJoin_2" target="p_9"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960855824" source="p_23" target="3732d1f1-271f-4579-b22c-7ee64e25e001"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960845200" source="393e41f9-2b39-495d-80db-f95f7d76a91c" target="p_12"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960855696" source="p_12" target="6923d158-9658-41d7-a2ea-f00414640e31"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960845840" source="6923d158-9658-41d7-a2ea-f00414640e31" target="p_13"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960848080" source="p_16" target="1e746926-bddd-443c-bb05-e30d8e2cd14e"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960854288" source="p_24" target="f5c23990-172d-4b78-92fb-cf7542915e46"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960854416" source="f5c23990-172d-4b78-92fb-cf7542915e46" target="p_25"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960846352" source="p_13" target="20585c9d-1595-48a6-af21-3e477d351bda"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960846480" source="20585c9d-1595-48a6-af21-3e477d351bda" target="p_14"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960848720" source="p_15" target="cbcb540d-8f0c-4d55-9d0a-c1f8afb616f8"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960848848" source="cbcb540d-8f0c-4d55-9d0a-c1f8afb616f8" target="p_17"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960855056" source="5be4a1e2-6d49-4605-97a4-93406a36269f" target="p_22"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960846992" source="p_14" target="f857452d-f767-4d8d-96d8-12c2a03b0c2e"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960855184" source="5be4a1e2-6d49-4605-97a4-93406a36269f" target="p_24"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960853200" source="p_22" target="4df11dd2-875e-4ae8-bf0f-b5e28645c31c"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960847120" source="f857452d-f767-4d8d-96d8-12c2a03b0c2e" target="p_15"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960853328" source="4df11dd2-875e-4ae8-bf0f-b5e28645c31c" target="p_23"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960843984" source="p_9" target="684c6fdf-6970-4fdc-bad2-5b733259858d"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960844112" source="684c6fdf-6970-4fdc-bad2-5b733259858d" target="p_10"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960802512" source="tauSplit_1" target="p_4"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960803152" source="64fcd53d-27db-415f-8753-5551442e088f" target="p_5"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960803792" source="p_7" target="tauJoin_2"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960804048" source="p_6" target="901f2758-9fa4-403a-b459-db96ad5350bd"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960804176" source="901f2758-9fa4-403a-b459-db96ad5350bd" target="p_7"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960855568" source="p_10" target="6923d158-9658-41d7-a2ea-f00414640e31"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960847632" source="p_15" target="620686d3-8752-46ef-bcb2-939c3a79b4f9"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960847760" source="620686d3-8752-46ef-bcb2-939c3a79b4f9" target="p_16"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960849872" source="p_13" target="508ca3ea-4180-4705-b5a2-c9a2909e3f80"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960855952" source="p_25" target="3732d1f1-271f-4579-b22c-7ee64e25e001"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960850000" source="508ca3ea-4180-4705-b5a2-c9a2909e3f80" target="p_18"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960850512" source="p_18" target="ceb6187f-100a-402b-8c51-aa4021c11959"><identifier><text>Agent 2</text></identifier></arc>
-      <arc id="5960850640" source="ceb6187f-100a-402b-8c51-aa4021c11959" target="p_19"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152980752" source="p_9" target="e87a5096-8ba4-46d9-9125-9679879432b2"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152939536" source="p_5" target="tauJoin_2"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152939792" source="p_4" target="bc7cc6b9-1a19-431d-b18b-15a3c1a4a8cb"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152939920" source="bc7cc6b9-1a19-431d-b18b-15a3c1a4a8cb" target="p_5"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152940560" source="p_7" target="tauJoin_2"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152940816" source="p_6" target="800ac67d-88c9-4228-85ac-7ef831bf368f"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152940944" source="800ac67d-88c9-4228-85ac-7ef831bf368f" target="p_7"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152984848" source="p_16" target="566fa724-7d3f-48d3-8919-67f46b134005"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152991056" source="p_24" target="fcaed6fe-b4ad-4a1a-911d-c82e22294f0a"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152980880" source="e87a5096-8ba4-46d9-9125-9679879432b2" target="p_10"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152991184" source="fcaed6fe-b4ad-4a1a-911d-c82e22294f0a" target="p_25"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152983120" source="p_13" target="d58cc6ef-6ee6-41b8-921c-2771ce58b800"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152983248" source="d58cc6ef-6ee6-41b8-921c-2771ce58b800" target="p_14"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152985488" source="p_15" target="53c23e77-350a-4ffb-99ab-6859cb0517b9"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152985616" source="53c23e77-350a-4ffb-99ab-6859cb0517b9" target="p_17"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152991824" source="0f38e6cd-8741-480f-835e-923c0e49240f" target="p_22"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152983760" source="p_14" target="9d12f178-76d1-42bc-b1f7-7db45b984ae2"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152991952" source="0f38e6cd-8741-480f-835e-923c0e49240f" target="p_24"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152989968" source="p_22" target="48769135-fd52-45ac-a5e6-ecbcc12777fc"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152983888" source="9d12f178-76d1-42bc-b1f7-7db45b984ae2" target="p_15"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152990096" source="48769135-fd52-45ac-a5e6-ecbcc12777fc" target="p_23"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152992464" source="p_25" target="ebe94b80-6f1a-45fb-b382-2b86e3194830"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152984400" source="p_15" target="4b056e09-61f6-4195-bd55-197e09c9be6f"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152984528" source="4b056e09-61f6-4195-bd55-197e09c9be6f" target="p_16"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152992336" source="p_23" target="ebe94b80-6f1a-45fb-b382-2b86e3194830"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152992208" source="tauJoin_2" target="p_11"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152992080" source="tauJoin_2" target="p_9"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152939216" source="tauSplit_1" target="p_4"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152940240" source="tauSplit_1" target="p_6"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152981840" source="p_11" target="93a50392-d8d2-4bf2-9f9b-f67c4b12565d"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152981968" source="93a50392-d8d2-4bf2-9f9b-f67c4b12565d" target="p_12"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152992592" source="p_10" target="d8636f27-2a80-42f7-b0bb-a46ab053ac2c"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152982608" source="d8636f27-2a80-42f7-b0bb-a46ab053ac2c" target="p_13"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152986640" source="p_13" target="967340b0-5fdc-49c0-9101-daf38a3d131b"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152986768" source="967340b0-5fdc-49c0-9101-daf38a3d131b" target="p_18"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152992720" source="p_12" target="d8636f27-2a80-42f7-b0bb-a46ab053ac2c"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152987280" source="p_18" target="73a920a8-1a77-4836-87fd-1a981913030b"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152987408" source="73a920a8-1a77-4836-87fd-1a981913030b" target="p_19"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152987920" source="p_19" target="0f38e6cd-8741-480f-835e-923c0e49240f"><identifier><text>Agent 2</text></identifier></arc>
+      <arc id="6152985936" source="p_17" target="97edc808-d6c4-4b30-b474-ec2cbe44f4fe"><identifier><text>Agent 2</text></identifier></arc>
       </page>
     </net>
 </pnml>

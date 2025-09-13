@@ -18,6 +18,7 @@ from pm4py.objects.petri_net.utils.check_soundness import check_sink_place_prese
 from pm4py.objects.petri_net.utils.initial_marking import discover_initial_marking
 from pm4py.objects.petri_net.utils.final_marking import discover_final_marking
 from pm4py.objects.petri_net.obj import PetriNet, Marking
+from pm4py.objects.log.obj import EventLog, Trace
 
 from copy import deepcopy
 
@@ -59,7 +60,443 @@ def projection_based_on_organization(raw_log=None,original_file_name=None):
 
     return org_list
 
+def projection_based_on_organization_ip2(raw_log=None,original_file_name=None):# r 
 
+
+    # Define agent assignment rules
+    def get_agent(concept_name):
+        if concept_name.startswith("a!") or concept_name.startswith("b!"):
+            return "t"
+        elif concept_name.startswith("a?") or concept_name.startswith("b?"):
+            return "q"
+        elif concept_name.startswith("t"):
+            return "t"
+        elif concept_name.startswith("q"):
+            return "q"
+        return None
+
+    agent_logs = {"t": EventLog(), "q": EventLog()}
+    # Copy log attributes if present (update in place, do not assign)
+    for agent_key in agent_logs:
+        if hasattr(raw_log, 'attributes'):
+            agent_logs[agent_key].attributes.update(raw_log.attributes)
+        if hasattr(raw_log, 'extensions'):
+            agent_logs[agent_key].extensions.update(raw_log.extensions)
+        if hasattr(raw_log, 'classifiers'):
+            agent_logs[agent_key].classifiers.update(raw_log.classifiers)
+
+    for trace in raw_log:
+        trace_t = Trace()
+        trace_q = Trace()
+        if hasattr(trace, 'attributes'):
+            trace_attrs = dict(trace.attributes)
+        else:
+            trace_attrs = {}
+        for event in trace:
+            concept_name = event.get("concept:name", "")
+            agent = get_agent(concept_name)
+            if agent == "t":
+                trace_t.append(event)
+            elif agent == "q":
+                trace_q.append(event)
+        if len(trace_t) > 0:
+            if trace_attrs:
+                trace_t.attributes.update(trace_attrs)
+            agent_logs["t"].append(trace_t)
+        if len(trace_q) > 0:
+            if trace_attrs:
+                trace_q.attributes.update(trace_attrs)
+            agent_logs["q"].append(trace_q)
+
+    for agent_key, agent_log in agent_logs.items():
+        pm4py.write_xes(agent_log, f"./data/{original_file_name}/projected_xes/{agent_key}.xes")
+    return [k for k in agent_logs if len(agent_logs[k]) > 0]
+
+
+def projection_based_on_organization_ip4(raw_log=None,original_file_name=None):# a!: t . b!: e
+
+    # Define agent assignment rules
+    def get_agent(concept_name):
+        if concept_name.startswith("a!") or concept_name.startswith("b?"):
+            return "t"
+        elif concept_name.startswith("a?") or concept_name.startswith("b!"):
+            return "e"
+        elif concept_name.startswith("t"):
+            return "t"
+        elif concept_name.startswith("e"):
+            return "e"
+
+        return None
+
+    agent_logs = {"t": EventLog(), "e": EventLog()}
+    # Copy log attributes if present (update in place, do not assign)
+    for agent_key in agent_logs:
+        if hasattr(raw_log, 'attributes'):
+            agent_logs[agent_key].attributes.update(raw_log.attributes)
+        if hasattr(raw_log, 'extensions'):
+            agent_logs[agent_key].extensions.update(raw_log.extensions)
+        if hasattr(raw_log, 'classifiers'):
+            agent_logs[agent_key].classifiers.update(raw_log.classifiers)
+
+    for trace in raw_log:
+        trace_t = Trace()
+        trace_e = Trace()
+        if hasattr(trace, 'attributes'):
+            trace_attrs = dict(trace.attributes)
+        else:
+            trace_attrs = {}
+        for event in trace:
+            concept_name = event.get("concept:name", "")
+            agent = get_agent(concept_name)
+            if agent == "t":
+                trace_t.append(event)
+            elif agent == "e":
+                trace_e.append(event)
+        if len(trace_t) > 0:
+            if trace_attrs:
+                trace_t.attributes.update(trace_attrs)
+            agent_logs["t"].append(trace_t)
+        if len(trace_e) > 0:
+            if trace_attrs:
+                trace_e.attributes.update(trace_attrs)
+            agent_logs["e"].append(trace_e)
+
+    for agent_key, agent_log in agent_logs.items():
+        pm4py.write_xes(agent_log, f"./data/{original_file_name}/projected_xes/{agent_key}.xes")
+    return [k for k in agent_logs if len(agent_logs[k]) > 0]
+
+
+
+def projection_based_on_organization_ip5(raw_log=None,original_file_name=None):# a!: t . b!: e
+
+    # Define agent assignment rules
+    def get_agent(concept_name):
+        if concept_name.startswith("a!") or concept_name.startswith("b!")or concept_name.startswith("c?") or concept_name.startswith("d?"):
+            return "t"
+        elif concept_name.startswith("a?") or concept_name.startswith("b?")or concept_name.startswith("c!") or concept_name.startswith("d!"):
+            return "q"
+        elif concept_name.startswith("t"):
+            return "t"
+        elif concept_name.startswith("q"):
+            return "q"
+
+        return None
+
+    agent_logs = {"t": EventLog(), "q": EventLog()}
+    # Copy log attributes if present (update in place, do not assign)
+    for agent_key in agent_logs:
+        if hasattr(raw_log, 'attributes'):
+            agent_logs[agent_key].attributes.update(raw_log.attributes)
+        if hasattr(raw_log, 'extensions'):
+            agent_logs[agent_key].extensions.update(raw_log.extensions)
+        if hasattr(raw_log, 'classifiers'):
+            agent_logs[agent_key].classifiers.update(raw_log.classifiers)
+
+    for trace in raw_log:
+        trace_t = Trace()
+        trace_q = Trace()
+        if hasattr(trace, 'attributes'):
+            trace_attrs = dict(trace.attributes)
+        else:
+            trace_attrs = {}
+        for event in trace:
+            concept_name = event.get("concept:name", "")
+            agent = get_agent(concept_name)
+            if agent == "t":
+                trace_t.append(event)
+            elif agent == "q":
+                trace_q.append(event)
+        if len(trace_t) > 0:
+            if trace_attrs:
+                trace_t.attributes.update(trace_attrs)
+            agent_logs["t"].append(trace_t)
+        if len(trace_q) > 0:
+            if trace_attrs:
+                trace_q.attributes.update(trace_attrs)
+            agent_logs["q"].append(trace_q)
+
+    for agent_key, agent_log in agent_logs.items():
+        pm4py.write_xes(agent_log, f"./data/{original_file_name}/projected_xes/{agent_key}.xes")
+    return [k for k in agent_logs if len(agent_logs[k]) > 0]
+
+def projection_based_on_organization_ip6(raw_log=None,original_file_name=None):# a!: t . b!: e
+
+    # Define agent assignment rules
+    def get_agent(concept_name):
+        if concept_name.startswith("a!") or concept_name.startswith("b")or concept_name.startswith("c?") or concept_name.startswith("d"):
+            return "t"
+        elif concept_name.startswith("a?") or  concept_name.startswith("c!"):
+            return "q"
+        elif concept_name.startswith("t"):
+            return "t"
+        elif concept_name.startswith("q"):
+            return "q"
+
+        return None
+
+    agent_logs = {"t": EventLog(), "q": EventLog()}
+    # Copy log attributes if present (update in place, do not assign)
+    for agent_key in agent_logs:
+        if hasattr(raw_log, 'attributes'):
+            agent_logs[agent_key].attributes.update(raw_log.attributes)
+        if hasattr(raw_log, 'extensions'):
+            agent_logs[agent_key].extensions.update(raw_log.extensions)
+        if hasattr(raw_log, 'classifiers'):
+            agent_logs[agent_key].classifiers.update(raw_log.classifiers)
+
+    for trace in raw_log:
+        trace_t = Trace()
+        trace_q = Trace()
+        if hasattr(trace, 'attributes'):
+            trace_attrs = dict(trace.attributes)
+        else:
+            trace_attrs = {}
+        for event in trace:
+            concept_name = event.get("concept:name", "")
+            agent = get_agent(concept_name)
+            if agent == "t":
+                trace_t.append(event)
+            elif agent == "q":
+                trace_q.append(event)
+        if len(trace_t) > 0:
+            if trace_attrs:
+                trace_t.attributes.update(trace_attrs)
+            agent_logs["t"].append(trace_t)
+        if len(trace_q) > 0:
+            if trace_attrs:
+                trace_q.attributes.update(trace_attrs)
+            agent_logs["q"].append(trace_q)
+
+    for agent_key, agent_log in agent_logs.items():
+        pm4py.write_xes(agent_log, f"./data/{original_file_name}/projected_xes/{agent_key}.xes")
+    return [k for k in agent_logs if len(agent_logs[k]) > 0]
+
+def projection_based_on_organization_ip7(raw_log=None,original_file_name=None):# a!: t . b!: e
+
+    # Define agent assignment rules
+    def get_agent(concept_name):
+        if concept_name.startswith("a?") or concept_name.startswith("b!")or concept_name.startswith("c!"):
+            return "t"
+        elif concept_name.startswith("a!") or concept_name.startswith("b?") or  concept_name.startswith("c?"):
+            return "q"
+        elif concept_name.startswith("t"):
+            return "t"
+        elif concept_name.startswith("q"):
+            return "q"
+
+        return None
+
+    agent_logs = {"t": EventLog(), "q": EventLog()}
+    # Copy log attributes if present (update in place, do not assign)
+    for agent_key in agent_logs:
+        if hasattr(raw_log, 'attributes'):
+            agent_logs[agent_key].attributes.update(raw_log.attributes)
+        if hasattr(raw_log, 'extensions'):
+            agent_logs[agent_key].extensions.update(raw_log.extensions)
+        if hasattr(raw_log, 'classifiers'):
+            agent_logs[agent_key].classifiers.update(raw_log.classifiers)
+
+    for trace in raw_log:
+        trace_t = Trace()
+        trace_q = Trace()
+        if hasattr(trace, 'attributes'):
+            trace_attrs = dict(trace.attributes)
+        else:
+            trace_attrs = {}
+        for event in trace:
+            concept_name = event.get("concept:name", "")
+            agent = get_agent(concept_name)
+            if agent == "t":
+                trace_t.append(event)
+            elif agent == "q":
+                trace_q.append(event)
+        if len(trace_t) > 0:
+            if trace_attrs:
+                trace_t.attributes.update(trace_attrs)
+            agent_logs["t"].append(trace_t)
+        if len(trace_q) > 0:
+            if trace_attrs:
+                trace_q.attributes.update(trace_attrs)
+            agent_logs["q"].append(trace_q)
+
+    for agent_key, agent_log in agent_logs.items():
+        pm4py.write_xes(agent_log, f"./data/{original_file_name}/projected_xes/{agent_key}.xes")
+    return [k for k in agent_logs if len(agent_logs[k]) > 0]
+
+def projection_based_on_organization_ip8(raw_log=None,original_file_name=None):#
+
+    # Define agent assignment rules
+    def get_agent(concept_name):
+        if concept_name.startswith("a!") or concept_name.startswith("ackA?") or concept_name.startswith("bR?") or concept_name.startswith("a?_u") :
+            return "t"
+        elif concept_name.startswith("aR?") or  concept_name.startswith("ackB?") or concept_name.startswith("b?_u"):
+            return "r"
+        elif concept_name.startswith("a?") or concept_name.startswith("b?") or concept_name.startswith("ackA!") or concept_name.startswith("ackB!") or concept_name.startswith("aR!")or concept_name.startswith("bR!"):
+            return "q"
+        elif concept_name.startswith("t"):
+            return "t"
+        elif concept_name.startswith("q"):
+            return "q"
+        elif concept_name.startswith("r"):
+            return "r"
+
+        return None
+
+    agent_logs = {"t": EventLog(), "q": EventLog(),"r": EventLog()}
+    # Copy log attributes if present (update in place, do not assign)
+    for agent_key in agent_logs:
+        if hasattr(raw_log, 'attributes'):
+            agent_logs[agent_key].attributes.update(raw_log.attributes)
+        if hasattr(raw_log, 'extensions'):
+            agent_logs[agent_key].extensions.update(raw_log.extensions)
+        if hasattr(raw_log, 'classifiers'):
+            agent_logs[agent_key].classifiers.update(raw_log.classifiers)
+
+    for trace in raw_log:
+        trace_t = Trace()
+        trace_q = Trace()
+        trace_r = Trace()
+        if hasattr(trace, 'attributes'):
+            trace_attrs = dict(trace.attributes)
+        else:
+            trace_attrs = {}
+        for event in trace:
+            concept_name = event.get("concept:name", "")
+            agent = get_agent(concept_name)
+            if agent == "t":
+                trace_t.append(event)
+            elif agent == "q":
+                trace_q.append(event)
+            elif agent == "r":
+                trace_r.append(event)
+        if len(trace_t) > 0:
+            if trace_attrs:
+                trace_t.attributes.update(trace_attrs)
+            agent_logs["t"].append(trace_t)
+        if len(trace_q) > 0:
+            if trace_attrs:
+                trace_q.attributes.update(trace_attrs)
+            agent_logs["q"].append(trace_q)
+        if len(trace_r) > 0:
+            if trace_attrs:
+                trace_r.attributes.update(trace_attrs)
+            agent_logs["r"].append(trace_r)
+
+    for agent_key, agent_log in agent_logs.items():
+        pm4py.write_xes(agent_log, f"./data/{original_file_name}/projected_xes/{agent_key}.xes")
+    return [k for k in agent_logs if len(agent_logs[k]) > 0]
+
+
+def projection_based_on_organization_ip_9(raw_log=None,original_file_name=None):# a!: t . b!: e
+
+    # Define agent assignment rules
+    def get_agent(concept_name):
+        if concept_name.startswith("a!") or concept_name.startswith("b?"):
+            return "t"
+        elif concept_name.startswith("a?") or concept_name.startswith("b!"):
+            return "q"
+        elif concept_name.startswith("t"):
+            return "t"
+        elif concept_name.startswith("q"):
+            return "q"
+
+        return None
+
+    agent_logs = {"t": EventLog(), "q": EventLog()}
+    # Copy log attributes if present (update in place, do not assign)
+    for agent_key in agent_logs:
+        if hasattr(raw_log, 'attributes'):
+            agent_logs[agent_key].attributes.update(raw_log.attributes)
+        if hasattr(raw_log, 'extensions'):
+            agent_logs[agent_key].extensions.update(raw_log.extensions)
+        if hasattr(raw_log, 'classifiers'):
+            agent_logs[agent_key].classifiers.update(raw_log.classifiers)
+
+    for trace in raw_log:
+        trace_t = Trace()
+        trace_q = Trace()
+        if hasattr(trace, 'attributes'):
+            trace_attrs = dict(trace.attributes)
+        else:
+            trace_attrs = {}
+        for event in trace:
+            concept_name = event.get("concept:name", "")
+            agent = get_agent(concept_name)
+            if agent == "t":
+                trace_t.append(event)
+            elif agent == "q":
+                trace_q.append(event)
+        if len(trace_t) > 0:
+            if trace_attrs:
+                trace_t.attributes.update(trace_attrs)
+            agent_logs["t"].append(trace_t)
+        if len(trace_q) > 0:
+            if trace_attrs:
+                trace_q.attributes.update(trace_attrs)
+            agent_logs["q"].append(trace_q)
+
+    for agent_key, agent_log in agent_logs.items():
+        pm4py.write_xes(agent_log, f"./data/{original_file_name}/projected_xes/{agent_key}.xes")
+    return [k for k in agent_logs if len(agent_logs[k]) > 0]
+
+
+
+def projection_based_on_organization_ip_11_12(raw_log=None,original_file_name=None):# a!: t . b!: e
+
+    # Define agent assignment rules
+    def get_agent(concept_name):
+        if concept_name.startswith("a!") or concept_name.startswith("b?"):
+            return "t"
+        elif concept_name.startswith("a?") or concept_name.startswith("b!"):
+            return "q"
+        elif concept_name.startswith("t"):
+            return "t"
+        elif concept_name.startswith("q"):
+            return "q"
+        elif concept_name.startswith("s"): # hwere, needs to be added to both agents 
+            return "s"
+        return None
+
+    agent_logs = {"t": EventLog(), "q": EventLog()}
+    # Copy log attributes if present (update in place, do not assign)
+    for agent_key in agent_logs:
+        if hasattr(raw_log, 'attributes'):
+            agent_logs[agent_key].attributes.update(raw_log.attributes)
+        if hasattr(raw_log, 'extensions'):
+            agent_logs[agent_key].extensions.update(raw_log.extensions)
+        if hasattr(raw_log, 'classifiers'):
+            agent_logs[agent_key].classifiers.update(raw_log.classifiers)
+
+    for trace in raw_log:
+        trace_t = Trace()
+        trace_q = Trace()
+        if hasattr(trace, 'attributes'):
+            trace_attrs = dict(trace.attributes)
+        else:
+            trace_attrs = {}
+        for event in trace:
+            concept_name = event.get("concept:name", "")
+            agent = get_agent(concept_name)
+            if agent == "t":
+                trace_t.append(event)
+            elif agent == "q":
+                trace_q.append(event)
+            elif agent == "s":
+                trace_t.append(event)
+                trace_q.append(event)
+
+        if len(trace_t) > 0:
+            if trace_attrs:
+                trace_t.attributes.update(trace_attrs)
+            agent_logs["t"].append(trace_t)
+        if len(trace_q) > 0:
+            if trace_attrs:
+                trace_q.attributes.update(trace_attrs)
+            agent_logs["q"].append(trace_q)
+
+    for agent_key, agent_log in agent_logs.items():
+        pm4py.write_xes(agent_log, f"./data/{original_file_name}/projected_xes/{agent_key}.xes")
+    return [k for k in agent_logs if len(agent_logs[k]) > 0]
 
 
 
@@ -105,7 +542,7 @@ def custom_petri_net_visualization(file_name,title="Petri Net with Organization 
             label_node = transition.find("name/text")
             label = label_node.text if label_node is not None else "τ"
 
-            if 'tau'in transition.get("id"):
+            if 'tau'in transition.get("id") or 'tau'in label_node:
                 label = "τ"
 
                 dot.node(
@@ -171,17 +608,18 @@ def t_jn_check():
 
 
 
-def add_identifiers(log_file_path, org, original_file_name):
-        '''
-        Add types / identifiers for each place (circle) and arc (arrow) in the Petri net
-        place: place type (jn_type)
-        arc: multi set of identifiers
-        '''
-        add_type_properties_to_pnml(log_file_path, org)
-        add_identifier_properties_to_pnml(log_file_path, org)
-        post_processing_customized(log_file_path, original_file_name)
 
-        return True
+def add_identifiers(log_file_path, org, original_file_name):
+    '''
+    Add types / identifiers for each place (circle) and arc (arrow) in the Petri net
+    place: place type (jn_type)
+    arc: multi set of identifiers
+    '''
+    add_type_properties_to_pnml(log_file_path, org)
+    add_identifier_properties_to_pnml(log_file_path, org)
+    post_processing_customized(log_file_path, original_file_name)
+    return True
+
 
 
 
@@ -189,69 +627,70 @@ def add_identifiers(log_file_path, org, original_file_name):
 
 
 def add_type_properties_to_pnml(pnml_file_path, org):
-        """
-        Add <type> properties to places in a PNML file (for tools that read PNML directly)
-        """
-        try:
-            tree = ET.parse(pnml_file_path)
-            root = tree.getroot()
-            for place in root.findall('.//place'):
-                type_elem = ET.SubElement(place, 'type')
-                type_text = ET.SubElement(type_elem, 'text')
-                type_text.text = org
-            tree.write(pnml_file_path, encoding='UTF-8', xml_declaration=True)
-            return True
-        except Exception as e:
-            print(f"Failed to add type properties to {pnml_file_path}: {e}")
-            return False
+    """
+    Add <type> properties to places in a PNML file (for tools that read PNML directly)
+    """
+    try:
+        tree = ET.parse(pnml_file_path)
+        root = tree.getroot()
+        for place in root.findall('.//place'):
+            type_elem = ET.SubElement(place, 'type')
+            type_text = ET.SubElement(type_elem, 'text')
+            type_text.text = org
+        tree.write(pnml_file_path, encoding='UTF-8', xml_declaration=True)
+        return True
+    except Exception as e:
+        print(f"Failed to add type properties to {pnml_file_path}: {e}")
+        return False
+
 
 
 def add_identifier_properties_to_pnml(pnml_file_path, org):
-        """
-        Add <identifier> properties to arcs in a PNML file (for tools that read PNML directly)
-        """
-        try:
-            tree = ET.parse(pnml_file_path)
-            root = tree.getroot()
-            for arc in root.findall('.//arc'):
-                type_elem = ET.SubElement(arc, 'identifier')
-                type_text = ET.SubElement(type_elem, 'text')
-                type_text.text = org
-            tree.write(pnml_file_path, encoding='UTF-8', xml_declaration=True)
-            return True
-        except Exception as e:
-            print(f"Failed to add type properties to {pnml_file_path}: {e}")
-            return False
+    """
+    Add <identifier> properties to arcs in a PNML file (for tools that read PNML directly)
+    """
+    try:
+        tree = ET.parse(pnml_file_path)
+        root = tree.getroot()
+        for arc in root.findall('.//arc'):
+            type_elem = ET.SubElement(arc, 'identifier')
+            type_text = ET.SubElement(type_elem, 'text')
+            type_text.text = org
+        tree.write(pnml_file_path, encoding='UTF-8', xml_declaration=True)
+        return True
+    except Exception as e:
+        print(f"Failed to add type properties to {pnml_file_path}: {e}")
+        return False
 
 
 def post_processing_customized(log_file_path, original_file_name):
-        try:
-            tree = ET.parse(log_file_path)
-            root = tree.getroot()
-            for net in root.findall('.//net'):
-                for fm in net.findall('finalmarkings'):
-                    net.remove(fm)
-                for im in net.findall('initialmarkings'):
-                    net.remove(im)
+    try:
+        tree = ET.parse(log_file_path)
+        root = tree.getroot()
+        for net in root.findall('.//net'):
+            for fm in net.findall('finalmarkings'):
+                net.remove(fm)
+            for im in net.findall('initialmarkings'):
+                net.remove(im)
 
-                for page in net.findall('page'):
-                    # Remove source/sink places
-                    for place in page.findall('place'):
-                        if place.get('id') in ['source', 'sink']:
-                            page.remove(place)
+            for page in net.findall('page'):
+                # Remove source/sink places
+                for place in page.findall('place'):
+                    if place.get('id') in ['source', 'sink']:
+                        page.remove(place)
 
-                    # Remove arcs linked to source/sink
-                    for arc in page.findall('arc'):
-                        if arc.get('source') in ['source', 'sink'] or arc.get('target') in ['source', 'sink']:
-                            page.remove(arc)
-            
-            pnml_file_path = f'./data/{original_file_name}/post_processed_pnml/{log_file_path.split("/")[-1].split(".")[0]}.pnml'  
+                # Remove arcs linked to source/sink
+                for arc in page.findall('arc'):
+                    if arc.get('source') in ['source', 'sink'] or arc.get('target') in ['source', 'sink']:
+                        page.remove(arc)
+        
+        pnml_file_path = f'./data/{original_file_name}/post_processed_pnml/{log_file_path.split("/")[-1].split(".")[0]}.pnml'  
 
-            tree.write(pnml_file_path, encoding='UTF-8', xml_declaration=True)
-            return True
-        except Exception as e:
-            print(f"Failed to add type properties to {pnml_file_path}: {e}")
-            return False
+        tree.write(pnml_file_path, encoding='UTF-8', xml_declaration=True)
+        return True
+    except Exception as e:
+        print(f"Failed to add type properties to {pnml_file_path}: {e}")
+        return False
         
     
 
@@ -360,10 +799,14 @@ def compose(pnml_files, original_file_name ="composed"):
         # Collect transitions and group by name
         for transition in page.findall("transition"):
             name_elem = transition.find("name/text")
+            # if "tau" in name_elem.text.lower():
+            #     continue
+
             trans_name = name_elem.text if name_elem is not None else f"unnamed_{transition.get('id')}"
-            
+
             if trans_name not in transition_groups:
                 transition_groups[trans_name] = []
+
             transition_groups[trans_name].append((transition, agent_name))
         
         # Collect arcs
@@ -385,10 +828,25 @@ def compose(pnml_files, original_file_name ="composed"):
             new_place.append(deepcopy(child))
     
     # Create shared transitions and mapping
-    shared_transition_mapping = {}  # (original_id, agent_name) -> shared_id
+    shared_transition_mapping = {}  # (original_id, agent_name) -> shared_id # TODO: apart from tau !!! 
     
     for trans_name, transition_list in transition_groups.items():
-        if len(transition_list) > 1:
+        if "tau" in trans_name or "tau" in transition_list[0][0].get('id') :
+            for transition, agent_name in transition_list:
+            
+                new_transition = ET.SubElement(composed_page, "transition")
+                original_id = transition.get("id")
+                new_id = f"{original_id}_{agent_name}"
+                new_transition.set("id", new_id)
+                
+                shared_transition_mapping[(original_id, agent_name)] = new_id
+                
+                # Copy all child elements
+                for child in transition:
+                    new_transition.append(deepcopy(child))
+
+
+        elif  len(transition_list) > 1:
             # This transition appears in multiple files - create shared transition
             shared_id = f"shared_{trans_name}"
             shared_transition = ET.SubElement(composed_page, "transition")
@@ -477,7 +935,7 @@ if __name__ == "__main__":
 
     # generation order: projected_xes, first_pnml, post_processed_pnml, composed_pnml, images
 
-    original_file_path= "./data/original_xes_file/IP-1_initial_log.xes"
+    original_file_path= "/Users/xufanlu/Projects/Process Mining/Process-Discovery-Typed-Jackson-Nets/data/original_xes_file/IP-2_init_log.xes"
     #original_file_path= "./data/original_xes_file/IP-4_init_log.xes"
 
     original_file_name = original_file_path.split("/")[-1].split(".")[0]    
@@ -497,7 +955,7 @@ if __name__ == "__main__":
 
 
     raw_log = xes_importer.apply(original_file_path)
-    orgs=projection_based_on_organization(raw_log,original_file_name=original_file_name)
+    orgs=projection_based_on_organization_ip2(raw_log,original_file_name=original_file_name)# this method needs to be changed 
 
     print(f"Processing {len(orgs)} organizations: {orgs}")
     composed_pnml_files = []
