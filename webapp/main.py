@@ -80,11 +80,6 @@ logfire.instrument_fastapi(app)
 async def index() -> FileResponse:
     return FileResponse((THIS_DIR / 'chat_app.html'), media_type='text/html')
 
-@app.get('/visualizer')
-async def visualizer() -> FileResponse:
-    """Serve the PNML visualizer page"""
-    return FileResponse((THIS_DIR.parent / 'test_new.html'), media_type='text/html')
-
 @app.get('/pnml/{file_path:path}')
 async def serve_pnml(file_path: str):
     """Serve PNML files for the visualizer"""
@@ -130,14 +125,14 @@ async def export_model_pnml(model_data: dict):
         raise HTTPException(status_code=500, detail=f"Export failed: {str(e)}")
 
 
-@app.on_event("startup")
-async def startup_event():
-    """Initialize the application with IP-1_initial_log.xes processing"""
-    try:
-        # Check if IP-1_initial_log.xes exists and process it if needed
-        pass
-    except Exception as e:
-        print(f"Error during startup processing: {e}")
+# @app.on_event("startup")
+# async def startup_event():
+#     """Initialize the application with IP-1_initial_log.xes processing"""
+#     try:
+#         # Check if IP-1_initial_log.xes exists and process it if needed
+#         pass
+#     except Exception as e:
+#         print(f"Error during startup processing: {e}")
 
 @app.get('/available-xes-files')
 async def get_available_xes_files():
@@ -263,19 +258,19 @@ async def get_related_models(log_name: str):
             pnml_files = glob.glob(os.path.join(post_processed_folder, "*.pnml"))
             print(f"Found {len(pnml_files)} post-processed PNML files")
             for pnml_file in pnml_files:
-                model = create_model_info(pnml_file, "post_processed_pnml", log_name)
+                model = create_model_info(pnml_file, "participant", log_name)
                 if model:
                     models.append(model)
         
-        # Check first_pnml folder
-        first_folder = os.path.join(log_folder_path, "first_pnml")
-        if os.path.exists(first_folder):
-            pnml_files = glob.glob(os.path.join(first_folder, "*.pnml"))
-            print(f"Found {len(pnml_files)} first PNML files")
-            for pnml_file in pnml_files:
-                model = create_model_info(pnml_file, "first_pnml", log_name)
-                if model:
-                    models.append(model)
+        # # Check first_pnml folder
+        # first_folder = os.path.join(log_folder_path, "first_pnml")
+        # if os.path.exists(first_folder):
+        #     pnml_files = glob.glob(os.path.join(first_folder, "*.pnml"))
+        #     print(f"Found {len(pnml_files)} first PNML files")
+        #     for pnml_file in pnml_files:
+        #         model = create_model_info(pnml_file, "first_pnml", log_name)
+        #         if model:
+        #             models.append(model)
         
         print(f"Total models found: {len(models)}")
         return JSONResponse({
@@ -374,10 +369,10 @@ def create_model_info(pnml_file, model_type, log_name):
     
 
 
-@app.post('/reprocess/{model_id}')
-async def reprocess_model(model_id: str):
-    """Reprocess a model using the main.py analysis functions"""
-    pass
+# @app.post('/reprocess/{model_id}')
+# async def reprocess_model(model_id: str):
+#     """Reprocess a model using the main.py analysis functions"""
+#     pass
 
 def get_log_statistics(log_path):
     """Get basic statistics from an XES log file"""
@@ -407,28 +402,28 @@ async def get_organization_model(org_name: str):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to load organization model: {str(e)}")
 
-async def get_initial_log_info():
-    """Get information about the initial log"""
-    try:
-        log_path = "../data/IP-1_initial_log.xes"
-        if os.path.exists(log_path):
-            # Read log to get basic statistics
-            log = xes_importer.apply(log_path)
+# async def get_initial_log_info():
+#     """Get information about the initial log"""
+#     try:
+#         log_path = "../data/IP-1_initial_log.xes"
+#         if os.path.exists(log_path):
+#             # Read log to get basic statistics
+#             log = xes_importer.apply(log_path)
             
-            return JSONResponse({
-                "status": "success",
-                "log_info": {
-                    "path": log_path,
-                    "traces": len(log),
-                    "events": sum(len(trace) for trace in log),
-                    "size_mb": os.path.getsize(log_path) / (1024 * 1024)
-                }
-            })
-        else:
-            raise HTTPException(status_code=404, detail="Initial log not found")
+#             return JSONResponse({
+#                 "status": "success",
+#                 "log_info": {
+#                     "path": log_path,
+#                     "traces": len(log),
+#                     "events": sum(len(trace) for trace in log),
+#                     "size_mb": os.path.getsize(log_path) / (1024 * 1024)
+#                 }
+#             })
+#         else:
+#             raise HTTPException(status_code=404, detail="Initial log not found")
             
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Failed to get initial log info: {str(e)}")
+#     except Exception as e:
+#         raise HTTPException(status_code=500, detail=f"Failed to get initial log info: {str(e)}")
 
 
 

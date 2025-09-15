@@ -18,7 +18,7 @@ class ProcessDiscoveryApp {
     this.initialLogLoaded = false;
     
     // Initialize with some sample PNML models for testing
-    this.initializeSampleModels();
+    //this.initializeSampleModels();
     
     this.initializeEventListeners();
     this.setupFileUpload();
@@ -28,71 +28,6 @@ class ProcessDiscoveryApp {
     
   }
 
-  initializeSampleModels() {
-    // Add sample models that point to existing PNML files
-    this.analyzedModels = [
-      {
-        id: "IP-1_initial_log/first_pnml/Agent 1.pnml",
-        name: "first_pnml: Agent 1",
-        organization: "Agent 1",
-        organizations: ["Agent 1"],
-        type: "first_pnml",
-        pnml_path: "/Users/xufanlu/Projects/Process Mining/Process-Discovery-Typed-Jackson-Nets/data/IP-1_initial_log/first_pnml/Agent 1.pnml",
-        has_visualization: true,
-        statistics: { places: 20, transitions: 15, arcs: 35 },
-        file_size: 12.4,
-        status: "ready"
-      },
-      {
-        id: "IP-1_initial_log/first_pnml/Agent 2.pnml",
-        name: "first_pnml: Agent 2",
-        organization: "Agent 2",
-        organizations: ["Agent 2"],
-        type: "first_pnml",
-        pnml_path: "/Users/xufanlu/Projects/Process Mining/Process-Discovery-Typed-Jackson-Nets/data/IP-1_initial_log/first_pnml/Agent 2.pnml",
-        has_visualization: true,
-        statistics: { places: 25, transitions: 18, arcs: 43 },
-        file_size: 15.2,
-        status: "ready"
-      },
-      {
-        id: "IP-1_initial_log/composed_pnml/composed_IP-1_initial_log.pnml",
-        name: "composed_pnml: composed_IP-1_initial_log",
-        organization: "Composed",
-        organizations: ["Agent 1", "Agent 2"],
-        type: "composed_pnml",
-        pnml_path: "/Users/xufanlu/Projects/Process Mining/Process-Discovery-Typed-Jackson-Nets/data/IP-1_initial_log/composed_pnml/composed_IP-1_initial_log.pnml",
-        has_visualization: true,
-        statistics: { places: 45, transitions: 33, arcs: 78 },
-        file_size: 28.7,
-        status: "ready"
-      },
-      {
-        id: "IP-1_initial_log/post_processed_pnml/Agent 1.pnml",
-        name: "post_processed_pnml: Agent 1",
-        organization: "Agent 1",
-        organizations: ["Agent 1"],
-        type: "post_processed_pnml",
-        pnml_path: "/Users/xufanlu/Projects/Process Mining/Process-Discovery-Typed-Jackson-Nets/data/IP-1_initial_log/post_processed_pnml/Agent 1.pnml",
-        has_visualization: true,
-        statistics: { places: 20, transitions: 15, arcs: 35 },
-        file_size: 13.1,
-        status: "ready"
-      },
-      {
-        id: "IP-1_initial_log/post_processed_pnml/Agent 2.pnml",
-        name: "post_processed_pnml: Agent 2",
-        organization: "Agent 2",
-        organizations: ["Agent 2"],
-        type: "post_processed_pnml",
-        pnml_path: "/Users/xufanlu/Projects/Process Mining/Process-Discovery-Typed-Jackson-Nets/data/IP-1_initial_log/post_processed_pnml/Agent 2.pnml",
-        has_visualization: true,
-        statistics: { places: 25, transitions: 18, arcs: 43 },
-        file_size: 16.0,
-        status: "ready"
-      }
-    ];
-  }
   
 
   initializeEventListeners() {

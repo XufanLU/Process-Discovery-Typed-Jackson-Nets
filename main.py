@@ -49,7 +49,24 @@ def apply_inductive_miner(log_file_path, original_file_name=None):
     return net, im, fm
 
 
-def projection_based_on_organization(raw_log=None,original_file_name=None):
+
+def projection_based_on_organization_healthcare(raw_log=None,original_file_name=None):
+
+    org_list= get_event_labels(raw_log, key="org:group")# TODO check if this is the same for all logs 
+
+    for org in org_list:
+        filtered_log = pm4py.filter_event_attribute_values(raw_log, values=org, level='event', attribute_key="org:group")
+        # save the filtered log to a file
+        pm4py.write_xes(filtered_log, f"./data/{original_file_name}/projected_xes/{org}.xes")
+
+    return org_list
+
+
+
+
+
+
+def projection_based_on_organization_1(raw_log=None,original_file_name=None):
 
     org_list= get_event_labels(raw_log, key="org:resource")# TODO check if this is the same for all logs 
 
@@ -59,6 +76,9 @@ def projection_based_on_organization(raw_log=None,original_file_name=None):
         pm4py.write_xes(filtered_log, f"./data/{original_file_name}/projected_xes/{org}.xes")
 
     return org_list
+
+
+
 
 def projection_based_on_organization_ip2(raw_log=None,original_file_name=None):# r 
 
@@ -509,7 +529,7 @@ def custom_petri_net_visualization(file_name,title="Petri Net with Organization 
 
         dot = graphviz.Digraph(comment=f'Petri Net for ')
         dot.attr(rankdir='LR')
-        dot.attr('graph', label=f'{title} - ', labelloc='t', fontsize='16')
+        dot.attr('graph', label=f'{title} - {original_file_name}', labelloc='t', fontsize='16')
 
         # Visualize Places
         for place in root.findall(".//place"):
@@ -649,13 +669,36 @@ def add_identifier_properties_to_pnml(pnml_file_path, org):
     """
     Add <identifier> properties to arcs in a PNML file (for tools that read PNML directly)
     """
+    import random
+    import string
     try:
+        # Map org to a random letter (x, y, z, m, n, ...)
+        # Use a deterministic mapping for the same org in a session
+        if not hasattr(add_identifier_properties_to_pnml, "org_map"):
+            add_identifier_properties_to_pnml.org_map = {}
+            add_identifier_properties_to_pnml.letters = list("xyzmnabcdefghijklopqrstuvw")
+            random.shuffle(add_identifier_properties_to_pnml.letters)
+            add_identifier_properties_to_pnml.next_idx = 0
+
+        org_map = add_identifier_properties_to_pnml.org_map
+        if org not in org_map:
+            idx = add_identifier_properties_to_pnml.next_idx
+            if idx >= len(add_identifier_properties_to_pnml.letters):
+                # If we run out of letters, use double letters
+                letter = add_identifier_properties_to_pnml.letters[idx % len(add_identifier_properties_to_pnml.letters)] + str(idx // len(add_identifier_properties_to_pnml.letters))
+            else:
+                letter = add_identifier_properties_to_pnml.letters[idx]
+            org_map[org] = letter
+            add_identifier_properties_to_pnml.next_idx += 1
+        else:
+            letter = org_map[org]
+
         tree = ET.parse(pnml_file_path)
         root = tree.getroot()
         for arc in root.findall('.//arc'):
             type_elem = ET.SubElement(arc, 'identifier')
             type_text = ET.SubElement(type_elem, 'text')
-            type_text.text = org
+            type_text.text = letter
         tree.write(pnml_file_path, encoding='UTF-8', xml_declaration=True)
         return True
     except Exception as e:
@@ -935,7 +978,7 @@ if __name__ == "__main__":
 
     # generation order: projected_xes, first_pnml, post_processed_pnml, composed_pnml, images
 
-    original_file_path= "/Users/xufanlu/Projects/Process Mining/Process-Discovery-Typed-Jackson-Nets/data/original_xes_file/IP-2_init_log.xes"
+    original_file_path= "/Users/xufanlu/Projects/Process Mining/Process-Discovery-Typed-Jackson-Nets/data/original_xes_file/IP-2_initial_log.xes"
     #original_file_path= "./data/original_xes_file/IP-4_init_log.xes"
 
     original_file_name = original_file_path.split("/")[-1].split(".")[0]    
