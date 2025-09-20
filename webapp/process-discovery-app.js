@@ -16,6 +16,7 @@ class ProcessDiscoveryApp {
     this.analyzedModels = [];
     this.selectedAnalyzedModel = null;
     this.initialLogLoaded = false;
+    this.pnml_content=""
     
     // Initialize with some sample PNML models for testing
     //this.initializeSampleModels();
@@ -25,6 +26,7 @@ class ProcessDiscoveryApp {
     this.setupVisualization();
     this.loadAnalyzedModels();
     this.loadAvailableXESFiles();
+
     
   }
 
@@ -327,31 +329,23 @@ class ProcessDiscoveryApp {
   }
 
   async exportPNML() {
-    if (!this.currentModel) {
+    if (!this.pnml_content) {
       this.showError('No model to export');
       return;
     }
 
     try {
-      const response = await fetch('/export/pnml', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(this.currentModel)
-      });
-
-      if (!response.ok) throw new Error('Export failed');
-
-      const blob = await response.blob();
+      // Export the PNML content as a .pnml file
+      const blob = new Blob([this.pnml_content], { type: 'application/xml' });
       const url = URL.createObjectURL(blob);
-      
       const a = document.createElement('a');
       a.href = url;
       a.download = 'process_model.pnml';
+      document.body.appendChild(a);
       a.click();
-      
+      document.body.removeChild(a);
       URL.revokeObjectURL(url);
       this.showSuccess('PNML exported successfully');
-
     } catch (error) {
       this.showError('Export failed: ' + error.message);
     }
@@ -719,49 +713,6 @@ class ProcessDiscoveryApp {
   }
 
 
-  updateModelDisplay(data) {
-    // Update the model visualization if SVG is available
-    if (data.svg_content) {
-      this.displaySVGContent(data.svg_content);
-      this.enableExportButtons();
-    } else if (data.model) {
-      // Render model using existing method
-      this.currentModel = data.model;
-      this.renderModel(data.model);
-      this.updateModelStatistics(data.model);
-      this.enableExportButtons();
-    }
-    
-    // Update status with model info
-    const modelInfo = data.name || data.organization || 'Unknown Model';
-    this.updateStatus('ready', `Loaded: ${modelInfo}`);
-  }
-
-  displaySVGContent(svgContent) {
-    const placeholder = document.getElementById('placeholder');
-    const canvas = document.getElementById('model-canvas');
-    
-    // Hide placeholder and canvas
-    placeholder.style.display = 'none';
-    canvas.style.display = 'none';
-    
-    // Create or update SVG display container
-    let svgContainer = document.getElementById('svg-display-container');
-    if (!svgContainer) {
-      svgContainer = document.createElement('div');
-      svgContainer.id = 'svg-display-container';
-      svgContainer.style.cssText = 'width: 100%; height: 100%; overflow: auto; background: white;';
-      document.getElementById('visualization-container').appendChild(svgContainer);
-    }
-    
-    svgContainer.innerHTML = svgContent;
-    svgContainer.style.display = 'block';
-    
-    // Enable export buttons
-    this.enableExportButtons();
-    console.log('763')
-  }
-
   async visualizePNMLFile(filePath) {
     try {
       // Initialize PNML visualization container if it doesn't exist
@@ -789,6 +740,7 @@ class ProcessDiscoveryApp {
       }
       
       const pnmlContent = await response.text();
+      this.pnml_content=pnmlContent
       
       // Parse and visualize the PNML
       this.parsePNMLAndVisualize(pnmlContent, filePath);
