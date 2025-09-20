@@ -1258,6 +1258,7 @@ class ProcessDiscoveryApp {
            text === 'epsilon' ||
            text === 'ε' ||
            text.startsWith('tau') ||
+           text.startsWith('skip') ||
            text.startsWith('τ_') ||
            text.includes('silent');
   }

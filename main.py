@@ -50,7 +50,7 @@ def apply_inductive_miner(log_file_path, original_file_name=None):
 
 
 
-def projection_based_on_organization_healthcare(raw_log=None,original_file_name=None):
+def projection_based_on_organization_collectivelog(raw_log=None,original_file_name=None):
 
     org_list= get_event_labels(raw_log, key="org:group")# TODO check if this is the same for all logs 
 
@@ -637,7 +637,7 @@ def add_identifiers(log_file_path, org, original_file_name):
     '''
     add_type_properties_to_pnml(log_file_path, org)
     add_identifier_properties_to_pnml(log_file_path, org)
-    post_processing_customized(log_file_path, original_file_name)
+    #post_processing_customized(log_file_path, original_file_name)
     return True
 
 
@@ -957,7 +957,8 @@ def compose(pnml_files, original_file_name ="composed"):
             new_arc.append(deepcopy(child))
     
     # Write the composed PNML file
-    output_path = f"./data/{original_file_name}/composed_pnml/composed_{original_file_name}.pnml"
+    output_path = f"./data/{original_file_name}/fully_composed_pnml/composed_{original_file_name}.pnml"
+    #output_path = f"./data/{original_file_name}/composed_pnml/composed_{original_file_name}.pnml"
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     
     composed_tree = ET.ElementTree(composed_root)
@@ -978,7 +979,7 @@ if __name__ == "__main__":
 
     # generation order: projected_xes, first_pnml, post_processed_pnml, composed_pnml, images
 
-    original_file_path= "/Users/xufanlu/Projects/Process Mining/Process-Discovery-Typed-Jackson-Nets/data/original_xes_file/IP-2_initial_log.xes"
+    original_file_path= "/Users/xufanlu/Projects/Process Mining/Process-Discovery-Typed-Jackson-Nets/data/original_xes_file/healthcare_collectivelog_.xes"
     #original_file_path= "./data/original_xes_file/IP-4_init_log.xes"
 
     original_file_name = original_file_path.split("/")[-1].split(".")[0]    
@@ -993,27 +994,44 @@ if __name__ == "__main__":
         os.makedirs(f"./data/{original_file_name}/projected_xes")       
     if not os.path.exists(f"./data/{original_file_name}/composed_pnml"):
         os.makedirs(f"./data/{original_file_name}/composed_pnml")
+    if not os.path.exists(f"./data/{original_file_name}/fully_composed_pnml"):
+        os.makedirs(f"./data/{original_file_name}/fully_composed_pnml")
     if not os.path.exists(f"./data/{original_file_name}/images"):
         os.makedirs(f"./data/{original_file_name}/images")
 
 
     raw_log = xes_importer.apply(original_file_path)
-    orgs=projection_based_on_organization_ip2(raw_log,original_file_name=original_file_name)# this method needs to be changed 
+    orgs=projection_based_on_organization_collectivelog(raw_log,original_file_name=original_file_name)# this method needs to be changed 
 
     print(f"Processing {len(orgs)} organizations: {orgs}")
     composed_pnml_files = []
 
   
 
+    # for org in orgs:
+    #     print(f"\n--- Processing {org} ---")
+    #     net,im, fm =apply_inductive_miner(log_file_path=f"./data/{original_file_name}/projected_xes/{org}.xes", original_file_name=original_file_name)
+
+    #     add_identifiers(log_file_path=f"./data/{original_file_name}/first_pnml/{org}.pnml", org=org,original_file_name=original_file_name)
+    #     custom_petri_net_visualization(file_name=f"./data/{original_file_name}/post_processed_pnml/{org}.pnml", title=f"Petri Net for {org}", original_file_name=original_file_name)
+    #     composed_pnml_files.append(f"./data/{original_file_name}/post_processed_pnml/{org}.pnml")
+
+ 
+    # compose(composed_pnml_files, original_file_name=original_file_name)
+    # custom_petri_net_visualization(file_name=f"./data/{original_file_name}/composed_pnml/composed_{original_file_name}.pnml", title="Composed Petri Net", original_file_name=original_file_name)
+    # get_shared_arcs(composed_pnml_files)
+
+
+    # no removement if the sind and source 
     for org in orgs:
         print(f"\n--- Processing {org} ---")
         net,im, fm =apply_inductive_miner(log_file_path=f"./data/{original_file_name}/projected_xes/{org}.xes", original_file_name=original_file_name)
 
         add_identifiers(log_file_path=f"./data/{original_file_name}/first_pnml/{org}.pnml", org=org,original_file_name=original_file_name)
-        custom_petri_net_visualization(file_name=f"./data/{original_file_name}/post_processed_pnml/{org}.pnml", title=f"Petri Net for {org}", original_file_name=original_file_name)
-        composed_pnml_files.append(f"./data/{original_file_name}/post_processed_pnml/{org}.pnml")
+      #  custom_petri_net_visualization(file_name=f"./data/{original_file_name}/post_processed_pnml/{org}.pnml", title=f"Petri Net for {org}", original_file_name=original_file_name)
+        composed_pnml_files.append(f"./data/{original_file_name}/first_pnml/{org}.pnml")
 
  
     compose(composed_pnml_files, original_file_name=original_file_name)
-    custom_petri_net_visualization(file_name=f"./data/{original_file_name}/composed_pnml/composed_{original_file_name}.pnml", title="Composed Petri Net", original_file_name=original_file_name)
-    get_shared_arcs(composed_pnml_files)
+    #custom_petri_net_visualization(file_name=f"./data/{original_file_name}/composed_pnml/composed_{original_file_name}.pnml", title="Composed Petri Net", original_file_name=original_file_name)
+   # get_shared_arcs(composed_pnml_files)

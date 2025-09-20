@@ -13,6 +13,7 @@ import tempfile
 import os
 import sys
 import glob
+import csv
 
 # Add parent directory to path to import project modules
 sys.path.append(str(Path(__file__).parent.parent))
@@ -402,36 +403,36 @@ async def get_organization_model(org_name: str):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to load organization model: {str(e)}")
 
-# async def get_initial_log_info():
-#     """Get information about the initial log"""
-#     try:
-#         log_path = "../data/IP-1_initial_log.xes"
-#         if os.path.exists(log_path):
-#             # Read log to get basic statistics
-#             log = xes_importer.apply(log_path)
-            
-#             return JSONResponse({
-#                 "status": "success",
-#                 "log_info": {
-#                     "path": log_path,
-#                     "traces": len(log),
-#                     "events": sum(len(trace) for trace in log),
-#                     "size_mb": os.path.getsize(log_path) / (1024 * 1024)
-#                 }
-#             })
-#         else:
-#             raise HTTPException(status_code=404, detail="Initial log not found")
-            
-#     except Exception as e:
-#         raise HTTPException(status_code=500, detail=f"Failed to get initial log info: {str(e)}")
 
 
-
-
-
-def calculate_model_statistics(model_data):
+@app.get('/statistics/{log_name}')
+def get_model_statistics(log_name):
     """Calculate statistics for the discovered model"""
-    pass
+
+
+    results_path = THIS_DIR / 'results.csv'
+    stats = None
+    try:
+        with open(results_path, 'r', encoding='utf-8') as f:
+            reader = csv.reader(f, delimiter=';')
+            header = next(reader)
+            for row in reader:
+                if row and row[0].strip() == log_name:
+                    # Defensive: handle missing columns
+                    stats = {
+                        "model": row[0],
+                        "fitness": float(row[1]) if row[1] else None,
+                        "precision": float(row[2]) if row[2] else None,
+                        "entropy_fitness": float(row[3]) if len(row) > 3 and row[3] else None,
+                        "entropy_precision": float(row[4]) if len(row) > 4 and row[4] else None
+                    }
+                    break
+        if stats:
+            return JSONResponse({"status": "success", "statistics": stats})
+        else:
+            return JSONResponse({"status": "not found", "message": f"No statistics for {log_name}"}, status_code=404)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error reading statistics: {str(e)}")
 
 
 
