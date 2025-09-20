@@ -4,6 +4,76 @@
  */
 
 class ProcessDiscoveryApp {
+  // Export the entire HTML content of the page
+  exportWholePageHTML() {
+    const htmlContent = document.documentElement.outerHTML;
+    const blob = new Blob([htmlContent], { type: 'text/html' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'process_discovery_page.html';
+    a.click();
+    URL.revokeObjectURL(url);
+    this.showSuccess('Whole page HTML exported successfully');
+  }
+  // Export all SVG content from pnml-holder (JointJS canvas)
+  exportPNMLHolderSVG() {
+    const holder = document.getElementById('pnml-holder');
+    if (!holder) {
+      this.showError('PNML holder not found.');
+      return;
+    }
+    // Find all SVG elements inside pnml-holder
+    const svgs = holder.querySelectorAll('svg');
+    if (svgs.length === 0) {
+      this.showError('No SVG content found in PNML holder.');
+      return;
+    }
+    // Calculate bounding box for all SVGs
+    let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+    svgs.forEach(svgEl => {
+      const bbox = svgEl.getBBox();
+      minX = Math.min(minX, bbox.x);
+      minY = Math.min(minY, bbox.y);
+      maxX = Math.max(maxX, bbox.x + bbox.width);
+      maxY = Math.max(maxY, bbox.y + bbox.height);
+    });
+    const width = Math.max(1, maxX - minX);
+    const height = Math.max(1, maxY - minY);
+    // If only one SVG, export it directly with adjusted width/height
+    if (svgs.length === 1) {
+      const svgEl = svgs[0].cloneNode(true);
+      svgEl.setAttribute('width', width);
+      svgEl.setAttribute('height', height);
+      const serializer = new XMLSerializer();
+      const svgString = serializer.serializeToString(svgEl);
+      const blob = new Blob([svgString], { type: 'image/svg+xml' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'pnml_holder.svg';
+      a.click();
+      URL.revokeObjectURL(url);
+      this.showSuccess('PNML holder SVG exported successfully');
+      return;
+    }
+    // If multiple SVGs, combine them into one SVG file with correct size
+    let combinedSVG = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}">`;
+    svgs.forEach(svgEl => {
+      // Remove any duplicate xmlns attributes
+      let svgContent = svgEl.outerHTML.replace(/xmlns="[^"]*"/g, "");
+      combinedSVG += svgContent;
+    });
+    combinedSVG += '</svg>';
+    const blob = new Blob([combinedSVG], { type: 'image/svg+xml' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'pnml_holder_combined.svg';
+    a.click();
+    URL.revokeObjectURL(url);
+    this.showSuccess('All PNML holder SVGs exported successfully');
+  }
   constructor() {
     this.currentModel = null;
     this.currentZoom = 1;
@@ -43,6 +113,9 @@ class ProcessDiscoveryApp {
   // Export buttons
   const staticSvgBtn = document.getElementById('export-static-svg');
   if (staticSvgBtn) staticSvgBtn.addEventListener('click', () => this.exportSVG());
+  // Add click event for inline static export button
+  const staticSvgInlineBtn = document.getElementById('export-static-svg-inline');
+  if (staticSvgInlineBtn) staticSvgInlineBtn.addEventListener('click', () => this.exportSVG());
   const flexibleSvgBtn = document.getElementById('export-flexible-svg');
   if (flexibleSvgBtn) flexibleSvgBtn.addEventListener('click', () => this.exportFlexibleSVG());
   const pnmlBtn = document.getElementById('export-pnml');
@@ -386,6 +459,12 @@ class ProcessDiscoveryApp {
       staticSvgBtn.disabled = false;
       console.log('Enabled static SVG export button');
     }
+    // Enable inline static export button if present
+    const staticSvgInlineBtn = document.getElementById('export-static-svg-inline');
+    if (staticSvgInlineBtn) {
+      staticSvgInlineBtn.disabled = false;
+      console.log('Enabled inline static SVG export button');
+    }
     const flexibleSvgBtn = document.getElementById('export-flexible-svg');
     if (flexibleSvgBtn) {
       flexibleSvgBtn.disabled = false;
@@ -474,8 +553,22 @@ class ProcessDiscoveryApp {
   }
 
   async exportFlexibleSVG() {
-    // Download the current canvas SVG (flexible)
-    const svg = document.getElementById('model-canvas');
+    // If user wants to save the whole page, call exportWholePageHTML
+    if (window.saveWholePage === true) {
+      this.exportWholePageHTML();
+      return;
+    }
+    // Export all SVG content from pnml-holder if present
+    const holder = document.getElementById('pnml-holder');
+    if (holder && holder.querySelector('svg')) {
+      this.exportPNMLHolderSVG();
+      return;
+    }
+    // Fallback: Download the current D3 canvas SVG
+    let svg = document.getElementById('model-canvas');
+    if (svg && svg.nodeName.toLowerCase() !== 'svg') {
+      svg = svg.querySelector('svg');
+    }
     if (svg) {
       const serializer = new XMLSerializer();
       const svgString = serializer.serializeToString(svg);
@@ -730,7 +823,7 @@ class ProcessDiscoveryApp {
         // Fallback - assume it's a relative path from project root
         pnmlUrl = `/pnml/${filePath}`;
       }
-      
+      console.log('737')
       console.log('Fetching PNML from:', pnmlUrl);
       
       // Fetch PNML file content
@@ -754,6 +847,7 @@ class ProcessDiscoveryApp {
   }
 
   async initializePNMLVisualization() {
+    console.log('761')
     // Hide other containers
     const placeholder = document.getElementById('placeholder');
     const canvas = document.getElementById('model-canvas');
@@ -985,7 +1079,7 @@ class ProcessDiscoveryApp {
       this.pnmlPaper.translate(tx, ty);
     }
   }
-// ...existing code...
+// ...existing code... TODO: this is the real one 
 
   parsePNMLAndVisualize(xmlContent, fileName = 'PNML File') {
     try {
@@ -997,6 +1091,7 @@ class ProcessDiscoveryApp {
       if (parserError) {
         throw new Error('XML parsing error: ' + parserError.textContent);
       }
+      console.log('1004')
       
       // Ensure the graph is initialized before clearing
       if (!this.pnmlGraph) {
@@ -1323,21 +1418,21 @@ class ProcessDiscoveryApp {
     }
   }
 
-  downloadPNMLAsSVG() {
-    if (this.pnmlPaper) {
-      const svgContent = this.pnmlPaper.svg;
-      const blob = new Blob([svgContent], { type: 'image/svg+xml' });
-      const url = URL.createObjectURL(blob);
+  // downloadPNMLAsSVG() {
+  //   if (this.pnmlPaper) {
+  //     const svgContent = this.pnmlPaper.svg;
+  //     const blob = new Blob([svgContent], { type: 'image/svg+xml' });
+  //     const url = URL.createObjectURL(blob);
       
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = 'petri-net.svg';
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-      URL.revokeObjectURL(url);
-    }
-  }
+  //     const a = document.createElement('a');
+  //     a.href = url;
+  //     a.download = 'petri-net.svg';
+  //     document.body.appendChild(a);
+  //     a.click();
+  //     document.body.removeChild(a);
+  //     URL.revokeObjectURL(url);
+  //   }
+  // }
 
   viewSVG(modelId) {
     // Open SVG visualization in a new window/tab
@@ -1424,9 +1519,14 @@ class ProcessDiscoveryApp {
             }
           }
           // Show SVG using <object> tag with direct path
-          svgBelowPnml.innerHTML = `<div style='padding:10px;'><strong>Static SVG</strong></div><object type='image/svg+xml' data='svg/${relativePath}' style='width:100%;min-height:400px;'></object>`;
+          svgBelowPnml.innerHTML = `<div style='padding:10px;display:flex;align-items:center;justify-content:space-between;'><strong style='font-size:1.5em;'><i class='fas fa-project-diagram me-2'></i>Static Model Visualization</strong><button class='btn btn-outline-primary btn-sm' id='export-static-svg-inline' disabled style='margin-left:15px;'><i class='fas fa-download me-1'></i>Export Static Visualization (.svg)</button></div><object type='image/svg+xml' data='svg/${relativePath}' style='width:100%;min-height:400px;'></object>`;
           svgBelowPnml.style.display = 'block';
-          this.enableExportButtons()
+          this.enableExportButtons();
+          // Attach click event to the newly created export-static-svg-inline button
+          const staticSvgInlineBtn = document.getElementById('export-static-svg-inline');
+          if (staticSvgInlineBtn) {
+            staticSvgInlineBtn.addEventListener('click', () => this.exportSVG());
+          }
         } else {
           // Hide SVG if not available
           const svgBelowPnml = document.getElementById('svg-below-pnml');
