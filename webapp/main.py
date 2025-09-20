@@ -108,6 +108,32 @@ async def serve_pnml(file_path: str):
         raise HTTPException(status_code=500, detail=f"Error serving PNML file: {str(e)}")
 
 
+@app.get('/svg/{file_path:path}')
+async def serve_svg(file_path: str):
+    """Serve SVG files for the visualizer"""
+    try:
+        from urllib.parse import unquote
+        decoded_path = unquote(file_path)
+        # Construct the full path (relative to project root)
+        full_path = (THIS_DIR.parent / decoded_path).resolve()
+        # Check if file exists and is an SVG file
+        if not full_path.exists():
+            print(f"SVG file not found: {full_path}")
+            raise HTTPException(status_code=404, detail=f"SVG file not found: {decoded_path}")
+        if not str(full_path).endswith('.svg'):
+            raise HTTPException(status_code=400, detail="Not an SVG file")
+        return FileResponse(full_path, media_type='image/svg+xml')
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error serving SVG file: {str(e)}")
+
+
+
+
+
+
+
 @app.post('/export/pnml')
 async def export_model_pnml(model_data: dict):
     """Export the discovered model to PNML format"""
@@ -433,7 +459,6 @@ def get_model_statistics(log_name):
             return JSONResponse({"status": "not found", "message": f"No statistics for {log_name}"}, status_code=404)
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error reading statistics: {str(e)}")
-
 
 
 if __name__ == '__main__':

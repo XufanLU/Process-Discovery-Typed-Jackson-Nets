@@ -38,9 +38,13 @@ class ProcessDiscoveryApp {
     // document.getElementById('fit-to-screen').addEventListener('click', () => this.fitToScreen());
     // document.getElementById('reset-view').addEventListener('click', () => this.resetView());
 
-    // Export buttons
-    document.getElementById('export-svg').addEventListener('click', () => this.exportSVG());
-    document.getElementById('export-pnml').addEventListener('click', () => this.exportPNML());
+  // Export buttons
+  const staticSvgBtn = document.getElementById('export-static-svg');
+  if (staticSvgBtn) staticSvgBtn.addEventListener('click', () => this.exportSVG());
+  const flexibleSvgBtn = document.getElementById('export-flexible-svg');
+  if (flexibleSvgBtn) flexibleSvgBtn.addEventListener('click', () => this.exportFlexibleSVG());
+  const pnmlBtn = document.getElementById('export-pnml');
+  if (pnmlBtn) pnmlBtn.addEventListener('click', () => this.exportPNML());
 
 
     // Model operations
@@ -277,20 +281,49 @@ class ProcessDiscoveryApp {
   }
 
   async exportSVG() {
+    // Try to download the static SVG shown below the PNML visualizer if present
+    const svgBelowPnml = document.getElementById('svg-below-pnml');
+    let svgElement = null;
+    let svgString = '';
+    if (svgBelowPnml && svgBelowPnml.style.display !== 'none') {
+      // Find the <object> tag inside svg-below-pnml
+      const objectTag = svgBelowPnml.querySelector('object[type="image/svg+xml"]');
+      if (objectTag && objectTag.data) {
+        // Fetch the SVG file via AJAX
+        fetch(objectTag.data)
+          .then(response => response.text())
+          .then(svgContent => {
+            const blob = new Blob([svgContent], { type: 'image/svg+xml' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'process_model.svg';
+            a.click();
+            URL.revokeObjectURL(url);
+            this.showSuccess('SVG exported successfully');
+          })
+          .catch(() => {
+            this.showError('Failed to download static SVG.');
+          });
+        return;
+      }
+    }
+    // Fallback: download the current canvas SVG
     const svg = document.getElementById('model-canvas');
-    const serializer = new XMLSerializer();
-    const svgString = serializer.serializeToString(svg);
-    
-    const blob = new Blob([svgString], { type: 'image/svg+xml' });
-    const url = URL.createObjectURL(blob);
-    
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'process_model.svg';
-    a.click();
-    
-    URL.revokeObjectURL(url);
-    this.showSuccess('SVG exported successfully');
+    if (svg) {
+      const serializer = new XMLSerializer();
+      svgString = serializer.serializeToString(svg);
+      const blob = new Blob([svgString], { type: 'image/svg+xml' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'process_model.svg';
+      a.click();
+      URL.revokeObjectURL(url);
+      this.showSuccess('SVG exported successfully');
+    } else {
+      this.showError('No SVG available to export.');
+    }
   }
 
   async exportPNML() {
@@ -352,8 +385,23 @@ class ProcessDiscoveryApp {
   }
 
   enableExportButtons() {
-    document.getElementById('export-svg').disabled = false;
-    document.getElementById('export-pnml').disabled = false;
+    console.log('called')
+    const staticSvgBtn = document.getElementById('export-static-svg');
+    console.log(staticSvgBtn)
+    if (staticSvgBtn) {
+      staticSvgBtn.disabled = false;
+      console.log('Enabled static SVG export button');
+    }
+    const flexibleSvgBtn = document.getElementById('export-flexible-svg');
+    if (flexibleSvgBtn) {
+      flexibleSvgBtn.disabled = false;
+      console.log('Enabled flexible SVG export button');
+    }
+    const pnmlBtn = document.getElementById('export-pnml');
+    if (pnmlBtn) {
+      pnmlBtn.disabled = false;
+      console.log('Enabled PNML export button');
+    }
   }
 
   updateStatus(type, message) {
@@ -422,21 +470,32 @@ class ProcessDiscoveryApp {
     // Reset model view
     document.getElementById('placeholder').style.display = 'flex';
     document.getElementById('model-canvas').style.display = 'none';
-    
     // Reset export buttons
-    document.getElementById('export-svg').disabled = true;
-    document.getElementById('export-pnml').disabled = true;
-    
-    // Reset analyzed models to default
-    this.loadAnalyzedModels();
-    
-    // Remove selection from XES files
-    document.querySelectorAll('.model-item').forEach(item => {
-      item.classList.remove('selected');
-    });
-    
-    this.updateStatus('ready', 'Ready');
-    this.showSuccess('Configuration reset successfully');
+    const staticSvgBtn = document.getElementById('export-static-svg');
+    if (staticSvgBtn) staticSvgBtn.disabled = true;
+    const flexibleSvgBtn = document.getElementById('export-flexible-svg');
+    if (flexibleSvgBtn) flexibleSvgBtn.disabled = true;
+    const pnmlBtn = document.getElementById('export-pnml');
+    if (pnmlBtn) pnmlBtn.disabled = true;
+  }
+
+  async exportFlexibleSVG() {
+    // Download the current canvas SVG (flexible)
+    const svg = document.getElementById('model-canvas');
+    if (svg) {
+      const serializer = new XMLSerializer();
+      const svgString = serializer.serializeToString(svg);
+      const blob = new Blob([svgString], { type: 'image/svg+xml' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'process_model_flexible.svg';
+      a.click();
+      URL.revokeObjectURL(url);
+      this.showSuccess('Flexible SVG exported successfully');
+    } else {
+      this.showError('No flexible SVG available to export.');
+    }
   }
 
 
@@ -664,6 +723,7 @@ class ProcessDiscoveryApp {
     // Update the model visualization if SVG is available
     if (data.svg_content) {
       this.displaySVGContent(data.svg_content);
+      this.enableExportButtons();
     } else if (data.model) {
       // Render model using existing method
       this.currentModel = data.model;
@@ -699,6 +759,7 @@ class ProcessDiscoveryApp {
     
     // Enable export buttons
     this.enableExportButtons();
+    console.log('763')
   }
 
   async visualizePNMLFile(filePath) {
@@ -1391,8 +1452,34 @@ class ProcessDiscoveryApp {
       
       // Find the model in our current analyzed models
       const model = this.analyzedModels.find(m => m.id === modelId);
+      console.log(model)
 
-      //todo3 svg path:  model.svg also visulize if below the pnml visualizer 
+      //todo3 svg path is at  model.svg also show the svg,  below the pnml visualizer 
+        // Show SVG below PNML visualizer if available
+        if (model && model.svg_path) {
+          console.log(model.svg_path)
+          // Remove previous SVG if exists
+          const relativePath = model.svg_path.replace('/Users/xufanlu/Projects/Process Mining/Process-Discovery-Typed-Jackson-Nets/', '../');
+          let svgBelowPnml = document.getElementById('svg-below-pnml');
+          if (!svgBelowPnml) {
+            svgBelowPnml = document.createElement('div');
+            svgBelowPnml.id = 'svg-below-pnml';
+            svgBelowPnml.style.cssText = 'width: 100%; margin-top: 20px; background: #fff; border: 1px solid #eee;';
+            // Insert below pnml-visualization-container
+            const pnmlContainer = document.getElementById('pnml-visualization-container');
+            if (pnmlContainer && pnmlContainer.parentNode) {
+              pnmlContainer.parentNode.insertBefore(svgBelowPnml, pnmlContainer.nextSibling);
+            }
+          }
+          // Show SVG using <object> tag with direct path
+          svgBelowPnml.innerHTML = `<div style='padding:10px;'><strong>Static SVG</strong></div><object type='image/svg+xml' data='svg/${relativePath}' style='width:100%;min-height:400px;'></object>`;
+          svgBelowPnml.style.display = 'block';
+          this.enableExportButtons()
+        } else {
+          // Hide SVG if not available
+          const svgBelowPnml = document.getElementById('svg-below-pnml');
+          if (svgBelowPnml) svgBelowPnml.style.display = 'none';
+        }
 
       console.log(modelId);
       if (model && model.pnml_path) {

@@ -395,8 +395,11 @@
               <i class="fas fa-project-diagram me-2"></i>Process Model Visualization
             </h4>
             <div class="export-options">
-              <button class="btn btn-outline-primary btn-sm" id="export-svg" disabled>
-                <i class="fas fa-download me-1"></i>Export SVG
+              <button class="btn btn-outline-primary btn-sm" id="export-static-svg" disabled>
+                <i class="fas fa-download me-1"></i>Export Static SVG
+              </button>
+              <button class="btn btn-outline-primary btn-sm" id="export-flexible-svg" disabled>
+                <i class="fas fa-download me-1"></i>Export Flexible SVG
               </button>
               <button class="btn btn-outline-primary btn-sm" id="export-pnml" disabled>
                 <i class="fas fa-download me-1"></i>Export PNML
@@ -410,7 +413,12 @@
             <svg class="model-canvas" id="model-canvas" style="display: none;">
               <!-- SVG content will be generated here -->
             </svg>
+
           </div>
+
+            <!-- PNML visualizer container will be injected here by JS -->
+            <!-- Add SVG visualization container below PNML visualizer -->
+          <div id="svg-below-pnml" style="width:100%;margin-top:20px;display:none;"></div>
 
           <!-- Model Information Panel -->
           <!-- <div class="row mt-3">
