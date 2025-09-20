@@ -44,7 +44,7 @@ class ProcessDiscoveryApp {
 
 
     // Model operations
-    document.getElementById('rearrange-model').addEventListener('click', () => this.rearrangeModel());
+ //   document.getElementById('rearrange-model').addEventListener('click', () => this.rearrangeModel());
   }
 
   setupFileUpload() {
@@ -334,21 +334,21 @@ class ProcessDiscoveryApp {
 
 
   updateModelStatistics(modelData) {
-    document.getElementById('activity-count').textContent = modelData.places?.length || 0;
-    document.getElementById('transition-count').textContent = modelData.transitions?.length || 0;
+   // document.getElementById('activity-count').textContent = modelData.places?.length || 0;
+    //document.getElementById('transition-count').textContent = modelData.transitions?.length || 0;
     document.getElementById('agent-count').textContent = 
       modelData.transitions?.filter(t => t.type === 'agent').length || 0;
     document.getElementById('collaboration-count').textContent = 
       modelData.collaborations?.length || 0;
     
     // Show organization info for analyzed models
-    if (modelData.organization) {
-      document.getElementById('model-organization').textContent = modelData.organization;
-      document.getElementById('model-type').textContent = 'TJN Analysis';
-      document.getElementById('model-info').style.display = 'block';
-    } else {
-      document.getElementById('model-info').style.display = 'none';
-    }
+    // if (modelData.organization) {
+    //   document.getElementById('model-organization').textContent = modelData.organization;
+    //   document.getElementById('model-type').textContent = 'TJN Analysis';
+    //   document.getElementById('model-info').style.display = 'block';
+    // } else {
+    //   document.getElementById('model-info').style.display = 'none';
+    // }
   }
 
   enableExportButtons() {
@@ -628,6 +628,7 @@ class ProcessDiscoveryApp {
       }
 
       const data = await response.json();
+//todo 2 
       
       if (data.models && data.models.length > 0) {
         // Update the analyzed models with the related ones
@@ -1000,6 +1001,12 @@ class ProcessDiscoveryApp {
       // Extract net name
       const net = xmlDoc.querySelector('net');
       const netName = net?.querySelector('name text')?.textContent || fileName;
+
+
+
+// fetch use the netname 
+
+
       
       // Parse PNML content (similar to test_new.html)
       const places = [];
@@ -1030,18 +1037,32 @@ class ProcessDiscoveryApp {
         arcs.push({ source, target, identifier });
       });
       
+      
       // Create visual elements
       this.createPNMLVisualElements(places, transitions, arcs, elements);
       
-      // Update info
-      document.getElementById('pnml-info').innerHTML = 
-        `<strong>${netName}</strong><br>` +
-        `Places: ${places.length}, Transitions: ${transitions.length}, Arcs: ${arcs.length}<br>` +
-        'Click on elements to see details.';
-      
+      // Update info// TODO : 
+      let fitness = '', precision = '', entropyFitness = '', entropyPrecision = '';
+      fetch(`/statistics/${encodeURIComponent(netName)}`)
+        .then(response => response.ok ? response.json() : null)
+        .then(statData => {
+          if (statData && statData.status === 'success' && statData.statistics) {
+            fitness = statData.statistics.fitness ?? '';
+            precision = statData.statistics.precision ?? '';
+            entropyFitness = statData.statistics.entropy_fitness ?? '';
+            entropyPrecision = statData.statistics.entropy_precision ?? '';
+          }
+          document.getElementById('pnml-info').innerHTML = 
+            `<strong>${netName}</strong><br>` +
+            `Places: ${places.length}, Transitions: ${transitions.length}, Arcs: ${arcs.length}<br>` +
+            `alignment-based avg Fitness: ${fitness}, alignment-based Precision: ${precision}<br>` +
+            `entropy-based avg Fitness: ${entropyFitness}, entropy-based Precision: ${entropyPrecision}`;
+        });
+
+      console.log(netName)
       // Auto-fit after a short delay
       setTimeout(() => this.fitPNMLToWindow(), 100);
-      
+
     } catch (error) {
       document.getElementById('pnml-info').innerHTML = 
         '<strong>Error parsing PNML file:</strong><br>' + error.message;
@@ -1371,6 +1392,8 @@ class ProcessDiscoveryApp {
       // Find the model in our current analyzed models
       const model = this.analyzedModels.find(m => m.id === modelId);
 
+      //todo3 svg path:  model.svg also visulize if below the pnml visualizer 
+
       console.log(modelId);
       if (model && model.pnml_path) {
         // Use the new PNML visualization
@@ -1382,6 +1405,7 @@ class ProcessDiscoveryApp {
           console.log('Relative path:', relativePath);
           
           await this.visualizePNMLFile(relativePath);
+
           
           // Update selected model in UI
           document.querySelectorAll('.model-item').forEach(item => {
