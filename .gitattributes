@@ -1,0 +1,4 @@
+data/original_xes_file/TASE_EM_Log.xes filter=lfs diff=lfs merge=lfs -text
+data/original_xes_file/TASE_FP_Log.xes filter=lfs diff=lfs merge=lfs -text
+data/original_xes_file/TASE_ID_Log.xes filter=lfs diff=lfs merge=lfs -text
+data/original_xes_file/TASE_SD_Log.xes filter=lfs diff=lfs merge=lfs -text
