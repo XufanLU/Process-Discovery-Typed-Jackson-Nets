@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_1758219716.0437918" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1758219716.0437918</text>
+    </name>
+    <page id="n0">
+      <place id="source">
+        <name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      <type><text>Hospital</text></type></place>
+      <place id="p_4">
+        <name>
+          <text>p_4</text>
+        </name>
+      <type><text>Hospital</text></type></place>
+      <place id="sink">
+        <name>
+          <text>sink</text>
+        </name>
+      <type><text>Hospital</text></type></place>
+      <place id="p_5">
+        <name>
+          <text>p_5</text>
+        </name>
+      <type><text>Hospital</text></type></place>
+      <place id="p_3">
+        <name>
+          <text>p_3</text>
+        </name>
+      <type><text>Hospital</text></type></place>
+      <transition id="baa308fc-6ade-4344-ac09-f6ae5a447e67">
+        <name>
+          <text>Admit patient</text>
+        </name>
+      </transition>
+      <transition id="884fa9f4-1a97-48c6-9a75-1b035b0b4f46">
+        <name>
+          <text>Create medical record</text>
+        </name>
+      </transition>
+      <transition id="b70d945c-b763-4af2-b36e-96e1a1b9b7d7">
+        <name>
+          <text>Request blood analysis</text>
+        </name>
+      </transition>
+      <transition id="d43ec75a-1423-4ad0-af62-054e3413c0e6">
+        <name>
+          <text>Send admission info</text>
+        </name>
+      </transition>
+      <transition id="42ec9a82-57e0-41b5-a3cc-67c68eb09cc1">
+        <name>
+          <text>Receive patient results</text>
+        </name>
+      </transition>
+      <arc id="5138358608" source="source" target="baa308fc-6ade-4344-ac09-f6ae5a447e67"><identifier><text>s</text></identifier></arc>
+      <arc id="5138357008" source="p_3" target="884fa9f4-1a97-48c6-9a75-1b035b0b4f46"><identifier><text>s</text></identifier></arc>
+      <arc id="5138359632" source="884fa9f4-1a97-48c6-9a75-1b035b0b4f46" target="p_4"><identifier><text>s</text></identifier></arc>
+      <arc id="5138358864" source="p_4" target="42ec9a82-57e0-41b5-a3cc-67c68eb09cc1"><identifier><text>s</text></identifier></arc>
+      <arc id="5138358416" source="baa308fc-6ade-4344-ac09-f6ae5a447e67" target="p_3"><identifier><text>s</text></identifier></arc>
+      <arc id="5138353552" source="42ec9a82-57e0-41b5-a3cc-67c68eb09cc1" target="p_5"><identifier><text>s</text></identifier></arc>
+      <arc id="5138359824" source="p_4" target="b70d945c-b763-4af2-b36e-96e1a1b9b7d7"><identifier><text>s</text></identifier></arc>
+      <arc id="5138360144" source="b70d945c-b763-4af2-b36e-96e1a1b9b7d7" target="p_5"><identifier><text>s</text></identifier></arc>
+      <arc id="5138360784" source="p_5" target="d43ec75a-1423-4ad0-af62-054e3413c0e6"><identifier><text>s</text></identifier></arc>
+      <arc id="5138360656" source="d43ec75a-1423-4ad0-af62-054e3413c0e6" target="sink"><identifier><text>s</text></identifier></arc>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink">
+          <text>1</text>
+        <type><text>Hospital</text></type></place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

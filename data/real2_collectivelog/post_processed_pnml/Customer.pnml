@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_1758221141.204779" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1758221141.204779</text>
+    </name>
+    <page id="n0">
+      <place id="p_5">
+        <name>
+          <text>p_5</text>
+        </name>
+      <type><text>Customer</text></type></place>
+      <place id="p_6">
+        <name>
+          <text>p_6</text>
+        </name>
+      <type><text>Customer</text></type></place>
+      <place id="p_8">
+        <name>
+          <text>p_8</text>
+        </name>
+      <type><text>Customer</text></type></place>
+      <place id="p_9">
+        <name>
+          <text>p_9</text>
+        </name>
+      <type><text>Customer</text></type></place>
+      <place id="p_10">
+        <name>
+          <text>p_10</text>
+        </name>
+      <type><text>Customer</text></type></place>
+      <transition id="tau_1">
+        <name>
+          <text>tau_1</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="ed64fe99-1bcf-47ee-bdd4-17ebaf0c4f3d" />
+      </transition>
+      <transition id="skip_4">
+        <name>
+          <text>skip_4</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="9c9c5f6f-9a05-42d6-9c14-38888ef37caa" />
+      </transition>
+      <transition id="17a4996a-00d9-41a5-a66e-919fee5d84bd">
+        <name>
+          <text>Check Travel Offer</text>
+        </name>
+      </transition>
+      <transition id="32a6d1be-e87b-4c41-ba4c-8bc742ac9394">
+        <name>
+          <text>Book Travel</text>
+        </name>
+      </transition>
+      <transition id="257cf915-ae58-48e8-b7f9-eaf3373c852e">
+        <name>
+          <text>Pay Travel</text>
+        </name>
+      </transition>
+      <transition id="5625c8ed-bfb6-4d01-a914-4457c163d6e7">
+        <name>
+          <text>Ticket Received</text>
+        </name>
+      </transition>
+      <transition id="ecf28948-4add-4883-980c-f3b166fee938">
+        <name>
+          <text>Booking Confirmed</text>
+        </name>
+      </transition>
+      <arc id="4657406864" source="skip_4" target="p_5"><identifier><text>o</text></identifier></arc>
+      <arc id="4657804688" source="p_6" target="skip_4"><identifier><text>o</text></identifier></arc>
+      <arc id="4657793040" source="p_6" target="32a6d1be-e87b-4c41-ba4c-8bc742ac9394"><identifier><text>o</text></identifier></arc>
+      <arc id="4657806736" source="p_9" target="5625c8ed-bfb6-4d01-a914-4457c163d6e7"><identifier><text>o</text></identifier></arc>
+      <arc id="4657806608" source="p_8" target="257cf915-ae58-48e8-b7f9-eaf3373c852e"><identifier><text>o</text></identifier></arc>
+      <arc id="4657806352" source="p_10" target="ecf28948-4add-4883-980c-f3b166fee938"><identifier><text>o</text></identifier></arc>
+      <arc id="4657807184" source="257cf915-ae58-48e8-b7f9-eaf3373c852e" target="p_9"><identifier><text>o</text></identifier></arc>
+      <arc id="4657807312" source="5625c8ed-bfb6-4d01-a914-4457c163d6e7" target="p_10"><identifier><text>o</text></identifier></arc>
+      <arc id="4657804624" source="p_5" target="17a4996a-00d9-41a5-a66e-919fee5d84bd"><identifier><text>o</text></identifier></arc>
+      <arc id="4657791184" source="tau_1" target="p_5"><identifier><text>o</text></identifier></arc>
+      <arc id="4657804496" source="17a4996a-00d9-41a5-a66e-919fee5d84bd" target="p_6"><identifier><text>o</text></identifier></arc>
+      <arc id="4657805520" source="32a6d1be-e87b-4c41-ba4c-8bc742ac9394" target="p_8"><identifier><text>o</text></identifier></arc>
+    </page>
+    </net>
+</pnml>

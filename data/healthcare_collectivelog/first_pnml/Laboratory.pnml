@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_1758219715.8765519" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1758219715.8765519</text>
+    </name>
+    <page id="n0">
+      <place id="source">
+        <name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      <type><text>Laboratory</text></type></place>
+      <place id="sink">
+        <name>
+          <text>sink</text>
+        </name>
+      <type><text>Laboratory</text></type></place>
+      <place id="p_3">
+        <name>
+          <text>p_3</text>
+        </name>
+      <type><text>Laboratory</text></type></place>
+      <place id="p_4">
+        <name>
+          <text>p_4</text>
+        </name>
+      <type><text>Laboratory</text></type></place>
+      <transition id="7dd6dd5c-bcab-4cf7-8b39-fad4567c484c">
+        <name>
+          <text>Receive blood sample</text>
+        </name>
+      </transition>
+      <transition id="3f178e91-537b-4a96-bbdb-45de4be27850">
+        <name>
+          <text>Send results</text>
+        </name>
+      </transition>
+      <transition id="53fe9f2f-f1d8-4034-822b-a14463debb8f">
+        <name>
+          <text>Analyse blood sample</text>
+        </name>
+      </transition>
+      <arc id="4630165520" source="source" target="7dd6dd5c-bcab-4cf7-8b39-fad4567c484c"><identifier><text>l</text></identifier></arc>
+      <arc id="5138685712" source="7dd6dd5c-bcab-4cf7-8b39-fad4567c484c" target="p_3"><identifier><text>l</text></identifier></arc>
+      <arc id="5138687568" source="53fe9f2f-f1d8-4034-822b-a14463debb8f" target="p_4"><identifier><text>l</text></identifier></arc>
+      <arc id="5138686608" source="p_4" target="3f178e91-537b-4a96-bbdb-45de4be27850"><identifier><text>l</text></identifier></arc>
+      <arc id="5138687440" source="p_3" target="53fe9f2f-f1d8-4034-822b-a14463debb8f"><identifier><text>l</text></identifier></arc>
+      <arc id="5138687184" source="3f178e91-537b-4a96-bbdb-45de4be27850" target="sink"><identifier><text>l</text></identifier></arc>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink">
+          <text>1</text>
+        <type><text>Laboratory</text></type></place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

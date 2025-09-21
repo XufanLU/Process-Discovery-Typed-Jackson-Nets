@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml><net id="composed_TASE_EM_log" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel"><name><text>composed_TASE_EM_log</text></name><page id="composed_page"><place id="p_3_Emergency"><name>
+          <text>p_3</text>
+        </name>
+      <type><text>Emergency</text></type></place><place id="p_6_Emergency"><name>
+          <text>p_6</text>
+        </name>
+      <type><text>Emergency</text></type></place><place id="p_7_Emergency"><name>
+          <text>p_7</text>
+        </name>
+      <type><text>Emergency</text></type></place><place id="p_8_Emergency"><name>
+          <text>p_8</text>
+        </name>
+      <type><text>Emergency</text></type></place><place id="p_9_Emergency"><name>
+          <text>p_9</text>
+        </name>
+      <type><text>Emergency</text></type></place><place id="p_10_Emergency"><name>
+          <text>p_10</text>
+        </name>
+      <type><text>Emergency</text></type></place><place id="p_11_Emergency"><name>
+          <text>p_11</text>
+        </name>
+      <type><text>Emergency</text></type></place><place id="p_5_Charge_office"><name>
+          <text>p_5</text>
+        </name>
+      <type><text>Charge office</text></type></place><place id="p_4_Charge_office"><name>
+          <text>p_4</text>
+        </name>
+      <type><text>Charge office</text></type></place><place id="p_6_Charge_office"><name>
+          <text>p_6</text>
+        </name>
+      <type><text>Charge office</text></type></place><place id="p_7_Charge_office"><name>
+          <text>p_7</text>
+        </name>
+      <type><text>Charge office</text></type></place><place id="p_8_Charge_office"><name>
+          <text>p_8</text>
+        </name>
+      <type><text>Charge office</text></type></place><place id="p_9_Charge_office"><name>
+          <text>p_9</text>
+        </name>
+      <type><text>Charge office</text></type></place><place id="p_10_Charge_office"><name>
+          <text>p_10</text>
+        </name>
+      <type><text>Charge office</text></type></place><place id="p_12_Charge_office"><name>
+          <text>p_12</text>
+        </name>
+      <type><text>Charge office</text></type></place><place id="p_11_Charge_office"><name>
+          <text>p_11</text>
+        </name>
+      <type><text>Charge office</text></type></place><place id="p_3_X_ray"><name>
+          <text>p_3</text>
+        </name>
+      <type><text>X_ray</text></type></place><place id="p_4_X_ray"><name>
+          <text>p_4</text>
+        </name>
+      <type><text>X_ray</text></type></place><place id="p_5_X_ray"><name>
+          <text>p_5</text>
+        </name>
+      <type><text>X_ray</text></type></place><place id="p_6_X_ray"><name>
+          <text>p_6</text>
+        </name>
+      <type><text>X_ray</text></type></place><place id="p_7_X_ray"><name>
+          <text>p_7</text>
+        </name>
+      <type><text>X_ray</text></type></place><place id="p_8_X_ray"><name>
+          <text>p_8</text>
+        </name>
+      <type><text>X_ray</text></type></place><place id="p_3_Cardiovascular"><name>
+          <text>p_3</text>
+        </name>
+      <type><text>Cardiovascular</text></type></place><place id="p_5_Surgical,_Cardiovascular"><name>
+          <text>p_5</text>
+        </name>
+      <type><text>Surgical, Cardiovascular</text></type></place><place id="p_4_Surgical,_Cardiovascular"><name>
+          <text>p_4</text>
+        </name>
+      <type><text>Surgical, Cardiovascular</text></type></place><place id="p_3_Surgical,_Cardiovascular"><name>
+          <text>p_3</text>
+        </name>
+      <type><text>Surgical, Cardiovascular</text></type></place><place id="p_6_Surgical,_Cardiovascular"><name>
+          <text>p_6</text>
+        </name>
+      <type><text>Surgical, Cardiovascular</text></type></place><place id="p_7_Surgical,_Cardiovascular"><name>
+          <text>p_7</text>
+        </name>
+      <type><text>Surgical, Cardiovascular</text></type></place><place id="p_8_Surgical,_Cardiovascular"><name>
+          <text>p_8</text>
+        </name>
+      <type><text>Surgical, Cardiovascular</text></type></place><place id="p_9_Surgical,_Cardiovascular"><name>
+          <text>p_9</text>
+        </name>
+      <type><text>Surgical, Cardiovascular</text></type></place><place id="p_10_Surgical,_Cardiovascular"><name>
+          <text>p_10</text>
+        </name>
+      <type><text>Surgical, Cardiovascular</text></type></place><place id="p_4_Pharmacy"><name>
+          <text>p_4</text>
+        </name>
+      <type><text>Pharmacy</text></type></place><place id="p_3_Pharmacy"><name>
+          <text>p_3</text>
+        </name>
+      <type><text>Pharmacy</text></type></place><transition id="01fdc7e8-df2c-4f54-9d42-7d6618303ea5_Emergency"><name>
+          <text>t27</text>
+        </name>
+      </transition><transition id="0864f6da-9c08-4a61-b5e1-536bc5afd816_Emergency"><name>
+          <text>t28</text>
+        </name>
+      </transition><transition id="abfad51b-b350-4563-8eba-1f4b8f4c5025_Emergency"><name>
+          <text>t10</text>
+        </name>
+      </transition><transition id="1bb0662b-265c-46a0-ba13-949b21a41dfc_Emergency"><name>
+          <text>t29</text>
+        </name>
+      </transition><transition id="4844f8e2-cc28-4b9f-8696-6bbda1db6f7f_Emergency"><name>
+          <text>t11</text>
+        </name>
+      </transition><transition id="0f81e932-7574-4fb5-b0dd-e360e5d41372_Emergency"><name>
+          <text>t12</text>
+        </name>
+      </transition><transition id="f8505de3-16e7-4a22-9298-19338bc2940a_Emergency"><name>
+          <text>t32</text>
+        </name>
+      </transition><transition id="shared_t1"><name>
+          <text>t1</text>
+        </name>
+      </transition><transition id="shared_t5"><name>
+          <text>t5</text>
+        </name>
+      </transition><transition id="shared_t2"><name>
+          <text>t2</text>
+        </name>
+      </transition><transition id="shared_t3"><name>
+          <text>t3</text>
+        </name>
+      </transition><transition id="shared_t4"><name>
+          <text>t4</text>
+        </name>
+      </transition><transition id="tauSplit_1_Charge_office"><name>
+          <text>tauSplit_1</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="10e9a182-6bba-4d18-b494-d7c6c494f452" />
+      </transition><transition id="ea7cb3aa-0853-4bee-928c-6cdb6b76b0e4_Charge_office"><name>
+          <text>t30</text>
+        </name>
+      </transition><transition id="7167ea73-980a-4746-b326-6d5b01c7bfc1_Charge_office"><name>
+          <text>t16</text>
+        </name>
+      </transition><transition id="5d72504f-966a-4def-8eec-5f0829e1c9e8_Charge_office"><name>
+          <text>t18</text>
+        </name>
+      </transition><transition id="b9e4550f-1ce6-4133-89fe-98b68244cc53_Charge_office"><name>
+          <text>t31</text>
+        </name>
+      </transition><transition id="926a44c3-bcc7-4f8b-9f93-d5a964f68e18_Charge_office"><name>
+          <text>t19</text>
+        </name>
+      </transition><transition id="f6e084fe-6495-4830-9ed1-d627c9a66896_Charge_office"><name>
+          <text>t17</text>
+        </name>
+      </transition><transition id="dbd1ed30-9fb5-450f-b29d-91d33c455c0e_X_ray"><name>
+          <text>t20</text>
+        </name>
+      </transition><transition id="4367410b-e6fa-44f8-99e7-671e770e618d_X_ray"><name>
+          <text>t23</text>
+        </name>
+      </transition><transition id="90d99a0f-e5ec-4944-b462-00a013e10b19_X_ray"><name>
+          <text>t22</text>
+        </name>
+      </transition><transition id="c16d6915-fb4e-4b6c-9211-447d5983ca77_X_ray"><name>
+          <text>t24</text>
+        </name>
+      </transition><transition id="cfa0ca19-0ae6-44a0-ad0e-11293434d700_X_ray"><name>
+          <text>t21</text>
+        </name>
+      </transition><transition id="bb6e03ed-4a8f-4c93-adfb-e28e1cc9beeb_X_ray"><name>
+          <text>t25</text>
+        </name>
+      </transition><transition id="dd2c2c90-6a69-4a91-96af-9dca85f0568f_X_ray"><name>
+          <text>t26</text>
+        </name>
+      </transition><transition id="shared_t8"><name>
+          <text>t8</text>
+        </name>
+      </transition><transition id="shared_t9"><name>
+          <text>t9</text>
+        </name>
+      </transition><transition id="fceee696-e51f-44ef-a5e6-f70f3997d8a7_Surgical,_Cardiovascular"><name>
+          <text>t6</text>
+        </name>
+      </transition><transition id="17eaa222-4a08-4a69-b7de-2e97665a8483_Surgical,_Cardiovascular"><name>
+          <text>t7</text>
+        </name>
+      </transition><transition id="b0a93064-b729-47e5-b91b-a5a871cca569_Pharmacy"><name>
+          <text>t13</text>
+        </name>
+      </transition><transition id="d6d48f24-d54f-4bac-8091-51aa141ecc2b_Pharmacy"><name>
+          <text>t15</text>
+        </name>
+      </transition><transition id="8b1e3364-dfc3-4504-a426-47b6b05c9b99_Pharmacy"><name>
+          <text>t14</text>
+        </name>
+      </transition><arc id="14007806480_Emergency" source="p_9_Emergency" target="4844f8e2-cc28-4b9f-8696-6bbda1db6f7f_Emergency"><identifier><text>g</text></identifier></arc><arc id="14007806992_Emergency" source="0f81e932-7574-4fb5-b0dd-e360e5d41372_Emergency" target="p_10_Emergency"><identifier><text>g</text></identifier></arc><arc id="14007806608_Emergency" source="4844f8e2-cc28-4b9f-8696-6bbda1db6f7f_Emergency" target="p_11_Emergency"><identifier><text>g</text></identifier></arc><arc id="14007806864_Emergency" source="p_11_Emergency" target="0f81e932-7574-4fb5-b0dd-e360e5d41372_Emergency"><identifier><text>g</text></identifier></arc><arc id="14007807696_Emergency" source="abfad51b-b350-4563-8eba-1f4b8f4c5025_Emergency" target="p_9_Emergency"><identifier><text>g</text></identifier></arc><arc id="14007807568_Emergency" source="abfad51b-b350-4563-8eba-1f4b8f4c5025_Emergency" target="p_6_Emergency"><identifier><text>g</text></identifier></arc><arc id="4696245584_Emergency" source="01fdc7e8-df2c-4f54-9d42-7d6618303ea5_Emergency" target="p_3_Emergency"><identifier><text>g</text></identifier></arc><arc id="14007801040_Emergency" source="p_3_Emergency" target="abfad51b-b350-4563-8eba-1f4b8f4c5025_Emergency"><identifier><text>g</text></identifier></arc><arc id="14007804880_Emergency" source="p_6_Emergency" target="0864f6da-9c08-4a61-b5e1-536bc5afd816_Emergency"><identifier><text>g</text></identifier></arc><arc id="14007805008_Emergency" source="0864f6da-9c08-4a61-b5e1-536bc5afd816_Emergency" target="p_8_Emergency"><identifier><text>g</text></identifier></arc><arc id="14007807824_Emergency" source="p_7_Emergency" target="f8505de3-16e7-4a22-9298-19338bc2940a_Emergency"><identifier><text>g</text></identifier></arc><arc id="14007805264_Emergency" source="p_8_Emergency" target="1bb0662b-265c-46a0-ba13-949b21a41dfc_Emergency"><identifier><text>g</text></identifier></arc><arc id="14007805392_Emergency" source="1bb0662b-265c-46a0-ba13-949b21a41dfc_Emergency" target="p_7_Emergency"><identifier><text>g</text></identifier></arc><arc id="14007807952_Emergency" source="p_10_Emergency" target="f8505de3-16e7-4a22-9298-19338bc2940a_Emergency"><identifier><text>g</text></identifier></arc><arc id="13985207312_Charge_office" source="tauSplit_1_Charge_office" target="p_4_Charge_office"><identifier><text>w</text></identifier></arc><arc id="13985205520_Charge_office" source="5d72504f-966a-4def-8eec-5f0829e1c9e8_Charge_office" target="p_5_Charge_office"><identifier><text>w</text></identifier></arc><arc id="13985210832_Charge_office" source="ea7cb3aa-0853-4bee-928c-6cdb6b76b0e4_Charge_office" target="p_10_Charge_office"><identifier><text>w</text></identifier></arc><arc id="13985215184_Charge_office" source="p_7_Charge_office" target="f6e084fe-6495-4830-9ed1-d627c9a66896_Charge_office"><identifier><text>w</text></identifier></arc><arc id="13985215440_Charge_office" source="p_9_Charge_office" target="f6e084fe-6495-4830-9ed1-d627c9a66896_Charge_office"><identifier><text>w</text></identifier></arc><arc id="13985215696_Charge_office" source="p_12_Charge_office" target="f6e084fe-6495-4830-9ed1-d627c9a66896_Charge_office"><identifier><text>w</text></identifier></arc><arc id="13985213392_Charge_office" source="p_11_Charge_office" target="926a44c3-bcc7-4f8b-9f93-d5a964f68e18_Charge_office"><identifier><text>w</text></identifier></arc><arc id="13985209040_Charge_office" source="tauSplit_1_Charge_office" target="p_8_Charge_office"><identifier><text>w</text></identifier></arc><arc id="13985212240_Charge_office" source="tauSplit_1_Charge_office" target="p_11_Charge_office"><identifier><text>w</text></identifier></arc><arc id="13985210576_Charge_office" source="p_8_Charge_office" target="ea7cb3aa-0853-4bee-928c-6cdb6b76b0e4_Charge_office"><identifier><text>w</text></identifier></arc><arc id="13985211600_Charge_office" source="b9e4550f-1ce6-4133-89fe-98b68244cc53_Charge_office" target="p_9_Charge_office"><identifier><text>w</text></identifier></arc><arc id="13985211344_Charge_office" source="p_10_Charge_office" target="b9e4550f-1ce6-4133-89fe-98b68244cc53_Charge_office"><identifier><text>w</text></identifier></arc><arc id="13985214928_Charge_office" source="p_5_Charge_office" target="f6e084fe-6495-4830-9ed1-d627c9a66896_Charge_office"><identifier><text>w</text></identifier></arc><arc id="13985205840_Charge_office" source="p_4_Charge_office" target="5d72504f-966a-4def-8eec-5f0829e1c9e8_Charge_office"><identifier><text>w</text></identifier></arc><arc id="13985202896_Charge_office" source="tauSplit_1_Charge_office" target="p_6_Charge_office"><identifier><text>w</text></identifier></arc><arc id="13985206608_Charge_office" source="p_6_Charge_office" target="7167ea73-980a-4746-b326-6d5b01c7bfc1_Charge_office"><identifier><text>w</text></identifier></arc><arc id="13985208400_Charge_office" source="7167ea73-980a-4746-b326-6d5b01c7bfc1_Charge_office" target="p_7_Charge_office"><identifier><text>w</text></identifier></arc><arc id="13985213648_Charge_office" source="926a44c3-bcc7-4f8b-9f93-d5a964f68e18_Charge_office" target="p_12_Charge_office"><identifier><text>w</text></identifier></arc><arc id="14006827856_X_ray" source="p_7_X_ray" target="bb6e03ed-4a8f-4c93-adfb-e28e1cc9beeb_X_ray"><identifier><text>t</text></identifier></arc><arc id="14006828304_X_ray" source="p_8_X_ray" target="dd2c2c90-6a69-4a91-96af-9dca85f0568f_X_ray"><identifier><text>t</text></identifier></arc><arc id="14006827984_X_ray" source="bb6e03ed-4a8f-4c93-adfb-e28e1cc9beeb_X_ray" target="p_8_X_ray"><identifier><text>t</text></identifier></arc><arc id="14006825936_X_ray" source="p_4_X_ray" target="90d99a0f-e5ec-4944-b462-00a013e10b19_X_ray"><identifier><text>t</text></identifier></arc><arc id="14006824784_X_ray" source="dbd1ed30-9fb5-450f-b29d-91d33c455c0e_X_ray" target="p_3_X_ray"><identifier><text>t</text></identifier></arc><arc id="14006825296_X_ray" source="p_3_X_ray" target="cfa0ca19-0ae6-44a0-ad0e-11293434d700_X_ray"><identifier><text>t</text></identifier></arc><arc id="14006825424_X_ray" source="cfa0ca19-0ae6-44a0-ad0e-11293434d700_X_ray" target="p_4_X_ray"><identifier><text>t</text></identifier></arc><arc id="14006826064_X_ray" source="90d99a0f-e5ec-4944-b462-00a013e10b19_X_ray" target="p_5_X_ray"><identifier><text>t</text></identifier></arc><arc id="14006826576_X_ray" source="p_5_X_ray" target="4367410b-e6fa-44f8-99e7-671e770e618d_X_ray"><identifier><text>t</text></identifier></arc><arc id="14006826704_X_ray" source="4367410b-e6fa-44f8-99e7-671e770e618d_X_ray" target="p_6_X_ray"><identifier><text>t</text></identifier></arc><arc id="14006827216_X_ray" source="p_6_X_ray" target="c16d6915-fb4e-4b6c-9211-447d5983ca77_X_ray"><identifier><text>t</text></identifier></arc><arc id="14006827344_X_ray" source="c16d6915-fb4e-4b6c-9211-447d5983ca77_X_ray" target="p_7_X_ray"><identifier><text>t</text></identifier></arc><arc id="13866087184_Cardiovascular" source="p_3_Cardiovascular" target="shared_t9"><identifier><text>n</text></identifier></arc><arc id="13866086864_Cardiovascular" source="shared_t8" target="p_3_Cardiovascular"><identifier><text>n</text></identifier></arc><arc id="14058778832_Surgical,_Cardiovascular" source="p_8_Surgical,_Cardiovascular" target="fceee696-e51f-44ef-a5e6-f70f3997d8a7_Surgical,_Cardiovascular"><identifier><text>q</text></identifier><identifier><text>n</text></identifier></arc><arc id="14058778192_Surgical,_Cardiovascular" source="p_7_Surgical,_Cardiovascular" target="shared_t8"><identifier><text>q</text></identifier><identifier><text>n</text></identifier></arc><arc id="14058778320_Surgical,_Cardiovascular" source="shared_t8" target="p_8_Surgical,_Cardiovascular"><identifier><text>q</text></identifier><identifier><text>n</text></identifier></arc><arc id="14058779472_Surgical,_Cardiovascular" source="p_9_Surgical,_Cardiovascular" target="17eaa222-4a08-4a69-b7de-2e97665a8483_Surgical,_Cardiovascular"><identifier><text>q</text></identifier><identifier><text>n</text></identifier></arc><arc id="14058779600_Surgical,_Cardiovascular" source="17eaa222-4a08-4a69-b7de-2e97665a8483_Surgical,_Cardiovascular" target="p_10_Surgical,_Cardiovascular"><identifier><text>q</text></identifier><identifier><text>n</text></identifier></arc><arc id="14058775632_Surgical,_Cardiovascular" source="p_3_Surgical,_Cardiovascular" target="shared_t2"><identifier><text>q</text></identifier><identifier><text>n</text></identifier></arc><arc id="14058775120_Surgical,_Cardiovascular" source="shared_t1" target="p_3_Surgical,_Cardiovascular"><identifier><text>q</text></identifier><identifier><text>n</text></identifier></arc><arc id="14058776272_Surgical,_Cardiovascular" source="p_4_Surgical,_Cardiovascular" target="shared_t3"><identifier><text>q</text></identifier><identifier><text>n</text></identifier></arc><arc id="14058775760_Surgical,_Cardiovascular" source="shared_t2" target="p_4_Surgical,_Cardiovascular"><identifier><text>q</text></identifier><identifier><text>n</text></identifier></arc><arc id="14058776400_Surgical,_Cardiovascular" source="shared_t3" target="p_5_Surgical,_Cardiovascular"><identifier><text>q</text></identifier><identifier><text>n</text></identifier></arc><arc id="14058776912_Surgical,_Cardiovascular" source="p_5_Surgical,_Cardiovascular" target="shared_t4"><identifier><text>q</text></identifier><identifier><text>n</text></identifier></arc><arc id="14058777040_Surgical,_Cardiovascular" source="shared_t4" target="p_6_Surgical,_Cardiovascular"><identifier><text>q</text></identifier><identifier><text>n</text></identifier></arc><arc id="14058777552_Surgical,_Cardiovascular" source="p_6_Surgical,_Cardiovascular" target="shared_t5"><identifier><text>q</text></identifier><identifier><text>n</text></identifier></arc><arc id="14058777680_Surgical,_Cardiovascular" source="shared_t5" target="p_7_Surgical,_Cardiovascular"><identifier><text>q</text></identifier><identifier><text>n</text></identifier></arc><arc id="14058779920_Surgical,_Cardiovascular" source="p_10_Surgical,_Cardiovascular" target="shared_t9"><identifier><text>q</text></identifier><identifier><text>n</text></identifier></arc><arc id="14058778960_Surgical,_Cardiovascular" source="fceee696-e51f-44ef-a5e6-f70f3997d8a7_Surgical,_Cardiovascular" target="p_9_Surgical,_Cardiovascular"><identifier><text>q</text></identifier><identifier><text>n</text></identifier></arc><arc id="13888134864_Pharmacy" source="p_3_Pharmacy" target="8b1e3364-dfc3-4504-a426-47b6b05c9b99_Pharmacy"><identifier><text>e</text></identifier></arc><arc id="13888134992_Pharmacy" source="8b1e3364-dfc3-4504-a426-47b6b05c9b99_Pharmacy" target="p_4_Pharmacy"><identifier><text>e</text></identifier></arc><arc id="13888135312_Pharmacy" source="p_4_Pharmacy" target="d6d48f24-d54f-4bac-8091-51aa141ecc2b_Pharmacy"><identifier><text>e</text></identifier></arc><arc id="13888134352_Pharmacy" source="b0a93064-b729-47e5-b91b-a5a871cca569_Pharmacy" target="p_3_Pharmacy"><identifier><text>e</text></identifier></arc></page></net></pnml>

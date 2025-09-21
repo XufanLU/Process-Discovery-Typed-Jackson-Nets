@@ -1,0 +1,224 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml><net id="composed_IP-1_initial_log" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel"><name><text>composed_IP-1_initial_log</text></name><page id="composed_page"><place id="p_17_Agent_1"><name>
+          <text>p_17</text>
+        </name>
+      <type><text>Agent 1</text></type></place><place id="sink">
+        <name>
+          <text>sink</text>
+        </name>
+      <type><text>Agent 1</text></type></place><place id="source">
+        <name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      <type><text>Agent 1</text></type></place><place id="p_19_Agent_1"><name>
+          <text>p_19</text>
+        </name>
+      <type><text>Agent 1</text></type></place><place id="p_12_Agent_1"><name>
+          <text>p_12</text>
+        </name>
+      <type><text>Agent 1</text></type></place><place id="p_7_Agent_1"><name>
+          <text>p_7</text>
+        </name>
+      <type><text>Agent 1</text></type></place><place id="p_10_Agent_1"><name>
+          <text>p_10</text>
+        </name>
+      <type><text>Agent 1</text></type></place><place id="p_20_Agent_1"><name>
+          <text>p_20</text>
+        </name>
+      <type><text>Agent 1</text></type></place><place id="p_18_Agent_1"><name>
+          <text>p_18</text>
+        </name>
+      <type><text>Agent 1</text></type></place><place id="p_13_Agent_1"><name>
+          <text>p_13</text>
+        </name>
+      <type><text>Agent 1</text></type></place><place id="p_14_Agent_1"><name>
+          <text>p_14</text>
+        </name>
+      <type><text>Agent 1</text></type></place><place id="p_5_Agent_1"><name>
+          <text>p_5</text>
+        </name>
+      <type><text>Agent 1</text></type></place><place id="p_6_Agent_1"><name>
+          <text>p_6</text>
+        </name>
+      <type><text>Agent 1</text></type></place><place id="p_8_Agent_1"><name>
+          <text>p_8</text>
+        </name>
+      <type><text>Agent 1</text></type></place><place id="p_9_Agent_1"><name>
+          <text>p_9</text>
+        </name>
+      <type><text>Agent 1</text></type></place><place id="p_11_Agent_1"><name>
+          <text>p_11</text>
+        </name>
+      <type><text>Agent 1</text></type></place><place id="p_18_Agent_2"><name>
+          <text>p_18</text>
+        </name>
+      <type><text>Agent 2</text></type></place><place id="p_17_Agent_2"><name>
+          <text>p_17</text>
+        </name>
+      <type><text>Agent 2</text></type></place><place id="p_7_Agent_2"><name>
+          <text>p_7</text>
+        </name>
+      <type><text>Agent 2</text></type></place><place id="p_10_Agent_2"><name>
+          <text>p_10</text>
+        </name>
+      <type><text>Agent 2</text></type></place><place id="p_14_Agent_2"><name>
+          <text>p_14</text>
+        </name>
+      <type><text>Agent 2</text></type></place><place id="p_11_Agent_2"><name>
+          <text>p_11</text>
+        </name>
+      <type><text>Agent 2</text></type></place><place id="p_22_Agent_2"><name>
+          <text>p_22</text>
+        </name>
+      <type><text>Agent 2</text></type></place><place id="p_25_Agent_2"><name>
+          <text>p_25</text>
+        </name>
+      <type><text>Agent 2</text></type></place><place id="p_24_Agent_2"><name>
+          <text>p_24</text>
+        </name>
+      <type><text>Agent 2</text></type></place><place id="p_16_Agent_2"><name>
+          <text>p_16</text>
+        </name>
+      <type><text>Agent 2</text></type></place><place id="p_19_Agent_2"><name>
+          <text>p_19</text>
+        </name>
+      <type><text>Agent 2</text></type></place><place id="p_12_Agent_2"><name>
+          <text>p_12</text>
+        </name>
+      <type><text>Agent 2</text></type></place><place id="p_15_Agent_2"><name>
+          <text>p_15</text>
+        </name>
+      <type><text>Agent 2</text></type></place><place id="p_5_Agent_2"><name>
+          <text>p_5</text>
+        </name>
+      <type><text>Agent 2</text></type></place><place id="p_4_Agent_2"><name>
+          <text>p_4</text>
+        </name>
+      <type><text>Agent 2</text></type></place><place id="p_6_Agent_2"><name>
+          <text>p_6</text>
+        </name>
+      <type><text>Agent 2</text></type></place><place id="p_9_Agent_2"><name>
+          <text>p_9</text>
+        </name>
+      <type><text>Agent 2</text></type></place><place id="p_23_Agent_2"><name>
+          <text>p_23</text>
+        </name>
+      <type><text>Agent 2</text></type></place><place id="p_13_Agent_2"><name>
+          <text>p_13</text>
+        </name>
+      <type><text>Agent 2</text></type></place><transition id="6dc562b0-68c0-4d3f-8949-2bcb46955b3d_Agent_1"><name>
+          <text>t13</text>
+        </name>
+      </transition><transition id="ff45ad42-2f02-4e2e-b7bd-ee7f4f720d5a_Agent_1"><name>
+          <text>a!_2</text>
+        </name>
+      </transition><transition id="cafbd8e3-bcb0-4ad3-ace4-ab692b14b403_Agent_1"><name>
+          <text>t12</text>
+        </name>
+      </transition><transition id="161433d7-d504-47b6-b463-4c0d3e8fe024_Agent_1"><name>
+          <text>t14</text>
+        </name>
+      </transition><transition id="d36ec78f-c7bc-4149-ac63-afcb5c53de71_Agent_1"><name>
+          <text>t6</text>
+        </name>
+      </transition><transition id="b02bc8d9-3323-4d1b-a926-f67637c299a6_Agent_1"><name>
+          <text>t1</text>
+        </name>
+      </transition><transition id="324e01b0-9e22-44eb-8488-96164c8bd235_Agent_1"><name>
+          <text>t2</text>
+        </name>
+      </transition><transition id="351a01c1-2423-49cf-90c0-b133004113aa_Agent_1"><name>
+          <text>t3</text>
+        </name>
+      </transition><transition id="dc703964-5522-439b-b127-d7981e0b1ba2_Agent_1"><name>
+          <text>t4</text>
+        </name>
+      </transition><transition id="5d5916bc-3552-47c0-b3ce-6408bfb728ae_Agent_1"><name>
+          <text>t5</text>
+        </name>
+      </transition><transition id="2ad227c0-344e-4927-96dd-242146daaa29_Agent_1"><name>
+          <text>a!_1</text>
+        </name>
+      </transition><transition id="c6d69f0f-463d-4557-b0ec-cb755b365f8b_Agent_1"><name>
+          <text>t9</text>
+        </name>
+      </transition><transition id="53a2c8b9-e7c5-4c82-8b48-5e2ed92a9148_Agent_1"><name>
+          <text>t10</text>
+        </name>
+      </transition><transition id="db6decab-f8aa-4bb8-b02a-7b0b107919e4_Agent_1"><name>
+          <text>t11</text>
+        </name>
+      </transition><transition id="9d5d5296-29b8-451c-98c3-fc664b3ca277_Agent_2"><name>
+          <text>e10</text>
+        </name>
+      </transition><transition id="a9fdae3e-7f78-4a15-830f-0a63733fdc3c_Agent_2"><name>
+          <text>e6</text>
+        </name>
+      </transition><transition id="e91b7dc2-ed7a-40fb-929a-610e1c47b719_Agent_2"><name>
+          <text>e1</text>
+        </name>
+      </transition><transition id="0ea7514a-a2c3-4d26-bb0f-74e51ff495f0_Agent_2"><name>
+          <text>e2</text>
+        </name>
+      </transition><transition id="05e30de9-337e-4368-b21c-7eacad325836_Agent_2"><name>
+          <text>e4</text>
+        </name>
+      </transition><transition id="d41df38f-ea0f-4968-bf1a-14d7d093bbd1_Agent_2"><name>
+          <text>e13</text>
+        </name>
+      </transition><transition id="8717b236-9278-4d81-9c04-a5608a9a5ae9_Agent_2"><name>
+          <text>e11</text>
+        </name>
+      </transition><transition id="7c61a78f-1daf-466f-9090-8935acdb82b5_Agent_2"><name>
+          <text>a?_1</text>
+        </name>
+      </transition><transition id="5611418c-e485-42bc-9a2f-37dff678e884_Agent_2"><name>
+          <text>e15</text>
+        </name>
+      </transition><transition id="c3cb46af-2f5a-41a0-9630-2cc147d2240b_Agent_2"><name>
+          <text>e8</text>
+        </name>
+      </transition><transition id="c45bbe23-5d64-4d89-ad25-910564a01179_Agent_2"><name>
+          <text>e9</text>
+        </name>
+      </transition><transition id="da4f25ce-1f0e-482c-bf49-ad4700a5d500_Agent_2"><name>
+          <text>a?_2</text>
+        </name>
+      </transition><transition id="tauSplit_1_Agent_2"><name>
+          <text>tauSplit_1</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="8d7a8b58-dc2a-4f66-b2b8-585e966a4904" />
+      </transition><transition id="tauJoin_2_Agent_2"><name>
+          <text>tauJoin_2</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="61b4175f-c8ff-480e-92eb-a6a3e83998e2" />
+      </transition><transition id="9c967df1-1ad8-4e19-92a3-8c5fd0aca08f_Agent_2"><name>
+          <text>e3</text>
+        </name>
+      </transition><transition id="f2c2a1c3-9860-4665-8d53-4cd903304322_Agent_2"><name>
+          <text>e5</text>
+        </name>
+      </transition><transition id="7cb24e78-4e52-40ed-a285-7a53f29a91e5_Agent_2"><name>
+          <text>e7</text>
+        </name>
+      </transition><transition id="45d57c64-92d8-4f9f-a99b-b7c43f4ce055_Agent_2"><name>
+          <text>e14</text>
+        </name>
+      </transition><transition id="ca5ed78d-24dd-409d-a03e-cfbd25424996_Agent_2"><name>
+          <text>e12</text>
+        </name>
+      </transition><arc id="5631510160_Agent_1" source="p_13_Agent_1" target="ff45ad42-2f02-4e2e-b7bd-ee7f4f720d5a_Agent_1"><identifier><text>j</text></identifier></arc><arc id="5631510288_Agent_1" source="ff45ad42-2f02-4e2e-b7bd-ee7f4f720d5a_Agent_1" target="p_14_Agent_1"><identifier><text>j</text></identifier></arc><arc id="5630753424_Agent_1" source="dc703964-5522-439b-b127-d7981e0b1ba2_Agent_1" target="p_9_Agent_1"><identifier><text>j</text></identifier></arc><arc id="5630754448_Agent_1" source="p_10_Agent_1" target="2ad227c0-344e-4927-96dd-242146daaa29_Agent_1"><identifier><text>j</text></identifier></arc><arc id="5630754576_Agent_1" source="2ad227c0-344e-4927-96dd-242146daaa29_Agent_1" target="p_11_Agent_1"><identifier><text>j</text></identifier></arc><arc id="5630744080_Agent_1" source="p_5_Agent_1" target="351a01c1-2423-49cf-90c0-b133004113aa_Agent_1"><identifier><text>j</text></identifier></arc><arc id="5630743312_Agent_1" source="351a01c1-2423-49cf-90c0-b133004113aa_Agent_1" target="p_6_Agent_1"><identifier><text>j</text></identifier></arc><arc id="5631508624_Agent_1" source="c6d69f0f-463d-4557-b0ec-cb755b365f8b_Agent_1" target="p_12_Agent_1"><identifier><text>j</text></identifier></arc><arc id="5631512592_Agent_1" source="p_17_Agent_1" target="6dc562b0-68c0-4d3f-8949-2bcb46955b3d_Agent_1"><identifier><text>j</text></identifier></arc><arc id="5631514320_Agent_1" source="db6decab-f8aa-4bb8-b02a-7b0b107919e4_Agent_1" target="p_19_Agent_1"><identifier><text>j</text></identifier></arc><arc id="5631514576_Agent_1" source="b02bc8d9-3323-4d1b-a926-f67637c299a6_Agent_1" target="p_7_Agent_1"><identifier><text>j</text></identifier></arc><arc id="5630743376_Agent_1" source="324e01b0-9e22-44eb-8488-96164c8bd235_Agent_1" target="p_8_Agent_1"><identifier><text>j</text></identifier></arc><arc id="5631521744_Agent_1" source="p_11_Agent_1" target="c6d69f0f-463d-4557-b0ec-cb755b365f8b_Agent_1"><identifier><text>j</text></identifier></arc><arc id="5631515088_Agent_1" source="p_20_Agent_1" target="161433d7-d504-47b6-b463-4c0d3e8fe024_Agent_1"><identifier><text>j</text></identifier></arc><arc id="5631514960_Agent_1" source="p_18_Agent_1" target="161433d7-d504-47b6-b463-4c0d3e8fe024_Agent_1"><identifier><text>j</text></identifier></arc><arc id="5631514448_Agent_1" source="b02bc8d9-3323-4d1b-a926-f67637c299a6_Agent_1" target="p_5_Agent_1"><identifier><text>j</text></identifier></arc><arc id="5631514832_Agent_1" source="p_8_Agent_1" target="dc703964-5522-439b-b127-d7981e0b1ba2_Agent_1"><identifier><text>j</text></identifier></arc><arc id="5630753872_Agent_1" source="p_9_Agent_1" target="5d5916bc-3552-47c0-b3ce-6408bfb728ae_Agent_1"><identifier><text>j</text></identifier></arc><arc id="5630742864_Agent_1" source="p_7_Agent_1" target="324e01b0-9e22-44eb-8488-96164c8bd235_Agent_1"><identifier><text>j</text></identifier></arc><arc id="5630754000_Agent_1" source="5d5916bc-3552-47c0-b3ce-6408bfb728ae_Agent_1" target="p_10_Agent_1"><identifier><text>j</text></identifier></arc><arc id="5631510736_Agent_1" source="p_14_Agent_1" target="db6decab-f8aa-4bb8-b02a-7b0b107919e4_Agent_1"><identifier><text>j</text></identifier></arc><arc id="5631514704_Agent_1" source="p_6_Agent_1" target="dc703964-5522-439b-b127-d7981e0b1ba2_Agent_1"><identifier><text>j</text></identifier></arc><arc id="5631512720_Agent_1" source="6dc562b0-68c0-4d3f-8949-2bcb46955b3d_Agent_1" target="p_18_Agent_1"><identifier><text>j</text></identifier></arc><arc id="5631508880_Agent_1" source="p_12_Agent_1" target="53a2c8b9-e7c5-4c82-8b48-5e2ed92a9148_Agent_1"><identifier><text>j</text></identifier></arc><arc id="5631509136_Agent_1" source="db6decab-f8aa-4bb8-b02a-7b0b107919e4_Agent_1" target="p_17_Agent_1"><identifier><text>j</text></identifier></arc><arc id="5631509520_Agent_1" source="p_9_Agent_1" target="d36ec78f-c7bc-4149-ac63-afcb5c53de71_Agent_1"><identifier><text>j</text></identifier></arc><arc id="5631513616_Agent_1" source="p_19_Agent_1" target="cafbd8e3-bcb0-4ad3-ace4-ab692b14b403_Agent_1"><identifier><text>j</text></identifier></arc><arc id="5631509648_Agent_1" source="d36ec78f-c7bc-4149-ac63-afcb5c53de71_Agent_1" target="p_13_Agent_1"><identifier><text>j</text></identifier></arc><arc id="5631513744_Agent_1" source="cafbd8e3-bcb0-4ad3-ace4-ab692b14b403_Agent_1" target="p_20_Agent_1"><identifier><text>j</text></identifier></arc><arc id="5906552464_Agent_2" source="p_12_Agent_2" target="f2c2a1c3-9860-4665-8d53-4cd903304322_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5906549968_Agent_2" source="p_22_Agent_2" target="ca5ed78d-24dd-409d-a03e-cfbd25424996_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5906552592_Agent_2" source="p_23_Agent_2" target="5611418c-e485-42bc-9a2f-37dff678e884_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5906552720_Agent_2" source="p_25_Agent_2" target="5611418c-e485-42bc-9a2f-37dff678e884_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5907476432_Agent_2" source="f2c2a1c3-9860-4665-8d53-4cd903304322_Agent_2" target="p_13_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5906552080_Agent_2" source="tauJoin_2_Agent_2" target="p_9_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5906552336_Agent_2" source="p_10_Agent_2" target="f2c2a1c3-9860-4665-8d53-4cd903304322_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5907466256_Agent_2" source="p_5_Agent_2" target="tauJoin_2_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5907466384_Agent_2" source="p_4_Agent_2" target="0ea7514a-a2c3-4d26-bb0f-74e51ff495f0_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5907466896_Agent_2" source="tauSplit_1_Agent_2" target="p_6_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5907474576_Agent_2" source="p_9_Agent_2" target="05e30de9-337e-4368-b21c-7eacad325836_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5907474704_Agent_2" source="05e30de9-337e-4368-b21c-7eacad325836_Agent_2" target="p_10_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5907478672_Agent_2" source="p_16_Agent_2" target="d41df38f-ea0f-4968-bf1a-14d7d093bbd1_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5906546768_Agent_2" source="a9fdae3e-7f78-4a15-830f-0a63733fdc3c_Agent_2" target="p_18_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5906550096_Agent_2" source="ca5ed78d-24dd-409d-a03e-cfbd25424996_Agent_2" target="p_23_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5907476944_Agent_2" source="p_13_Agent_2" target="7cb24e78-4e52-40ed-a285-7a53f29a91e5_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5907475792_Agent_2" source="9c967df1-1ad8-4e19-92a3-8c5fd0aca08f_Agent_2" target="p_12_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5907477072_Agent_2" source="7cb24e78-4e52-40ed-a285-7a53f29a91e5_Agent_2" target="p_14_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5906547280_Agent_2" source="p_18_Agent_2" target="7c61a78f-1daf-466f-9090-8935acdb82b5_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5906547408_Agent_2" source="7c61a78f-1daf-466f-9090-8935acdb82b5_Agent_2" target="p_19_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5907479312_Agent_2" source="p_15_Agent_2" target="9d5d5296-29b8-451c-98c3-fc664b3ca277_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5907479440_Agent_2" source="9d5d5296-29b8-451c-98c3-fc664b3ca277_Agent_2" target="p_17_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5907477584_Agent_2" source="p_14_Agent_2" target="da4f25ce-1f0e-482c-bf49-ad4700a5d500_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5907477712_Agent_2" source="da4f25ce-1f0e-482c-bf49-ad4700a5d500_Agent_2" target="p_15_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5906547920_Agent_2" source="p_19_Agent_2" target="c3cb46af-2f5a-41a0-9630-2cc147d2240b_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5907478224_Agent_2" source="p_15_Agent_2" target="c45bbe23-5d64-4d89-ad25-910564a01179_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5907478352_Agent_2" source="c45bbe23-5d64-4d89-ad25-910564a01179_Agent_2" target="p_16_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5907480464_Agent_2" source="p_13_Agent_2" target="a9fdae3e-7f78-4a15-830f-0a63733fdc3c_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5907475664_Agent_2" source="p_11_Agent_2" target="9c967df1-1ad8-4e19-92a3-8c5fd0aca08f_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5907465936_Agent_2" source="tauSplit_1_Agent_2" target="p_4_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5907466576_Agent_2" source="0ea7514a-a2c3-4d26-bb0f-74e51ff495f0_Agent_2" target="p_5_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5907467216_Agent_2" source="p_7_Agent_2" target="tauJoin_2_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5907467472_Agent_2" source="p_6_Agent_2" target="e91b7dc2-ed7a-40fb-929a-610e1c47b719_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5906551056_Agent_2" source="p_24_Agent_2" target="8717b236-9278-4d81-9c04-a5608a9a5ae9_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5906551184_Agent_2" source="8717b236-9278-4d81-9c04-a5608a9a5ae9_Agent_2" target="p_25_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5906551824_Agent_2" source="c3cb46af-2f5a-41a0-9630-2cc147d2240b_Agent_2" target="p_22_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5906551952_Agent_2" source="c3cb46af-2f5a-41a0-9630-2cc147d2240b_Agent_2" target="p_24_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5907479760_Agent_2" source="p_17_Agent_2" target="45d57c64-92d8-4f9f-a99b-b7c43f4ce055_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5907467600_Agent_2" source="e91b7dc2-ed7a-40fb-929a-610e1c47b719_Agent_2" target="p_7_Agent_2"><identifier><text>v</text></identifier></arc><arc id="5906552208_Agent_2" source="tauJoin_2_Agent_2" target="p_11_Agent_2"><identifier><text>v</text></identifier></arc></page>      <finalmarkings>
+      <marking>
+        <place idref="sink">
+          <text>1</text>
+        <type><text>Agent 1</text></type></place>
+      </marking>
+            <marking>
+        <place idref="sink">
+          <text>1</text>
+        <type><text>Agent 2</text></type></place>
+      </marking>
+    </finalmarkings></net></pnml>

@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_1758221787.4090319" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1758221787.4090319</text>
+    </name>
+    <page id="n0">
+      <place id="source">
+        <name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      <type><text>Charge office Department</text></type></place>
+      <place id="sink">
+        <name>
+          <text>sink</text>
+        </name>
+      <type><text>Charge office Department</text></type></place>
+      <place id="p_3">
+        <name>
+          <text>p_3</text>
+        </name>
+      <type><text>Charge office Department</text></type></place>
+      <transition id="0678b7fe-691f-4568-a4c2-1b864642cc43">
+        <name>
+          <text>D26</text>
+        </name>
+      </transition>
+      <transition id="c4bb6b46-ecdb-4063-964d-08a9bc814ec9">
+        <name>
+          <text>D27</text>
+        </name>
+      </transition>
+      <arc id="14450927504" source="source" target="0678b7fe-691f-4568-a4c2-1b864642cc43"><identifier><text>o</text></identifier></arc>
+      <arc id="14450927632" source="0678b7fe-691f-4568-a4c2-1b864642cc43" target="p_3"><identifier><text>o</text></identifier></arc>
+      <arc id="14450927952" source="p_3" target="c4bb6b46-ecdb-4063-964d-08a9bc814ec9"><identifier><text>o</text></identifier></arc>
+      <arc id="14450928080" source="c4bb6b46-ecdb-4063-964d-08a9bc814ec9" target="sink"><identifier><text>o</text></identifier></arc>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink">
+          <text>1</text>
+        <type><text>Charge office Department</text></type></place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

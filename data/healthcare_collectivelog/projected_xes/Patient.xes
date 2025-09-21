@@ -1,0 +1,2558 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<log xes.version="1849-2016" xes.features="nested-attributes" xmlns="http://www.xes-standard.org/">
+	<extension name="Organizational" prefix="org" uri="http://www.xes-standard.org/org.xesext" />
+	<extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext" />
+	<extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext" />
+	<extension name="Identity" prefix="identity" uri="http://www.xes-standard.org/identity.xesext" />
+	<string key="concept:name" value="collog" />
+	<trace>
+		<string key="concept:name" value="case_44" />
+		<event>
+			<string key="msgInstanceID" value="disease_47" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:06:35.562000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_50" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:06:58.103000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_254" />
+		<event>
+			<string key="msgInstanceID" value="disease_272" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:41:13.070000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_275" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:42:09.958000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_278" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:42:26.199000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_354" />
+		<event>
+			<string key="msgInstanceID" value="disease_385" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:58:48.018000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_388" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:59:13.265000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_391" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:59:43.406000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_169" />
+		<event>
+			<string key="msgInstanceID" value="disease_171" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:24:37.984000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_174" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:25:02.772000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_184" />
+		<event>
+			<string key="msgInstanceID" value="disease_183" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:26:16.324000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_186" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:26:54.667000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_189" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:27:22.700000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_339" />
+		<event>
+			<string key="msgInstanceID" value="disease_370" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:56:30.956000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_373" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:56:58.128000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_376" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:57:33.623000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_9" />
+		<event>
+			<string key="msgInstanceID" value="disease_4" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T10:59:26.814000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_7" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T10:59:49.197000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_209" />
+		<event>
+			<string key="msgInstanceID" value="disease_215" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:31:58.258000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_218" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:32:40.601000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_221" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:33:11.157000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_359" />
+		<event>
+			<string key="msgInstanceID" value="disease_392" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:59:47.447000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_395" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T12:00:54.581000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_398" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T12:01:08.903000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_189" />
+		<event>
+			<string key="msgInstanceID" value="disease_190" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:27:26.977000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_193" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:28:40.955000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_196" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:28:53.513000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_29" />
+		<event>
+			<string key="msgInstanceID" value="disease_29" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:03:43.234000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_32" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:04:35.328000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_35" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:05:00.723000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_314" />
+		<event>
+			<string key="msgInstanceID" value="disease_335" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:50:59.474000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_338" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:51:32.030000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_341" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:52:04.641000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_459" />
+		<event>
+			<string key="msgInstanceID" value="disease_499" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T12:17:07.628000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_502" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T12:17:38.139000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_434" />
+		<event>
+			<string key="msgInstanceID" value="disease_476" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T12:13:11.777000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_479" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T12:13:42.193000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_114" />
+		<event>
+			<string key="msgInstanceID" value="disease_112" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:15:29.244000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_115" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:16:12.300000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_118" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:16:26.755000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_379" />
+		<event>
+			<string key="msgInstanceID" value="disease_417" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T12:04:15.694000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_420" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T12:04:52.512000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_423" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T12:05:20.533000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_39" />
+		<event>
+			<string key="msgInstanceID" value="disease_40" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:05:31.471000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_43" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:06:13.619000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_46" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:06:33.996000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_389" />
+		<event>
+			<string key="msgInstanceID" value="disease_428" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T12:05:50.968000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_431" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T12:06:21.130000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_434" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T12:06:44.820000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_414" />
+		<event>
+			<string key="msgInstanceID" value="disease_454" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T12:09:34.981000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_457" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T12:10:07.498000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_474" />
+		<event>
+			<string key="msgInstanceID" value="disease_514" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T12:19:29.527000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_517" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T12:20:22.114000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_520" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T12:20:36.936000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_109" />
+		<event>
+			<string key="msgInstanceID" value="disease_108" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:14:54.873000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_111" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:15:25.678000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_404" />
+		<event>
+			<string key="msgInstanceID" value="disease_443" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T12:07:45.766000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_446" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T12:08:10.991000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_229" />
+		<event>
+			<string key="msgInstanceID" value="disease_240" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:35:38.252000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_243" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:37:03.509000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_246" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:37:13.267000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_409" />
+		<event>
+			<string key="msgInstanceID" value="disease_447" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T12:08:13.969000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_450" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T12:09:16.309000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_453" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T12:09:25.957000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_94" />
+		<event>
+			<string key="msgInstanceID" value="disease_93" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:13:00.158000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_96" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:13:29.791000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_329" />
+		<event>
+			<string key="msgInstanceID" value="disease_356" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:54:20.778000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_359" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:54:56.801000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_362" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:55:19.214000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_159" />
+		<event>
+			<string key="msgInstanceID" value="disease_157" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:22:07.753000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_160" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:23:13.488000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_163" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:23:24.967000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_59" />
+		<event>
+			<string key="msgInstanceID" value="disease_62" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:08:48.659000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_65" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:09:18.599000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_64" />
+		<event>
+			<string key="msgInstanceID" value="disease_66" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:09:21.706000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_69" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:09:48.141000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_439" />
+		<event>
+			<string key="msgInstanceID" value="disease_480" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T12:13:45.121000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_483" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T12:14:22.708000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_399" />
+		<event>
+			<string key="msgInstanceID" value="disease_439" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T12:07:12.298000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_442" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T12:07:42.814000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_149" />
+		<event>
+			<string key="msgInstanceID" value="disease_149" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:20:50.209000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_152" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:21:29.148000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_124" />
+		<event>
+			<string key="msgInstanceID" value="disease_123" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:17:03.218000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_126" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:17:41.235000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_349" />
+		<event>
+			<string key="msgInstanceID" value="disease_381" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:58:17.088000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_384" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:58:45.983000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_484" />
+		<event>
+			<string key="msgInstanceID" value="disease_528" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T12:21:40.270000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_531" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T12:22:21.676000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_19" />
+		<event>
+			<string key="msgInstanceID" value="disease_15" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:01:12.718000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_18" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:01:53.447000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_21" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:02:18.401000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_449" />
+		<event>
+			<string key="msgInstanceID" value="disease_491" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T12:15:47.081000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_494" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T12:16:29.154000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_139" />
+		<event>
+			<string key="msgInstanceID" value="disease_138" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:19:05.560000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_141" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:19:55.150000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_144" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:20:04.043000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_49" />
+		<event>
+			<string key="msgInstanceID" value="disease_51" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:06:58.277000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_54" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:07:37.337000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_259" />
+		<event>
+			<string key="msgInstanceID" value="disease_279" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:42:27.616000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_282" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:42:54.529000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_249" />
+		<event>
+			<string key="msgInstanceID" value="disease_265" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:40:01.426000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_268" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:40:44.233000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_271" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:41:12.617000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_74" />
+		<event>
+			<string key="msgInstanceID" value="disease_74" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:10:14.067000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_77" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:11:03.718000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_80" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:11:30.069000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_469" />
+		<event>
+			<string key="msgInstanceID" value="disease_507" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T12:18:21.964000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_510" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T12:19:03.386000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_513" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T12:19:25.549000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_429" />
+		<event>
+			<string key="msgInstanceID" value="disease_472" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T12:12:40.006000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_475" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T12:13:07.227000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_394" />
+		<event>
+			<string key="msgInstanceID" value="disease_435" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T12:06:45.312000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_438" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T12:07:08.026000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_69" />
+		<event>
+			<string key="msgInstanceID" value="disease_70" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:09:48.627000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_73" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:10:12.035000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_334" />
+		<event>
+			<string key="msgInstanceID" value="disease_363" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:55:19.824000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_366" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:56:13.492000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_369" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:56:26.667000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_479" />
+		<event>
+			<string key="msgInstanceID" value="disease_521" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T12:20:39.970000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_524" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T12:21:21.777000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_527" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T12:21:37.718000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_289" />
+		<event>
+			<string key="msgInstanceID" value="disease_309" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:47:16.995000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_312" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:47:46.640000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_294" />
+		<event>
+			<string key="msgInstanceID" value="disease_313" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:47:48.021000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_316" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:48:17.696000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_369" />
+		<event>
+			<string key="msgInstanceID" value="disease_406" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T12:02:21.891000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_409" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T12:03:00.035000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_264" />
+		<event>
+			<string key="msgInstanceID" value="disease_283" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:42:55.505000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_286" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:43:30.484000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_104" />
+		<event>
+			<string key="msgInstanceID" value="disease_104" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:14:19.906000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_107" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:14:53.006000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_199" />
+		<event>
+			<string key="msgInstanceID" value="disease_204" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:30:14.365000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_207" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:30:50.596000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_210" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:31:20.409000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_344" />
+		<event>
+			<string key="msgInstanceID" value="disease_377" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:57:34.377000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_380" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:58:15.199000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_384" />
+		<event>
+			<string key="msgInstanceID" value="disease_424" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T12:05:24.845000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_427" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T12:05:48.152000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_244" />
+		<event>
+			<string key="msgInstanceID" value="disease_261" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:39:25.555000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_264" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:39:56.737000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_284" />
+		<event>
+			<string key="msgInstanceID" value="disease_302" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:45:57.685000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_305" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:47:05.852000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_308" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:47:16.577000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_79" />
+		<event>
+			<string key="msgInstanceID" value="disease_81" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:11:30.883000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_84" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:11:51.847000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_194" />
+		<event>
+			<string key="msgInstanceID" value="disease_197" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:28:56.579000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_200" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:29:55.355000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_203" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:30:12.588000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_319" />
+		<event>
+			<string key="msgInstanceID" value="disease_342" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:52:08.795000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_345" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:52:38.386000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_348" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:53:01.265000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_34" />
+		<event>
+			<string key="msgInstanceID" value="disease_36" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:05:01.534000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_39" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:05:30.142000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_274" />
+		<event>
+			<string key="msgInstanceID" value="disease_291" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:44:26.960000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_294" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:44:56.914000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_134" />
+		<event>
+			<string key="msgInstanceID" value="disease_134" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:18:31.843000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_137" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:19:03.978000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_499" />
+		<event>
+			<string key="msgInstanceID" value="disease_543" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T12:23:52.482000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_546" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T12:24:50.066000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_549" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T12:24:55.160000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_224" />
+		<event>
+			<string key="msgInstanceID" value="disease_233" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:34:29.739000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_236" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:35:12.474000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_239" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:35:37.469000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_299" />
+		<event>
+			<string key="msgInstanceID" value="disease_317" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:48:19.864000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_320" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:48:54.384000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_323" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:49:21.207000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_364" />
+		<event>
+			<string key="msgInstanceID" value="disease_399" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T12:01:08.958000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_402" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T12:01:48.575000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_405" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T12:02:17.342000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_454" />
+		<event>
+			<string key="msgInstanceID" value="disease_495" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T12:16:30.080000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_498" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T12:17:03.752000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_494" />
+		<event>
+			<string key="msgInstanceID" value="disease_539" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T12:23:25.134000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_542" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T12:23:51.469000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_99" />
+		<event>
+			<string key="msgInstanceID" value="disease_97" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:13:33.303000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_100" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:14:16.999000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_103" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:14:18.546000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_144" />
+		<event>
+			<string key="msgInstanceID" value="disease_145" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:20:05.691000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_148" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:20:45.599000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_444" />
+		<event>
+			<string key="msgInstanceID" value="disease_484" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T12:14:24.918000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_487" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T12:15:21.956000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_490" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T12:15:45.446000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_374" />
+		<event>
+			<string key="msgInstanceID" value="disease_410" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T12:03:04.958000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_413" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T12:03:45.973000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_416" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T12:04:15.408000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_464" />
+		<event>
+			<string key="msgInstanceID" value="disease_503" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T12:17:40.562000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_506" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T12:18:19.008000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_54" />
+		<event>
+			<string key="msgInstanceID" value="disease_55" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:07:41.476000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_58" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:08:36.576000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_61" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:08:45.232000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_154" />
+		<event>
+			<string key="msgInstanceID" value="disease_153" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:21:33.564000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_156" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:22:04.367000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_214" />
+		<event>
+			<string key="msgInstanceID" value="disease_222" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:33:11.727000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_225" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:33:37.382000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_14" />
+		<event>
+			<string key="msgInstanceID" value="disease_8" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T10:59:51.039000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_11" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:00:54.505000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_14" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:01:09.588000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_24" />
+		<event>
+			<string key="msgInstanceID" value="disease_22" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:02:23.321000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_25" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:03:10.370000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_28" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:03:42.208000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_419" />
+		<event>
+			<string key="msgInstanceID" value="disease_458" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T12:10:09.951000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_461" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T12:11:11.198000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_464" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T12:11:30.485000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_129" />
+		<event>
+			<string key="msgInstanceID" value="disease_127" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:17:44.611000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_130" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:18:06.556000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_133" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:18:31.608000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_239" />
+		<event>
+			<string key="msgInstanceID" value="disease_254" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:38:34.194000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_257" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:38:59.776000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_260" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:39:24.162000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_324" />
+		<event>
+			<string key="msgInstanceID" value="disease_349" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:53:06.137000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_352" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:53:51.031000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_355" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:54:17.359000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_119" />
+		<event>
+			<string key="msgInstanceID" value="disease_119" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:16:31.702000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_122" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:16:59.628000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_204" />
+		<event>
+			<string key="msgInstanceID" value="disease_211" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:31:25.399000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_214" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:31:57.931000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_164" />
+		<event>
+			<string key="msgInstanceID" value="disease_164" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:23:29.471000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_167" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:23:59.485000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_170" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:24:35.183000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_279" />
+		<event>
+			<string key="msgInstanceID" value="disease_295" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:44:57.579000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_298" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:45:35.568000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_301" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:45:53.967000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_269" />
+		<event>
+			<string key="msgInstanceID" value="disease_287" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:43:32.519000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_290" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:44:26.036000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_234" />
+		<event>
+			<string key="msgInstanceID" value="disease_247" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:37:18.058000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_250" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:38:10.020000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_253" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:38:30.274000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_174" />
+		<event>
+			<string key="msgInstanceID" value="disease_175" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:25:06.624000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_178" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:25:31.720000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_179" />
+		<event>
+			<string key="msgInstanceID" value="disease_179" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:25:34.287000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_182" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:26:12.446000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_219" />
+		<event>
+			<string key="msgInstanceID" value="disease_226" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:33:37.748000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_229" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:34:03.016000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_232" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:34:28.542000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_309" />
+		<event>
+			<string key="msgInstanceID" value="disease_331" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:50:25.819000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_334" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:50:55.402000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_489" />
+		<event>
+			<string key="msgInstanceID" value="disease_532" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T12:22:24.145000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_535" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T12:23:10.165000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_538" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T12:23:22.206000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_424" />
+		<event>
+			<string key="msgInstanceID" value="disease_465" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T12:11:31.065000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_468" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T12:12:08.159000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_471" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T12:12:36.378000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_304" />
+		<event>
+			<string key="msgInstanceID" value="disease_324" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:49:23.369000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="hospitalisation_327" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Hospitalisation needed" />
+			<date key="time:timestamp" value="2021-06-17T11:50:01.044000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="hospitalisation" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_330" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:50:24.080000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_84" />
+		<event>
+			<string key="msgInstanceID" value="disease_85" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:11:55.664000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_88" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:12:17.623000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_4" />
+		<event>
+			<string key="msgInstanceID" value="disease_0" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T10:58:55.472000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_3" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T10:59:25.039000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_89" />
+		<event>
+			<string key="msgInstanceID" value="disease_89" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Communicate disease" />
+			<date key="time:timestamp" value="2021-06-17T11:12:22.510000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="disease" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="prescription_92" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Patient" />
+			<string key="concept:name" value="Receive prescription" />
+			<date key="time:timestamp" value="2021-06-17T11:12:58.618000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="prescription" />
+		</event>
+	</trace>
+</log>

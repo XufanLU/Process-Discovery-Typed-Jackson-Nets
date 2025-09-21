@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_1758220346.469986" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1758220346.469986</text>
+    </name>
+    <page id="n0">
+      <place id="p_5">
+        <name>
+          <text>p_5</text>
+        </name>
+      <type><text>Dingo</text></type></place>
+      <place id="p_4">
+        <name>
+          <text>p_4</text>
+        </name>
+      <type><text>Dingo</text></type></place>
+      <place id="p_3">
+        <name>
+          <text>p_3</text>
+        </name>
+      <type><text>Dingo</text></type></place>
+      <transition id="f2b7e242-74cf-4eeb-b77a-d924fb69e203">
+        <name>
+          <text>Dingo_target_found</text>
+        </name>
+      </transition>
+      <transition id="3ccfb3ad-9779-4bcb-b726-b6edce3b5a78">
+        <name>
+          <text>Dingo_Fire</text>
+        </name>
+      </transition>
+      <transition id="da5dcc4e-fc38-4ed8-8f93-e8ab832f91d4">
+        <name>
+          <text>Dingo_done</text>
+        </name>
+      </transition>
+      <transition id="cdc984e5-662a-4230-be25-7c713a27ef41">
+        <name>
+          <text>Dingo_GoTo</text>
+        </name>
+      </transition>
+      <arc id="5134844560" source="p_4" target="3ccfb3ad-9779-4bcb-b726-b6edce3b5a78"><identifier><text>r</text></identifier></arc>
+      <arc id="5134843984" source="p_3" target="cdc984e5-662a-4230-be25-7c713a27ef41"><identifier><text>r</text></identifier></arc>
+      <arc id="5134750096" source="f2b7e242-74cf-4eeb-b77a-d924fb69e203" target="p_3"><identifier><text>r</text></identifier></arc>
+      <arc id="5134844112" source="cdc984e5-662a-4230-be25-7c713a27ef41" target="p_4"><identifier><text>r</text></identifier></arc>
+      <arc id="5134844688" source="3ccfb3ad-9779-4bcb-b726-b6edce3b5a78" target="p_5"><identifier><text>r</text></identifier></arc>
+      <arc id="5134844944" source="p_5" target="da5dcc4e-fc38-4ed8-8f93-e8ab832f91d4"><identifier><text>r</text></identifier></arc>
+      </page>
+    </net>
+</pnml>

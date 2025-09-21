@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_1758221153.005671" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1758221153.005671</text>
+    </name>
+    <page id="n0">
+      <place id="p_5">
+        <name>
+          <text>p_5</text>
+        </name>
+      <type><text>Visitor</text></type></place>
+      <place id="p_4">
+        <name>
+          <text>p_4</text>
+        </name>
+      <type><text>Visitor</text></type></place>
+      <place id="p_3">
+        <name>
+          <text>p_3</text>
+        </name>
+      <type><text>Visitor</text></type></place>
+      <place id="p_6">
+        <name>
+          <text>p_6</text>
+        </name>
+      <type><text>Visitor</text></type></place>
+      <place id="p_7">
+        <name>
+          <text>p_7</text>
+        </name>
+      <type><text>Visitor</text></type></place>
+      <transition id="fdca768a-f549-40b3-b8d0-cf10ba75e68d">
+        <name>
+          <text>Decide individual or family ticket</text>
+        </name>
+      </transition>
+      <transition id="1896010e-d63f-4ec7-9449-f3ec555d68b9">
+        <name>
+          <text>Wait for card</text>
+        </name>
+      </transition>
+      <transition id="c362d39a-7498-41a3-8cc4-f125481eeea1">
+        <name>
+          <text>Send information to the ZooClub department</text>
+        </name>
+      </transition>
+      <transition id="ae666a17-143c-4d99-b023-9cb20551367b">
+        <name>
+          <text>Prepare family's information</text>
+        </name>
+      </transition>
+      <transition id="e7dff9cf-ed26-4f08-8fb7-1831601b71ea">
+        <name>
+          <text>Prepare personal information</text>
+        </name>
+      </transition>
+      <transition id="1aa8bfbe-c373-4039-8cb1-f8739ea9ba13">
+        <name>
+          <text>Card received?</text>
+        </name>
+      </transition>
+      <transition id="48bd8039-f9c5-4f0c-8955-20217f9f0ad0">
+        <name>
+          <text>Go home</text>
+        </name>
+      </transition>
+      <arc id="4889917072" source="p_6" target="1aa8bfbe-c373-4039-8cb1-f8739ea9ba13"><identifier><text>v</text></identifier></arc>
+      <arc id="4889917200" source="1aa8bfbe-c373-4039-8cb1-f8739ea9ba13" target="p_7"><identifier><text>v</text></identifier></arc>
+      <arc id="4889912912" source="e7dff9cf-ed26-4f08-8fb7-1831601b71ea" target="p_4"><identifier><text>v</text></identifier></arc>
+      <arc id="4889913168" source="p_3" target="e7dff9cf-ed26-4f08-8fb7-1831601b71ea"><identifier><text>v</text></identifier></arc>
+      <arc id="4889912272" source="p_3" target="ae666a17-143c-4d99-b023-9cb20551367b"><identifier><text>v</text></identifier></arc>
+      <arc id="4854081232" source="fdca768a-f549-40b3-b8d0-cf10ba75e68d" target="p_3"><identifier><text>v</text></identifier></arc>
+      <arc id="4889912016" source="ae666a17-143c-4d99-b023-9cb20551367b" target="p_4"><identifier><text>v</text></identifier></arc>
+      <arc id="4889915920" source="p_4" target="c362d39a-7498-41a3-8cc4-f125481eeea1"><identifier><text>v</text></identifier></arc>
+      <arc id="4889916048" source="c362d39a-7498-41a3-8cc4-f125481eeea1" target="p_5"><identifier><text>v</text></identifier></arc>
+      <arc id="4889916496" source="p_5" target="1896010e-d63f-4ec7-9449-f3ec555d68b9"><identifier><text>v</text></identifier></arc>
+      <arc id="4889916624" source="1896010e-d63f-4ec7-9449-f3ec555d68b9" target="p_6"><identifier><text>v</text></identifier></arc>
+      <arc id="4889917456" source="p_7" target="48bd8039-f9c5-4f0c-8955-20217f9f0ad0"><identifier><text>v</text></identifier></arc>
+      </page>
+    </net>
+</pnml>

@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_1758221140.965271" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1758221140.965271</text>
+    </name>
+    <page id="n0">
+      <place id="p_16">
+        <name>
+          <text>p_16</text>
+        </name>
+      <type><text>TravelAgency</text></type></place>
+      <place id="p_13">
+        <name>
+          <text>p_13</text>
+        </name>
+      <type><text>TravelAgency</text></type></place>
+      <place id="p_15">
+        <name>
+          <text>p_15</text>
+        </name>
+      <type><text>TravelAgency</text></type></place>
+      <place id="p_17">
+        <name>
+          <text>p_17</text>
+        </name>
+      <type><text>TravelAgency</text></type></place>
+      <place id="p_12">
+        <name>
+          <text>p_12</text>
+        </name>
+      <type><text>TravelAgency</text></type></place>
+      <place id="source">
+        <name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      <type><text>TravelAgency</text></type></place>
+      <place id="p_5">
+        <name>
+          <text>p_5</text>
+        </name>
+      <type><text>TravelAgency</text></type></place>
+      <place id="sink">
+        <name>
+          <text>sink</text>
+        </name>
+      <type><text>TravelAgency</text></type></place>
+      <place id="p_6">
+        <name>
+          <text>p_6</text>
+        </name>
+      <type><text>TravelAgency</text></type></place>
+      <place id="p_9">
+        <name>
+          <text>p_9</text>
+        </name>
+      <type><text>TravelAgency</text></type></place>
+      <place id="p_10">
+        <name>
+          <text>p_10</text>
+        </name>
+      <type><text>TravelAgency</text></type></place>
+      <place id="p_14">
+        <name>
+          <text>p_14</text>
+        </name>
+      <type><text>TravelAgency</text></type></place>
+      <transition id="14164235-2c9b-468c-bd4a-dfb6eb39973a">
+        <name>
+          <text>Book Received</text>
+        </name>
+      </transition>
+      <transition id="f808798d-dfb6-49b6-b9b6-e2d4b707a74b">
+        <name>
+          <text>Payment Received</text>
+        </name>
+      </transition>
+      <transition id="tau_1">
+        <name>
+          <text>tau_1</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="088756bd-3920-43fa-b59f-9ee0a2ccdf8c" />
+      </transition>
+      <transition id="04461778-0c42-4781-8287-5fa93d8d0553">
+        <name>
+          <text>Order Ticket</text>
+        </name>
+      </transition>
+      <transition id="tauJoin_4">
+        <name>
+          <text>tauJoin_4</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="89f4e504-a95e-4bf6-ac10-5e5c64b4c424" />
+      </transition>
+      <transition id="4a1f1d9d-ad88-4473-abc0-f6c87a9684bd">
+        <name>
+          <text>Make Travel Offer</text>
+        </name>
+      </transition>
+      <transition id="skip_7">
+        <name>
+          <text>skip_7</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="ec3c87ce-69fa-4bec-8678-d6c39e126827" />
+      </transition>
+      <transition id="e264d402-40b1-4f67-9a74-275d5cc0bdb1">
+        <name>
+          <text>Confirm Booking</text>
+        </name>
+      </transition>
+      <arc id="4658177808" source="04461778-0c42-4781-8287-5fa93d8d0553" target="p_6"><identifier><text>h</text></identifier></arc>
+      <arc id="4658181904" source="p_13" target="tauJoin_4"><identifier><text>h</text></identifier></arc>
+      <arc id="4658184016" source="p_17" target="tauJoin_4"><identifier><text>h</text></identifier></arc>
+      <arc id="4658179728" source="p_9" target="4a1f1d9d-ad88-4473-abc0-f6c87a9684bd"><identifier><text>h</text></identifier></arc>
+      <arc id="4658179856" source="4a1f1d9d-ad88-4473-abc0-f6c87a9684bd" target="p_10"><identifier><text>h</text></identifier></arc>
+      <arc id="4658180368" source="p_10" target="skip_7"><identifier><text>h</text></identifier></arc>
+      <arc id="4647546512" source="source" target="tau_1"><identifier><text>h</text></identifier></arc>
+      <arc id="4658250128" source="tauJoin_4" target="sink"><identifier><text>h</text></identifier></arc>
+      <arc id="4658251152" source="p_10" target="tauJoin_4"><identifier><text>h</text></identifier></arc>
+      <arc id="4658177680" source="p_5" target="04461778-0c42-4781-8287-5fa93d8d0553"><identifier><text>h</text></identifier></arc>
+      <arc id="4658250320" source="skip_7" target="p_9"><identifier><text>h</text></identifier></arc>
+      <arc id="4658250832" source="tau_1" target="p_12"><identifier><text>h</text></identifier></arc>
+      <arc id="4658250704" source="tau_1" target="p_16"><identifier><text>h</text></identifier></arc>
+      <arc id="4658250960" source="tau_1" target="p_9"><identifier><text>h</text></identifier></arc>
+      <arc id="4658177488" source="p_6" target="tauJoin_4"><identifier><text>h</text></identifier></arc>
+      <arc id="4658250448" source="tau_1" target="p_14"><identifier><text>h</text></identifier></arc>
+      <arc id="4658175952" source="tau_1" target="p_5"><identifier><text>h</text></identifier></arc>
+      <arc id="4658182224" source="p_12" target="e264d402-40b1-4f67-9a74-275d5cc0bdb1"><identifier><text>h</text></identifier></arc>
+      <arc id="4658182352" source="e264d402-40b1-4f67-9a74-275d5cc0bdb1" target="p_13"><identifier><text>h</text></identifier></arc>
+      <arc id="4658182992" source="p_15" target="tauJoin_4"><identifier><text>h</text></identifier></arc>
+      <arc id="4658249872" source="p_16" target="f808798d-dfb6-49b6-b9b6-e2d4b707a74b"><identifier><text>h</text></identifier></arc>
+      <arc id="4658250000" source="f808798d-dfb6-49b6-b9b6-e2d4b707a74b" target="p_17"><identifier><text>h</text></identifier></arc>
+      <arc id="4658183248" source="p_14" target="14164235-2c9b-468c-bd4a-dfb6eb39973a"><identifier><text>h</text></identifier></arc>
+      <arc id="4658183376" source="14164235-2c9b-468c-bd4a-dfb6eb39973a" target="p_15"><identifier><text>h</text></identifier></arc>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink">
+          <text>1</text>
+        <type><text>TravelAgency</text></type></place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

@@ -1,0 +1,1037 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<log xes.version="1849-2016" xes.features="nested-attributes" xmlns="http://www.xes-standard.org/">
+	<extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext" />
+	<extension name="Lifecycle" prefix="lifecycle" uri="http://www.xes-standard.org/lifecycle.xesext" />
+	<extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext" />
+	<extension name="Organizational" prefix="org" uri="http://www.xes-standard.org/org.xesext" />
+	<classifier name="Activity" keys="act" />
+	<classifier name="Resource" keys="org:group" />
+	<string key="lifecycle:model" value="standard" />
+	<string key="creator" value="Fluxicon Disco" />
+	<string key="library" value="Fluxicon Octane" />
+	<global scope="trace">
+		<string key="concept:name" value="name" />
+		<string key="variant" value="string" />
+		<int key="variant-index" value="0" />
+	</global>
+	<global scope="event">
+		<string key="concept:name" value="name" />
+		<string key="lifecycle:transition" value="transition" />
+		<string key="org:resource" value="resource" />
+		<date key="time:timestamp" value="2023-01-08T14:47:19.283000+00:00" />
+		<string key="org:group" value="string" />
+		<string key="act" value="string" />
+	</global>
+	<trace>
+		<string key="concept:name" value="1" />
+		<string key="variant" value="Variant 1" />
+		<int key="variant-index" value="1" />
+		<string key="creator" value="Fluxicon Disco" />
+		<event>
+			<string key="concept:name" value="Dingo_target_found" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T13:32:37.881000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="target_found" />
+			<string key="msgInstanceID" value="target_found_1" />
+			<string key="msgRole" value="receive" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_target_found" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_GoTo" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T13:32:38.894000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_GoTo" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_Fire" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T13:32:39.951000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_Fire" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_done" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T13:32:40.981000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="done" />
+			<string key="msgInstanceID" value="done_2" />
+			<string key="msgRole" value="send" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_done" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="2" />
+		<string key="variant" value="Variant 1" />
+		<int key="variant-index" value="1" />
+		<string key="creator" value="Fluxicon Disco" />
+		<event>
+			<string key="concept:name" value="Dingo_target_found" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T14:32:37.867000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="target_found" />
+			<string key="msgInstanceID" value="target_found_3" />
+			<string key="msgRole" value="receive" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_target_found" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_GoTo" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T14:32:38.874000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_GoTo" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_Fire" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T14:32:39.923000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_Fire" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_done" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T14:32:40.953000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="done" />
+			<string key="msgInstanceID" value="done_4" />
+			<string key="msgRole" value="send" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_done" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="3" />
+		<string key="variant" value="Variant 1" />
+		<int key="variant-index" value="1" />
+		<string key="creator" value="Fluxicon Disco" />
+		<event>
+			<string key="concept:name" value="Dingo_target_found" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T15:32:32.877000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="target_found" />
+			<string key="msgInstanceID" value="target_found_5" />
+			<string key="msgRole" value="receive" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_target_found" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_GoTo" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T15:32:33.891000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_GoTo" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_Fire" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T15:32:34.937000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_Fire" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_done" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T15:32:35.964000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="done" />
+			<string key="msgInstanceID" value="done_6" />
+			<string key="msgRole" value="send" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_done" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="4" />
+		<string key="variant" value="Variant 1" />
+		<int key="variant-index" value="1" />
+		<string key="creator" value="Fluxicon Disco" />
+		<event>
+			<string key="concept:name" value="Dingo_target_found" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T16:32:37.862000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="target_found" />
+			<string key="msgInstanceID" value="target_found_7" />
+			<string key="msgRole" value="receive" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_target_found" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_GoTo" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T16:32:38.873000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_GoTo" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_Fire" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T16:32:39.924000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_Fire" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_done" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T16:32:40.946000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="done" />
+			<string key="msgInstanceID" value="done_8" />
+			<string key="msgRole" value="send" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_done" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="5" />
+		<string key="variant" value="Variant 1" />
+		<int key="variant-index" value="1" />
+		<string key="creator" value="Fluxicon Disco" />
+		<event>
+			<string key="concept:name" value="Dingo_target_found" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T17:32:31.874000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="target_found" />
+			<string key="msgInstanceID" value="target_found_9" />
+			<string key="msgRole" value="receive" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_target_found" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_GoTo" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T17:32:32.880000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_GoTo" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_Fire" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T17:32:33.937000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_Fire" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_done" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T17:32:34.967000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="done" />
+			<string key="msgInstanceID" value="done_10" />
+			<string key="msgRole" value="send" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_done" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="6" />
+		<string key="variant" value="Variant 1" />
+		<int key="variant-index" value="1" />
+		<string key="creator" value="Fluxicon Disco" />
+		<event>
+			<string key="concept:name" value="Dingo_target_found" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T18:32:35.857000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="target_found" />
+			<string key="msgInstanceID" value="target_found_11" />
+			<string key="msgRole" value="receive" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_target_found" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_GoTo" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T18:32:36.866000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_GoTo" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_Fire" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T18:32:37.910000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_Fire" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_done" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T18:32:38.933000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="done" />
+			<string key="msgInstanceID" value="done_12" />
+			<string key="msgRole" value="send" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_done" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="7" />
+		<string key="variant" value="Variant 1" />
+		<int key="variant-index" value="1" />
+		<string key="creator" value="Fluxicon Disco" />
+		<event>
+			<string key="concept:name" value="Dingo_target_found" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T19:32:35.877000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="target_found" />
+			<string key="msgInstanceID" value="target_found_13" />
+			<string key="msgRole" value="receive" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_target_found" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_GoTo" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T19:32:36.884000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_GoTo" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_Fire" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T19:32:37.924000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_Fire" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_done" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T19:32:38.952000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="done" />
+			<string key="msgInstanceID" value="done_14" />
+			<string key="msgRole" value="send" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_done" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="8" />
+		<string key="variant" value="Variant 1" />
+		<int key="variant-index" value="1" />
+		<string key="creator" value="Fluxicon Disco" />
+		<event>
+			<string key="concept:name" value="Dingo_target_found" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T20:32:32.881000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="target_found" />
+			<string key="msgInstanceID" value="target_found_15" />
+			<string key="msgRole" value="receive" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_target_found" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_GoTo" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T20:32:33.889000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_GoTo" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_Fire" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T20:32:34.931000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_Fire" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_done" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T20:32:35.957000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="done" />
+			<string key="msgInstanceID" value="done_16" />
+			<string key="msgRole" value="send" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_done" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="9" />
+		<string key="variant" value="Variant 1" />
+		<int key="variant-index" value="1" />
+		<string key="creator" value="Fluxicon Disco" />
+		<event>
+			<string key="concept:name" value="Dingo_target_found" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T21:32:31.859000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="target_found" />
+			<string key="msgInstanceID" value="target_found_17" />
+			<string key="msgRole" value="receive" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_target_found" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_GoTo" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T21:32:32.873000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_GoTo" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_Fire" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T21:32:33.926000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_Fire" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_done" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T21:32:34.951000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="done" />
+			<string key="msgInstanceID" value="done_18" />
+			<string key="msgRole" value="send" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_done" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="10" />
+		<string key="variant" value="Variant 1" />
+		<int key="variant-index" value="1" />
+		<string key="creator" value="Fluxicon Disco" />
+		<event>
+			<string key="concept:name" value="Dingo_target_found" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T22:32:33.873000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="target_found" />
+			<string key="msgInstanceID" value="target_found_19" />
+			<string key="msgRole" value="receive" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_target_found" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_GoTo" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T22:32:34.880000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_GoTo" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_Fire" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T22:32:35.929000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_Fire" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_done" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T22:32:36.958000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="done" />
+			<string key="msgInstanceID" value="done_20" />
+			<string key="msgRole" value="send" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_done" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="11" />
+		<string key="variant" value="Variant 1" />
+		<int key="variant-index" value="1" />
+		<string key="creator" value="Fluxicon Disco" />
+		<event>
+			<string key="concept:name" value="Dingo_target_found" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T23:32:30.854000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="target_found" />
+			<string key="msgInstanceID" value="target_found_21" />
+			<string key="msgRole" value="receive" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_target_found" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_GoTo" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T23:32:31.865000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_GoTo" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_Fire" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T23:32:32.907000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_Fire" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_done" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-03T23:32:33.934000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="done" />
+			<string key="msgInstanceID" value="done_22" />
+			<string key="msgRole" value="send" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_done" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="12" />
+		<string key="variant" value="Variant 1" />
+		<int key="variant-index" value="1" />
+		<string key="creator" value="Fluxicon Disco" />
+		<event>
+			<string key="concept:name" value="Dingo_target_found" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T00:32:32.873000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="target_found" />
+			<string key="msgInstanceID" value="target_found_23" />
+			<string key="msgRole" value="receive" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_target_found" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_GoTo" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T00:32:33.880000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_GoTo" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_Fire" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T00:32:34.921000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_Fire" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_done" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T00:32:35.944000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="done" />
+			<string key="msgInstanceID" value="done_24" />
+			<string key="msgRole" value="send" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_done" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="13" />
+		<string key="variant" value="Variant 1" />
+		<int key="variant-index" value="1" />
+		<string key="creator" value="Fluxicon Disco" />
+		<event>
+			<string key="concept:name" value="Dingo_target_found" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T01:32:30.881000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="target_found" />
+			<string key="msgInstanceID" value="target_found_25" />
+			<string key="msgRole" value="receive" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_target_found" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_GoTo" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T01:32:31.895000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_GoTo" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_Fire" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T01:32:32.946000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_Fire" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_done" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T01:32:33.972000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="done" />
+			<string key="msgInstanceID" value="done_26" />
+			<string key="msgRole" value="send" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_done" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="14" />
+		<string key="variant" value="Variant 1" />
+		<int key="variant-index" value="1" />
+		<string key="creator" value="Fluxicon Disco" />
+		<event>
+			<string key="concept:name" value="Dingo_target_found" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T02:32:35.866000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="target_found" />
+			<string key="msgInstanceID" value="target_found_27" />
+			<string key="msgRole" value="receive" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_target_found" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_GoTo" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T02:32:36.874000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_GoTo" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_Fire" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T02:32:37.922000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_Fire" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_done" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T02:32:38.949000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="done" />
+			<string key="msgInstanceID" value="done_28" />
+			<string key="msgRole" value="send" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_done" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="15" />
+		<string key="variant" value="Variant 1" />
+		<int key="variant-index" value="1" />
+		<string key="creator" value="Fluxicon Disco" />
+		<event>
+			<string key="concept:name" value="Dingo_target_found" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T03:32:39.861000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="target_found" />
+			<string key="msgInstanceID" value="target_found_29" />
+			<string key="msgRole" value="receive" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_target_found" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_GoTo" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T03:32:40.874000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_GoTo" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_Fire" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T03:32:41.921000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_Fire" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_done" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T03:32:42.941000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="done" />
+			<string key="msgInstanceID" value="done_30" />
+			<string key="msgRole" value="send" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_done" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="16" />
+		<string key="variant" value="Variant 1" />
+		<int key="variant-index" value="1" />
+		<string key="creator" value="Fluxicon Disco" />
+		<event>
+			<string key="concept:name" value="Dingo_target_found" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T04:32:33.872000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="target_found" />
+			<string key="msgInstanceID" value="target_found_31" />
+			<string key="msgRole" value="receive" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_target_found" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_GoTo" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T04:32:34.882000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_GoTo" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_Fire" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T04:32:35.926000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_Fire" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_done" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T04:32:36.954000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="done" />
+			<string key="msgInstanceID" value="done_32" />
+			<string key="msgRole" value="send" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_done" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="17" />
+		<string key="variant" value="Variant 1" />
+		<int key="variant-index" value="1" />
+		<string key="creator" value="Fluxicon Disco" />
+		<event>
+			<string key="concept:name" value="Dingo_target_found" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T05:32:38.875000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="target_found" />
+			<string key="msgInstanceID" value="target_found_33" />
+			<string key="msgRole" value="receive" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_target_found" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_GoTo" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T05:32:39.884000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_GoTo" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_Fire" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T05:32:40.925000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_Fire" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_done" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T05:32:41.952000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="done" />
+			<string key="msgInstanceID" value="done_34" />
+			<string key="msgRole" value="send" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_done" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="18" />
+		<string key="variant" value="Variant 1" />
+		<int key="variant-index" value="1" />
+		<string key="creator" value="Fluxicon Disco" />
+		<event>
+			<string key="concept:name" value="Dingo_target_found" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T06:32:35.883000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="target_found" />
+			<string key="msgInstanceID" value="target_found_35" />
+			<string key="msgRole" value="receive" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_target_found" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_GoTo" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T06:32:36.890000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_GoTo" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_Fire" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T06:32:37.945000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_Fire" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_done" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T06:32:38.972000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="done" />
+			<string key="msgInstanceID" value="done_36" />
+			<string key="msgRole" value="send" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_done" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="19" />
+		<string key="variant" value="Variant 1" />
+		<int key="variant-index" value="1" />
+		<string key="creator" value="Fluxicon Disco" />
+		<event>
+			<string key="concept:name" value="Dingo_target_found" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T07:32:34.873000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="target_found" />
+			<string key="msgInstanceID" value="target_found_37" />
+			<string key="msgRole" value="receive" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_target_found" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_GoTo" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T07:32:35.883000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_GoTo" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_Fire" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T07:32:36.927000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_Fire" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_done" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T07:32:37.952000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="done" />
+			<string key="msgInstanceID" value="done_38" />
+			<string key="msgRole" value="send" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_done" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="20" />
+		<string key="variant" value="Variant 1" />
+		<int key="variant-index" value="1" />
+		<string key="creator" value="Fluxicon Disco" />
+		<event>
+			<string key="concept:name" value="Dingo_target_found" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T08:32:34.858000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="target_found" />
+			<string key="msgInstanceID" value="target_found_39" />
+			<string key="msgRole" value="receive" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_target_found" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_GoTo" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T08:32:35.869000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_GoTo" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_Fire" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T08:32:36.919000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_Fire" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_done" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T08:32:37.944000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="done" />
+			<string key="msgInstanceID" value="done_40" />
+			<string key="msgRole" value="send" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_done" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="21" />
+		<string key="variant" value="Variant 1" />
+		<int key="variant-index" value="1" />
+		<string key="creator" value="Fluxicon Disco" />
+		<event>
+			<string key="concept:name" value="Dingo_target_found" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T09:32:38.879000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="target_found" />
+			<string key="msgInstanceID" value="target_found_41" />
+			<string key="msgRole" value="receive" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_target_found" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_GoTo" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T09:32:39.892000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_GoTo" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_Fire" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T09:32:40.934000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_Fire" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_done" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T09:32:41.955000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="done" />
+			<string key="msgInstanceID" value="done_42" />
+			<string key="msgRole" value="send" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_done" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="22" />
+		<string key="variant" value="Variant 1" />
+		<int key="variant-index" value="1" />
+		<string key="creator" value="Fluxicon Disco" />
+		<event>
+			<string key="concept:name" value="Dingo_target_found" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T10:32:39.879000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="target_found" />
+			<string key="msgInstanceID" value="target_found_43" />
+			<string key="msgRole" value="receive" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_target_found" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_GoTo" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T10:32:40.892000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_GoTo" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_Fire" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T10:32:41.932000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="act" value="Dingo_Fire" />
+		</event>
+		<event>
+			<string key="concept:name" value="Dingo_done" />
+			<string key="lifecycle:transition" value="complete" />
+			<string key="org:resource" value="Dingo" />
+			<date key="time:timestamp" value="2023-01-04T10:32:42.957000+00:00" />
+			<string key="org:group" value="Dingo" />
+			<string key="msgName" value="done" />
+			<string key="msgInstanceID" value="done_44" />
+			<string key="msgRole" value="send" />
+			<string key="msgProtocol" value="Pub/Sub" />
+			<string key="act" value="Dingo_done" />
+		</event>
+	</trace>
+</log>

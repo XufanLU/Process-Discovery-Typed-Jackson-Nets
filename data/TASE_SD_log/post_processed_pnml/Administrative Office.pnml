@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_1758457624.553613" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1758457624.553613</text>
+    </name>
+    <page id="n0">
+      <place id="p_3">
+        <name>
+          <text>p_3</text>
+        </name>
+      <type><text>Administrative Office</text></type></place>
+      <place id="p_4">
+        <name>
+          <text>p_4</text>
+        </name>
+      <type><text>Administrative Office</text></type></place>
+      <place id="p_5">
+        <name>
+          <text>p_5</text>
+        </name>
+      <type><text>Administrative Office</text></type></place>
+      <place id="p_6">
+        <name>
+          <text>p_6</text>
+        </name>
+      <type><text>Administrative Office</text></type></place>
+      <transition id="22bdebb1-6348-41c9-8a8c-f7725cf71dd5">
+        <name>
+          <text>s1</text>
+        </name>
+      </transition>
+      <transition id="c74446e7-94fe-4d5a-a7cc-8922c488dc01">
+        <name>
+          <text>s4</text>
+        </name>
+      </transition>
+      <transition id="914b0a1c-b78e-41da-8dec-2cd9beee39ba">
+        <name>
+          <text>s2</text>
+        </name>
+      </transition>
+      <transition id="042aa30e-6798-49e2-a235-12f22145f670">
+        <name>
+          <text>s3</text>
+        </name>
+      </transition>
+      <transition id="08e43945-d070-4d7e-9647-b4866b3852c9">
+        <name>
+          <text>s5</text>
+        </name>
+      </transition>
+      <arc id="14872850960" source="914b0a1c-b78e-41da-8dec-2cd9beee39ba" target="p_4"><identifier><text>m</text></identifier></arc>
+      <arc id="14872851408" source="p_4" target="042aa30e-6798-49e2-a235-12f22145f670"><identifier><text>m</text></identifier></arc>
+      <arc id="14872850832" source="p_3" target="914b0a1c-b78e-41da-8dec-2cd9beee39ba"><identifier><text>m</text></identifier></arc>
+      <arc id="14872850384" source="22bdebb1-6348-41c9-8a8c-f7725cf71dd5" target="p_3"><identifier><text>m</text></identifier></arc>
+      <arc id="14872851536" source="042aa30e-6798-49e2-a235-12f22145f670" target="p_5"><identifier><text>m</text></identifier></arc>
+      <arc id="14872852048" source="p_5" target="c74446e7-94fe-4d5a-a7cc-8922c488dc01"><identifier><text>m</text></identifier></arc>
+      <arc id="14872852176" source="c74446e7-94fe-4d5a-a7cc-8922c488dc01" target="p_6"><identifier><text>m</text></identifier></arc>
+      <arc id="14872852432" source="p_6" target="08e43945-d070-4d7e-9647-b4866b3852c9"><identifier><text>m</text></identifier></arc>
+      </page>
+    </net>
+</pnml>

@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml><net id="composed_real2_collectivelog_" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel"><name><text>composed_real2_collectivelog_</text></name><page id="composed_page"><place id="p_15_TravelAgency"><name>
+          <text>p_15</text>
+        </name>
+      <type><text>TravelAgency</text></type></place><place id="p_17_TravelAgency"><name>
+          <text>p_17</text>
+        </name>
+      <type><text>TravelAgency</text></type></place><place id="p_12_TravelAgency"><name>
+          <text>p_12</text>
+        </name>
+      <type><text>TravelAgency</text></type></place><place id="p_14_TravelAgency"><name>
+          <text>p_14</text>
+        </name>
+      <type><text>TravelAgency</text></type></place><place id="source_TravelAgency"><name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      <type><text>TravelAgency</text></type></place><place id="p_5_TravelAgency"><name>
+          <text>p_5</text>
+        </name>
+      <type><text>TravelAgency</text></type></place><place id="sink_TravelAgency"><name>
+          <text>sink</text>
+        </name>
+      <type><text>TravelAgency</text></type></place><place id="p_6_TravelAgency"><name>
+          <text>p_6</text>
+        </name>
+      <type><text>TravelAgency</text></type></place><place id="p_9_TravelAgency"><name>
+          <text>p_9</text>
+        </name>
+      <type><text>TravelAgency</text></type></place><place id="p_10_TravelAgency"><name>
+          <text>p_10</text>
+        </name>
+      <type><text>TravelAgency</text></type></place><place id="p_16_TravelAgency"><name>
+          <text>p_16</text>
+        </name>
+      <type><text>TravelAgency</text></type></place><place id="p_13_TravelAgency"><name>
+          <text>p_13</text>
+        </name>
+      <type><text>TravelAgency</text></type></place><place id="source_Customer"><name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      <type><text>Customer</text></type></place><place id="p_5_Customer"><name>
+          <text>p_5</text>
+        </name>
+      <type><text>Customer</text></type></place><place id="sink_Customer"><name>
+          <text>sink</text>
+        </name>
+      <type><text>Customer</text></type></place><place id="p_6_Customer"><name>
+          <text>p_6</text>
+        </name>
+      <type><text>Customer</text></type></place><place id="p_8_Customer"><name>
+          <text>p_8</text>
+        </name>
+      <type><text>Customer</text></type></place><place id="p_9_Customer"><name>
+          <text>p_9</text>
+        </name>
+      <type><text>Customer</text></type></place><place id="p_10_Customer"><name>
+          <text>p_10</text>
+        </name>
+      <type><text>Customer</text></type></place><transition id="7c66ee8d-1df0-4b5a-aef0-3f20050df7fd_TravelAgency"><name>
+          <text>Confirm Booking</text>
+        </name>
+      </transition><transition id="753cb79b-c2d1-402b-9e1c-67c75772e7f8_TravelAgency"><name>
+          <text>Book Received</text>
+        </name>
+      </transition><transition id="c37a2188-18ad-46c3-9166-870e18c4d928_TravelAgency"><name>
+          <text>Payment Received</text>
+        </name>
+      </transition><transition id="tau_1_TravelAgency"><name>
+          <text>tau_1</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="871461ee-061d-4b87-9206-0f2ed898d3a6" />
+      </transition><transition id="tau_1_Customer"><name>
+          <text>tau_1</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="7b5986c5-c7e9-4757-9dc6-728d7a0fd619" />
+      </transition><transition id="1a3ab928-d7e0-4bf4-a147-0242843c45af_TravelAgency"><name>
+          <text>Order Ticket</text>
+        </name>
+      </transition><transition id="tauJoin_4_TravelAgency"><name>
+          <text>tauJoin_4</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="f62eebf3-0b72-4334-83ba-7142a13038b0" />
+      </transition><transition id="79d40cc9-1a41-486f-a8bf-30d601f97c67_TravelAgency"><name>
+          <text>Make Travel Offer</text>
+        </name>
+      </transition><transition id="skip_7_TravelAgency"><name>
+          <text>skip_7</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="b84a04bd-456d-43d1-9d4e-e672f2af7075" />
+      </transition><transition id="cef3d0cc-f4f3-48b8-a7ea-e0e5288f942e_Customer"><name>
+          <text>Check Travel Offer</text>
+        </name>
+      </transition><transition id="skip_4_Customer"><name>
+          <text>skip_4</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="891462a6-32b3-4c16-acbd-735c655f3e76" />
+      </transition><transition id="7766dde9-6840-4f4b-85f1-47953286c0e0_Customer"><name>
+          <text>Book Travel</text>
+        </name>
+      </transition><transition id="dc05ff83-2cb2-4958-a76b-2c4cfe56a00c_Customer"><name>
+          <text>Pay Travel</text>
+        </name>
+      </transition><transition id="8ebd1612-9f39-4b95-8565-5d4d610e19b3_Customer"><name>
+          <text>Ticket Received</text>
+        </name>
+      </transition><transition id="e7284ba8-8bf5-480f-8a9a-d5862ac9d5e9_Customer"><name>
+          <text>Booking Confirmed</text>
+        </name>
+      </transition><arc id="5080749328_TravelAgency" source="p_9_TravelAgency" target="79d40cc9-1a41-486f-a8bf-30d601f97c67_TravelAgency"><identifier><text>r</text></identifier></arc><arc id="5080749968_TravelAgency" source="p_10_TravelAgency" target="skip_7_TravelAgency"><identifier><text>r</text></identifier></arc><arc id="5080754192_TravelAgency" source="tau_1_TravelAgency" target="p_5_TravelAgency"><identifier><text>r</text></identifier></arc><arc id="5080755088_TravelAgency" source="skip_7_TravelAgency" target="p_9_TravelAgency"><identifier><text>r</text></identifier></arc><arc id="5080745232_TravelAgency" source="tau_1_TravelAgency" target="p_9_TravelAgency"><identifier><text>r</text></identifier></arc><arc id="5080747408_TravelAgency" source="1a3ab928-d7e0-4bf4-a147-0242843c45af_TravelAgency" target="p_6_TravelAgency"><identifier><text>r</text></identifier></arc><arc id="5080755216_TravelAgency" source="p_10_TravelAgency" target="tauJoin_4_TravelAgency"><identifier><text>r</text></identifier></arc><arc id="5080752592_TravelAgency" source="p_15_TravelAgency" target="tauJoin_4_TravelAgency"><identifier><text>r</text></identifier></arc><arc id="5080752848_TravelAgency" source="p_14_TravelAgency" target="753cb79b-c2d1-402b-9e1c-67c75772e7f8_TravelAgency"><identifier><text>r</text></identifier></arc><arc id="5080752976_TravelAgency" source="753cb79b-c2d1-402b-9e1c-67c75772e7f8_TravelAgency" target="p_15_TravelAgency"><identifier><text>r</text></identifier></arc><arc id="5080751504_TravelAgency" source="p_13_TravelAgency" target="tauJoin_4_TravelAgency"><identifier><text>r</text></identifier></arc><arc id="5080753616_TravelAgency" source="p_17_TravelAgency" target="tauJoin_4_TravelAgency"><identifier><text>r</text></identifier></arc><arc id="5080753872_TravelAgency" source="p_16_TravelAgency" target="c37a2188-18ad-46c3-9166-870e18c4d928_TravelAgency"><identifier><text>r</text></identifier></arc><arc id="5080754000_TravelAgency" source="c37a2188-18ad-46c3-9166-870e18c4d928_TravelAgency" target="p_17_TravelAgency"><identifier><text>r</text></identifier></arc><arc id="4561356752_TravelAgency" source="source_TravelAgency" target="tau_1_TravelAgency"><identifier><text>r</text></identifier></arc><arc id="5080754896_TravelAgency" source="tauJoin_4_TravelAgency" target="sink_TravelAgency"><identifier><text>r</text></identifier></arc><arc id="5080754640_TravelAgency" source="tau_1_TravelAgency" target="p_14_TravelAgency"><identifier><text>r</text></identifier></arc><arc id="5080746320_TravelAgency" source="p_6_TravelAgency" target="tauJoin_4_TravelAgency"><identifier><text>r</text></identifier></arc><arc id="5080745936_TravelAgency" source="p_5_TravelAgency" target="1a3ab928-d7e0-4bf4-a147-0242843c45af_TravelAgency"><identifier><text>r</text></identifier></arc><arc id="5080754512_TravelAgency" source="tau_1_TravelAgency" target="p_16_TravelAgency"><identifier><text>r</text></identifier></arc><arc id="5080751824_TravelAgency" source="p_12_TravelAgency" target="7c66ee8d-1df0-4b5a-aef0-3f20050df7fd_TravelAgency"><identifier><text>r</text></identifier></arc><arc id="5080751952_TravelAgency" source="7c66ee8d-1df0-4b5a-aef0-3f20050df7fd_TravelAgency" target="p_13_TravelAgency"><identifier><text>r</text></identifier></arc><arc id="5080754384_TravelAgency" source="tau_1_TravelAgency" target="p_12_TravelAgency"><identifier><text>r</text></identifier></arc><arc id="5080749456_TravelAgency" source="79d40cc9-1a41-486f-a8bf-30d601f97c67_TravelAgency" target="p_10_TravelAgency"><identifier><text>r</text></identifier></arc><arc id="5079249936_Customer" source="source_Customer" target="tau_1_Customer"><identifier><text>i</text></identifier></arc><arc id="5079251600_Customer" source="p_5_Customer" target="cef3d0cc-f4f3-48b8-a7ea-e0e5288f942e_Customer"><identifier><text>i</text></identifier></arc><arc id="5079250192_Customer" source="skip_4_Customer" target="p_5_Customer"><identifier><text>i</text></identifier></arc><arc id="5078846224_Customer" source="tau_1_Customer" target="p_5_Customer"><identifier><text>i</text></identifier></arc><arc id="5079251728_Customer" source="cef3d0cc-f4f3-48b8-a7ea-e0e5288f942e_Customer" target="p_6_Customer"><identifier><text>i</text></identifier></arc><arc id="5078844496_Customer" source="dc05ff83-2cb2-4958-a76b-2c4cfe56a00c_Customer" target="p_9_Customer"><identifier><text>i</text></identifier></arc><arc id="5078845136_Customer" source="e7284ba8-8bf5-480f-8a9a-d5862ac9d5e9_Customer" target="sink_Customer"><identifier><text>i</text></identifier></arc><arc id="5078845520_Customer" source="8ebd1612-9f39-4b95-8565-5d4d610e19b3_Customer" target="p_10_Customer"><identifier><text>i</text></identifier></arc><arc id="5078844240_Customer" source="7766dde9-6840-4f4b-85f1-47953286c0e0_Customer" target="p_8_Customer"><identifier><text>i</text></identifier></arc><arc id="5078845264_Customer" source="p_10_Customer" target="e7284ba8-8bf5-480f-8a9a-d5862ac9d5e9_Customer"><identifier><text>i</text></identifier></arc><arc id="5079252304_Customer" source="p_6_Customer" target="skip_4_Customer"><identifier><text>i</text></identifier></arc><arc id="5078846928_Customer" source="p_6_Customer" target="7766dde9-6840-4f4b-85f1-47953286c0e0_Customer"><identifier><text>i</text></identifier></arc><arc id="5078844624_Customer" source="p_8_Customer" target="dc05ff83-2cb2-4958-a76b-2c4cfe56a00c_Customer"><identifier><text>i</text></identifier></arc><arc id="5078845648_Customer" source="p_9_Customer" target="8ebd1612-9f39-4b95-8565-5d4d610e19b3_Customer"><identifier><text>i</text></identifier></arc></page></net></pnml>

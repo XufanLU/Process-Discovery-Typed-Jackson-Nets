@@ -1,0 +1,1704 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<log xes.version="1849-2016" xes.features="nested-attributes" xmlns="http://www.xes-standard.org/">
+	<extension name="Organizational" prefix="org" uri="http://www.xes-standard.org/org.xesext" />
+	<extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext" />
+	<extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext" />
+	<extension name="Identity" prefix="identity" uri="http://www.xes-standard.org/identity.xesext" />
+	<string key="concept:name" value="collog" />
+	<trace>
+		<string key="concept:name" value="case_254" />
+		<event>
+			<string key="msgInstanceID" value="admission request_276" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:41:58.064000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:42:07.269000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Request blood analysis" />
+			<date key="time:timestamp" value="2021-06-17T11:42:17.790000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_278" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:42:21.716000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_354" />
+		<event>
+			<string key="msgInstanceID" value="admission request_389" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:59:20.209000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:59:29.097000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Request blood analysis" />
+			<date key="time:timestamp" value="2021-06-17T11:59:33.703000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_391" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:59:37.236000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_184" />
+		<event>
+			<string key="msgInstanceID" value="admission request_187" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:27:18.566000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:27:18.567000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="patient analysis_188" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Receive patient results" />
+			<date key="time:timestamp" value="2021-06-17T11:27:21.490000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="patient analysis" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_189" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:27:21.599000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_339" />
+		<event>
+			<string key="msgInstanceID" value="admission request_374" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:57:09.134000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:57:09.939000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="patient analysis_375" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Receive patient results" />
+			<date key="time:timestamp" value="2021-06-17T11:57:18.667000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="patient analysis" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_376" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:57:23.160000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_209" />
+		<event>
+			<string key="msgInstanceID" value="admission request_219" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:32:49.654000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:32:55.037000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="patient analysis_220" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Receive patient results" />
+			<date key="time:timestamp" value="2021-06-17T11:33:07.356000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="patient analysis" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_221" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:33:07.782000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_359" />
+		<event>
+			<string key="msgInstanceID" value="admission request_396" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:00:36.014000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T12:00:41.527000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="patient analysis_397" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Receive patient results" />
+			<date key="time:timestamp" value="2021-06-17T12:01:02.880000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="patient analysis" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_398" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T12:01:04.398000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_189" />
+		<event>
+			<string key="msgInstanceID" value="admission request_194" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:28:24.545000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:28:31.871000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="patient analysis_195" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Receive patient results" />
+			<date key="time:timestamp" value="2021-06-17T11:28:45.248000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="patient analysis" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_196" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:28:48.647000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_29" />
+		<event>
+			<string key="msgInstanceID" value="admission request_33" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:04:20.660000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:04:29.848000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="patient analysis_34" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Receive patient results" />
+			<date key="time:timestamp" value="2021-06-17T11:04:51.790000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="patient analysis" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_35" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:05:00.609000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_314" />
+		<event>
+			<string key="msgInstanceID" value="admission request_339" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:51:50.200000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:51:52.971000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Request blood analysis" />
+			<date key="time:timestamp" value="2021-06-17T11:51:54.142000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_341" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:51:56.456000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_114" />
+		<event>
+			<string key="msgInstanceID" value="admission request_116" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:16:02.587000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:16:20.361000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Request blood analysis" />
+			<date key="time:timestamp" value="2021-06-17T11:16:22.042000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_118" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:16:23.390000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_379" />
+		<event>
+			<string key="msgInstanceID" value="admission request_421" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:05:00.747000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T12:05:05.334000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="patient analysis_422" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Receive patient results" />
+			<date key="time:timestamp" value="2021-06-17T12:05:13.337000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="patient analysis" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_423" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T12:05:14.695000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_39" />
+		<event>
+			<string key="msgInstanceID" value="admission request_44" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:06:11.225000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:06:23.100000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Request blood analysis" />
+			<date key="time:timestamp" value="2021-06-17T11:06:26.296000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_46" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:06:30.770000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_389" />
+		<event>
+			<string key="msgInstanceID" value="admission request_432" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:06:28.135000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T12:06:36.359000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="patient analysis_433" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Receive patient results" />
+			<date key="time:timestamp" value="2021-06-17T12:06:40.552000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="patient analysis" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_434" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T12:06:42.839000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_474" />
+		<event>
+			<string key="msgInstanceID" value="admission request_518" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:20:11.972000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T12:20:15.002000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Request blood analysis" />
+			<date key="time:timestamp" value="2021-06-17T12:20:27.537000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_520" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T12:20:32.516000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_229" />
+		<event>
+			<string key="msgInstanceID" value="admission request_244" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:36:31.508000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:36:51.382000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="patient analysis_245" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Receive patient results" />
+			<date key="time:timestamp" value="2021-06-17T11:37:04.147000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="patient analysis" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_246" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:37:06.209000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_409" />
+		<event>
+			<string key="msgInstanceID" value="admission request_451" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:08:47.473000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T12:08:54.380000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Request blood analysis" />
+			<date key="time:timestamp" value="2021-06-17T12:09:09.709000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_453" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T12:09:20.626000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_329" />
+		<event>
+			<string key="msgInstanceID" value="admission request_360" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:55:01.756000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:55:04.395000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="patient analysis_361" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Receive patient results" />
+			<date key="time:timestamp" value="2021-06-17T11:55:10.818000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="patient analysis" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_362" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:55:12.675000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_159" />
+		<event>
+			<string key="msgInstanceID" value="admission request_161" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:22:55.569000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:23:18.650000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="patient analysis_162" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Receive patient results" />
+			<date key="time:timestamp" value="2021-06-17T11:23:20.672000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="patient analysis" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_163" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:23:24.501000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_19" />
+		<event>
+			<string key="msgInstanceID" value="admission request_19" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:01:49.094000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:01:57.747000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Request blood analysis" />
+			<date key="time:timestamp" value="2021-06-17T11:02:09.724000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_21" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:02:10.237000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_139" />
+		<event>
+			<string key="msgInstanceID" value="admission request_142" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:19:32.632000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:19:38.511000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="patient analysis_143" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Receive patient results" />
+			<date key="time:timestamp" value="2021-06-17T11:19:49.033000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="patient analysis" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_144" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:20:01.983000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_249" />
+		<event>
+			<string key="msgInstanceID" value="admission request_269" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:40:58.375000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:41:02.643000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="patient analysis_270" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Receive patient results" />
+			<date key="time:timestamp" value="2021-06-17T11:41:05.873000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="patient analysis" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_271" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:41:08.468000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_74" />
+		<event>
+			<string key="msgInstanceID" value="admission request_78" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:11:09.462000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:11:14.152000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Request blood analysis" />
+			<date key="time:timestamp" value="2021-06-17T11:11:23.018000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_80" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:11:25.701000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_469" />
+		<event>
+			<string key="msgInstanceID" value="admission request_511" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:19:16.253000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T12:19:16.679000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="patient analysis_512" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Receive patient results" />
+			<date key="time:timestamp" value="2021-06-17T12:19:19.942000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="patient analysis" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_513" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T12:19:22.599000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_334" />
+		<event>
+			<string key="msgInstanceID" value="admission request_367" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:56:05.983000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:56:17.590000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Request blood analysis" />
+			<date key="time:timestamp" value="2021-06-17T11:56:20.204000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_369" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:56:22.668000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_479" />
+		<event>
+			<string key="msgInstanceID" value="admission request_525" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:21:13.363000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T12:21:26.423000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="patient analysis_526" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Receive patient results" />
+			<date key="time:timestamp" value="2021-06-17T12:21:31.138000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="patient analysis" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_527" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T12:21:34.763000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_199" />
+		<event>
+			<string key="msgInstanceID" value="admission request_208" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:30:56.367000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:31:01.435000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Request blood analysis" />
+			<date key="time:timestamp" value="2021-06-17T11:31:17.706000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_210" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:31:18.172000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_284" />
+		<event>
+			<string key="msgInstanceID" value="admission request_306" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:46:58.851000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:47:01.744000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Request blood analysis" />
+			<date key="time:timestamp" value="2021-06-17T11:47:08.306000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_308" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:47:12.715000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_194" />
+		<event>
+			<string key="msgInstanceID" value="admission request_201" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:29:39.439000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:30:03.007000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="patient analysis_202" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Receive patient results" />
+			<date key="time:timestamp" value="2021-06-17T11:30:03.865000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="patient analysis" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_203" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:30:07.574000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_319" />
+		<event>
+			<string key="msgInstanceID" value="admission request_346" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:52:40.992000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:52:52.239000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="patient analysis_347" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Receive patient results" />
+			<date key="time:timestamp" value="2021-06-17T11:52:55.020000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="patient analysis" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_348" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:52:57.815000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_499" />
+		<event>
+			<string key="msgInstanceID" value="admission request_547" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:24:44.358000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T12:24:47.900000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Request blood analysis" />
+			<date key="time:timestamp" value="2021-06-17T12:24:53.091000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_549" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T12:24:53.999000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_224" />
+		<event>
+			<string key="msgInstanceID" value="admission request_237" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:35:27.669000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:35:31.356000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Request blood analysis" />
+			<date key="time:timestamp" value="2021-06-17T11:35:33.241000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_239" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:35:33.312000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_299" />
+		<event>
+			<string key="msgInstanceID" value="admission request_321" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:49:00.994000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:49:05.678000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="patient analysis_322" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Receive patient results" />
+			<date key="time:timestamp" value="2021-06-17T11:49:16.938000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="patient analysis" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_323" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:49:20.207000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_364" />
+		<event>
+			<string key="msgInstanceID" value="admission request_403" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:01:53.335000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T12:01:56.022000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="patient analysis_404" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Receive patient results" />
+			<date key="time:timestamp" value="2021-06-17T12:02:12.261000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="patient analysis" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_405" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T12:02:13.834000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_99" />
+		<event>
+			<string key="msgInstanceID" value="admission request_101" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:14:02.571000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:14:04.724000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Request blood analysis" />
+			<date key="time:timestamp" value="2021-06-17T11:14:10.367000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_103" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:14:11.887000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_444" />
+		<event>
+			<string key="msgInstanceID" value="admission request_488" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:15:10.246000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T12:15:25.675000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="patient analysis_489" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Receive patient results" />
+			<date key="time:timestamp" value="2021-06-17T12:15:32.470000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="patient analysis" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_490" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T12:15:37.286000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_374" />
+		<event>
+			<string key="msgInstanceID" value="admission request_414" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:04:03.727000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T12:04:06.759000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Request blood analysis" />
+			<date key="time:timestamp" value="2021-06-17T12:04:11.720000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_416" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T12:04:14.854000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_54" />
+		<event>
+			<string key="msgInstanceID" value="admission request_59" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:08:14.274000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:08:18.331000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Request blood analysis" />
+			<date key="time:timestamp" value="2021-06-17T11:08:32.617000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_61" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:08:40.992000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_14" />
+		<event>
+			<string key="msgInstanceID" value="admission request_12" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:00:39.449000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:01:02.660000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Request blood analysis" />
+			<date key="time:timestamp" value="2021-06-17T11:01:04.507000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_14" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:01:07.920000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_24" />
+		<event>
+			<string key="msgInstanceID" value="admission request_26" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:03:03.166000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:03:17.145000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Request blood analysis" />
+			<date key="time:timestamp" value="2021-06-17T11:03:22.226000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_28" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:03:31.180000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_419" />
+		<event>
+			<string key="msgInstanceID" value="admission request_462" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:10:51.077000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T12:11:04.246000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Request blood analysis" />
+			<date key="time:timestamp" value="2021-06-17T12:11:20.731000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_464" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T12:11:25.704000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_129" />
+		<event>
+			<string key="msgInstanceID" value="admission request_131" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:18:17.545000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:18:20.185000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Request blood analysis" />
+			<date key="time:timestamp" value="2021-06-17T11:18:20.586000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_133" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:18:26.665000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_239" />
+		<event>
+			<string key="msgInstanceID" value="admission request_258" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:39:04.241000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:39:14.620000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="patient analysis_259" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Receive patient results" />
+			<date key="time:timestamp" value="2021-06-17T11:39:18.005000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="patient analysis" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_260" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:39:20.154000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_324" />
+		<event>
+			<string key="msgInstanceID" value="admission request_353" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:53:59.823000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:54:11.917000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="patient analysis_354" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Receive patient results" />
+			<date key="time:timestamp" value="2021-06-17T11:54:12.254000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="patient analysis" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_355" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:54:12.705000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_164" />
+		<event>
+			<string key="msgInstanceID" value="admission request_168" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:24:15.774000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:24:20.571000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Request blood analysis" />
+			<date key="time:timestamp" value="2021-06-17T11:24:24.293000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_170" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:24:27.830000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_279" />
+		<event>
+			<string key="msgInstanceID" value="admission request_299" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:45:41.825000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:45:46.355000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Request blood analysis" />
+			<date key="time:timestamp" value="2021-06-17T11:45:46.440000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_301" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:45:48.509000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_234" />
+		<event>
+			<string key="msgInstanceID" value="admission request_251" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:38:15.749000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:38:20.601000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Request blood analysis" />
+			<date key="time:timestamp" value="2021-06-17T11:38:22.720000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_253" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:38:23.070000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_219" />
+		<event>
+			<string key="msgInstanceID" value="admission request_230" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:34:08.369000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:34:11.195000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="patient analysis_231" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Receive patient results" />
+			<date key="time:timestamp" value="2021-06-17T11:34:20.077000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="patient analysis" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_232" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:34:21.780000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_489" />
+		<event>
+			<string key="msgInstanceID" value="admission request_536" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:23:01.792000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T12:23:17.030000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Request blood analysis" />
+			<date key="time:timestamp" value="2021-06-17T12:23:20.119000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_538" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T12:23:20.196000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_424" />
+		<event>
+			<string key="msgInstanceID" value="admission request_469" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:12:19.137000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T12:12:23.260000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Request blood analysis" />
+			<date key="time:timestamp" value="2021-06-17T12:12:29.192000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_471" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T12:12:31.103000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_304" />
+		<event>
+			<string key="msgInstanceID" value="admission request_328" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Admit patient" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:50:13.741000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission request" />
+		</event>
+		<event>
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Create medical record" />
+			<date key="time:timestamp" value="2021-06-17T11:50:15.085000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="patient analysis_329" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Receive patient results" />
+			<date key="time:timestamp" value="2021-06-17T11:50:18.639000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="patient analysis" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="admission_330" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Hospital" />
+			<string key="concept:name" value="Send admission info" />
+			<date key="time:timestamp" value="2021-06-17T11:50:22.534000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="admission" />
+		</event>
+	</trace>
+</log>

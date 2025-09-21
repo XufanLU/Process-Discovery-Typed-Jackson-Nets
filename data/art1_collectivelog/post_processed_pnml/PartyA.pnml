@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_1758219792.090983" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1758219792.090983</text>
+    </name>
+    <page id="n0">
+      <place id="p_5">
+        <name>
+          <text>p_5</text>
+        </name>
+      <type><text>PartyA</text></type></place>
+      <place id="p_6">
+        <name>
+          <text>p_6</text>
+        </name>
+      <type><text>PartyA</text></type></place>
+      <place id="p_7">
+        <name>
+          <text>p_7</text>
+        </name>
+      <type><text>PartyA</text></type></place>
+      <place id="p_8">
+        <name>
+          <text>p_8</text>
+        </name>
+      <type><text>PartyA</text></type></place>
+      <transition id="d76e81f1-5ed9-4946-b73d-5074b58a3fb2">
+        <name>
+          <text>Activity A</text>
+        </name>
+      </transition>
+      <transition id="c3a68361-2672-468d-a098-99961c76e5ba">
+        <name>
+          <text>Activity D</text>
+        </name>
+      </transition>
+      <transition id="da603732-9c6b-4f35-8266-47170c052ca5">
+        <name>
+          <text>Activity C</text>
+        </name>
+      </transition>
+      <transition id="10c24e62-a7dd-4f76-aa9a-1275fcdd7593">
+        <name>
+          <text>Activity B</text>
+        </name>
+      </transition>
+      <arc id="4550270480" source="da603732-9c6b-4f35-8266-47170c052ca5" target="p_8"><identifier><text>i</text></identifier></arc>
+      <arc id="4550271248" source="d76e81f1-5ed9-4946-b73d-5074b58a3fb2" target="p_7"><identifier><text>i</text></identifier></arc>
+      <arc id="4550271504" source="p_8" target="10c24e62-a7dd-4f76-aa9a-1275fcdd7593"><identifier><text>i</text></identifier></arc>
+      <arc id="4550269328" source="p_5" target="c3a68361-2672-468d-a098-99961c76e5ba"><identifier><text>i</text></identifier></arc>
+      <arc id="4550269456" source="c3a68361-2672-468d-a098-99961c76e5ba" target="p_6"><identifier><text>i</text></identifier></arc>
+      <arc id="4550271120" source="d76e81f1-5ed9-4946-b73d-5074b58a3fb2" target="p_5"><identifier><text>i</text></identifier></arc>
+      <arc id="4550271376" source="p_6" target="10c24e62-a7dd-4f76-aa9a-1275fcdd7593"><identifier><text>i</text></identifier></arc>
+      <arc id="4550270352" source="p_7" target="da603732-9c6b-4f35-8266-47170c052ca5"><identifier><text>i</text></identifier></arc>
+    </page>
+    </net>
+</pnml>

@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_1758450274.301694" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1758450274.301694</text>
+    </name>
+    <page id="n0">
+      <place id="source">
+        <name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      <type><text>Cardiovascular</text></type></place>
+      <place id="sink">
+        <name>
+          <text>sink</text>
+        </name>
+      <type><text>Cardiovascular</text></type></place>
+      <place id="p_3">
+        <name>
+          <text>p_3</text>
+        </name>
+      <type><text>Cardiovascular</text></type></place>
+      <transition id="b5ce9f7c-abed-4f20-8ead-fe09e8210c80">
+        <name>
+          <text>t8</text>
+        </name>
+      </transition>
+      <transition id="da7f6529-45db-411f-a7d5-6a963c2e05b7">
+        <name>
+          <text>t9</text>
+        </name>
+      </transition>
+      <arc id="13866086736" source="source" target="b5ce9f7c-abed-4f20-8ead-fe09e8210c80"><identifier><text>n</text></identifier></arc>
+      <arc id="13866087184" source="p_3" target="da7f6529-45db-411f-a7d5-6a963c2e05b7"><identifier><text>n</text></identifier></arc>
+      <arc id="13866087312" source="da7f6529-45db-411f-a7d5-6a963c2e05b7" target="sink"><identifier><text>n</text></identifier></arc>
+      <arc id="13866086864" source="b5ce9f7c-abed-4f20-8ead-fe09e8210c80" target="p_3"><identifier><text>n</text></identifier></arc>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink">
+          <text>1</text>
+        <type><text>Cardiovascular</text></type></place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_1758221783.621939" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1758221783.621939</text>
+    </name>
+    <page id="n0">
+      <place id="source">
+        <name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      <type><text>Pharmacy Department</text></type></place>
+      <place id="p_4">
+        <name>
+          <text>p_4</text>
+        </name>
+      <type><text>Pharmacy Department</text></type></place>
+      <place id="p_3">
+        <name>
+          <text>p_3</text>
+        </name>
+      <type><text>Pharmacy Department</text></type></place>
+      <place id="sink">
+        <name>
+          <text>sink</text>
+        </name>
+      <type><text>Pharmacy Department</text></type></place>
+      <transition id="700bb65a-0176-4df1-b064-33caa86155f3">
+        <name>
+          <text>D28</text>
+        </name>
+      </transition>
+      <transition id="bd4473b5-42fa-4c3f-bfbd-808405816469">
+        <name>
+          <text>D30</text>
+        </name>
+      </transition>
+      <transition id="360703c9-90b1-4104-951d-5278c0638961">
+        <name>
+          <text>D29</text>
+        </name>
+      </transition>
+      <arc id="14528425424" source="source" target="700bb65a-0176-4df1-b064-33caa86155f3"><identifier><text>s</text></identifier></arc>
+      <arc id="14528426512" source="p_4" target="bd4473b5-42fa-4c3f-bfbd-808405816469"><identifier><text>s</text></identifier></arc>
+      <arc id="14528425552" source="700bb65a-0176-4df1-b064-33caa86155f3" target="p_3"><identifier><text>s</text></identifier></arc>
+      <arc id="14528426064" source="p_3" target="360703c9-90b1-4104-951d-5278c0638961"><identifier><text>s</text></identifier></arc>
+      <arc id="14528426192" source="360703c9-90b1-4104-951d-5278c0638961" target="p_4"><identifier><text>s</text></identifier></arc>
+      <arc id="14528426640" source="bd4473b5-42fa-4c3f-bfbd-808405816469" target="sink"><identifier><text>s</text></identifier></arc>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink">
+          <text>1</text>
+        <type><text>Pharmacy Department</text></type></place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

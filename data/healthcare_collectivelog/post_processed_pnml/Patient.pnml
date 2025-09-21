@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_1758219715.203416" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1758219715.203416</text>
+    </name>
+    <page id="n0">
+      <place id="p_3">
+        <name>
+          <text>p_3</text>
+        </name>
+      <type><text>Patient</text></type></place>
+      <place id="p_4">
+        <name>
+          <text>p_4</text>
+        </name>
+      <type><text>Patient</text></type></place>
+      <transition id="d0d9707f-1480-45bf-95de-9dd8e13f1b6c">
+        <name>
+          <text>Communicate disease</text>
+        </name>
+      </transition>
+      <transition id="406535c6-192e-49b8-ac06-414820ee960a">
+        <name>
+          <text>Receive prescription</text>
+        </name>
+      </transition>
+      <transition id="be9ece39-e1e3-40ac-9091-a30e114e5df7">
+        <name>
+          <text>Hospitalisation needed</text>
+        </name>
+      </transition>
+      <transition id="5add556a-78d3-42a8-a5b4-4628936a4c00">
+        <name>
+          <text>Receive admission info</text>
+        </name>
+      </transition>
+      <arc id="5138490128" source="d0d9707f-1480-45bf-95de-9dd8e13f1b6c" target="p_3"><identifier><text>e</text></identifier></arc>
+      <arc id="5138487440" source="p_3" target="be9ece39-e1e3-40ac-9091-a30e114e5df7"><identifier><text>e</text></identifier></arc>
+      <arc id="5138490064" source="p_3" target="406535c6-192e-49b8-ac06-414820ee960a"><identifier><text>e</text></identifier></arc>
+      <arc id="5138490832" source="be9ece39-e1e3-40ac-9091-a30e114e5df7" target="p_4"><identifier><text>e</text></identifier></arc>
+      <arc id="5138490960" source="p_4" target="5add556a-78d3-42a8-a5b4-4628936a4c00"><identifier><text>e</text></identifier></arc>
+      </page>
+    </net>
+</pnml>

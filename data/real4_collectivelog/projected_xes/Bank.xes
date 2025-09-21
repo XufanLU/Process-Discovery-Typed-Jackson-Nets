@@ -1,0 +1,2508 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<log xes.version="1849-2016" xes.features="nested-attributes" xmlns="http://www.xes-standard.org/">
+	<extension name="Organizational" prefix="org" uri="http://www.xes-standard.org/org.xesext" />
+	<extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext" />
+	<extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext" />
+	<extension name="Identity" prefix="identity" uri="http://www.xes-standard.org/identity.xesext" />
+	<string key="concept:name" value="collog" />
+	<trace>
+		<string key="concept:name" value="case_139" />
+		<event>
+			<string key="msgInstanceId" value="request_136" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:26:58.471000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:26:59.381000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_137" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:27:04.206000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_91" />
+		<event>
+			<string key="msgInstanceId" value="request_88" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:12:09.327000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:12:12.758000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_89" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:12:15.191000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_135" />
+		<event>
+			<string key="msgInstanceId" value="request_132" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:25:36.539000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:25:42.926000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_133" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:25:52.876000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_95" />
+		<event>
+			<string key="msgInstanceId" value="request_92" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:13:35.401000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:13:39.970000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_93" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:13:42.368000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_107" />
+		<event>
+			<string key="msgInstanceId" value="request_104" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:17:18.001000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:17:22.620000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_105" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:17:24.967000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_275" />
+		<event>
+			<string key="msgInstanceId" value="request_272" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:07:06.309000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:07:09.571000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_273" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:07:10.389000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_347" />
+		<event>
+			<string key="msgInstanceId" value="request_344" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:27:32.138000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:27:43.473000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_345" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:27:51.314000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_83" />
+		<event>
+			<string key="msgInstanceId" value="request_80" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:10:05.528000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:10:07.833000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_81" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:10:11.791000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_239" />
+		<event>
+			<string key="msgInstanceId" value="request_236" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:56:06.981000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:56:14.863000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_237" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:56:15.442000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_235" />
+		<event>
+			<string key="msgInstanceId" value="request_232" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:54:36.802000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:54:37.034000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_233" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:54:37.157000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_27" />
+		<event>
+			<string key="msgInstanceId" value="request_24" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T15:52:47.127000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T15:52:50.882000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_25" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T15:52:54.521000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_263" />
+		<event>
+			<string key="msgInstanceId" value="request_260" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:03:13.817000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:03:14.757000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_261" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:03:23.511000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_63" />
+		<event>
+			<string key="msgInstanceId" value="request_60" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:04:28.721000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:04:34.844000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_61" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:04:35.153000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_331" />
+		<event>
+			<string key="msgInstanceId" value="request_328" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:23:08.523000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:23:13.126000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_329" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:23:16.735000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_143" />
+		<event>
+			<string key="msgInstanceId" value="request_140" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:28:16.233000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:28:23.732000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_141" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:28:25.270000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_231" />
+		<event>
+			<string key="msgInstanceId" value="request_228" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:53:40.759000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:53:45.165000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_229" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:53:47.405000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_163" />
+		<event>
+			<string key="msgInstanceId" value="request_160" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:34:04.015000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:34:09.804000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_161" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:34:14.951000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_35" />
+		<event>
+			<string key="msgInstanceId" value="request_32" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T15:55:21.254000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T15:55:23.530000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_33" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T15:55:23.847000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_387" />
+		<event>
+			<string key="msgInstanceId" value="request_384" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:39:18.132000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:39:24.006000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_385" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:39:29.701000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_99" />
+		<event>
+			<string key="msgInstanceId" value="request_96" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:14:40.064000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:14:48.908000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_97" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:14:52.554000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_315" />
+		<event>
+			<string key="msgInstanceId" value="request_312" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:18:12.594000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:18:16.510000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_313" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:18:27.269000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_227" />
+		<event>
+			<string key="msgInstanceId" value="request_224" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:52:27.752000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:52:30.767000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_225" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:52:37.912000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_207" />
+		<event>
+			<string key="msgInstanceId" value="request_204" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:46:23.702000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:46:26.040000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_205" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:46:30.908000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_15" />
+		<event>
+			<string key="msgInstanceId" value="request_12" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T15:48:57.338000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T15:49:00.464000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_13" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T15:49:05.128000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_323" />
+		<event>
+			<string key="msgInstanceId" value="request_320" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:21:01.332000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:21:07.231000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_321" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:21:12.320000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_195" />
+		<event>
+			<string key="msgInstanceId" value="request_192" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:43:24.970000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:43:33.668000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_193" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:43:38.443000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_287" />
+		<event>
+			<string key="msgInstanceId" value="request_284" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:10:36.035000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:10:39.533000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_285" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:10:42.157000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_43" />
+		<event>
+			<string key="msgInstanceId" value="request_40" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T15:58:01.905000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T15:58:06.488000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_41" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T15:58:14.920000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_115" />
+		<event>
+			<string key="msgInstanceId" value="request_112" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:19:16.717000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:19:19.677000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_113" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:19:20.064000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_155" />
+		<event>
+			<string key="msgInstanceId" value="request_152" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:31:55.869000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:32:00.440000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_153" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:32:02.755000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_255" />
+		<event>
+			<string key="msgInstanceId" value="request_252" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:00:37.034000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:00:39.069000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_253" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:00:39.253000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_335" />
+		<event>
+			<string key="msgInstanceId" value="request_332" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:24:15.079000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:24:16.182000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_333" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:24:22.596000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_31" />
+		<event>
+			<string key="msgInstanceId" value="request_28" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T15:53:59.207000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T15:54:03.272000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_29" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T15:54:07.620000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_371" />
+		<event>
+			<string key="msgInstanceId" value="request_368" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:34:46.459000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:34:52.199000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_369" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:34:53.595000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_375" />
+		<event>
+			<string key="msgInstanceId" value="request_372" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:36:00.249000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:36:03.489000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_373" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:36:07.938000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_355" />
+		<event>
+			<string key="msgInstanceId" value="request_352" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:30:02.253000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:30:09.831000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_353" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:30:14.773000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_159" />
+		<event>
+			<string key="msgInstanceId" value="request_156" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:32:59.030000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:33:02.873000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_157" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:33:02.898000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_383" />
+		<event>
+			<string key="msgInstanceId" value="request_380" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:38:07.569000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:38:07.613000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_381" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:38:11.648000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_175" />
+		<event>
+			<string key="msgInstanceId" value="request_172" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:37:40.202000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:37:46.336000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_173" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:37:51.495000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_151" />
+		<event>
+			<string key="msgInstanceId" value="request_148" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:30:38.912000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:31:02.681000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_149" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:31:03.700000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_103" />
+		<event>
+			<string key="msgInstanceId" value="request_100" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:15:53.875000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:15:57.680000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_101" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:16:07.196000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_79" />
+		<event>
+			<string key="msgInstanceId" value="request_76" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:08:33.609000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:08:38.667000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_77" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:08:53.214000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_47" />
+		<event>
+			<string key="msgInstanceId" value="request_44" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T15:59:16.531000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T15:59:32.426000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_45" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T15:59:32.829000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_7" />
+		<event>
+			<string key="msgInstanceId" value="request_4" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T15:46:32.693000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T15:46:40.797000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_5" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T15:46:47.942000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_379" />
+		<event>
+			<string key="msgInstanceId" value="request_376" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:37:00.271000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:37:03.133000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_377" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:37:03.429000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_71" />
+		<event>
+			<string key="msgInstanceId" value="request_68" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:06:51.204000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:06:53.339000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_69" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:06:59.308000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_59" />
+		<event>
+			<string key="msgInstanceId" value="request_56" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:03:01.298000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:03:09.072000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_57" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:03:12.970000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_51" />
+		<event>
+			<string key="msgInstanceId" value="request_48" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:00:39.877000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:00:40.908000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_49" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:00:43.756000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_295" />
+		<event>
+			<string key="msgInstanceId" value="request_292" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:12:37.460000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:12:37.565000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_293" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:12:39.887000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_75" />
+		<event>
+			<string key="msgInstanceId" value="request_72" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:07:50.673000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:07:54.401000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_73" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:07:55.170000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_247" />
+		<event>
+			<string key="msgInstanceId" value="request_244" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:58:07.589000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:58:14.374000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_245" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:58:15.045000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_179" />
+		<event>
+			<string key="msgInstanceId" value="request_176" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:38:45.292000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:38:47.334000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_177" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:38:51.875000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_183" />
+		<event>
+			<string key="msgInstanceId" value="request_180" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:40:05.356000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:40:07.281000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_181" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:40:11.762000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_55" />
+		<event>
+			<string key="msgInstanceId" value="request_52" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:01:48.058000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:01:57.531000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_53" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:02:00.677000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_291" />
+		<event>
+			<string key="msgInstanceId" value="request_288" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:11:32.446000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:11:39.957000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_289" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:11:42.649000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_251" />
+		<event>
+			<string key="msgInstanceId" value="request_248" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:59:26.855000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:59:29.607000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_249" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:59:30.897000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_279" />
+		<event>
+			<string key="msgInstanceId" value="request_276" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:08:10.323000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:08:12.403000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_277" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:08:14.082000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_23" />
+		<event>
+			<string key="msgInstanceId" value="request_20" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T15:51:29.239000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T15:51:34.152000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_21" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T15:51:34.263000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_311" />
+		<event>
+			<string key="msgInstanceId" value="request_308" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:17:13.700000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:17:15.984000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_309" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:17:18.760000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_391" />
+		<event>
+			<string key="msgInstanceId" value="request_388" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:40:42.014000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:40:49.828000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_389" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:41:01.154000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_127" />
+		<event>
+			<string key="msgInstanceId" value="request_124" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:22:45.671000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:22:50.622000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_125" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:22:51.192000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_11" />
+		<event>
+			<string key="msgInstanceId" value="request_8" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T15:47:50.211000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T15:47:53.276000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_9" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T15:47:53.735000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_39" />
+		<event>
+			<string key="msgInstanceId" value="request_36" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T15:56:32.424000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T15:56:33.721000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_37" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T15:56:36.365000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_67" />
+		<event>
+			<string key="msgInstanceId" value="request_64" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:05:40.090000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:05:45.110000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_65" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:05:46.781000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_319" />
+		<event>
+			<string key="msgInstanceId" value="request_316" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:19:38.622000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:19:40.899000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_317" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:19:45.806000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_167" />
+		<event>
+			<string key="msgInstanceId" value="request_164" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:35:12.620000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:35:16.721000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_165" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:35:21.334000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_191" />
+		<event>
+			<string key="msgInstanceId" value="request_188" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:42:24.739000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:42:29.822000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_189" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:42:31.190000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_339" />
+		<event>
+			<string key="msgInstanceId" value="request_336" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:25:14.594000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:25:16.723000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_337" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:25:20.054000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_351" />
+		<event>
+			<string key="msgInstanceId" value="request_348" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:28:56.948000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:29:01.629000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_349" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:29:05.821000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_147" />
+		<event>
+			<string key="msgInstanceId" value="request_144" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:29:24.176000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:29:34.513000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_145" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:29:35.438000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_111" />
+		<event>
+			<string key="msgInstanceId" value="request_108" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:18:20.877000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:18:27.756000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_109" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:18:28.701000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_271" />
+		<event>
+			<string key="msgInstanceId" value="request_268" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:05:57.340000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:06:00.069000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_269" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:06:04.086000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_131" />
+		<event>
+			<string key="msgInstanceId" value="request_128" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:24:18.057000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:24:21.422000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_129" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:24:24.175000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_307" />
+		<event>
+			<string key="msgInstanceId" value="request_304" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:16:15.521000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:16:18.646000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_305" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:16:19.797000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_123" />
+		<event>
+			<string key="msgInstanceId" value="request_120" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:21:20.129000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:21:22.352000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_121" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:21:28.655000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_199" />
+		<event>
+			<string key="msgInstanceId" value="request_196" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:44:16.620000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:44:17.141000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_197" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:44:27.568000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_283" />
+		<event>
+			<string key="msgInstanceId" value="request_280" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:09:15.764000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:09:23.733000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_281" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:09:35.326000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_359" />
+		<event>
+			<string key="msgInstanceId" value="request_356" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:31:27.534000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:31:34.271000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_357" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:31:39.873000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_19" />
+		<event>
+			<string key="msgInstanceId" value="request_16" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T15:50:23.934000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T15:50:28.391000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_17" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T15:50:30.877000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_119" />
+		<event>
+			<string key="msgInstanceId" value="request_116" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:20:21.102000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:20:23.030000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_117" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:20:24.982000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_203" />
+		<event>
+			<string key="msgInstanceId" value="request_200" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:45:26.912000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:45:31.202000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_201" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:45:33.527000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_395" />
+		<event>
+			<string key="msgInstanceId" value="request_392" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:41:52.669000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:41:55.578000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_393" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:41:55.977000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_399" />
+		<event>
+			<string key="msgInstanceId" value="request_396" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:43:12.906000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:43:16.668000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_397" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:43:18.130000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_223" />
+		<event>
+			<string key="msgInstanceId" value="request_220" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:51:26.535000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:51:29.103000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_221" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:51:33.036000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_187" />
+		<event>
+			<string key="msgInstanceId" value="request_184" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:41:11.661000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:41:16.107000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_185" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:41:20.454000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_219" />
+		<event>
+			<string key="msgInstanceId" value="request_216" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:50:24.533000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:50:25.022000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_217" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:50:25.133000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_303" />
+		<event>
+			<string key="msgInstanceId" value="request_300" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:15:09.977000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:15:11.628000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_301" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:15:14.607000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_211" />
+		<event>
+			<string key="msgInstanceId" value="request_208" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:47:39.537000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:47:47.131000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_209" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:47:51.184000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_343" />
+		<event>
+			<string key="msgInstanceId" value="request_340" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:26:40.623000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:26:41.307000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_341" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:26:42.853000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_259" />
+		<event>
+			<string key="msgInstanceId" value="request_256" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:02:03.278000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:02:07.159000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_257" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:02:11.891000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_327" />
+		<event>
+			<string key="msgInstanceId" value="request_324" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:22:14.231000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:22:14.470000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_325" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:22:16.766000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_367" />
+		<event>
+			<string key="msgInstanceId" value="request_364" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:33:34.453000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:33:37.611000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_365" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:33:39.633000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_299" />
+		<event>
+			<string key="msgInstanceId" value="request_296" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:13:57.574000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:14:01.099000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_297" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:14:05.931000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_243" />
+		<event>
+			<string key="msgInstanceId" value="request_240" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:57:12.033000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:57:12.906000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_241" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:57:17.058000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_215" />
+		<event>
+			<string key="msgInstanceId" value="request_212" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:48:50.272000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:48:55.263000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_213" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:48:59.551000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_87" />
+		<event>
+			<string key="msgInstanceId" value="request_84" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:11:14.237000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:11:16.184000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_85" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:11:18.788000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_3" />
+		<event>
+			<string key="msgInstanceId" value="request_0" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T15:45:27.172000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T15:45:30.659000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_1" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T15:45:32.022000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_363" />
+		<event>
+			<string key="msgInstanceId" value="request_360" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:32:39.268000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:32:40.203000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_361" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:32:43.600000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_171" />
+		<event>
+			<string key="msgInstanceId" value="request_168" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T16:36:27.731000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T16:36:31.131000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_169" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T16:36:34.479000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_267" />
+		<event>
+			<string key="msgInstanceId" value="request_264" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Receive payment request" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-16T17:04:22.206000+00:00" />
+			<string key="msgFlow" value="request" />
+		</event>
+		<event>
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Process payment information" />
+			<date key="time:timestamp" value="2021-06-16T17:04:23.459000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="account_265" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Bank" />
+			<string key="concept:name" value="Change account" />
+			<date key="time:timestamp" value="2021-06-16T17:04:31.303000+00:00" />
+			<string key="msgFlow" value="account" />
+		</event>
+	</trace>
+</log>

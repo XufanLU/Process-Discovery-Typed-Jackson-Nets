@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_1758221153.465002" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1758221153.465002</text>
+    </name>
+    <page id="n0">
+      <place id="source">
+        <name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      <type><text>Bank</text></type></place>
+      <place id="sink">
+        <name>
+          <text>sink</text>
+        </name>
+      <type><text>Bank</text></type></place>
+      <place id="p_3">
+        <name>
+          <text>p_3</text>
+        </name>
+      <type><text>Bank</text></type></place>
+      <place id="p_4">
+        <name>
+          <text>p_4</text>
+        </name>
+      <type><text>Bank</text></type></place>
+      <transition id="c2aa44c0-30f7-4a45-b500-f4aa69694b04">
+        <name>
+          <text>Receive payment request</text>
+        </name>
+      </transition>
+      <transition id="ed358f2a-6aec-4727-bb7b-9521b8d496c6">
+        <name>
+          <text>Change account</text>
+        </name>
+      </transition>
+      <transition id="cc104805-de37-418f-8fd1-aa0e93694acf">
+        <name>
+          <text>Process payment information</text>
+        </name>
+      </transition>
+      <arc id="4890704848" source="source" target="c2aa44c0-30f7-4a45-b500-f4aa69694b04"><identifier><text>f</text></identifier></arc>
+      <arc id="4890704336" source="p_4" target="ed358f2a-6aec-4727-bb7b-9521b8d496c6"><identifier><text>f</text></identifier></arc>
+      <arc id="4890704720" source="c2aa44c0-30f7-4a45-b500-f4aa69694b04" target="p_3"><identifier><text>f</text></identifier></arc>
+      <arc id="4890705552" source="p_3" target="cc104805-de37-418f-8fd1-aa0e93694acf"><identifier><text>f</text></identifier></arc>
+      <arc id="4890705872" source="cc104805-de37-418f-8fd1-aa0e93694acf" target="p_4"><identifier><text>f</text></identifier></arc>
+      <arc id="4890691408" source="ed358f2a-6aec-4727-bb7b-9521b8d496c6" target="sink"><identifier><text>f</text></identifier></arc>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink">
+          <text>1</text>
+        <type><text>Bank</text></type></place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

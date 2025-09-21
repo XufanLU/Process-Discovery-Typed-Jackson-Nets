@@ -1,23 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <pnml>
-  <net id="imdf_net_1757770941.7844532" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+  <net id="imdf_net_1758206482.2130072" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
     <name>
-      <text>imdf_net_1757770941.7844532</text>
+      <text>imdf_net_1758206482.2130072</text>
     </name>
     <page id="n0">
+      <place id="p_13">
+        <name>
+          <text>p_13</text>
+        </name>
+      <type><text>r</text></type></place>
       <place id="p_11">
         <name>
           <text>p_11</text>
-        </name>
-      <type><text>r</text></type></place>
-      <place id="p_15">
-        <name>
-          <text>p_15</text>
-        </name>
-      <type><text>r</text></type></place>
-      <place id="p_12">
-        <name>
-          <text>p_12</text>
         </name>
       <type><text>r</text></type></place>
       <place id="p_4">
@@ -50,105 +45,110 @@
           <text>p_10</text>
         </name>
       <type><text>r</text></type></place>
+      <place id="p_12">
+        <name>
+          <text>p_12</text>
+        </name>
+      <type><text>r</text></type></place>
+      <place id="p_15">
+        <name>
+          <text>p_15</text>
+        </name>
+      <type><text>r</text></type></place>
       <place id="p_14">
         <name>
           <text>p_14</text>
         </name>
       <type><text>r</text></type></place>
-      <place id="p_13">
-        <name>
-          <text>p_13</text>
-        </name>
-      <type><text>r</text></type></place>
-      <transition id="b921c89e-76d5-4177-a7fd-089c32ba77d5">
-        <name>
-          <text>r5</text>
-        </name>
-      </transition>
-      <transition id="c3eb2afb-0eab-4053-877b-22e83439d5cd">
-        <name>
-          <text>r6</text>
-        </name>
-      </transition>
-      <transition id="1c7de109-e85e-4789-915c-a667fe46a2e2">
-        <name>
-          <text>r2</text>
-        </name>
-      </transition>
-      <transition id="c5562306-63dc-42e3-b646-56d60e02170d">
-        <name>
-          <text>ackB?</text>
-        </name>
-      </transition>
-      <transition id="64aa3f73-16d9-4f24-a036-db8c30fd85bc">
-        <name>
-          <text>r1</text>
-        </name>
-      </transition>
-      <transition id="08685c39-f7af-4c55-a588-e24da5cdecec">
-        <name>
-          <text>r3</text>
-        </name>
-      </transition>
-      <transition id="b30622ce-25e1-4c45-bb2a-a5c345ce5920">
-        <name>
-          <text>r4</text>
-        </name>
-      </transition>
-      <transition id="c37afaad-bad4-47a7-b10e-48f4241ff169">
-        <name>
-          <text>r7</text>
-        </name>
-      </transition>
-      <transition id="872c2cd3-98d5-442f-bdc8-e485d4ce4b35">
-        <name>
-          <text>r8</text>
-        </name>
-      </transition>
-      <transition id="e05f6bd7-00ed-4b7d-a45d-a001fe2ddc90">
-        <name>
-          <text>r10</text>
-        </name>
-      </transition>
-      <transition id="dd6f3423-4713-4f99-85e4-2348187ca507">
-        <name>
-          <text>aR?</text>
-        </name>
-      </transition>
-      <transition id="c1a72343-9a3d-46e1-b15a-353959f1e144">
-        <name>
-          <text>b?_u</text>
-        </name>
-      </transition>
-      <transition id="f95abffe-c057-4f3f-ab22-3ecf698c0f05">
+      <transition id="f99570e7-eb26-42e8-b8f7-4ce6a0df6c8b">
         <name>
           <text>r9</text>
         </name>
       </transition>
-      <arc id="5514286096" source="p_9" target="e05f6bd7-00ed-4b7d-a45d-a001fe2ddc90"><identifier><text>r</text></identifier></arc>
-      <arc id="5514282000" source="p_10" target="872c2cd3-98d5-442f-bdc8-e485d4ce4b35"><identifier><text>r</text></identifier></arc>
-      <arc id="5514887056" source="p_8" target="c37afaad-bad4-47a7-b10e-48f4241ff169"><identifier><text>r</text></identifier></arc>
-      <arc id="5514884368" source="p_5" target="08685c39-f7af-4c55-a588-e24da5cdecec"><identifier><text>r</text></identifier></arc>
-      <arc id="5514884496" source="08685c39-f7af-4c55-a588-e24da5cdecec" target="p_3"><identifier><text>r</text></identifier></arc>
-      <arc id="5514885008" source="p_3" target="c5562306-63dc-42e3-b646-56d60e02170d"><identifier><text>r</text></identifier></arc>
-      <arc id="5514285968" source="c5562306-63dc-42e3-b646-56d60e02170d" target="p_10"><identifier><text>r</text></identifier></arc>
-      <arc id="5514281040" source="c37afaad-bad4-47a7-b10e-48f4241ff169" target="p_9"><identifier><text>r</text></identifier></arc>
-      <arc id="5514285840" source="c5562306-63dc-42e3-b646-56d60e02170d" target="p_8"><identifier><text>r</text></identifier></arc>
-      <arc id="5514282128" source="872c2cd3-98d5-442f-bdc8-e485d4ce4b35" target="p_11"><identifier><text>r</text></identifier></arc>
-      <arc id="5514283152" source="p_3" target="dd6f3423-4713-4f99-85e4-2348187ca507"><identifier><text>r</text></identifier></arc>
-      <arc id="5514283280" source="dd6f3423-4713-4f99-85e4-2348187ca507" target="p_12"><identifier><text>r</text></identifier></arc>
-      <arc id="5514285520" source="p_15" target="f95abffe-c057-4f3f-ab22-3ecf698c0f05"><identifier><text>r</text></identifier></arc>
-      <arc id="5514283792" source="p_12" target="b921c89e-76d5-4177-a7fd-089c32ba77d5"><identifier><text>r</text></identifier></arc>
-      <arc id="5514283920" source="b921c89e-76d5-4177-a7fd-089c32ba77d5" target="p_13"><identifier><text>r</text></identifier></arc>
-      <arc id="5514284432" source="p_13" target="c1a72343-9a3d-46e1-b15a-353959f1e144"><identifier><text>r</text></identifier></arc>
-      <arc id="5514284560" source="c1a72343-9a3d-46e1-b15a-353959f1e144" target="p_14"><identifier><text>r</text></identifier></arc>
-      <arc id="5514872656" source="1c7de109-e85e-4789-915c-a667fe46a2e2" target="p_4"><identifier><text>r</text></identifier></arc>
-      <arc id="5514873296" source="b30622ce-25e1-4c45-bb2a-a5c345ce5920" target="p_3"><identifier><text>r</text></identifier></arc>
-      <arc id="5514872784" source="p_4" target="b30622ce-25e1-4c45-bb2a-a5c345ce5920"><identifier><text>r</text></identifier></arc>
-      <arc id="5514881872" source="64aa3f73-16d9-4f24-a036-db8c30fd85bc" target="p_5"><identifier><text>r</text></identifier></arc>
-      <arc id="5514285072" source="p_14" target="c3eb2afb-0eab-4053-877b-22e83439d5cd"><identifier><text>r</text></identifier></arc>
-      <arc id="5514285200" source="c3eb2afb-0eab-4053-877b-22e83439d5cd" target="p_15"><identifier><text>r</text></identifier></arc>
-      <arc id="5514286224" source="p_11" target="e05f6bd7-00ed-4b7d-a45d-a001fe2ddc90"><identifier><text>r</text></identifier></arc>
-    </page>
+      <transition id="ec7ea3a3-64d0-4efb-8614-eacd47e38e38">
+        <name>
+          <text>b?_u</text>
+        </name>
+      </transition>
+      <transition id="e162fc3a-a48e-42bd-bece-7b098bbc9812">
+        <name>
+          <text>r2</text>
+        </name>
+      </transition>
+      <transition id="7639874a-dc10-494f-a08f-74a32b5a2cc4">
+        <name>
+          <text>r1</text>
+        </name>
+      </transition>
+      <transition id="796c2c9a-2e77-4f14-a96f-f07a6c0110b0">
+        <name>
+          <text>r3</text>
+        </name>
+      </transition>
+      <transition id="e8f70cd6-fb7d-40c6-9d5d-588a1880f78e">
+        <name>
+          <text>r4</text>
+        </name>
+      </transition>
+      <transition id="960000ce-d85d-4fd5-aeea-cf06ebe0451e">
+        <name>
+          <text>ackB?</text>
+        </name>
+      </transition>
+      <transition id="9ab73444-672c-43b9-9fe5-20c5cd15dc85">
+        <name>
+          <text>r7</text>
+        </name>
+      </transition>
+      <transition id="7e699828-3e6a-4e1d-9fc1-559a77221218">
+        <name>
+          <text>r8</text>
+        </name>
+      </transition>
+      <transition id="cfb88260-b447-4fe6-bc12-0edbec6ff1ec">
+        <name>
+          <text>r10</text>
+        </name>
+      </transition>
+      <transition id="39578e69-c5bf-4994-9cfe-8ffc59fe5ea2">
+        <name>
+          <text>r5</text>
+        </name>
+      </transition>
+      <transition id="85955634-c690-4d1d-b0a2-bc261a3fef8c">
+        <name>
+          <text>r6</text>
+        </name>
+      </transition>
+      <transition id="5495df4b-81c0-46f3-a079-62e22d627e28">
+        <name>
+          <text>aR?</text>
+        </name>
+      </transition>
+      <arc id="5360170384" source="p_10" target="7e699828-3e6a-4e1d-9fc1-559a77221218"><identifier><text>b</text></identifier></arc>
+      <arc id="5360157456" source="e8f70cd6-fb7d-40c6-9d5d-588a1880f78e" target="p_3"><identifier><text>b</text></identifier></arc>
+      <arc id="5360170512" source="7e699828-3e6a-4e1d-9fc1-559a77221218" target="p_11"><identifier><text>b</text></identifier></arc>
+      <arc id="5360171536" source="p_3" target="5495df4b-81c0-46f3-a079-62e22d627e28"><identifier><text>b</text></identifier></arc>
+      <arc id="5360171664" source="5495df4b-81c0-46f3-a079-62e22d627e28" target="p_12"><identifier><text>b</text></identifier></arc>
+      <arc id="5360763088" source="p_14" target="85955634-c690-4d1d-b0a2-bc261a3fef8c"><identifier><text>b</text></identifier></arc>
+      <arc id="5360763216" source="85955634-c690-4d1d-b0a2-bc261a3fef8c" target="p_15"><identifier><text>b</text></identifier></arc>
+      <arc id="5360169424" source="9ab73444-672c-43b9-9fe5-20c5cd15dc85" target="p_9"><identifier><text>b</text></identifier></arc>
+      <arc id="5360172176" source="p_12" target="39578e69-c5bf-4994-9cfe-8ffc59fe5ea2"><identifier><text>b</text></identifier></arc>
+      <arc id="5360764112" source="p_9" target="cfb88260-b447-4fe6-bc12-0edbec6ff1ec"><identifier><text>b</text></identifier></arc>
+      <arc id="5360172304" source="39578e69-c5bf-4994-9cfe-8ffc59fe5ea2" target="p_13"><identifier><text>b</text></identifier></arc>
+      <arc id="5360764240" source="p_11" target="cfb88260-b447-4fe6-bc12-0edbec6ff1ec"><identifier><text>b</text></identifier></arc>
+      <arc id="5360172816" source="p_13" target="ec7ea3a3-64d0-4efb-8614-eacd47e38e38"><identifier><text>b</text></identifier></arc>
+      <arc id="5360172944" source="ec7ea3a3-64d0-4efb-8614-eacd47e38e38" target="p_14"><identifier><text>b</text></identifier></arc>
+      <arc id="5360763984" source="960000ce-d85d-4fd5-aeea-cf06ebe0451e" target="p_10"><identifier><text>b</text></identifier></arc>
+      <arc id="5360158032" source="e162fc3a-a48e-42bd-bece-7b098bbc9812" target="p_4"><identifier><text>b</text></identifier></arc>
+      <arc id="5360161488" source="p_4" target="e8f70cd6-fb7d-40c6-9d5d-588a1880f78e"><identifier><text>b</text></identifier></arc>
+      <arc id="5360166352" source="7639874a-dc10-494f-a08f-74a32b5a2cc4" target="p_5"><identifier><text>b</text></identifier></arc>
+      <arc id="5360166608" source="p_5" target="796c2c9a-2e77-4f14-a96f-f07a6c0110b0"><identifier><text>b</text></identifier></arc>
+      <arc id="5360166736" source="796c2c9a-2e77-4f14-a96f-f07a6c0110b0" target="p_3"><identifier><text>b</text></identifier></arc>
+      <arc id="5360167248" source="p_3" target="960000ce-d85d-4fd5-aeea-cf06ebe0451e"><identifier><text>b</text></identifier></arc>
+      <arc id="5360763856" source="960000ce-d85d-4fd5-aeea-cf06ebe0451e" target="p_8"><identifier><text>b</text></identifier></arc>
+      <arc id="5360169296" source="p_8" target="9ab73444-672c-43b9-9fe5-20c5cd15dc85"><identifier><text>b</text></identifier></arc>
+      <arc id="5360763536" source="p_15" target="f99570e7-eb26-42e8-b8f7-4ce6a0df6c8b"><identifier><text>b</text></identifier></arc>
+      </page>
     </net>
 </pnml>

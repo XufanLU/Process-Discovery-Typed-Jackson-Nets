@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_1758219873.037086" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1758219873.037086</text>
+    </name>
+    <page id="n0">
+      <place id="p_3">
+        <name>
+          <text>p_3</text>
+        </name>
+      <type><text>PartyD</text></type></place>
+      <transition id="a92ae2c1-61b7-4a11-a0ee-98d1a7e956ac">
+        <name>
+          <text>Start2</text>
+        </name>
+      </transition>
+      <transition id="a0c1f1b9-da6b-4e2f-b024-33388760fbdd">
+        <name>
+          <text>Activity ZAZ</text>
+        </name>
+      </transition>
+      <arc id="4717563408" source="a92ae2c1-61b7-4a11-a0ee-98d1a7e956ac" target="p_3"><identifier><text>u</text></identifier></arc>
+      <arc id="4717575952" source="p_3" target="a0c1f1b9-da6b-4e2f-b024-33388760fbdd"><identifier><text>u</text></identifier></arc>
+      </page>
+    </net>
+</pnml>

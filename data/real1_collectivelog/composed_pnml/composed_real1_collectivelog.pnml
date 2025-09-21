@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml><net id="composed_real1_collectivelog" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel"><name><text>composed_real1_collectivelog</text></name><page id="composed_page"><place id="p_4_Rex"><name>
+          <text>p_4</text>
+        </name>
+      <type><text>Rex</text></type></place><place id="p_3_Rex"><name>
+          <text>p_3</text>
+        </name>
+      <type><text>Rex</text></type></place><place id="p_5_Dingo"><name>
+          <text>p_5</text>
+        </name>
+      <type><text>Dingo</text></type></place><place id="p_4_Dingo"><name>
+          <text>p_4</text>
+        </name>
+      <type><text>Dingo</text></type></place><place id="p_3_Dingo"><name>
+          <text>p_3</text>
+        </name>
+      <type><text>Dingo</text></type></place><transition id="cbe499a2-3bc7-4f5b-9b00-c1770718134c_Rex"><name>
+          <text>Rex_Explore</text>
+        </name>
+      </transition><transition id="a4b01582-5865-4f4e-be3e-3353f99efafb_Rex"><name>
+          <text>Rex_target_found</text>
+        </name>
+      </transition><transition id="5632af3e-6046-4d5f-921e-8918636d98a8_Rex"><name>
+          <text>Rex_done</text>
+        </name>
+      </transition><transition id="f2b7e242-74cf-4eeb-b77a-d924fb69e203_Dingo"><name>
+          <text>Dingo_target_found</text>
+        </name>
+      </transition><transition id="3ccfb3ad-9779-4bcb-b726-b6edce3b5a78_Dingo"><name>
+          <text>Dingo_Fire</text>
+        </name>
+      </transition><transition id="da5dcc4e-fc38-4ed8-8f93-e8ab832f91d4_Dingo"><name>
+          <text>Dingo_done</text>
+        </name>
+      </transition><transition id="cdc984e5-662a-4230-be25-7c713a27ef41_Dingo"><name>
+          <text>Dingo_GoTo</text>
+        </name>
+      </transition><arc id="5134766032_Rex" source="p_4_Rex" target="5632af3e-6046-4d5f-921e-8918636d98a8_Rex"><identifier><text>n</text></identifier></arc><arc id="5134764880_Rex" source="cbe499a2-3bc7-4f5b-9b00-c1770718134c_Rex" target="p_3_Rex"><identifier><text>n</text></identifier></arc><arc id="5134765648_Rex" source="p_3_Rex" target="a4b01582-5865-4f4e-be3e-3353f99efafb_Rex"><identifier><text>n</text></identifier></arc><arc id="5134765776_Rex" source="a4b01582-5865-4f4e-be3e-3353f99efafb_Rex" target="p_4_Rex"><identifier><text>n</text></identifier></arc><arc id="5134844560_Dingo" source="p_4_Dingo" target="3ccfb3ad-9779-4bcb-b726-b6edce3b5a78_Dingo"><identifier><text>r</text></identifier></arc><arc id="5134843984_Dingo" source="p_3_Dingo" target="cdc984e5-662a-4230-be25-7c713a27ef41_Dingo"><identifier><text>r</text></identifier></arc><arc id="5134750096_Dingo" source="f2b7e242-74cf-4eeb-b77a-d924fb69e203_Dingo" target="p_3_Dingo"><identifier><text>r</text></identifier></arc><arc id="5134844112_Dingo" source="cdc984e5-662a-4230-be25-7c713a27ef41_Dingo" target="p_4_Dingo"><identifier><text>r</text></identifier></arc><arc id="5134844688_Dingo" source="3ccfb3ad-9779-4bcb-b726-b6edce3b5a78_Dingo" target="p_5_Dingo"><identifier><text>r</text></identifier></arc><arc id="5134844944_Dingo" source="p_5_Dingo" target="da5dcc4e-fc38-4ed8-8f93-e8ab832f91d4_Dingo"><identifier><text>r</text></identifier></arc></page></net></pnml>

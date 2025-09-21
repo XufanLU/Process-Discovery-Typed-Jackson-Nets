@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_1758220098.5326421" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1758220098.5326421</text>
+    </name>
+    <page id="n0">
+      <place id="source">
+        <name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      <type><text>Contact_Author</text></type></place>
+      <place id="p_5">
+        <name>
+          <text>p_5</text>
+        </name>
+      <type><text>Contact_Author</text></type></place>
+      <place id="p_4">
+        <name>
+          <text>p_4</text>
+        </name>
+      <type><text>Contact_Author</text></type></place>
+      <place id="p_3">
+        <name>
+          <text>p_3</text>
+        </name>
+      <type><text>Contact_Author</text></type></place>
+      <place id="sink">
+        <name>
+          <text>sink</text>
+        </name>
+      <type><text>Contact_Author</text></type></place>
+      <place id="p_6">
+        <name>
+          <text>p_6</text>
+        </name>
+      <type><text>Contact_Author</text></type></place>
+      <place id="p_7">
+        <name>
+          <text>p_7</text>
+        </name>
+      <type><text>Contact_Author</text></type></place>
+      <place id="p_8">
+        <name>
+          <text>p_8</text>
+        </name>
+      <type><text>Contact_Author</text></type></place>
+      <transition id="37826e59-d0da-41bd-acfd-2c90e1bb75c2">
+        <name>
+          <text>Write Paper</text>
+        </name>
+      </transition>
+      <transition id="c96238fb-d92a-4840-8d51-47bcccec44c1">
+        <name>
+          <text>Finalize Manuscript</text>
+        </name>
+      </transition>
+      <transition id="c2088e19-fac5-42e2-a47c-46dbf4592a0e">
+        <name>
+          <text>Apply Changes</text>
+        </name>
+      </transition>
+      <transition id="65b8785a-4782-4900-b7e8-79bd6a7199ce">
+        <name>
+          <text>Check Journal Submission Guide</text>
+        </name>
+      </transition>
+      <transition id="skip_1">
+        <name>
+          <text>skip_1</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="33a4a94d-f320-4e67-81d8-cb3868ad18b5" />
+      </transition>
+      <transition id="skip_2">
+        <name>
+          <text>skip_2</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="d4f00e2d-903d-4123-b541-31b32fd7ab65" />
+      </transition>
+      <transition id="e6808b85-7354-429c-8696-ab7915602050">
+        <name>
+          <text>Submit Manuscript</text>
+        </name>
+      </transition>
+      <transition id="0331f031-bd1c-44b3-a95c-053a08b33ca8">
+        <name>
+          <text>Notification Received</text>
+        </name>
+      </transition>
+      <transition id="4ef173a1-193e-442b-8d73-04213f3d81b3">
+        <name>
+          <text>Read Notification</text>
+        </name>
+      </transition>
+      <transition id="0ecdd4af-c11b-4a9a-913b-3ef22c2b36e7">
+        <name>
+          <text>Revise For Resubmission</text>
+        </name>
+      </transition>
+      <transition id="64cf8c1e-587f-43f2-8f97-d4099ce04109">
+        <name>
+          <text>Prepare Camera Ready</text>
+        </name>
+      </transition>
+      <arc id="4726136464" source="p_4" target="skip_2"><identifier><text>a</text></identifier></arc>
+      <arc id="4726136592" source="skip_2" target="sink"><identifier><text>a</text></identifier></arc>
+      <arc id="4726137616" source="p_6" target="0331f031-bd1c-44b3-a95c-053a08b33ca8"><identifier><text>a</text></identifier></arc>
+      <arc id="4726137744" source="0331f031-bd1c-44b3-a95c-053a08b33ca8" target="p_7"><identifier><text>a</text></identifier></arc>
+      <arc id="4725900432" source="source" target="37826e59-d0da-41bd-acfd-2c90e1bb75c2"><identifier><text>a</text></identifier></arc>
+      <arc id="4726135696" source="65b8785a-4782-4900-b7e8-79bd6a7199ce" target="p_5"><identifier><text>a</text></identifier></arc>
+      <arc id="4726132368" source="skip_1" target="p_4"><identifier><text>a</text></identifier></arc>
+      <arc id="4726134416" source="c2088e19-fac5-42e2-a47c-46dbf4592a0e" target="p_4"><identifier><text>a</text></identifier></arc>
+      <arc id="4726138320" source="4ef173a1-193e-442b-8d73-04213f3d81b3" target="p_8"><identifier><text>a</text></identifier></arc>
+      <arc id="4726138704" source="0ecdd4af-c11b-4a9a-913b-3ef22c2b36e7" target="sink"><identifier><text>a</text></identifier></arc>
+      <arc id="4726138576" source="p_8" target="0ecdd4af-c11b-4a9a-913b-3ef22c2b36e7"><identifier><text>a</text></identifier></arc>
+      <arc id="4726132048" source="p_3" target="65b8785a-4782-4900-b7e8-79bd6a7199ce"><identifier><text>a</text></identifier></arc>
+      <arc id="4726133584" source="p_5" target="skip_1"><identifier><text>a</text></identifier></arc>
+      <arc id="4726134992" source="37826e59-d0da-41bd-acfd-2c90e1bb75c2" target="p_3"><identifier><text>a</text></identifier></arc>
+      <arc id="4726134096" source="p_5" target="c2088e19-fac5-42e2-a47c-46dbf4592a0e"><identifier><text>a</text></identifier></arc>
+      <arc id="4726136016" source="p_3" target="c96238fb-d92a-4840-8d51-47bcccec44c1"><identifier><text>a</text></identifier></arc>
+      <arc id="4726136144" source="c96238fb-d92a-4840-8d51-47bcccec44c1" target="p_4"><identifier><text>a</text></identifier></arc>
+      <arc id="4726138192" source="p_7" target="4ef173a1-193e-442b-8d73-04213f3d81b3"><identifier><text>a</text></identifier></arc>
+      <arc id="4726137168" source="e6808b85-7354-429c-8696-ab7915602050" target="p_6"><identifier><text>a</text></identifier></arc>
+      <arc id="4726137040" source="p_4" target="e6808b85-7354-429c-8696-ab7915602050"><identifier><text>a</text></identifier></arc>
+      <arc id="4726138960" source="p_8" target="64cf8c1e-587f-43f2-8f97-d4099ce04109"><identifier><text>a</text></identifier></arc>
+      <arc id="4726139088" source="64cf8c1e-587f-43f2-8f97-d4099ce04109" target="sink"><identifier><text>a</text></identifier></arc>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink">
+          <text>1</text>
+        <type><text>Contact_Author</text></type></place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

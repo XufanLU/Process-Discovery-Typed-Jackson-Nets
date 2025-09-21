@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_1758457252.0286" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1758457252.0286</text>
+    </name>
+    <page id="n0">
+      <place id="source">
+        <name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      <type><text>Security Department</text></type></place>
+      <place id="sink">
+        <name>
+          <text>sink</text>
+        </name>
+      <type><text>Security Department</text></type></place>
+      <place id="p_4">
+        <name>
+          <text>p_4</text>
+        </name>
+      <type><text>Security Department</text></type></place>
+      <place id="p_3">
+        <name>
+          <text>p_3</text>
+        </name>
+      <type><text>Security Department</text></type></place>
+      <place id="p_7">
+        <name>
+          <text>p_7</text>
+        </name>
+      <type><text>Security Department</text></type></place>
+      <place id="p_8">
+        <name>
+          <text>p_8</text>
+        </name>
+      <type><text>Security Department</text></type></place>
+      <place id="p_9">
+        <name>
+          <text>p_9</text>
+        </name>
+      <type><text>Security Department</text></type></place>
+      <place id="p_10">
+        <name>
+          <text>p_10</text>
+        </name>
+      <type><text>Security Department</text></type></place>
+      <transition id="8308ee15-b19b-4a69-923e-ec21f7fcc79f">
+        <name>
+          <text>F1</text>
+        </name>
+      </transition>
+      <transition id="cb1a5531-72b7-4586-9b30-73692820e9ee">
+        <name>
+          <text>F3</text>
+        </name>
+      </transition>
+      <transition id="bac6f65a-3797-408d-9110-74ee924f6348">
+        <name>
+          <text>F2</text>
+        </name>
+      </transition>
+      <transition id="1860e45b-0774-447b-aa31-1108dfc7b52f">
+        <name>
+          <text>F5</text>
+        </name>
+      </transition>
+      <transition id="fe1296ea-2437-4f37-8bd2-e045b22d5b33">
+        <name>
+          <text>F4</text>
+        </name>
+      </transition>
+      <transition id="d9c2f48e-e999-4183-a1b1-1bf3ee8db980">
+        <name>
+          <text>F6</text>
+        </name>
+      </transition>
+      <arc id="14627054160" source="p_7" target="1860e45b-0774-447b-aa31-1108dfc7b52f"><identifier><text>n</text></identifier></arc>
+      <arc id="14627055184" source="p_9" target="fe1296ea-2437-4f37-8bd2-e045b22d5b33"><identifier><text>n</text></identifier></arc>
+      <arc id="14627054288" source="1860e45b-0774-447b-aa31-1108dfc7b52f" target="p_8"><identifier><text>n</text></identifier></arc>
+      <arc id="14627055312" source="fe1296ea-2437-4f37-8bd2-e045b22d5b33" target="p_10"><identifier><text>n</text></identifier></arc>
+      <arc id="14627051280" source="source" target="8308ee15-b19b-4a69-923e-ec21f7fcc79f"><identifier><text>n</text></identifier></arc>
+      <arc id="14627052048" source="p_3" target="bac6f65a-3797-408d-9110-74ee924f6348"><identifier><text>n</text></identifier></arc>
+      <arc id="14627052304" source="p_4" target="cb1a5531-72b7-4586-9b30-73692820e9ee"><identifier><text>n</text></identifier></arc>
+      <arc id="14627051664" source="bac6f65a-3797-408d-9110-74ee924f6348" target="p_4"><identifier><text>n</text></identifier></arc>
+      <arc id="4585270480" source="8308ee15-b19b-4a69-923e-ec21f7fcc79f" target="p_3"><identifier><text>n</text></identifier></arc>
+      <arc id="14627056016" source="cb1a5531-72b7-4586-9b30-73692820e9ee" target="p_9"><identifier><text>n</text></identifier></arc>
+      <arc id="14627056336" source="p_10" target="d9c2f48e-e999-4183-a1b1-1bf3ee8db980"><identifier><text>n</text></identifier></arc>
+      <arc id="14627055888" source="cb1a5531-72b7-4586-9b30-73692820e9ee" target="p_7"><identifier><text>n</text></identifier></arc>
+      <arc id="14627056208" source="p_8" target="d9c2f48e-e999-4183-a1b1-1bf3ee8db980"><identifier><text>n</text></identifier></arc>
+      <arc id="14627055696" source="d9c2f48e-e999-4183-a1b1-1bf3ee8db980" target="sink"><identifier><text>n</text></identifier></arc>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink">
+          <text>1</text>
+        <type><text>Security Department</text></type></place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

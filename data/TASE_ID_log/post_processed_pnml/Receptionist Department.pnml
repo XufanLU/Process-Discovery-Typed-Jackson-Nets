@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_1758221759.295327" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1758221759.295327</text>
+    </name>
+    <page id="n0">
+      <place id="p_3">
+        <name>
+          <text>p_3</text>
+        </name>
+      <type><text>Receptionist Department</text></type></place>
+      <place id="p_4">
+        <name>
+          <text>p_4</text>
+        </name>
+      <type><text>Receptionist Department</text></type></place>
+      <transition id="8d02a56f-3315-4ce2-a539-a11b6e7fabf4">
+        <name>
+          <text>D1</text>
+        </name>
+      </transition>
+      <transition id="bb4e4d1d-e726-4351-b27a-d78baf0c8dfa">
+        <name>
+          <text>D2</text>
+        </name>
+      </transition>
+      <transition id="3dcace2c-5e84-4720-bb27-e7f92adf6cc5">
+        <name>
+          <text>D3</text>
+        </name>
+      </transition>
+      <arc id="4307620112" source="p_3" target="bb4e4d1d-e726-4351-b27a-d78baf0c8dfa"><identifier><text>e</text></identifier></arc>
+      <arc id="14198760912" source="p_4" target="3dcace2c-5e84-4720-bb27-e7f92adf6cc5"><identifier><text>e</text></identifier></arc>
+      <arc id="14012012176" source="8d02a56f-3315-4ce2-a539-a11b6e7fabf4" target="p_3"><identifier><text>e</text></identifier></arc>
+      <arc id="14529474768" source="bb4e4d1d-e726-4351-b27a-d78baf0c8dfa" target="p_4"><identifier><text>e</text></identifier></arc>
+      </page>
+    </net>
+</pnml>

@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml><net id="composed_TASE_SD_log" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel"><name><text>composed_TASE_SD_log</text></name><page id="composed_page"><place id="p_6_Pharmacy_Department"><name>
+          <text>p_6</text>
+        </name>
+      <type><text>Pharmacy Department</text></type></place><place id="p_8_Pharmacy_Department"><name>
+          <text>p_8</text>
+        </name>
+      <type><text>Pharmacy Department</text></type></place><place id="p_3_Administrative_Office"><name>
+          <text>p_3</text>
+        </name>
+      <type><text>Administrative Office</text></type></place><place id="p_4_Administrative_Office"><name>
+          <text>p_4</text>
+        </name>
+      <type><text>Administrative Office</text></type></place><place id="p_5_Administrative_Office"><name>
+          <text>p_5</text>
+        </name>
+      <type><text>Administrative Office</text></type></place><place id="p_5_Security_Department"><name>
+          <text>p_5</text>
+        </name>
+      <type><text>Security Department</text></type></place><place id="p_6_Security_Department"><name>
+          <text>p_6</text>
+        </name>
+      <type><text>Security Department</text></type></place><place id="p_7_Security_Department"><name>
+          <text>p_7</text>
+        </name>
+      <type><text>Security Department</text></type></place><place id="p_8_Security_Department"><name>
+          <text>p_8</text>
+        </name>
+      <type><text>Security Department</text></type></place><place id="p_9_Security_Department"><name>
+          <text>p_9</text>
+        </name>
+      <type><text>Security Department</text></type></place><place id="p_10_Security_Department"><name>
+          <text>p_10</text>
+        </name>
+      <type><text>Security Department</text></type></place><place id="p_11_Security_Department"><name>
+          <text>p_11</text>
+        </name>
+      <type><text>Security Department</text></type></place><place id="p_3_Medicine_Department"><name>
+          <text>p_3</text>
+        </name>
+      <type><text>Medicine Department</text></type></place><place id="p_6_Medicine_Department"><name>
+          <text>p_6</text>
+        </name>
+      <type><text>Medicine Department</text></type></place><place id="p_7_Medicine_Department"><name>
+          <text>p_7</text>
+        </name>
+      <type><text>Medicine Department</text></type></place><place id="p_8_Medicine_Department"><name>
+          <text>p_8</text>
+        </name>
+      <type><text>Medicine Department</text></type></place><place id="p_9_Medicine_Department"><name>
+          <text>p_9</text>
+        </name>
+      <type><text>Medicine Department</text></type></place><place id="p_10_Medicine_Department"><name>
+          <text>p_10</text>
+        </name>
+      <type><text>Medicine Department</text></type></place><place id="p_11_Administrative_Office,_Pharmacy_Department"><name>
+          <text>p_11</text>
+        </name>
+      <type><text>Administrative Office, Pharmacy Department</text></type></place><place id="p_19_Administrative_Office,_Pharmacy_Department"><name>
+          <text>p_19</text>
+        </name>
+      <type><text>Administrative Office, Pharmacy Department</text></type></place><place id="p_13_Administrative_Office,_Pharmacy_Department"><name>
+          <text>p_13</text>
+        </name>
+      <type><text>Administrative Office, Pharmacy Department</text></type></place><place id="p_16_Administrative_Office,_Pharmacy_Department"><name>
+          <text>p_16</text>
+        </name>
+      <type><text>Administrative Office, Pharmacy Department</text></type></place><place id="p_17_Administrative_Office,_Pharmacy_Department"><name>
+          <text>p_17</text>
+        </name>
+      <type><text>Administrative Office, Pharmacy Department</text></type></place><place id="p_6_Administrative_Office,_Pharmacy_Department"><name>
+          <text>p_6</text>
+        </name>
+      <type><text>Administrative Office, Pharmacy Department</text></type></place><place id="p_7_Administrative_Office,_Pharmacy_Department"><name>
+          <text>p_7</text>
+        </name>
+      <type><text>Administrative Office, Pharmacy Department</text></type></place><place id="p_9_Administrative_Office,_Pharmacy_Department"><name>
+          <text>p_9</text>
+        </name>
+      <type><text>Administrative Office, Pharmacy Department</text></type></place><place id="p_12_Administrative_Office,_Pharmacy_Department"><name>
+          <text>p_12</text>
+        </name>
+      <type><text>Administrative Office, Pharmacy Department</text></type></place><place id="p_18_Administrative_Office,_Pharmacy_Department"><name>
+          <text>p_18</text>
+        </name>
+      <type><text>Administrative Office, Pharmacy Department</text></type></place><place id="p_5_Administrative_Office,_Pharmacy_Department"><name>
+          <text>p_5</text>
+        </name>
+      <type><text>Administrative Office, Pharmacy Department</text></type></place><place id="p_8_Administrative_Office,_Pharmacy_Department"><name>
+          <text>p_8</text>
+        </name>
+      <type><text>Administrative Office, Pharmacy Department</text></type></place><place id="p_10_Administrative_Office,_Pharmacy_Department"><name>
+          <text>p_10</text>
+        </name>
+      <type><text>Administrative Office, Pharmacy Department</text></type></place><place id="p_20_Administrative_Office,_Pharmacy_Department"><name>
+          <text>p_20</text>
+        </name>
+      <type><text>Administrative Office, Pharmacy Department</text></type></place><transition id="shared_s14"><name>
+          <text>s14</text>
+        </name>
+      </transition><transition id="shared_s15"><name>
+          <text>s15</text>
+        </name>
+      </transition><transition id="shared_s16"><name>
+          <text>s16</text>
+        </name>
+      </transition><transition id="shared_s17"><name>
+          <text>s17</text>
+        </name>
+      </transition><transition id="shared_s1"><name>
+          <text>s1</text>
+        </name>
+      </transition><transition id="shared_s4"><name>
+          <text>s4</text>
+        </name>
+      </transition><transition id="shared_s2"><name>
+          <text>s2</text>
+        </name>
+      </transition><transition id="shared_s3"><name>
+          <text>s3</text>
+        </name>
+      </transition><transition id="shared_s5"><name>
+          <text>s5</text>
+        </name>
+      </transition><transition id="fba02b10-a9e8-4955-ae46-6e2d90775c8a_Security_Department"><name>
+          <text>s7</text>
+        </name>
+      </transition><transition id="e852c041-0d2a-466f-b794-d2927b9a02af_Security_Department"><name>
+          <text>s8</text>
+        </name>
+      </transition><transition id="f0134398-725b-4ed6-8568-12f1aa6cadb9_Security_Department"><name>
+          <text>s9</text>
+        </name>
+      </transition><transition id="497ed34f-5f1f-483f-9969-61cce8b2c22e_Security_Department"><name>
+          <text>s10</text>
+        </name>
+      </transition><transition id="2d30b8c3-d873-48e8-b552-68361800b53e_Security_Department"><name>
+          <text>s11</text>
+        </name>
+      </transition><transition id="c2869265-f122-4055-82c0-33229a6d4c8d_Security_Department"><name>
+          <text>s12</text>
+        </name>
+      </transition><transition id="c677d3f4-7720-4764-802d-4a7e835ed0c2_Security_Department"><name>
+          <text>s13</text>
+        </name>
+      </transition><transition id="f626ab34-1d7a-42e4-a620-0560849ce650_Medicine_Department"><name>
+          <text>s18</text>
+        </name>
+      </transition><transition id="ab87df60-289d-4257-b3f7-b50bd99ed61a_Medicine_Department"><name>
+          <text>s21</text>
+        </name>
+      </transition><transition id="c76c6fe9-03a2-4118-a588-edd14f100790_Medicine_Department"><name>
+          <text>s19</text>
+        </name>
+      </transition><transition id="c9ff5637-e6e1-4039-a24c-70b5c3cec60a_Medicine_Department"><name>
+          <text>s20</text>
+        </name>
+      </transition><transition id="5834cae1-c66e-42f6-bbb5-02a45f20b339_Medicine_Department"><name>
+          <text>s22</text>
+        </name>
+      </transition><transition id="eacf11ca-1346-4bd3-be6f-3896212bf2c9_Medicine_Department"><name>
+          <text>s23</text>
+        </name>
+      </transition><transition id="234857b4-f968-409b-8b3d-f1dadaed2385_Administrative_Office,_Pharmacy_Department"><name>
+          <text>s6</text>
+        </name>
+      </transition><arc id="14802811024_Pharmacy_Department" source="p_8_Pharmacy_Department" target="shared_s17"><identifier><text>y</text></identifier></arc><arc id="14802808976_Pharmacy_Department" source="shared_s16" target="p_6_Pharmacy_Department"><identifier><text>y</text></identifier></arc><arc id="14802810896_Pharmacy_Department" source="p_6_Pharmacy_Department" target="shared_s17"><identifier><text>y</text></identifier></arc><arc id="14802810000_Pharmacy_Department" source="shared_s15" target="p_8_Pharmacy_Department"><identifier><text>y</text></identifier></arc><arc id="14872850960_Administrative_Office" source="shared_s2" target="p_4_Administrative_Office"><identifier><text>m</text></identifier></arc><arc id="14872851408_Administrative_Office" source="p_4_Administrative_Office" target="shared_s3"><identifier><text>m</text></identifier></arc><arc id="14872850832_Administrative_Office" source="p_3_Administrative_Office" target="shared_s2"><identifier><text>m</text></identifier></arc><arc id="14872850384_Administrative_Office" source="shared_s1" target="p_3_Administrative_Office"><identifier><text>m</text></identifier></arc><arc id="14872851536_Administrative_Office" source="shared_s3" target="p_5_Administrative_Office"><identifier><text>m</text></identifier></arc><arc id="14872852048_Administrative_Office" source="p_5_Administrative_Office" target="shared_s4"><identifier><text>m</text></identifier></arc><arc id="14872842512_Security_Department" source="c2869265-f122-4055-82c0-33229a6d4c8d_Security_Department" target="p_11_Security_Department"><identifier><text>w</text></identifier></arc><arc id="14872840848_Security_Department" source="497ed34f-5f1f-483f-9969-61cce8b2c22e_Security_Department" target="p_10_Security_Department"><identifier><text>w</text></identifier></arc><arc id="14872841232_Security_Department" source="fba02b10-a9e8-4955-ae46-6e2d90775c8a_Security_Department" target="p_5_Security_Department"><identifier><text>w</text></identifier></arc><arc id="14872845072_Security_Department" source="f0134398-725b-4ed6-8568-12f1aa6cadb9_Security_Department" target="p_6_Security_Department"><identifier><text>w</text></identifier></arc><arc id="14872854416_Security_Department" source="p_8_Security_Department" target="c2869265-f122-4055-82c0-33229a6d4c8d_Security_Department"><identifier><text>w</text></identifier></arc><arc id="14872848400_Security_Department" source="p_11_Security_Department" target="c677d3f4-7720-4764-802d-4a7e835ed0c2_Security_Department"><identifier><text>w</text></identifier></arc><arc id="14872839568_Security_Department" source="p_10_Security_Department" target="2d30b8c3-d873-48e8-b552-68361800b53e_Security_Department"><identifier><text>w</text></identifier></arc><arc id="14872842832_Security_Department" source="e852c041-0d2a-466f-b794-d2927b9a02af_Security_Department" target="p_9_Security_Department"><identifier><text>w</text></identifier></arc><arc id="14872840528_Security_Department" source="2d30b8c3-d873-48e8-b552-68361800b53e_Security_Department" target="p_8_Security_Department"><identifier><text>w</text></identifier></arc><arc id="14872853456_Security_Department" source="p_5_Security_Department" target="f0134398-725b-4ed6-8568-12f1aa6cadb9_Security_Department"><identifier><text>w</text></identifier></arc><arc id="14872848848_Security_Department" source="fba02b10-a9e8-4955-ae46-6e2d90775c8a_Security_Department" target="p_7_Security_Department"><identifier><text>w</text></identifier></arc><arc id="14872845520_Security_Department" source="p_9_Security_Department" target="497ed34f-5f1f-483f-9969-61cce8b2c22e_Security_Department"><identifier><text>w</text></identifier></arc><arc id="14872853200_Security_Department" source="p_6_Security_Department" target="c2869265-f122-4055-82c0-33229a6d4c8d_Security_Department"><identifier><text>w</text></identifier></arc><arc id="14872839632_Security_Department" source="p_7_Security_Department" target="e852c041-0d2a-466f-b794-d2927b9a02af_Security_Department"><identifier><text>w</text></identifier></arc><arc id="14930859728_Medicine_Department" source="p_8_Medicine_Department" target="c9ff5637-e6e1-4039-a24c-70b5c3cec60a_Medicine_Department"><identifier><text>b</text></identifier></arc><arc id="14930860816_Medicine_Department" source="p_10_Medicine_Department" target="eacf11ca-1346-4bd3-be6f-3896212bf2c9_Medicine_Department"><identifier><text>b</text></identifier></arc><arc id="14930859856_Medicine_Department" source="c9ff5637-e6e1-4039-a24c-70b5c3cec60a_Medicine_Department" target="p_9_Medicine_Department"><identifier><text>b</text></identifier></arc><arc id="14930855760_Medicine_Department" source="p_3_Medicine_Department" target="c76c6fe9-03a2-4118-a588-edd14f100790_Medicine_Department"><identifier><text>b</text></identifier></arc><arc id="14930854288_Medicine_Department" source="f626ab34-1d7a-42e4-a620-0560849ce650_Medicine_Department" target="p_3_Medicine_Department"><identifier><text>b</text></identifier></arc><arc id="14930861264_Medicine_Department" source="c76c6fe9-03a2-4118-a588-edd14f100790_Medicine_Department" target="p_8_Medicine_Department"><identifier><text>b</text></identifier></arc><arc id="14930861520_Medicine_Department" source="p_9_Medicine_Department" target="5834cae1-c66e-42f6-bbb5-02a45f20b339_Medicine_Department"><identifier><text>b</text></identifier></arc><arc id="14930858640_Medicine_Department" source="p_6_Medicine_Department" target="ab87df60-289d-4257-b3f7-b50bd99ed61a_Medicine_Department"><identifier><text>b</text></identifier></arc><arc id="14930858768_Medicine_Department" source="ab87df60-289d-4257-b3f7-b50bd99ed61a_Medicine_Department" target="p_7_Medicine_Department"><identifier><text>b</text></identifier></arc><arc id="14930861136_Medicine_Department" source="c76c6fe9-03a2-4118-a588-edd14f100790_Medicine_Department" target="p_6_Medicine_Department"><identifier><text>b</text></identifier></arc><arc id="14930861392_Medicine_Department" source="p_7_Medicine_Department" target="5834cae1-c66e-42f6-bbb5-02a45f20b339_Medicine_Department"><identifier><text>b</text></identifier></arc><arc id="14930860496_Medicine_Department" source="5834cae1-c66e-42f6-bbb5-02a45f20b339_Medicine_Department" target="p_10_Medicine_Department"><identifier><text>b</text></identifier></arc><arc id="15196903184_Administrative_Office,_Pharmacy_Department" source="shared_s14" target="p_9_Administrative_Office,_Pharmacy_Department"><identifier><text>m</text></identifier><identifier><text>y</text></identifier></arc><arc id="15196903696_Administrative_Office,_Pharmacy_Department" source="p_12_Administrative_Office,_Pharmacy_Department" target="234857b4-f968-409b-8b3d-f1dadaed2385_Administrative_Office,_Pharmacy_Department"><identifier><text>m</text></identifier><identifier><text>y</text></identifier></arc><arc id="15196851856_Administrative_Office,_Pharmacy_Department" source="p_9_Administrative_Office,_Pharmacy_Department" target="shared_s15"><identifier><text>m</text></identifier><identifier><text>y</text></identifier></arc><arc id="15196859024_Administrative_Office,_Pharmacy_Department" source="p_11_Administrative_Office,_Pharmacy_Department" target="shared_s2"><identifier><text>m</text></identifier><identifier><text>y</text></identifier></arc><arc id="15196857232_Administrative_Office,_Pharmacy_Department" source="shared_s15" target="p_10_Administrative_Office,_Pharmacy_Department"><identifier><text>m</text></identifier><identifier><text>y</text></identifier></arc><arc id="15196903056_Administrative_Office,_Pharmacy_Department" source="shared_s14" target="p_13_Administrative_Office,_Pharmacy_Department"><identifier><text>m</text></identifier><identifier><text>y</text></identifier></arc><arc id="15196902928_Administrative_Office,_Pharmacy_Department" source="shared_s14" target="p_7_Administrative_Office,_Pharmacy_Department"><identifier><text>m</text></identifier><identifier><text>y</text></identifier></arc><arc id="15196902800_Administrative_Office,_Pharmacy_Department" source="shared_s14" target="p_11_Administrative_Office,_Pharmacy_Department"><identifier><text>m</text></identifier><identifier><text>y</text></identifier></arc><arc id="15196852496_Administrative_Office,_Pharmacy_Department" source="shared_s16" target="p_6_Administrative_Office,_Pharmacy_Department"><identifier><text>m</text></identifier><identifier><text>y</text></identifier></arc><arc id="15196902672_Administrative_Office,_Pharmacy_Department" source="shared_s14" target="p_5_Administrative_Office,_Pharmacy_Department"><identifier><text>m</text></identifier><identifier><text>y</text></identifier></arc><arc id="15196859152_Administrative_Office,_Pharmacy_Department" source="shared_s2" target="p_12_Administrative_Office,_Pharmacy_Department"><identifier><text>m</text></identifier><identifier><text>y</text></identifier></arc><arc id="15196903568_Administrative_Office,_Pharmacy_Department" source="p_6_Administrative_Office,_Pharmacy_Department" target="234857b4-f968-409b-8b3d-f1dadaed2385_Administrative_Office,_Pharmacy_Department"><identifier><text>m</text></identifier><identifier><text>y</text></identifier></arc><arc id="15196903824_Administrative_Office,_Pharmacy_Department" source="p_10_Administrative_Office,_Pharmacy_Department" target="234857b4-f968-409b-8b3d-f1dadaed2385_Administrative_Office,_Pharmacy_Department"><identifier><text>m</text></identifier><identifier><text>y</text></identifier></arc><arc id="15196901840_Administrative_Office,_Pharmacy_Department" source="p_19_Administrative_Office,_Pharmacy_Department" target="shared_s17"><identifier><text>m</text></identifier><identifier><text>y</text></identifier></arc><arc id="15196901968_Administrative_Office,_Pharmacy_Department" source="shared_s17" target="p_20_Administrative_Office,_Pharmacy_Department"><identifier><text>m</text></identifier><identifier><text>y</text></identifier></arc><arc id="15196904080_Administrative_Office,_Pharmacy_Department" source="p_8_Administrative_Office,_Pharmacy_Department" target="234857b4-f968-409b-8b3d-f1dadaed2385_Administrative_Office,_Pharmacy_Department"><identifier><text>m</text></identifier><identifier><text>y</text></identifier></arc><arc id="15196900752_Administrative_Office,_Pharmacy_Department" source="p_18_Administrative_Office,_Pharmacy_Department" target="shared_s5"><identifier><text>m</text></identifier><identifier><text>y</text></identifier></arc><arc id="15196900880_Administrative_Office,_Pharmacy_Department" source="shared_s5" target="p_17_Administrative_Office,_Pharmacy_Department"><identifier><text>m</text></identifier><identifier><text>y</text></identifier></arc><arc id="15196860304_Administrative_Office,_Pharmacy_Department" source="p_13_Administrative_Office,_Pharmacy_Department" target="shared_s1"><identifier><text>m</text></identifier><identifier><text>y</text></identifier></arc><arc id="15196848848_Administrative_Office,_Pharmacy_Department" source="shared_s3" target="p_8_Administrative_Office,_Pharmacy_Department"><identifier><text>m</text></identifier><identifier><text>y</text></identifier></arc><arc id="15196850128_Administrative_Office,_Pharmacy_Department" source="p_7_Administrative_Office,_Pharmacy_Department" target="shared_s3"><identifier><text>m</text></identifier><identifier><text>y</text></identifier></arc><arc id="15196856016_Administrative_Office,_Pharmacy_Department" source="p_5_Administrative_Office,_Pharmacy_Department" target="shared_s16"><identifier><text>m</text></identifier><identifier><text>y</text></identifier></arc><arc id="15196903376_Administrative_Office,_Pharmacy_Department" source="shared_s1" target="p_19_Administrative_Office,_Pharmacy_Department"><identifier><text>m</text></identifier><identifier><text>y</text></identifier></arc><arc id="15196904272_Administrative_Office,_Pharmacy_Department" source="p_20_Administrative_Office,_Pharmacy_Department" target="234857b4-f968-409b-8b3d-f1dadaed2385_Administrative_Office,_Pharmacy_Department"><identifier><text>m</text></identifier><identifier><text>y</text></identifier></arc><arc id="15196902608_Administrative_Office,_Pharmacy_Department" source="shared_s1" target="p_16_Administrative_Office,_Pharmacy_Department"><identifier><text>m</text></identifier><identifier><text>y</text></identifier></arc><arc id="15196903504_Administrative_Office,_Pharmacy_Department" source="p_17_Administrative_Office,_Pharmacy_Department" target="234857b4-f968-409b-8b3d-f1dadaed2385_Administrative_Office,_Pharmacy_Department"><identifier><text>m</text></identifier><identifier><text>y</text></identifier></arc><arc id="15196900304_Administrative_Office,_Pharmacy_Department" source="p_16_Administrative_Office,_Pharmacy_Department" target="shared_s4"><identifier><text>m</text></identifier><identifier><text>y</text></identifier></arc><arc id="15196900432_Administrative_Office,_Pharmacy_Department" source="shared_s4" target="p_18_Administrative_Office,_Pharmacy_Department"><identifier><text>m</text></identifier><identifier><text>y</text></identifier></arc></page></net></pnml>

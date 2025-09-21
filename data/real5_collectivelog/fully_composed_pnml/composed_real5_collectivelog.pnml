@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml><net id="composed_real5_collectivelog_" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel"><name><text>composed_real5_collectivelog_</text></name><page id="composed_page"><place id="source_Contact_Author"><name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      <type><text>Contact_Author</text></type></place><place id="sink_Contact_Author"><name>
+          <text>sink</text>
+        </name>
+      <type><text>Contact_Author</text></type></place><place id="p_5_Contact_Author"><name>
+          <text>p_5</text>
+        </name>
+      <type><text>Contact_Author</text></type></place><place id="p_4_Contact_Author"><name>
+          <text>p_4</text>
+        </name>
+      <type><text>Contact_Author</text></type></place><place id="p_3_Contact_Author"><name>
+          <text>p_3</text>
+        </name>
+      <type><text>Contact_Author</text></type></place><place id="p_6_Contact_Author"><name>
+          <text>p_6</text>
+        </name>
+      <type><text>Contact_Author</text></type></place><place id="p_7_Contact_Author"><name>
+          <text>p_7</text>
+        </name>
+      <type><text>Contact_Author</text></type></place><place id="p_8_Contact_Author"><name>
+          <text>p_8</text>
+        </name>
+      <type><text>Contact_Author</text></type></place><place id="p_12_PC_Chair"><name>
+          <text>p_12</text>
+        </name>
+      <type><text>PC_Chair</text></type></place><place id="p_11_PC_Chair"><name>
+          <text>p_11</text>
+        </name>
+      <type><text>PC_Chair</text></type></place><place id="source_PC_Chair"><name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      <type><text>PC_Chair</text></type></place><place id="sink_PC_Chair"><name>
+          <text>sink</text>
+        </name>
+      <type><text>PC_Chair</text></type></place><place id="p_4_PC_Chair"><name>
+          <text>p_4</text>
+        </name>
+      <type><text>PC_Chair</text></type></place><place id="p_3_PC_Chair"><name>
+          <text>p_3</text>
+        </name>
+      <type><text>PC_Chair</text></type></place><place id="p_5_PC_Chair"><name>
+          <text>p_5</text>
+        </name>
+      <type><text>PC_Chair</text></type></place><place id="p_6_PC_Chair"><name>
+          <text>p_6</text>
+        </name>
+      <type><text>PC_Chair</text></type></place><place id="p_7_PC_Chair"><name>
+          <text>p_7</text>
+        </name>
+      <type><text>PC_Chair</text></type></place><place id="p_8_PC_Chair"><name>
+          <text>p_8</text>
+        </name>
+      <type><text>PC_Chair</text></type></place><place id="p_9_PC_Chair"><name>
+          <text>p_9</text>
+        </name>
+      <type><text>PC_Chair</text></type></place><place id="source_Reviewer"><name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      <type><text>Reviewer</text></type></place><place id="p_4_Reviewer"><name>
+          <text>p_4</text>
+        </name>
+      <type><text>Reviewer</text></type></place><place id="sink_Reviewer"><name>
+          <text>sink</text>
+        </name>
+      <type><text>Reviewer</text></type></place><place id="p_3_Reviewer"><name>
+          <text>p_3</text>
+        </name>
+      <type><text>Reviewer</text></type></place><place id="p_5_Reviewer"><name>
+          <text>p_5</text>
+        </name>
+      <type><text>Reviewer</text></type></place><transition id="57b2f016-aa13-4799-85c2-3c967ee36ebd_Contact_Author"><name>
+          <text>Prepare Camera Ready</text>
+        </name>
+      </transition><transition id="7aa63528-f48e-4823-a5b9-b16e59b277c5_Contact_Author"><name>
+          <text>Write Paper</text>
+        </name>
+      </transition><transition id="4630e46c-1c05-431d-a954-a5c45f36772b_Contact_Author"><name>
+          <text>Check Journal Submission Guide</text>
+        </name>
+      </transition><transition id="shared_skip_1"><name>
+          <text>skip_1</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="b4d2b550-19ac-4958-b05c-22d15cccda24" />
+      </transition><transition id="7a4307a1-e5a6-425a-8111-b943c35176fd_Contact_Author"><name>
+          <text>Finalize Manuscript</text>
+        </name>
+      </transition><transition id="06a70be2-1f5e-4623-bdae-6c72982e55ef_Contact_Author"><name>
+          <text>Apply Changes</text>
+        </name>
+      </transition><transition id="skip_2_Contact_Author"><name>
+          <text>skip_2</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="3b58212f-bd8e-4dfa-ab94-2cf3703bb6da" />
+      </transition><transition id="cd97cce9-2b13-43e2-9a36-7ac81469e5cd_Contact_Author"><name>
+          <text>Submit Manuscript</text>
+        </name>
+      </transition><transition id="1ac262fc-c5e6-470a-b5da-a7372c2b8e35_Contact_Author"><name>
+          <text>Notification Received</text>
+        </name>
+      </transition><transition id="728f01bb-8c70-46e2-add0-36d8b621ee04_Contact_Author"><name>
+          <text>Read Notification</text>
+        </name>
+      </transition><transition id="66d88807-cdb4-4071-a646-7ba0a98a3d1b_Contact_Author"><name>
+          <text>Revise For Resubmission</text>
+        </name>
+      </transition><transition id="a889bce0-7a99-4c61-a75b-ac6e16891c6a_PC_Chair"><name>
+          <text>Prepare Rejection Letter</text>
+        </name>
+      </transition><transition id="b99fe0e4-d998-498c-88a1-ea0564bbc79f_PC_Chair"><name>
+          <text>Send Results</text>
+        </name>
+      </transition><transition id="2663b54b-4bb7-4d27-9b7c-e825ff8991f7_PC_Chair"><name>
+          <text>Review Management</text>
+        </name>
+      </transition><transition id="9941248a-031b-45b6-9843-c38dd2664938_PC_Chair"><name>
+          <text>Assign Paper</text>
+        </name>
+      </transition><transition id="13fb9232-ecfc-476b-8a46-978ca2b7f5f1_PC_Chair"><name>
+          <text>Receive and Combine Reviews</text>
+        </name>
+      </transition><transition id="10e1ef23-89fd-4c92-b255-8f767769c034_PC_Chair"><name>
+          <text>Review Evaluation</text>
+        </name>
+      </transition><transition id="init_loop_2_PC_Chair"><name>
+          <text>init_loop_2</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="bbad1dd7-990c-44a6-9857-40945de1b0a5" />
+      </transition><transition id="2d76734d-5df8-42cf-a052-77f956592f5e_PC_Chair"><name>
+          <text>Discuss</text>
+        </name>
+      </transition><transition id="skip_4_PC_Chair"><name>
+          <text>skip_4</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="d4c26a52-7a0d-4e3e-91a6-535f40a449cc" />
+      </transition><transition id="skip_5_PC_Chair"><name>
+          <text>skip_5</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="22c5bb7e-dd8b-472d-afdc-ea695d957ab7" />
+      </transition><transition id="b7cba054-bdc2-4cba-b394-cc450cf12773_PC_Chair"><name>
+          <text>Prepare Acceptance Letter</text>
+        </name>
+      </transition><transition id="6f1fcb3e-a250-454f-9959-42cca8a745a2_PC_Chair"><name>
+          <text>Send Feedback</text>
+        </name>
+      </transition><transition id="4a7dc4f9-456a-441d-91bd-e1c58c608512_Reviewer"><name>
+          <text>Paper Received</text>
+        </name>
+      </transition><transition id="57a79e1d-beb0-4cce-909f-8f40203d6ae0_Reviewer"><name>
+          <text>Paper Review</text>
+        </name>
+      </transition><transition id="c0d6a4df-c885-4379-80c5-c94397f37ca4_Reviewer"><name>
+          <text>Feedback Received</text>
+        </name>
+      </transition><transition id="287745ae-5707-4bb0-8b3b-cee30eb8a5da_Reviewer"><name>
+          <text>Submit Review</text>
+        </name>
+      </transition><arc id="5103716624_Contact_Author" source="p_4_Contact_Author" target="skip_2_Contact_Author"><identifier><text>l</text></identifier></arc><arc id="5103717904_Contact_Author" source="1ac262fc-c5e6-470a-b5da-a7372c2b8e35_Contact_Author" target="p_7_Contact_Author"><identifier><text>l</text></identifier></arc><arc id="4697256336_Contact_Author" source="source_Contact_Author" target="7aa63528-f48e-4823-a5b9-b16e59b277c5_Contact_Author"><identifier><text>l</text></identifier></arc><arc id="5103714832_Contact_Author" source="p_3_Contact_Author" target="4630e46c-1c05-431d-a954-a5c45f36772b_Contact_Author"><identifier><text>l</text></identifier></arc><arc id="5103715728_Contact_Author" source="4630e46c-1c05-431d-a954-a5c45f36772b_Contact_Author" target="p_5_Contact_Author"><identifier><text>l</text></identifier></arc><arc id="4697006992_Contact_Author" source="7aa63528-f48e-4823-a5b9-b16e59b277c5_Contact_Author" target="p_3_Contact_Author"><identifier><text>l</text></identifier></arc><arc id="5103715472_Contact_Author" source="p_5_Contact_Author" target="shared_skip_1"><identifier><text>l</text></identifier></arc><arc id="5103717776_Contact_Author" source="p_6_Contact_Author" target="1ac262fc-c5e6-470a-b5da-a7372c2b8e35_Contact_Author"><identifier><text>l</text></identifier></arc><arc id="5103716752_Contact_Author" source="skip_2_Contact_Author" target="sink_Contact_Author"><identifier><text>l</text></identifier></arc><arc id="5103718864_Contact_Author" source="66d88807-cdb4-4071-a646-7ba0a98a3d1b_Contact_Author" target="sink_Contact_Author"><identifier><text>l</text></identifier></arc><arc id="5103719120_Contact_Author" source="p_8_Contact_Author" target="57b2f016-aa13-4799-85c2-3c967ee36ebd_Contact_Author"><identifier><text>l</text></identifier></arc><arc id="5103719248_Contact_Author" source="57b2f016-aa13-4799-85c2-3c967ee36ebd_Contact_Author" target="sink_Contact_Author"><identifier><text>l</text></identifier></arc><arc id="5103717200_Contact_Author" source="p_4_Contact_Author" target="cd97cce9-2b13-43e2-9a36-7ac81469e5cd_Contact_Author"><identifier><text>l</text></identifier></arc><arc id="5103718736_Contact_Author" source="p_8_Contact_Author" target="66d88807-cdb4-4071-a646-7ba0a98a3d1b_Contact_Author"><identifier><text>l</text></identifier></arc><arc id="5103717328_Contact_Author" source="cd97cce9-2b13-43e2-9a36-7ac81469e5cd_Contact_Author" target="p_6_Contact_Author"><identifier><text>l</text></identifier></arc><arc id="5103715024_Contact_Author" source="shared_skip_1" target="p_4_Contact_Author"><identifier><text>l</text></identifier></arc><arc id="5103714384_Contact_Author" source="p_5_Contact_Author" target="06a70be2-1f5e-4623-bdae-6c72982e55ef_Contact_Author"><identifier><text>l</text></identifier></arc><arc id="5103715920_Contact_Author" source="06a70be2-1f5e-4623-bdae-6c72982e55ef_Contact_Author" target="p_4_Contact_Author"><identifier><text>l</text></identifier></arc><arc id="5103716176_Contact_Author" source="p_3_Contact_Author" target="7a4307a1-e5a6-425a-8111-b943c35176fd_Contact_Author"><identifier><text>l</text></identifier></arc><arc id="5103716304_Contact_Author" source="7a4307a1-e5a6-425a-8111-b943c35176fd_Contact_Author" target="p_4_Contact_Author"><identifier><text>l</text></identifier></arc><arc id="5103718352_Contact_Author" source="p_7_Contact_Author" target="728f01bb-8c70-46e2-add0-36d8b621ee04_Contact_Author"><identifier><text>l</text></identifier></arc><arc id="5103718480_Contact_Author" source="728f01bb-8c70-46e2-add0-36d8b621ee04_Contact_Author" target="p_8_Contact_Author"><identifier><text>l</text></identifier></arc><arc id="5103881936_PC_Chair" source="p_12_PC_Chair" target="b99fe0e4-d998-498c-88a1-ea0564bbc79f_PC_Chair"><identifier><text>v</text></identifier></arc><arc id="5103882064_PC_Chair" source="b99fe0e4-d998-498c-88a1-ea0564bbc79f_PC_Chair" target="sink_PC_Chair"><identifier><text>v</text></identifier></arc><arc id="5103877648_PC_Chair" source="p_6_PC_Chair" target="init_loop_2_PC_Chair"><identifier><text>v</text></identifier></arc><arc id="5103877776_PC_Chair" source="init_loop_2_PC_Chair" target="p_8_PC_Chair"><identifier><text>v</text></identifier></arc><arc id="5103869968_PC_Chair" source="source_PC_Chair" target="2663b54b-4bb7-4d27-9b7c-e825ff8991f7_PC_Chair"><identifier><text>v</text></identifier></arc><arc id="5103873808_PC_Chair" source="2663b54b-4bb7-4d27-9b7c-e825ff8991f7_PC_Chair" target="p_3_PC_Chair"><identifier><text>v</text></identifier></arc><arc id="5103875344_PC_Chair" source="9941248a-031b-45b6-9843-c38dd2664938_PC_Chair" target="p_4_PC_Chair"><identifier><text>v</text></identifier></arc><arc id="5103875216_PC_Chair" source="p_3_PC_Chair" target="9941248a-031b-45b6-9843-c38dd2664938_PC_Chair"><identifier><text>v</text></identifier></arc><arc id="5103876368_PC_Chair" source="p_5_PC_Chair" target="10e1ef23-89fd-4c92-b255-8f767769c034_PC_Chair"><identifier><text>v</text></identifier></arc><arc id="5103876496_PC_Chair" source="10e1ef23-89fd-4c92-b255-8f767769c034_PC_Chair" target="p_6_PC_Chair"><identifier><text>v</text></identifier></arc><arc id="5103877008_PC_Chair" source="p_6_PC_Chair" target="shared_skip_1"><identifier><text>v</text></identifier></arc><arc id="5103877136_PC_Chair" source="shared_skip_1" target="p_7_PC_Chair"><identifier><text>v</text></identifier></arc><arc id="5103880464_PC_Chair" source="p_7_PC_Chair" target="b7cba054-bdc2-4cba-b394-cc450cf12773_PC_Chair"><identifier><text>v</text></identifier></arc><arc id="5103880592_PC_Chair" source="b7cba054-bdc2-4cba-b394-cc450cf12773_PC_Chair" target="p_11_PC_Chair"><identifier><text>v</text></identifier></arc><arc id="5103880848_PC_Chair" source="p_7_PC_Chair" target="a889bce0-7a99-4c61-a75b-ac6e16891c6a_PC_Chair"><identifier><text>v</text></identifier></arc><arc id="5103880976_PC_Chair" source="a889bce0-7a99-4c61-a75b-ac6e16891c6a_PC_Chair" target="p_11_PC_Chair"><identifier><text>v</text></identifier></arc><arc id="5103881488_PC_Chair" source="p_11_PC_Chair" target="6f1fcb3e-a250-454f-9959-42cca8a745a2_PC_Chair"><identifier><text>v</text></identifier></arc><arc id="5103881616_PC_Chair" source="6f1fcb3e-a250-454f-9959-42cca8a745a2_PC_Chair" target="p_12_PC_Chair"><identifier><text>v</text></identifier></arc><arc id="5103879760_PC_Chair" source="p_9_PC_Chair" target="skip_5_PC_Chair"><identifier><text>v</text></identifier></arc><arc id="5103879888_PC_Chair" source="skip_5_PC_Chair" target="p_7_PC_Chair"><identifier><text>v</text></identifier></arc><arc id="5103879120_PC_Chair" source="p_9_PC_Chair" target="skip_4_PC_Chair"><identifier><text>v</text></identifier></arc><arc id="5103875792_PC_Chair" source="p_4_PC_Chair" target="13fb9232-ecfc-476b-8a46-978ca2b7f5f1_PC_Chair"><identifier><text>v</text></identifier></arc><arc id="5103875920_PC_Chair" source="13fb9232-ecfc-476b-8a46-978ca2b7f5f1_PC_Chair" target="p_5_PC_Chair"><identifier><text>v</text></identifier></arc><arc id="5103878480_PC_Chair" source="p_8_PC_Chair" target="2d76734d-5df8-42cf-a052-77f956592f5e_PC_Chair"><identifier><text>v</text></identifier></arc><arc id="5103878608_PC_Chair" source="2d76734d-5df8-42cf-a052-77f956592f5e_PC_Chair" target="p_9_PC_Chair"><identifier><text>v</text></identifier></arc><arc id="5103882256_PC_Chair" source="skip_4_PC_Chair" target="p_8_PC_Chair"><identifier><text>v</text></identifier></arc><arc id="5103256592_Reviewer" source="source_Reviewer" target="4a7dc4f9-456a-441d-91bd-e1c58c608512_Reviewer"><identifier><text>u</text></identifier></arc><arc id="5103257936_Reviewer" source="p_4_Reviewer" target="287745ae-5707-4bb0-8b3b-cee30eb8a5da_Reviewer"><identifier><text>u</text></identifier></arc><arc id="5103257424_Reviewer" source="57a79e1d-beb0-4cce-909f-8f40203d6ae0_Reviewer" target="p_4_Reviewer"><identifier><text>u</text></identifier></arc><arc id="5103256720_Reviewer" source="4a7dc4f9-456a-441d-91bd-e1c58c608512_Reviewer" target="p_3_Reviewer"><identifier><text>u</text></identifier></arc><arc id="5103257296_Reviewer" source="p_3_Reviewer" target="57a79e1d-beb0-4cce-909f-8f40203d6ae0_Reviewer"><identifier><text>u</text></identifier></arc><arc id="5103258064_Reviewer" source="287745ae-5707-4bb0-8b3b-cee30eb8a5da_Reviewer" target="p_5_Reviewer"><identifier><text>u</text></identifier></arc><arc id="5103258384_Reviewer" source="p_5_Reviewer" target="c0d6a4df-c885-4379-80c5-c94397f37ca4_Reviewer"><identifier><text>u</text></identifier></arc><arc id="5103258512_Reviewer" source="c0d6a4df-c885-4379-80c5-c94397f37ca4_Reviewer" target="sink_Reviewer"><identifier><text>u</text></identifier></arc></page></net></pnml>

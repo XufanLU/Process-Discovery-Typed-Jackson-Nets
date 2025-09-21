@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml><net id="composed_healthcare_collectivelog" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel"><name><text>composed_healthcare_collectivelog</text></name><page id="composed_page"><place id="p_3_Patient"><name>
+          <text>p_3</text>
+        </name>
+      <type><text>Patient</text></type></place><place id="p_4_Patient"><name>
+          <text>p_4</text>
+        </name>
+      <type><text>Patient</text></type></place><place id="p_11_Gynecologist"><name>
+          <text>p_11</text>
+        </name>
+      <type><text>Gynecologist</text></type></place><place id="p_4_Gynecologist"><name>
+          <text>p_4</text>
+        </name>
+      <type><text>Gynecologist</text></type></place><place id="p_5_Gynecologist"><name>
+          <text>p_5</text>
+        </name>
+      <type><text>Gynecologist</text></type></place><place id="p_6_Gynecologist"><name>
+          <text>p_6</text>
+        </name>
+      <type><text>Gynecologist</text></type></place><place id="p_7_Gynecologist"><name>
+          <text>p_7</text>
+        </name>
+      <type><text>Gynecologist</text></type></place><place id="p_8_Gynecologist"><name>
+          <text>p_8</text>
+        </name>
+      <type><text>Gynecologist</text></type></place><place id="p_9_Gynecologist"><name>
+          <text>p_9</text>
+        </name>
+      <type><text>Gynecologist</text></type></place><place id="p_10_Gynecologist"><name>
+          <text>p_10</text>
+        </name>
+      <type><text>Gynecologist</text></type></place><place id="p_12_Gynecologist"><name>
+          <text>p_12</text>
+        </name>
+      <type><text>Gynecologist</text></type></place><place id="p_3_Laboratory"><name>
+          <text>p_3</text>
+        </name>
+      <type><text>Laboratory</text></type></place><place id="p_4_Laboratory"><name>
+          <text>p_4</text>
+        </name>
+      <type><text>Laboratory</text></type></place><place id="p_4_Hospital"><name>
+          <text>p_4</text>
+        </name>
+      <type><text>Hospital</text></type></place><place id="p_5_Hospital"><name>
+          <text>p_5</text>
+        </name>
+      <type><text>Hospital</text></type></place><place id="p_3_Hospital"><name>
+          <text>p_3</text>
+        </name>
+      <type><text>Hospital</text></type></place><transition id="d0d9707f-1480-45bf-95de-9dd8e13f1b6c_Patient"><name>
+          <text>Communicate disease</text>
+        </name>
+      </transition><transition id="406535c6-192e-49b8-ac06-414820ee960a_Patient"><name>
+          <text>Receive prescription</text>
+        </name>
+      </transition><transition id="be9ece39-e1e3-40ac-9091-a30e114e5df7_Patient"><name>
+          <text>Hospitalisation needed</text>
+        </name>
+      </transition><transition id="5add556a-78d3-42a8-a5b4-4628936a4c00_Patient"><name>
+          <text>Receive admission info</text>
+        </name>
+      </transition><transition id="9fe08c30-7232-486c-99cb-94d16b8d0421_Gynecologist"><name>
+          <text>Forward patient analysis results</text>
+        </name>
+      </transition><transition id="8da04139-5f14-4f7f-a3c1-fb1e67f3f017_Gynecologist"><name>
+          <text>Receive disease info</text>
+        </name>
+      </transition><transition id="tauJoin_2_Gynecologist"><name>
+          <text>tauJoin_2</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="e75807f6-9ed1-43e2-8733-5a171db262b5" />
+      </transition><transition id="387dc1a2-ef12-44e0-951a-e44490855e68_Gynecologist"><name>
+          <text>Blood draw</text>
+        </name>
+      </transition><transition id="e1284e5d-3ac4-4a71-9f77-54566d81ccaa_Gynecologist"><name>
+          <text>Examine patient</text>
+        </name>
+      </transition><transition id="a2f75240-8fd5-4e88-a500-fd1b75daf150_Gynecologist"><name>
+          <text>Send blood sample</text>
+        </name>
+      </transition><transition id="7c3ac220-f838-4d05-a691-006b2d73dcd8_Gynecologist"><name>
+          <text>Receive blood analysis results</text>
+        </name>
+      </transition><transition id="8bba006a-21d2-4e5c-bbc5-f28d1c92705c_Gynecologist"><name>
+          <text>Send prescription</text>
+        </name>
+      </transition><transition id="03f78816-2208-4c91-a61a-bff88ca7a7fd_Gynecologist"><name>
+          <text>Communicate the need to hospitalise</text>
+        </name>
+      </transition><transition id="6ceb7064-3e48-4693-b3da-dee8006d7594_Gynecologist"><name>
+          <text>Require patient admission</text>
+        </name>
+      </transition><transition id="7dd6dd5c-bcab-4cf7-8b39-fad4567c484c_Laboratory"><name>
+          <text>Receive blood sample</text>
+        </name>
+      </transition><transition id="3f178e91-537b-4a96-bbdb-45de4be27850_Laboratory"><name>
+          <text>Send results</text>
+        </name>
+      </transition><transition id="53fe9f2f-f1d8-4034-822b-a14463debb8f_Laboratory"><name>
+          <text>Analyse blood sample</text>
+        </name>
+      </transition><transition id="baa308fc-6ade-4344-ac09-f6ae5a447e67_Hospital"><name>
+          <text>Admit patient</text>
+        </name>
+      </transition><transition id="884fa9f4-1a97-48c6-9a75-1b035b0b4f46_Hospital"><name>
+          <text>Create medical record</text>
+        </name>
+      </transition><transition id="b70d945c-b763-4af2-b36e-96e1a1b9b7d7_Hospital"><name>
+          <text>Request blood analysis</text>
+        </name>
+      </transition><transition id="d43ec75a-1423-4ad0-af62-054e3413c0e6_Hospital"><name>
+          <text>Send admission info</text>
+        </name>
+      </transition><transition id="42ec9a82-57e0-41b5-a3cc-67c68eb09cc1_Hospital"><name>
+          <text>Receive patient results</text>
+        </name>
+      </transition><arc id="5138490128_Patient" source="d0d9707f-1480-45bf-95de-9dd8e13f1b6c_Patient" target="p_3_Patient"><identifier><text>e</text></identifier></arc><arc id="5138487440_Patient" source="p_3_Patient" target="be9ece39-e1e3-40ac-9091-a30e114e5df7_Patient"><identifier><text>e</text></identifier></arc><arc id="5138490064_Patient" source="p_3_Patient" target="406535c6-192e-49b8-ac06-414820ee960a_Patient"><identifier><text>e</text></identifier></arc><arc id="5138490832_Patient" source="be9ece39-e1e3-40ac-9091-a30e114e5df7_Patient" target="p_4_Patient"><identifier><text>e</text></identifier></arc><arc id="5138490960_Patient" source="p_4_Patient" target="5add556a-78d3-42a8-a5b4-4628936a4c00_Patient"><identifier><text>e</text></identifier></arc><arc id="5153896720_Gynecologist" source="p_4_Gynecologist" target="8bba006a-21d2-4e5c-bbc5-f28d1c92705c_Gynecologist"><identifier><text>x</text></identifier></arc><arc id="5153895312_Gynecologist" source="p_7_Gynecologist" target="387dc1a2-ef12-44e0-951a-e44490855e68_Gynecologist"><identifier><text>x</text></identifier></arc><arc id="5153895440_Gynecologist" source="387dc1a2-ef12-44e0-951a-e44490855e68_Gynecologist" target="p_9_Gynecologist"><identifier><text>x</text></identifier></arc><arc id="5153897872_Gynecologist" source="p_11_Gynecologist" target="6ceb7064-3e48-4693-b3da-dee8006d7594_Gynecologist"><identifier><text>x</text></identifier></arc><arc id="5153898000_Gynecologist" source="6ceb7064-3e48-4693-b3da-dee8006d7594_Gynecologist" target="p_12_Gynecologist"><identifier><text>x</text></identifier></arc><arc id="5153898256_Gynecologist" source="p_12_Gynecologist" target="9fe08c30-7232-486c-99cb-94d16b8d0421_Gynecologist"><identifier><text>x</text></identifier></arc><arc id="5153931600_Gynecologist" source="8da04139-5f14-4f7f-a3c1-fb1e67f3f017_Gynecologist" target="p_7_Gynecologist"><identifier><text>x</text></identifier></arc><arc id="5153894864_Gynecologist" source="p_8_Gynecologist" target="tauJoin_2_Gynecologist"><identifier><text>x</text></identifier></arc><arc id="5153895888_Gynecologist" source="p_9_Gynecologist" target="a2f75240-8fd5-4e88-a500-fd1b75daf150_Gynecologist"><identifier><text>x</text></identifier></arc><arc id="5153896016_Gynecologist" source="a2f75240-8fd5-4e88-a500-fd1b75daf150_Gynecologist" target="p_10_Gynecologist"><identifier><text>x</text></identifier></arc><arc id="5153896272_Gynecologist" source="p_10_Gynecologist" target="7c3ac220-f838-4d05-a691-006b2d73dcd8_Gynecologist"><identifier><text>x</text></identifier></arc><arc id="5153897296_Gynecologist" source="p_4_Gynecologist" target="03f78816-2208-4c91-a61a-bff88ca7a7fd_Gynecologist"><identifier><text>x</text></identifier></arc><arc id="5153896400_Gynecologist" source="7c3ac220-f838-4d05-a691-006b2d73dcd8_Gynecologist" target="p_8_Gynecologist"><identifier><text>x</text></identifier></arc><arc id="5153893200_Gynecologist" source="tauJoin_2_Gynecologist" target="p_4_Gynecologist"><identifier><text>x</text></identifier></arc><arc id="5153931472_Gynecologist" source="8da04139-5f14-4f7f-a3c1-fb1e67f3f017_Gynecologist" target="p_5_Gynecologist"><identifier><text>x</text></identifier></arc><arc id="5153893840_Gynecologist" source="p_6_Gynecologist" target="tauJoin_2_Gynecologist"><identifier><text>x</text></identifier></arc><arc id="5153894096_Gynecologist" source="p_5_Gynecologist" target="e1284e5d-3ac4-4a71-9f77-54566d81ccaa_Gynecologist"><identifier><text>x</text></identifier></arc><arc id="5153894224_Gynecologist" source="e1284e5d-3ac4-4a71-9f77-54566d81ccaa_Gynecologist" target="p_6_Gynecologist"><identifier><text>x</text></identifier></arc><arc id="5153897424_Gynecologist" source="03f78816-2208-4c91-a61a-bff88ca7a7fd_Gynecologist" target="p_11_Gynecologist"><identifier><text>x</text></identifier></arc><arc id="5138685712_Laboratory" source="7dd6dd5c-bcab-4cf7-8b39-fad4567c484c_Laboratory" target="p_3_Laboratory"><identifier><text>l</text></identifier></arc><arc id="5138687568_Laboratory" source="53fe9f2f-f1d8-4034-822b-a14463debb8f_Laboratory" target="p_4_Laboratory"><identifier><text>l</text></identifier></arc><arc id="5138686608_Laboratory" source="p_4_Laboratory" target="3f178e91-537b-4a96-bbdb-45de4be27850_Laboratory"><identifier><text>l</text></identifier></arc><arc id="5138687440_Laboratory" source="p_3_Laboratory" target="53fe9f2f-f1d8-4034-822b-a14463debb8f_Laboratory"><identifier><text>l</text></identifier></arc><arc id="5138357008_Hospital" source="p_3_Hospital" target="884fa9f4-1a97-48c6-9a75-1b035b0b4f46_Hospital"><identifier><text>s</text></identifier></arc><arc id="5138359632_Hospital" source="884fa9f4-1a97-48c6-9a75-1b035b0b4f46_Hospital" target="p_4_Hospital"><identifier><text>s</text></identifier></arc><arc id="5138358864_Hospital" source="p_4_Hospital" target="42ec9a82-57e0-41b5-a3cc-67c68eb09cc1_Hospital"><identifier><text>s</text></identifier></arc><arc id="5138358416_Hospital" source="baa308fc-6ade-4344-ac09-f6ae5a447e67_Hospital" target="p_3_Hospital"><identifier><text>s</text></identifier></arc><arc id="5138353552_Hospital" source="42ec9a82-57e0-41b5-a3cc-67c68eb09cc1_Hospital" target="p_5_Hospital"><identifier><text>s</text></identifier></arc><arc id="5138359824_Hospital" source="p_4_Hospital" target="b70d945c-b763-4af2-b36e-96e1a1b9b7d7_Hospital"><identifier><text>s</text></identifier></arc><arc id="5138360144_Hospital" source="b70d945c-b763-4af2-b36e-96e1a1b9b7d7_Hospital" target="p_5_Hospital"><identifier><text>s</text></identifier></arc><arc id="5138360784_Hospital" source="p_5_Hospital" target="d43ec75a-1423-4ad0-af62-054e3413c0e6_Hospital"><identifier><text>s</text></identifier></arc></page></net></pnml>

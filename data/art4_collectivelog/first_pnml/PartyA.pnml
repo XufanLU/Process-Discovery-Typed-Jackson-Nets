@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_1758219865.513896" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1758219865.513896</text>
+    </name>
+    <page id="n0">
+      <place id="source">
+        <name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      <type><text>PartyA</text></type></place>
+      <place id="p_4">
+        <name>
+          <text>p_4</text>
+        </name>
+      <type><text>PartyA</text></type></place>
+      <place id="sink">
+        <name>
+          <text>sink</text>
+        </name>
+      <type><text>PartyA</text></type></place>
+      <place id="p_3">
+        <name>
+          <text>p_3</text>
+        </name>
+      <type><text>PartyA</text></type></place>
+      <transition id="d2fd355f-4aa0-41c6-9237-7cb1dba6d289">
+        <name>
+          <text>Activity A</text>
+        </name>
+      </transition>
+      <transition id="9a5c8bb7-7580-4fef-a9a9-68529e26e3c3">
+        <name>
+          <text>Activity C</text>
+        </name>
+      </transition>
+      <transition id="c5ba200d-e208-4c9a-b439-e5d05203e636">
+        <name>
+          <text>Activity D</text>
+        </name>
+      </transition>
+      <transition id="4ad0f1c0-084e-4cf9-a959-1538242d5004">
+        <name>
+          <text>Activity B</text>
+        </name>
+      </transition>
+      <arc id="4823680656" source="source" target="d2fd355f-4aa0-41c6-9237-7cb1dba6d289"><identifier><text>u</text></identifier></arc>
+      <arc id="4823680784" source="d2fd355f-4aa0-41c6-9237-7cb1dba6d289" target="p_3"><identifier><text>u</text></identifier></arc>
+      <arc id="4823679824" source="p_3" target="c5ba200d-e208-4c9a-b439-e5d05203e636"><identifier><text>u</text></identifier></arc>
+      <arc id="4823680400" source="c5ba200d-e208-4c9a-b439-e5d05203e636" target="p_4"><identifier><text>u</text></identifier></arc>
+      <arc id="4823680144" source="p_3" target="9a5c8bb7-7580-4fef-a9a9-68529e26e3c3"><identifier><text>u</text></identifier></arc>
+      <arc id="4823679696" source="9a5c8bb7-7580-4fef-a9a9-68529e26e3c3" target="p_4"><identifier><text>u</text></identifier></arc>
+      <arc id="4823681104" source="p_4" target="4ad0f1c0-084e-4cf9-a959-1538242d5004"><identifier><text>u</text></identifier></arc>
+      <arc id="4823681232" source="4ad0f1c0-084e-4cf9-a959-1538242d5004" target="sink"><identifier><text>u</text></identifier></arc>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink">
+          <text>1</text>
+        <type><text>PartyA</text></type></place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

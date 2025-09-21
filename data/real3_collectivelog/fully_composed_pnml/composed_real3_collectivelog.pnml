@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml><net id="composed_real3_collectivelog_" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel"><name><text>composed_real3_collectivelog_</text></name><page id="composed_page"><place id="source_User"><name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      <type><text>User</text></type></place><place id="sink_User"><name>
+          <text>sink</text>
+        </name>
+      <type><text>User</text></type></place><place id="p_3_User"><name>
+          <text>p_3</text>
+        </name>
+      <type><text>User</text></type></place><place id="p_4_User"><name>
+          <text>p_4</text>
+        </name>
+      <type><text>User</text></type></place><place id="p_5_User"><name>
+          <text>p_5</text>
+        </name>
+      <type><text>User</text></type></place><place id="p_6_User"><name>
+          <text>p_6</text>
+        </name>
+      <type><text>User</text></type></place><place id="p_11_Thermostat"><name>
+          <text>p_11</text>
+        </name>
+      <type><text>Thermostat</text></type></place><place id="p_12_Thermostat"><name>
+          <text>p_12</text>
+        </name>
+      <type><text>Thermostat</text></type></place><place id="p_13_Thermostat"><name>
+          <text>p_13</text>
+        </name>
+      <type><text>Thermostat</text></type></place><place id="source_Thermostat"><name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      <type><text>Thermostat</text></type></place><place id="sink_Thermostat"><name>
+          <text>sink</text>
+        </name>
+      <type><text>Thermostat</text></type></place><place id="p_4_Thermostat"><name>
+          <text>p_4</text>
+        </name>
+      <type><text>Thermostat</text></type></place><place id="p_5_Thermostat"><name>
+          <text>p_5</text>
+        </name>
+      <type><text>Thermostat</text></type></place><place id="p_6_Thermostat"><name>
+          <text>p_6</text>
+        </name>
+      <type><text>Thermostat</text></type></place><place id="p_7_Thermostat"><name>
+          <text>p_7</text>
+        </name>
+      <type><text>Thermostat</text></type></place><place id="p_8_Thermostat"><name>
+          <text>p_8</text>
+        </name>
+      <type><text>Thermostat</text></type></place><place id="p_9_Thermostat"><name>
+          <text>p_9</text>
+        </name>
+      <type><text>Thermostat</text></type></place><place id="p_16_Controller"><name>
+          <text>p_16</text>
+        </name>
+      <type><text>Controller</text></type></place><place id="p_15_Controller"><name>
+          <text>p_15</text>
+        </name>
+      <type><text>Controller</text></type></place><place id="p_17_Controller"><name>
+          <text>p_17</text>
+        </name>
+      <type><text>Controller</text></type></place><place id="p_14_Controller"><name>
+          <text>p_14</text>
+        </name>
+      <type><text>Controller</text></type></place><place id="source_Controller"><name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      <type><text>Controller</text></type></place><place id="p_5_Controller"><name>
+          <text>p_5</text>
+        </name>
+      <type><text>Controller</text></type></place><place id="sink_Controller"><name>
+          <text>sink</text>
+        </name>
+      <type><text>Controller</text></type></place><place id="p_6_Controller"><name>
+          <text>p_6</text>
+        </name>
+      <type><text>Controller</text></type></place><place id="p_7_Controller"><name>
+          <text>p_7</text>
+        </name>
+      <type><text>Controller</text></type></place><place id="p_8_Controller"><name>
+          <text>p_8</text>
+        </name>
+      <type><text>Controller</text></type></place><place id="p_9_Controller"><name>
+          <text>p_9</text>
+        </name>
+      <type><text>Controller</text></type></place><place id="p_10_Controller"><name>
+          <text>p_10</text>
+        </name>
+      <type><text>Controller</text></type></place><place id="p_12_Controller"><name>
+          <text>p_12</text>
+        </name>
+      <type><text>Controller</text></type></place><place id="p_13_Controller"><name>
+          <text>p_13</text>
+        </name>
+      <type><text>Controller</text></type></place><transition id="07a042ef-c7d7-42d2-a3d4-e70724d0efe9_User"><name>
+          <text>Set Up Thermostat</text>
+        </name>
+      </transition><transition id="d21de276-d7f2-4d33-b936-2ed1dc47af7e_User"><name>
+          <text>Check Environment Temperature</text>
+        </name>
+      </transition><transition id="skip_1_User"><name>
+          <text>skip_1</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="d3216ee6-8124-4871-a241-1fe32ef6a305" />
+      </transition><transition id="init_loop_2_User"><name>
+          <text>init_loop_2</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="65776c1d-cd54-49d3-aa09-5a8fdb0b914c" />
+      </transition><transition id="shared_skip_4"><name>
+          <text>skip_4</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="32794606-532d-42fe-9146-496f800fbf2b" />
+      </transition><transition id="skip_5_User"><name>
+          <text>skip_5</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="a92e71c5-6c9e-45cc-9099-1bfab50edbca" />
+      </transition><transition id="c6333043-db6d-42e5-9fd7-324c4ea85cf2_User"><name>
+          <text>Switch Off Thermostat</text>
+        </name>
+      </transition><transition id="9a2e95e3-7735-4dd7-8ed0-24bfaab2413b_Thermostat"><name>
+          <text>Turn Off</text>
+        </name>
+      </transition><transition id="0d3414da-4b80-4f94-8911-c8d18f5d9244_Thermostat"><name>
+          <text>Send Temperature</text>
+        </name>
+      </transition><transition id="shared_skip_9"><name>
+          <text>skip_9</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="188ff821-6753-47a5-86dd-1f334cb81aed" />
+      </transition><transition id="a0b2ed56-dc3c-4956-b9a9-63c6f4547c59_Thermostat"><name>
+          <text>Power On</text>
+        </name>
+      </transition><transition id="aac90d53-c4b9-4365-b6cf-a51ca4788826_Thermostat"><name>
+          <text>Turn On Controller</text>
+        </name>
+      </transition><transition id="skip_3_Thermostat"><name>
+          <text>skip_3</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="86bb3795-9149-43f2-8222-b0801dc6ecbc" />
+      </transition><transition id="tauJoin_2_Thermostat"><name>
+          <text>tauJoin_2</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="73bb74d5-81ec-4e47-9ca2-ba93d5b8e0f8" />
+      </transition><transition id="shared_init_loop_5"><name>
+          <text>init_loop_5</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="c2654919-f060-4750-b958-6e8d61278cc0" />
+      </transition><transition id="8d39b958-59ce-4f20-b6d5-cb07fa382e3e_Thermostat"><name>
+          <text>Receive Info</text>
+        </name>
+      </transition><transition id="shared_skip_7"><name>
+          <text>skip_7</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="bdb732c6-d78e-4eda-96f2-a9bb5ac2d458" />
+      </transition><transition id="shared_skip_8"><name>
+          <text>skip_8</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="f0ef0f2f-8fed-48f9-a980-dccf934f59c9" />
+      </transition><transition id="cb8f7a43-f51b-4d6e-8412-3354c7cef893_Thermostat"><name>
+          <text>Power Off</text>
+        </name>
+      </transition><transition id="e01c87fe-b355-491e-b5fb-84d3fe6ef5d0_Controller"><name>
+          <text>Switch Off</text>
+        </name>
+      </transition><transition id="tauJoin_3_Controller"><name>
+          <text>tauJoin_3</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="71c51175-922b-4659-929f-47c4d0e215e5" />
+      </transition><transition id="9ed8a8d5-9f3e-43b8-ae3d-5c0240aee674_Controller"><name>
+          <text>Update Avg</text>
+        </name>
+      </transition><transition id="skip_15_Controller"><name>
+          <text>skip_15</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="aaa74ae0-b3ae-4c86-ae88-b8504ad2ce9b" />
+      </transition><transition id="skip_12_Controller"><name>
+          <text>skip_12</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="064c89c7-7770-44db-800e-5ceb8ee8bc33" />
+      </transition><transition id="8ad4df94-e906-4a96-88c6-31f178947b88_Controller"><name>
+          <text>Collect Temperatures</text>
+        </name>
+      </transition><transition id="adca86c5-ad03-48f4-b1a3-d4dd09beeb68_Controller"><name>
+          <text>Send Env Info</text>
+        </name>
+      </transition><transition id="skip_13_Controller"><name>
+          <text>skip_13</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="af17554b-8c31-4910-b6ff-c1a336fd730e" />
+      </transition><transition id="700c5224-9a2f-4dc5-9454-edd6a0c71bc2_Controller"><name>
+          <text>Switch On</text>
+        </name>
+      </transition><transition id="c9e23472-205f-471c-9987-28695afc5ed1_Controller"><name>
+          <text>Set Up Boiler</text>
+        </name>
+      </transition><transition id="init_loop_10_Controller"><name>
+          <text>init_loop_10</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="9292ed0c-6a3f-4e37-8bd5-cd02e0fd4dc0" />
+      </transition><transition id="skip_14_Controller"><name>
+          <text>skip_14</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="ad6fb023-8023-4dc1-9fb7-044479603feb" />
+      </transition><arc id="5487844944_User" source="p_4_User" target="c6333043-db6d-42e5-9fd7-324c4ea85cf2_User"><identifier><text>e</text></identifier></arc><arc id="5487845072_User" source="c6333043-db6d-42e5-9fd7-324c4ea85cf2_User" target="sink_User"><identifier><text>e</text></identifier></arc><arc id="4471836624_User" source="source_User" target="07a042ef-c7d7-42d2-a3d4-e70724d0efe9_User"><identifier><text>e</text></identifier></arc><arc id="5403502096_User" source="07a042ef-c7d7-42d2-a3d4-e70724d0efe9_User" target="p_3_User"><identifier><text>e</text></identifier></arc><arc id="5487842320_User" source="p_3_User" target="init_loop_2_User"><identifier><text>e</text></identifier></arc><arc id="5487840528_User" source="skip_1_User" target="p_4_User"><identifier><text>e</text></identifier></arc><arc id="5487842256_User" source="p_3_User" target="skip_1_User"><identifier><text>e</text></identifier></arc><arc id="5487842512_User" source="init_loop_2_User" target="p_5_User"><identifier><text>e</text></identifier></arc><arc id="5487843152_User" source="p_5_User" target="d21de276-d7f2-4d33-b936-2ed1dc47af7e_User"><identifier><text>e</text></identifier></arc><arc id="5487843280_User" source="d21de276-d7f2-4d33-b936-2ed1dc47af7e_User" target="p_6_User"><identifier><text>e</text></identifier></arc><arc id="5487843792_User" source="p_6_User" target="shared_skip_4"><identifier><text>e</text></identifier></arc><arc id="5487845264_User" source="shared_skip_4" target="p_5_User"><identifier><text>e</text></identifier></arc><arc id="5487844368_User" source="p_6_User" target="skip_5_User"><identifier><text>e</text></identifier></arc><arc id="5487844496_User" source="skip_5_User" target="p_4_User"><identifier><text>e</text></identifier></arc><arc id="5488537168_Thermostat" source="p_13_Thermostat" target="9a2e95e3-7735-4dd7-8ed0-24bfaab2413b_Thermostat"><identifier><text>j</text></identifier></arc><arc id="5488537296_Thermostat" source="9a2e95e3-7735-4dd7-8ed0-24bfaab2413b_Thermostat" target="p_12_Thermostat"><identifier><text>j</text></identifier></arc><arc id="5488535440_Thermostat" source="p_8_Thermostat" target="shared_skip_9"><identifier><text>j</text></identifier></arc><arc id="5488534160_Thermostat" source="p_9_Thermostat" target="0d3414da-4b80-4f94-8911-c8d18f5d9244_Thermostat"><identifier><text>j</text></identifier></arc><arc id="5488533904_Thermostat" source="shared_skip_7" target="p_8_Thermostat"><identifier><text>j</text></identifier></arc><arc id="5488532368_Thermostat" source="p_6_Thermostat" target="shared_init_loop_5"><identifier><text>j</text></identifier></arc><arc id="5488532496_Thermostat" source="shared_init_loop_5" target="p_7_Thermostat"><identifier><text>j</text></identifier></arc><arc id="5488529680_Thermostat" source="tauJoin_2_Thermostat" target="sink_Thermostat"><identifier><text>j</text></identifier></arc><arc id="5488530320_Thermostat" source="p_5_Thermostat" target="tauJoin_2_Thermostat"><identifier><text>j</text></identifier></arc><arc id="5488530832_Thermostat" source="skip_3_Thermostat" target="p_5_Thermostat"><identifier><text>j</text></identifier></arc><arc id="5488531728_Thermostat" source="p_6_Thermostat" target="shared_skip_4"><identifier><text>j</text></identifier></arc><arc id="5488533776_Thermostat" source="p_9_Thermostat" target="shared_skip_7"><identifier><text>j</text></identifier></arc><arc id="5488531856_Thermostat" source="shared_skip_4" target="p_5_Thermostat"><identifier><text>j</text></identifier></arc><arc id="5488535568_Thermostat" source="shared_skip_9" target="p_5_Thermostat"><identifier><text>j</text></identifier></arc><arc id="5488536336_Thermostat" source="p_12_Thermostat" target="tauJoin_2_Thermostat"><identifier><text>j</text></identifier></arc><arc id="5488533328_Thermostat" source="p_7_Thermostat" target="8d39b958-59ce-4f20-b6d5-cb07fa382e3e_Thermostat"><identifier><text>j</text></identifier></arc><arc id="5488533456_Thermostat" source="8d39b958-59ce-4f20-b6d5-cb07fa382e3e_Thermostat" target="p_9_Thermostat"><identifier><text>j</text></identifier></arc><arc id="5488526288_Thermostat" source="source_Thermostat" target="a0b2ed56-dc3c-4956-b9a9-63c6f4547c59_Thermostat"><identifier><text>j</text></identifier></arc><arc id="5488537424_Thermostat" source="shared_skip_8" target="p_7_Thermostat"><identifier><text>j</text></identifier></arc><arc id="5488537680_Thermostat" source="a0b2ed56-dc3c-4956-b9a9-63c6f4547c59_Thermostat" target="p_11_Thermostat"><identifier><text>j</text></identifier></arc><arc id="5488530640_Thermostat" source="p_4_Thermostat" target="skip_3_Thermostat"><identifier><text>j</text></identifier></arc><arc id="5488531280_Thermostat" source="p_4_Thermostat" target="aac90d53-c4b9-4365-b6cf-a51ca4788826_Thermostat"><identifier><text>j</text></identifier></arc><arc id="5488531408_Thermostat" source="aac90d53-c4b9-4365-b6cf-a51ca4788826_Thermostat" target="p_6_Thermostat"><identifier><text>j</text></identifier></arc><arc id="5488537552_Thermostat" source="a0b2ed56-dc3c-4956-b9a9-63c6f4547c59_Thermostat" target="p_4_Thermostat"><identifier><text>j</text></identifier></arc><arc id="5488534288_Thermostat" source="0d3414da-4b80-4f94-8911-c8d18f5d9244_Thermostat" target="p_8_Thermostat"><identifier><text>j</text></identifier></arc><arc id="5488536784_Thermostat" source="p_11_Thermostat" target="cb8f7a43-f51b-4d6e-8412-3354c7cef893_Thermostat"><identifier><text>j</text></identifier></arc><arc id="5488534800_Thermostat" source="p_8_Thermostat" target="shared_skip_8"><identifier><text>j</text></identifier></arc><arc id="5488536912_Thermostat" source="cb8f7a43-f51b-4d6e-8412-3354c7cef893_Thermostat" target="p_13_Thermostat"><identifier><text>j</text></identifier></arc><arc id="5488625168_Controller" source="p_14_Controller" target="8ad4df94-e906-4a96-88c6-31f178947b88_Controller"><identifier><text>u</text></identifier></arc><arc id="5488637456_Controller" source="9ed8a8d5-9f3e-43b8-ae3d-5c0240aee674_Controller" target="p_17_Controller"><identifier><text>u</text></identifier></arc><arc id="5488262736_Controller" source="p_10_Controller" target="shared_skip_8"><identifier><text>u</text></identifier></arc><arc id="5488627408_Controller" source="p_12_Controller" target="shared_skip_9"><identifier><text>u</text></identifier></arc><arc id="5488639696_Controller" source="p_15_Controller" target="skip_15_Controller"><identifier><text>u</text></identifier></arc><arc id="5488627536_Controller" source="init_loop_10_Controller" target="p_14_Controller"><identifier><text>u</text></identifier></arc><arc id="5488639824_Controller" source="skip_15_Controller" target="p_13_Controller"><identifier><text>u</text></identifier></arc><arc id="5488637840_Controller" source="p_17_Controller" target="skip_13_Controller"><identifier><text>u</text></identifier></arc><arc id="5488634384_Controller" source="shared_skip_4" target="p_8_Controller"><identifier><text>u</text></identifier></arc><arc id="5488636560_Controller" source="p_10_Controller" target="shared_skip_7"><identifier><text>u</text></identifier></arc><arc id="5488260240_Controller" source="700c5224-9a2f-4dc5-9454-edd6a0c71bc2_Controller" target="p_5_Controller"><identifier><text>u</text></identifier></arc><arc id="5488633104_Controller" source="p_5_Controller" target="e01c87fe-b355-491e-b5fb-84d3fe6ef5d0_Controller"><identifier><text>u</text></identifier></arc><arc id="5488633232_Controller" source="e01c87fe-b355-491e-b5fb-84d3fe6ef5d0_Controller" target="p_6_Controller"><identifier><text>u</text></identifier></arc><arc id="5488633872_Controller" source="p_8_Controller" target="tauJoin_3_Controller"><identifier><text>u</text></identifier></arc><arc id="5488634256_Controller" source="p_7_Controller" target="shared_skip_4"><identifier><text>u</text></identifier></arc><arc id="5488259280_Controller" source="shared_skip_8" target="p_8_Controller"><identifier><text>u</text></identifier></arc><arc id="5488673488_Controller" source="skip_14_Controller" target="p_14_Controller"><identifier><text>u</text></identifier></arc><arc id="5488638992_Controller" source="p_15_Controller" target="skip_14_Controller"><identifier><text>u</text></identifier></arc><arc id="5488629456_Controller" source="shared_skip_9" target="p_13_Controller"><identifier><text>u</text></identifier></arc><arc id="5488673232_Controller" source="shared_skip_7" target="p_9_Controller"><identifier><text>u</text></identifier></arc><arc id="5488635856_Controller" source="p_9_Controller" target="c9e23472-205f-471c-9987-28695afc5ed1_Controller"><identifier><text>u</text></identifier></arc><arc id="5488635088_Controller" source="shared_init_loop_5" target="p_9_Controller"><identifier><text>u</text></identifier></arc><arc id="5488673104_Controller" source="700c5224-9a2f-4dc5-9454-edd6a0c71bc2_Controller" target="p_7_Controller"><identifier><text>u</text></identifier></arc><arc id="5488672976_Controller" source="700c5224-9a2f-4dc5-9454-edd6a0c71bc2_Controller" target="p_12_Controller"><identifier><text>u</text></identifier></arc><arc id="5488631248_Controller" source="source_Controller" target="700c5224-9a2f-4dc5-9454-edd6a0c71bc2_Controller"><identifier><text>u</text></identifier></arc><arc id="5488673360_Controller" source="tauJoin_3_Controller" target="sink_Controller"><identifier><text>u</text></identifier></arc><arc id="5488632784_Controller" source="p_6_Controller" target="tauJoin_3_Controller"><identifier><text>u</text></identifier></arc><arc id="5488634960_Controller" source="p_7_Controller" target="shared_init_loop_5"><identifier><text>u</text></identifier></arc><arc id="5488635984_Controller" source="c9e23472-205f-471c-9987-28695afc5ed1_Controller" target="p_10_Controller"><identifier><text>u</text></identifier></arc><arc id="5488623888_Controller" source="p_16_Controller" target="skip_12_Controller"><identifier><text>u</text></identifier></arc><arc id="5488637968_Controller" source="skip_13_Controller" target="p_15_Controller"><identifier><text>u</text></identifier></arc><arc id="5488638288_Controller" source="p_17_Controller" target="adca86c5-ad03-48f4-b1a3-d4dd09beeb68_Controller"><identifier><text>u</text></identifier></arc><arc id="5488628112_Controller" source="p_12_Controller" target="init_loop_10_Controller"><identifier><text>u</text></identifier></arc><arc id="5488638416_Controller" source="adca86c5-ad03-48f4-b1a3-d4dd09beeb68_Controller" target="p_15_Controller"><identifier><text>u</text></identifier></arc><arc id="5488259728_Controller" source="p_13_Controller" target="tauJoin_3_Controller"><identifier><text>u</text></identifier></arc><arc id="5488636816_Controller" source="skip_12_Controller" target="p_15_Controller"><identifier><text>u</text></identifier></arc><arc id="5488637328_Controller" source="p_16_Controller" target="9ed8a8d5-9f3e-43b8-ae3d-5c0240aee674_Controller"><identifier><text>u</text></identifier></arc><arc id="5488625616_Controller" source="8ad4df94-e906-4a96-88c6-31f178947b88_Controller" target="p_16_Controller"><identifier><text>u</text></identifier></arc></page></net></pnml>

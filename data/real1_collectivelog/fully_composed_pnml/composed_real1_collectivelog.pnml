@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml><net id="composed_real1_collectivelog_" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel"><name><text>composed_real1_collectivelog_</text></name><page id="composed_page"><place id="source_Rex"><name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      <type><text>Rex</text></type></place><place id="p_4_Rex"><name>
+          <text>p_4</text>
+        </name>
+      <type><text>Rex</text></type></place><place id="p_3_Rex"><name>
+          <text>p_3</text>
+        </name>
+      <type><text>Rex</text></type></place><place id="sink_Rex"><name>
+          <text>sink</text>
+        </name>
+      <type><text>Rex</text></type></place><place id="source_Dingo"><name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      <type><text>Dingo</text></type></place><place id="p_3_Dingo"><name>
+          <text>p_3</text>
+        </name>
+      <type><text>Dingo</text></type></place><place id="p_5_Dingo"><name>
+          <text>p_5</text>
+        </name>
+      <type><text>Dingo</text></type></place><place id="p_4_Dingo"><name>
+          <text>p_4</text>
+        </name>
+      <type><text>Dingo</text></type></place><place id="sink_Dingo"><name>
+          <text>sink</text>
+        </name>
+      <type><text>Dingo</text></type></place><transition id="e7c29327-fcd0-4da7-8369-88cdcc51784f_Rex"><name>
+          <text>Rex_Explore</text>
+        </name>
+      </transition><transition id="d9c810ca-362a-480c-90a6-3b279f18674f_Rex"><name>
+          <text>Rex_done</text>
+        </name>
+      </transition><transition id="2f8fa7f2-f6b8-4b9e-9aa9-9d6f9e5fa4fa_Rex"><name>
+          <text>Rex_target_found</text>
+        </name>
+      </transition><transition id="6114d2aa-5291-4dd3-b37f-e94e322599a2_Dingo"><name>
+          <text>Dingo_target_found</text>
+        </name>
+      </transition><transition id="7b48539b-88d7-45dd-bf22-ba4c30143e1e_Dingo"><name>
+          <text>Dingo_done</text>
+        </name>
+      </transition><transition id="f1c987ca-5082-4dfe-bf3f-ebb667dc7cfb_Dingo"><name>
+          <text>Dingo_GoTo</text>
+        </name>
+      </transition><transition id="9c0f22eb-143d-4da6-b0d1-3a1249d00aab_Dingo"><name>
+          <text>Dingo_Fire</text>
+        </name>
+      </transition><arc id="5005116304_Rex" source="source_Rex" target="e7c29327-fcd0-4da7-8369-88cdcc51784f_Rex"><identifier><text>v</text></identifier></arc><arc id="5005116944_Rex" source="p_3_Rex" target="2f8fa7f2-f6b8-4b9e-9aa9-9d6f9e5fa4fa_Rex"><identifier><text>v</text></identifier></arc><arc id="5005116496_Rex" source="e7c29327-fcd0-4da7-8369-88cdcc51784f_Rex" target="p_3_Rex"><identifier><text>v</text></identifier></arc><arc id="5005117072_Rex" source="2f8fa7f2-f6b8-4b9e-9aa9-9d6f9e5fa4fa_Rex" target="p_4_Rex"><identifier><text>v</text></identifier></arc><arc id="5005117328_Rex" source="p_4_Rex" target="d9c810ca-362a-480c-90a6-3b279f18674f_Rex"><identifier><text>v</text></identifier></arc><arc id="5005117456_Rex" source="d9c810ca-362a-480c-90a6-3b279f18674f_Rex" target="sink_Rex"><identifier><text>v</text></identifier></arc><arc id="5005077392_Dingo" source="source_Dingo" target="6114d2aa-5291-4dd3-b37f-e94e322599a2_Dingo"><identifier><text>y</text></identifier></arc><arc id="5005077520_Dingo" source="6114d2aa-5291-4dd3-b37f-e94e322599a2_Dingo" target="p_3_Dingo"><identifier><text>y</text></identifier></arc><arc id="5005078544_Dingo" source="p_4_Dingo" target="9c0f22eb-143d-4da6-b0d1-3a1249d00aab_Dingo"><identifier><text>y</text></identifier></arc><arc id="5005078096_Dingo" source="f1c987ca-5082-4dfe-bf3f-ebb667dc7cfb_Dingo" target="p_4_Dingo"><identifier><text>y</text></identifier></arc><arc id="5005077968_Dingo" source="p_3_Dingo" target="f1c987ca-5082-4dfe-bf3f-ebb667dc7cfb_Dingo"><identifier><text>y</text></identifier></arc><arc id="5005078672_Dingo" source="9c0f22eb-143d-4da6-b0d1-3a1249d00aab_Dingo" target="p_5_Dingo"><identifier><text>y</text></identifier></arc><arc id="5005078928_Dingo" source="p_5_Dingo" target="7b48539b-88d7-45dd-bf22-ba4c30143e1e_Dingo"><identifier><text>y</text></identifier></arc><arc id="5005079056_Dingo" source="7b48539b-88d7-45dd-bf22-ba4c30143e1e_Dingo" target="sink_Dingo"><identifier><text>y</text></identifier></arc></page></net></pnml>

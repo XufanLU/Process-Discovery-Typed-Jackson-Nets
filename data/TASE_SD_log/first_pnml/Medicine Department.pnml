@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_1758457645.474737" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1758457645.474737</text>
+    </name>
+    <page id="n0">
+      <place id="source">
+        <name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      <type><text>Medicine Department</text></type></place>
+      <place id="p_3">
+        <name>
+          <text>p_3</text>
+        </name>
+      <type><text>Medicine Department</text></type></place>
+      <place id="sink">
+        <name>
+          <text>sink</text>
+        </name>
+      <type><text>Medicine Department</text></type></place>
+      <place id="p_6">
+        <name>
+          <text>p_6</text>
+        </name>
+      <type><text>Medicine Department</text></type></place>
+      <place id="p_7">
+        <name>
+          <text>p_7</text>
+        </name>
+      <type><text>Medicine Department</text></type></place>
+      <place id="p_8">
+        <name>
+          <text>p_8</text>
+        </name>
+      <type><text>Medicine Department</text></type></place>
+      <place id="p_9">
+        <name>
+          <text>p_9</text>
+        </name>
+      <type><text>Medicine Department</text></type></place>
+      <place id="p_10">
+        <name>
+          <text>p_10</text>
+        </name>
+      <type><text>Medicine Department</text></type></place>
+      <transition id="f626ab34-1d7a-42e4-a620-0560849ce650">
+        <name>
+          <text>s18</text>
+        </name>
+      </transition>
+      <transition id="ab87df60-289d-4257-b3f7-b50bd99ed61a">
+        <name>
+          <text>s21</text>
+        </name>
+      </transition>
+      <transition id="c76c6fe9-03a2-4118-a588-edd14f100790">
+        <name>
+          <text>s19</text>
+        </name>
+      </transition>
+      <transition id="c9ff5637-e6e1-4039-a24c-70b5c3cec60a">
+        <name>
+          <text>s20</text>
+        </name>
+      </transition>
+      <transition id="5834cae1-c66e-42f6-bbb5-02a45f20b339">
+        <name>
+          <text>s22</text>
+        </name>
+      </transition>
+      <transition id="eacf11ca-1346-4bd3-be6f-3896212bf2c9">
+        <name>
+          <text>s23</text>
+        </name>
+      </transition>
+      <arc id="14930859728" source="p_8" target="c9ff5637-e6e1-4039-a24c-70b5c3cec60a"><identifier><text>b</text></identifier></arc>
+      <arc id="14930860816" source="p_10" target="eacf11ca-1346-4bd3-be6f-3896212bf2c9"><identifier><text>b</text></identifier></arc>
+      <arc id="14930859856" source="c9ff5637-e6e1-4039-a24c-70b5c3cec60a" target="p_9"><identifier><text>b</text></identifier></arc>
+      <arc id="14930860944" source="eacf11ca-1346-4bd3-be6f-3896212bf2c9" target="sink"><identifier><text>b</text></identifier></arc>
+      <arc id="14930854480" source="source" target="f626ab34-1d7a-42e4-a620-0560849ce650"><identifier><text>b</text></identifier></arc>
+      <arc id="14930855760" source="p_3" target="c76c6fe9-03a2-4118-a588-edd14f100790"><identifier><text>b</text></identifier></arc>
+      <arc id="14930854288" source="f626ab34-1d7a-42e4-a620-0560849ce650" target="p_3"><identifier><text>b</text></identifier></arc>
+      <arc id="14930861264" source="c76c6fe9-03a2-4118-a588-edd14f100790" target="p_8"><identifier><text>b</text></identifier></arc>
+      <arc id="14930861520" source="p_9" target="5834cae1-c66e-42f6-bbb5-02a45f20b339"><identifier><text>b</text></identifier></arc>
+      <arc id="14930858640" source="p_6" target="ab87df60-289d-4257-b3f7-b50bd99ed61a"><identifier><text>b</text></identifier></arc>
+      <arc id="14930858768" source="ab87df60-289d-4257-b3f7-b50bd99ed61a" target="p_7"><identifier><text>b</text></identifier></arc>
+      <arc id="14930861136" source="c76c6fe9-03a2-4118-a588-edd14f100790" target="p_6"><identifier><text>b</text></identifier></arc>
+      <arc id="14930861392" source="p_7" target="5834cae1-c66e-42f6-bbb5-02a45f20b339"><identifier><text>b</text></identifier></arc>
+      <arc id="14930860496" source="5834cae1-c66e-42f6-bbb5-02a45f20b339" target="p_10"><identifier><text>b</text></identifier></arc>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink">
+          <text>1</text>
+        <type><text>Medicine Department</text></type></place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

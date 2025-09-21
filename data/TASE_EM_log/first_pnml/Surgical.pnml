@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_1758450263.479798" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1758450263.479798</text>
+    </name>
+    <page id="n0">
+      <place id="source">
+        <name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      <type><text>Surgical</text></type></place>
+      <place id="p_4">
+        <name>
+          <text>p_4</text>
+        </name>
+      <type><text>Surgical</text></type></place>
+      <place id="p_3">
+        <name>
+          <text>p_3</text>
+        </name>
+      <type><text>Surgical</text></type></place>
+      <place id="p_5">
+        <name>
+          <text>p_5</text>
+        </name>
+      <type><text>Surgical</text></type></place>
+      <place id="sink">
+        <name>
+          <text>sink</text>
+        </name>
+      <type><text>Surgical</text></type></place>
+      <place id="p_6">
+        <name>
+          <text>p_6</text>
+        </name>
+      <type><text>Surgical</text></type></place>
+      <transition id="20d607f6-da67-4084-98eb-ca90f899f7ae">
+        <name>
+          <text>t1</text>
+        </name>
+      </transition>
+      <transition id="3120ffbf-7799-483a-939b-1cf6e4b9f26a">
+        <name>
+          <text>t5</text>
+        </name>
+      </transition>
+      <transition id="7d533862-0a8d-46f7-811e-fbfdb184c2bb">
+        <name>
+          <text>t2</text>
+        </name>
+      </transition>
+      <transition id="143087c0-15e2-4f53-a5fe-a439a11fb58c">
+        <name>
+          <text>t3</text>
+        </name>
+      </transition>
+      <transition id="5ebe2bd6-010c-4c05-a658-1811680bedc4">
+        <name>
+          <text>t4</text>
+        </name>
+      </transition>
+      <arc id="13960135504" source="source" target="20d607f6-da67-4084-98eb-ca90f899f7ae"><identifier><text>q</text></identifier></arc>
+      <arc id="13960136208" source="7d533862-0a8d-46f7-811e-fbfdb184c2bb" target="p_4"><identifier><text>q</text></identifier></arc>
+      <arc id="13960136656" source="p_4" target="143087c0-15e2-4f53-a5fe-a439a11fb58c"><identifier><text>q</text></identifier></arc>
+      <arc id="13960136080" source="p_3" target="7d533862-0a8d-46f7-811e-fbfdb184c2bb"><identifier><text>q</text></identifier></arc>
+      <arc id="13960135632" source="20d607f6-da67-4084-98eb-ca90f899f7ae" target="p_3"><identifier><text>q</text></identifier></arc>
+      <arc id="13960136784" source="143087c0-15e2-4f53-a5fe-a439a11fb58c" target="p_5"><identifier><text>q</text></identifier></arc>
+      <arc id="13960137232" source="p_5" target="5ebe2bd6-010c-4c05-a658-1811680bedc4"><identifier><text>q</text></identifier></arc>
+      <arc id="13960137360" source="5ebe2bd6-010c-4c05-a658-1811680bedc4" target="p_6"><identifier><text>q</text></identifier></arc>
+      <arc id="13960137616" source="p_6" target="3120ffbf-7799-483a-939b-1cf6e4b9f26a"><identifier><text>q</text></identifier></arc>
+      <arc id="13960137744" source="3120ffbf-7799-483a-939b-1cf6e4b9f26a" target="sink"><identifier><text>q</text></identifier></arc>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink">
+          <text>1</text>
+        <type><text>Surgical</text></type></place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

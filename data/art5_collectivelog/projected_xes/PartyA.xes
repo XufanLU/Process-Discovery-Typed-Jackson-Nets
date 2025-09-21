@@ -1,0 +1,3576 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<log xes.version="1849-2016" xes.features="nested-attributes" xmlns="http://www.xes-standard.org/">
+	<extension name="Organizational" prefix="org" uri="http://www.xes-standard.org/org.xesext" />
+	<extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext" />
+	<extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext" />
+	<extension name="Identity" prefix="identity" uri="http://www.xes-standard.org/identity.xesext" />
+	<string key="concept:name" value="collog" />
+	<trace>
+		<string key="concept:name" value="case_394" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T14:03:26.908000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T14:03:34.722000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T14:03:53.247000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_414" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T14:03:58.520000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_415" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T14:04:07.331000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_114" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T12:04:57.961000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T12:05:30.654000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T12:06:12.689000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_117" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T12:06:17.095000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_118" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T12:06:25.523000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_339" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T13:41:10.258000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T13:41:28.876000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T13:42:11.063000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_357" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T13:42:17.485000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_358" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T13:42:20.611000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_89" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T11:52:59.700000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T11:53:21.992000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T11:53:52.301000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_92" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T11:54:16.205000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_93" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T11:54:24.040000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_29" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T11:28:40.915000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_26" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T11:28:58.230000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T11:29:05.768000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_27" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T11:29:16.007000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_28" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T11:29:19.999000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_179" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T12:31:51.074000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T12:31:55.752000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T12:32:55.382000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_185" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T12:33:04.188000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_186" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T12:33:34.784000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_239" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T12:59:43.273000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T13:00:18.451000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T13:00:27.153000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_250" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T13:00:33.724000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_251" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T13:01:03.667000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_349" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T13:44:54.346000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_367" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T13:45:23.806000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T13:45:26.435000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_368" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T13:46:19.986000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_369" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T13:46:22.849000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_354" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T13:46:37.771000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T13:46:57.960000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T13:47:31.291000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_372" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T13:48:10.283000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_373" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T13:48:56.125000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_444" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T14:24:47.666000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_467" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T14:25:12.287000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T14:25:27.071000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_468" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T14:25:27.700000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_469" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T14:25:32.071000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_54" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T11:38:26.761000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_51" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T11:39:55.392000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T11:39:55.724000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_52" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T11:39:58.004000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_53" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T11:40:22.538000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_124" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T12:09:44.197000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T12:09:57.613000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T12:10:39.459000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_127" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T12:10:42.204000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_128" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T12:10:48.615000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_154" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T12:22:03.780000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T12:22:34.347000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T12:22:58.006000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_159" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T12:23:14.123000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_160" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T12:23:30.659000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_374" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T13:55:37.773000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_393" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T13:56:34.642000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T13:57:02.759000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_394" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T13:57:07.463000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_395" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T13:57:19.386000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_424" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T14:16:43.473000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_446" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T14:17:19.895000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T14:17:34.550000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_447" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T14:17:35.384000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_448" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T14:17:38.508000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_479" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T14:39:11.601000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_503" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T14:40:02.565000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T14:40:05.622000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_504" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T14:40:07.802000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_505" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T14:40:08.756000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_174" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T12:30:07.599000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_180" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T12:31:02.122000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T12:31:16.010000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_181" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T12:31:23.779000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_182" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T12:31:39.144000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_184" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T12:34:19.205000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_190" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T12:35:32.787000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T12:35:41.188000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_191" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T12:35:50.112000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_192" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T12:36:03.308000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_344" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T13:42:52.735000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T13:43:01.797000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T13:43:14.412000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_362" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T13:43:30.667000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_363" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T13:43:56.625000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_319" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T13:32:18.764000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T13:32:51.889000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T13:33:43.912000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_333" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T13:33:59.781000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_334" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T13:34:21.337000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_399" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T14:05:09.832000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_419" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T14:05:47.266000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T14:06:23.316000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_420" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T14:06:28.508000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_421" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T14:06:42.407000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_359" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T13:49:26.120000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T13:49:47.169000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T13:50:01.807000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_377" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T13:50:06.507000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_378" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T13:50:22.669000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_474" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T14:36:54.849000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_498" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T14:37:44.284000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T14:38:32.173000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_499" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T14:38:36.357000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_500" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T14:38:44.034000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_299" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T13:22:59.404000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T13:23:10.031000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T13:23:34.562000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_311" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T13:23:54.383000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_312" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T13:24:22.035000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_194" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T12:39:05.534000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T12:39:24.634000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T12:40:18.956000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_202" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T12:40:45.035000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_203" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T12:40:49.858000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_159" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T12:24:20.092000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_164" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T12:25:16.730000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T12:25:35.139000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_165" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T12:25:37.127000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_166" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T12:25:42.247000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_34" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T11:29:48.214000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_31" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T11:30:32.534000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T11:31:25.138000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_32" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T11:31:29.676000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_33" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T11:31:35.670000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_379" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T13:57:58.522000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T13:58:05.515000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T13:58:17.047000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_398" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T13:58:29.663000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_399" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T13:58:35.518000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_244" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T13:02:06.306000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T13:02:47.520000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T13:03:00.680000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_255" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T13:03:06.741000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_256" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T13:03:19.797000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_9" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T11:20:36.423000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_5" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T11:21:12.432000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T11:21:21.153000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_6" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T11:21:25.423000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_7" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T11:21:39.863000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_104" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T11:59:37.739000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_107" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T12:00:28.139000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T12:00:47.361000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_108" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T12:00:53.126000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_109" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T12:01:07.084000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_204" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T12:43:02.808000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_213" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T12:43:36.569000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T12:43:58.302000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_214" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T12:44:09.694000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_215" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T12:44:30.573000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_454" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T14:28:32.816000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T14:28:44.716000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T14:28:58.604000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_477" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T14:29:29.652000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_478" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T14:29:34.556000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_279" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T13:15:45.818000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_291" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T13:16:31.707000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T13:16:33.462000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_292" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T13:16:36.335000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_293" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T13:16:49.286000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_249" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T13:03:50.193000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_260" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T13:04:37.453000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T13:05:05.553000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_261" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T13:05:16.087000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_262" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T13:05:34.009000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_294" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T13:21:25.171000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T13:21:55.635000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T13:22:18.036000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_306" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T13:22:22.607000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_307" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T13:22:27.630000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_209" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T12:44:57.969000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_218" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T12:45:56.738000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T12:46:07.994000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_219" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T12:46:37.173000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_220" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T12:46:40.703000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_269" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T13:11:40.479000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_281" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T13:12:46.764000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T13:13:01.016000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_282" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T13:13:03.743000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_283" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T13:13:13.503000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_144" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T12:18:07.017000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T12:18:14.117000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T12:18:47.117000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_149" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T12:18:50.499000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_150" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T12:19:03.213000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_4" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T11:17:23.962000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T11:18:02.700000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T11:18:12.557000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_0" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T11:18:40.839000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_1" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T11:18:51.464000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_69" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T11:45:19.008000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_69" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T11:46:07.487000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T11:46:13.153000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_70" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T11:46:17.801000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_71" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T11:46:25.234000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_264" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T13:10:00.217000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_276" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T13:10:32.566000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T13:10:57.666000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_277" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T13:11:02.418000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_278" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T13:11:03.604000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_304" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T13:25:37.549000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_317" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T13:26:29.227000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T13:26:36.785000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_318" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T13:26:45.863000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_319" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T13:27:05.611000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_364" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T13:51:20.337000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T13:51:44.160000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T13:52:32.154000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_382" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T13:52:33.088000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_383" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T13:52:58.372000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_439" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T14:21:55.693000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_461" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T14:23:35.400000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T14:23:36.673000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_462" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T14:23:40.709000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_463" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T14:23:56.034000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_44" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T11:34:14.208000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_41" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T11:35:00.197000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T11:35:37.998000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_42" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T11:35:49.437000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_43" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T11:35:55.370000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_49" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T11:36:00.837000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T11:36:01.566000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T11:36:34.143000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_46" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T11:36:40.394000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_47" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T11:37:48.265000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_469" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T14:35:08.724000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T14:35:38.313000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T14:35:57.497000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_493" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T14:36:06.392000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_494" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T14:36:08.583000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_219" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T12:50:08.918000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T12:50:31.642000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T12:51:23.202000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_229" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T12:51:37.682000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_230" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T12:51:50.815000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_464" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T14:33:39.922000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_488" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T14:33:54.725000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T14:34:21.054000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_489" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T14:34:27.547000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_490" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T14:34:30.796000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_259" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T13:08:01.521000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_271" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T13:09:15.380000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T13:09:24.520000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_272" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T13:09:28.090000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_273" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T13:09:31.863000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_384" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T13:59:49.339000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_404" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T14:00:27.397000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T14:00:37.976000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_405" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T14:00:43.656000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_406" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T14:00:48.639000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_94" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T11:54:58.114000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_97" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T11:55:45.124000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T11:55:54.194000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_98" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T11:56:23.702000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_99" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T11:56:31.335000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_459" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T14:30:49.591000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T14:31:07.207000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T14:31:17.367000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_483" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T14:31:20.608000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_484" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T14:31:52.546000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_64" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T11:42:30.323000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_63" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T11:43:08.989000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T11:43:29.380000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_64" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T11:43:37.397000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_65" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T11:44:19.168000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_199" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T12:40:58.344000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T12:40:58.432000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T12:41:26.653000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_207" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T12:41:37.553000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_208" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T12:41:50.375000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_429" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T14:18:23.362000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T14:18:47.725000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T14:19:16.642000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_451" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T14:19:19.227000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_452" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T14:19:39.635000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_39" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T11:32:13.931000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_36" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T11:32:46.238000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T11:32:48.962000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_37" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T11:33:13.576000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_38" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T11:33:51.286000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_314" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T13:30:02.717000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_328" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T13:31:02.583000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T13:31:28.153000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_329" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T13:31:49.077000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_330" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T13:31:55.697000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_59" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T11:40:35.841000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T11:40:38.908000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T11:40:48.359000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_57" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T11:40:57.508000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_58" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T11:41:38.114000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_334" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T13:38:55.893000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T13:39:03.384000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T13:39:44.715000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_351" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T13:39:59.217000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_352" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T13:40:17.816000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_14" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T11:21:52.824000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_10" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T11:22:57.992000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T11:23:20.753000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_11" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T11:23:31.957000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_12" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T11:23:39.698000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_404" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T14:07:21.896000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T14:07:46.014000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T14:08:17.542000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_425" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T14:08:29.951000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_426" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T14:08:52.639000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_24" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T11:26:11.186000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T11:26:20.859000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T11:26:47.709000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_21" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T11:27:10.258000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_22" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T11:27:22.628000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_164" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T12:25:49.750000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_169" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T12:27:01.923000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T12:27:12.577000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_170" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T12:27:27.418000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_171" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T12:27:33.242000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_234" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T12:57:46.303000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T12:57:53.354000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T12:58:14.552000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_245" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T12:58:21.076000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_246" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T12:58:44.186000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_289" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T13:19:17.441000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T13:19:19.002000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T13:19:40.957000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_301" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T13:19:41.526000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_302" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T13:20:39.362000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_109" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T12:01:29.774000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_112" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T12:02:09.047000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T12:02:24.964000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_113" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T12:02:39.774000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_114" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T12:03:10.264000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_229" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T12:55:06.335000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_240" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T12:55:56.175000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T12:56:17.556000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_241" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T12:56:26.892000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_242" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T12:56:56.558000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_484" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T14:40:33.819000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_508" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T14:41:19.631000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T14:41:24.761000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_509" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T14:41:37.300000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_510" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T14:41:43.881000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_224" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T12:52:50.829000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_234" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T12:53:37.631000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T12:53:42.697000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_235" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T12:53:45.702000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_236" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T12:54:24.884000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_214" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T12:47:23.842000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T12:47:37.643000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T12:48:47.513000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_223" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T12:49:21.509000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_224" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T12:49:46.664000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_324" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T13:34:45.681000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_339" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T13:35:52.164000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T13:36:05.545000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_340" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T13:36:17.510000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_341" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T13:36:28.991000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_74" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T11:46:49.389000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T11:47:23.824000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T11:47:33.340000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_75" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T11:47:56.189000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_76" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T11:48:08.487000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_149" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T12:20:18.693000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_154" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T12:21:17.405000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T12:21:34.523000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_155" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T12:21:38.239000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_156" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T12:21:53.047000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_84" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T11:51:07.043000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T11:51:25.022000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T11:51:28.310000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_86" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T11:51:34.546000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_87" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T11:51:48.333000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_119" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T12:07:06.579000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T12:07:21.092000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T12:07:35.964000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_122" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T12:07:45.195000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_123" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T12:08:30.982000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_274" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T13:13:55.891000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_286" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T13:14:24.797000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T13:14:40.376000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_287" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T13:14:53.237000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_288" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T13:14:56.599000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_499" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T14:47:10.713000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_525" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T14:48:14.722000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T14:48:28.495000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_526" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T14:48:29.770000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_527" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T14:48:33.080000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_434" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T14:19:57.584000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_456" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T14:20:32.300000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T14:21:10.090000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_457" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T14:21:15.308000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_458" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T14:21:34.096000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_389" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T14:01:48.580000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_409" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T14:02:29.290000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T14:02:44.338000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_410" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T14:02:51.358000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_411" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T14:03:08.765000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_309" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T13:28:41.171000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T13:29:17.825000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T13:29:22.436000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_323" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T13:29:25.654000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_324" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T13:29:37.865000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_369" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T13:53:34.831000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_387" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T13:54:35.844000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T13:54:53.135000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_388" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T13:55:07.679000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_389" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T13:55:19.996000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_414" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T14:12:10.632000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_436" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T14:12:29.788000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T14:12:50.980000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_437" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T14:12:53.450000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_438" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T14:12:58.311000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_129" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T12:11:23.361000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_132" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T12:12:19.480000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T12:12:35.319000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_133" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T12:12:41.481000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_134" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T12:13:18.983000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_19" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T11:24:15.141000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_15" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T11:25:14.121000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T11:25:15.952000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_16" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T11:25:21.924000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_17" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T11:25:43.404000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_254" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T13:06:05.406000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T13:06:26.170000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T13:07:00.059000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_265" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T13:07:06.020000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_266" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T13:07:22.267000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_449" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T14:26:18.155000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_472" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T14:27:44.636000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T14:27:47.908000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_473" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T14:27:57.263000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_474" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T14:28:04.474000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_79" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T11:48:48.603000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_81" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T11:50:01.913000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T11:50:07.016000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_82" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T11:50:07.365000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_83" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T11:50:15.757000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_329" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T13:36:48.678000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T13:37:09.709000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T13:37:39.723000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_345" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T13:37:49.802000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_346" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T13:37:55.258000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_419" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T14:14:31.879000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_441" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T14:14:41.276000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T14:14:53.486000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_442" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T14:15:12.297000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_443" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T14:15:15.913000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_494" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T14:45:06.043000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_519" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T14:45:52.684000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T14:46:04.223000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_520" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T14:46:09.160000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_521" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T14:46:09.198000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_284" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T13:17:19.605000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_296" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T13:17:51.205000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T13:18:05.663000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_297" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T13:18:15.575000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_298" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T13:18:16.593000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_134" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T12:14:13.287000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T12:14:26.402000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T12:14:48.679000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_138" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T12:14:51.572000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_139" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T12:15:02.356000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_99" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T11:57:12.625000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T11:57:28.395000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T11:57:49.968000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_102" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T11:58:15.062000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_103" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T11:58:34.897000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_189" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T12:36:44.167000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_196" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T12:38:02.926000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T12:38:14.906000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_197" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T12:38:22.809000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_198" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T12:38:45.674000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_139" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T12:16:22.436000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_144" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T12:17:15.808000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T12:17:20.202000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_145" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T12:17:30.797000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_146" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T12:17:48.576000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_409" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T14:09:28.401000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T14:09:42.023000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T14:10:18.146000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_431" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T14:10:25.428000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_432" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T14:10:37.453000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_489" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T14:43:24.207000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity C" />
+			<date key="time:timestamp" value="2021-06-23T14:43:39.533000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T14:44:28.920000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_514" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T14:44:38.711000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_515" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T14:44:42.458000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_169" />
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity A" />
+			<date key="time:timestamp" value="2021-06-23T12:27:50.286000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m2_174" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity D" />
+			<date key="time:timestamp" value="2021-06-23T12:28:50.069000+00:00" />
+			<string key="msgFlow" value="m2" />
+		</event>
+		<event>
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity B" />
+			<date key="time:timestamp" value="2021-06-23T12:29:17.192000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m3_175" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity E" />
+			<date key="time:timestamp" value="2021-06-23T12:29:21.664000+00:00" />
+			<string key="msgFlow" value="m3" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="m1_176" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="PartyA" />
+			<string key="concept:name" value="Activity F" />
+			<date key="time:timestamp" value="2021-06-23T12:29:40.133000+00:00" />
+			<string key="msgFlow" value="m1" />
+		</event>
+	</trace>
+</log>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_1758457615.789767" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1758457615.789767</text>
+    </name>
+    <page id="n0">
+      <place id="p_5">
+        <name>
+          <text>p_5</text>
+        </name>
+      <type><text>Pharmacy Department</text></type></place>
+      <place id="p_6">
+        <name>
+          <text>p_6</text>
+        </name>
+      <type><text>Pharmacy Department</text></type></place>
+      <place id="p_7">
+        <name>
+          <text>p_7</text>
+        </name>
+      <type><text>Pharmacy Department</text></type></place>
+      <place id="p_8">
+        <name>
+          <text>p_8</text>
+        </name>
+      <type><text>Pharmacy Department</text></type></place>
+      <transition id="31e59370-f9a1-4e22-a523-69e8c87135eb">
+        <name>
+          <text>s14</text>
+        </name>
+      </transition>
+      <transition id="8ede5331-02b2-4736-9df1-d093ec59d0ff">
+        <name>
+          <text>s15</text>
+        </name>
+      </transition>
+      <transition id="8a50ba9c-c68e-4fcc-866e-d78c3cc70558">
+        <name>
+          <text>s16</text>
+        </name>
+      </transition>
+      <transition id="147ddfa5-2287-468e-a804-585a1301a6f4">
+        <name>
+          <text>s17</text>
+        </name>
+      </transition>
+      <arc id="14802810768" source="31e59370-f9a1-4e22-a523-69e8c87135eb" target="p_7"><identifier><text>y</text></identifier></arc>
+      <arc id="14802811024" source="p_8" target="147ddfa5-2287-468e-a804-585a1301a6f4"><identifier><text>y</text></identifier></arc>
+      <arc id="14802808848" source="p_5" target="8a50ba9c-c68e-4fcc-866e-d78c3cc70558"><identifier><text>y</text></identifier></arc>
+      <arc id="14802808976" source="8a50ba9c-c68e-4fcc-866e-d78c3cc70558" target="p_6"><identifier><text>y</text></identifier></arc>
+      <arc id="14802810640" source="31e59370-f9a1-4e22-a523-69e8c87135eb" target="p_5"><identifier><text>y</text></identifier></arc>
+      <arc id="14802810896" source="p_6" target="147ddfa5-2287-468e-a804-585a1301a6f4"><identifier><text>y</text></identifier></arc>
+      <arc id="14802809872" source="p_7" target="8ede5331-02b2-4736-9df1-d093ec59d0ff"><identifier><text>y</text></identifier></arc>
+      <arc id="14802810000" source="8ede5331-02b2-4736-9df1-d093ec59d0ff" target="p_8"><identifier><text>y</text></identifier></arc>
+    </page>
+    </net>
+</pnml>

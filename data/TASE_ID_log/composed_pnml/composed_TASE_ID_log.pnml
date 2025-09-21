@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml><net id="composed_TASE_ID_log" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel"><name><text>composed_TASE_ID_log</text></name><page id="composed_page"><place id="p_3_Record_Room"><name>
+          <text>p_3</text>
+        </name>
+      <type><text>Record Room</text></type></place><place id="p_4_Record_Room"><name>
+          <text>p_4</text>
+        </name>
+      <type><text>Record Room</text></type></place><place id="p_5_Record_Room"><name>
+          <text>p_5</text>
+        </name>
+      <type><text>Record Room</text></type></place><place id="p_6_Record_Room"><name>
+          <text>p_6</text>
+        </name>
+      <type><text>Record Room</text></type></place><place id="p_7_Record_Room"><name>
+          <text>p_7</text>
+        </name>
+      <type><text>Record Room</text></type></place><place id="p_3_Receptionist_Department"><name>
+          <text>p_3</text>
+        </name>
+      <type><text>Receptionist Department</text></type></place><place id="p_4_Receptionist_Department"><name>
+          <text>p_4</text>
+        </name>
+      <type><text>Receptionist Department</text></type></place><place id="p_4_Fever_Out-patient_Department"><name>
+          <text>p_4</text>
+        </name>
+      <type><text>Fever Out-patient Department</text></type></place><place id="p_5_Fever_Out-patient_Department"><name>
+          <text>p_5</text>
+        </name>
+      <type><text>Fever Out-patient Department</text></type></place><place id="p_3_Fever_Out-patient_Department"><name>
+          <text>p_3</text>
+        </name>
+      <type><text>Fever Out-patient Department</text></type></place><place id="p_6_Fever_Out-patient_Department"><name>
+          <text>p_6</text>
+        </name>
+      <type><text>Fever Out-patient Department</text></type></place><place id="p_4_General_Out-patient_Department"><name>
+          <text>p_4</text>
+        </name>
+      <type><text>General Out-patient Department</text></type></place><place id="p_3_General_Out-patient_Department"><name>
+          <text>p_3</text>
+        </name>
+      <type><text>General Out-patient Department</text></type></place><place id="p_5_General_Out-patient_Department"><name>
+          <text>p_5</text>
+        </name>
+      <type><text>General Out-patient Department</text></type></place><place id="p_6_General_Out-patient_Department"><name>
+          <text>p_6</text>
+        </name>
+      <type><text>General Out-patient Department</text></type></place><place id="p_7_General_Out-patient_Department"><name>
+          <text>p_7</text>
+        </name>
+      <type><text>General Out-patient Department</text></type></place><place id="p_8_General_Out-patient_Department"><name>
+          <text>p_8</text>
+        </name>
+      <type><text>General Out-patient Department</text></type></place><place id="p_9_General_Out-patient_Department"><name>
+          <text>p_9</text>
+        </name>
+      <type><text>General Out-patient Department</text></type></place><place id="p_10_General_Out-patient_Department"><name>
+          <text>p_10</text>
+        </name>
+      <type><text>General Out-patient Department</text></type></place><place id="p_4_Pharmacy_Department"><name>
+          <text>p_4</text>
+        </name>
+      <type><text>Pharmacy Department</text></type></place><place id="p_3_Pharmacy_Department"><name>
+          <text>p_3</text>
+        </name>
+      <type><text>Pharmacy Department</text></type></place><place id="p_3_Charge_office_Department"><name>
+          <text>p_3</text>
+        </name>
+      <type><text>Charge office Department</text></type></place><transition id="8db8e349-866f-436b-90bd-79922a44ad9a_Record_Room"><name>
+          <text>D20</text>
+        </name>
+      </transition><transition id="acf6c230-3520-4e96-90d6-ba1dbb3204a2_Record_Room"><name>
+          <text>D24</text>
+        </name>
+      </transition><transition id="3050cdbb-4016-4a5b-abc9-d35c8f891854_Record_Room"><name>
+          <text>D21</text>
+        </name>
+      </transition><transition id="9defe3ee-b8b8-46a3-9a12-2f53755b6ec1_Record_Room"><name>
+          <text>D22</text>
+        </name>
+      </transition><transition id="a776a30d-20a0-4d96-b514-c664b8b7ea4d_Record_Room"><name>
+          <text>D23</text>
+        </name>
+      </transition><transition id="e3a65f48-a338-4f9c-aae2-823d19589ea2_Record_Room"><name>
+          <text>D25</text>
+        </name>
+      </transition><transition id="8d02a56f-3315-4ce2-a539-a11b6e7fabf4_Receptionist_Department"><name>
+          <text>D1</text>
+        </name>
+      </transition><transition id="bb4e4d1d-e726-4351-b27a-d78baf0c8dfa_Receptionist_Department"><name>
+          <text>D2</text>
+        </name>
+      </transition><transition id="3dcace2c-5e84-4720-bb27-e7f92adf6cc5_Receptionist_Department"><name>
+          <text>D3</text>
+        </name>
+      </transition><transition id="f2a7e44f-515e-425c-aa35-ca7e0e90f9f8_Fever_Out-patient_Department"><name>
+          <text>D15</text>
+        </name>
+      </transition><transition id="c1f42572-6458-46eb-a8be-31867c6bf83e_Fever_Out-patient_Department"><name>
+          <text>D16</text>
+        </name>
+      </transition><transition id="25261496-1372-498e-b44c-be48b07a3665_Fever_Out-patient_Department"><name>
+          <text>D17</text>
+        </name>
+      </transition><transition id="58d39857-f55e-4451-a657-2200007998ee_Fever_Out-patient_Department"><name>
+          <text>D19</text>
+        </name>
+      </transition><transition id="145a0a88-fce5-4d03-8b09-2d0580df8d8f_Fever_Out-patient_Department"><name>
+          <text>D18</text>
+        </name>
+      </transition><transition id="bf15845e-c736-4916-8bda-6ddb504a154f_General_Out-patient_Department"><name>
+          <text>D4</text>
+        </name>
+      </transition><transition id="fc77cb93-7b7d-413b-bfab-4700a7a2ca5d_General_Out-patient_Department"><name>
+          <text>D10</text>
+        </name>
+      </transition><transition id="23fdfc08-c462-4074-b548-a09e24832858_General_Out-patient_Department"><name>
+          <text>D6</text>
+        </name>
+      </transition><transition id="3bca562f-c21a-44b2-be4b-2cc9ca8c4164_General_Out-patient_Department"><name>
+          <text>D7</text>
+        </name>
+      </transition><transition id="32130f1a-d8ac-4171-9f8a-0f4d928d2d8d_General_Out-patient_Department"><name>
+          <text>D11</text>
+        </name>
+      </transition><transition id="9e89f9a1-d75a-430d-9d9a-5ce2d93b3967_General_Out-patient_Department"><name>
+          <text>D5</text>
+        </name>
+      </transition><transition id="44b9dc0a-1247-48fd-beb6-9e4976bc0596_General_Out-patient_Department"><name>
+          <text>D8</text>
+        </name>
+      </transition><transition id="2c6283c2-f879-46d9-a5bc-f3df9cb6c1e2_General_Out-patient_Department"><name>
+          <text>D9</text>
+        </name>
+      </transition><transition id="054d21c7-2f90-49fa-9191-ffe887dd5421_General_Out-patient_Department"><name>
+          <text>D12</text>
+        </name>
+      </transition><transition id="fb8a2c4d-e1f7-49d5-a5b1-4dbc670ed8e4_General_Out-patient_Department"><name>
+          <text>D13</text>
+        </name>
+      </transition><transition id="e435fbb5-16f0-4420-8730-b9e88df319d1_General_Out-patient_Department"><name>
+          <text>D14</text>
+        </name>
+      </transition><transition id="700bb65a-0176-4df1-b064-33caa86155f3_Pharmacy_Department"><name>
+          <text>D28</text>
+        </name>
+      </transition><transition id="bd4473b5-42fa-4c3f-bfbd-808405816469_Pharmacy_Department"><name>
+          <text>D30</text>
+        </name>
+      </transition><transition id="360703c9-90b1-4104-951d-5278c0638961_Pharmacy_Department"><name>
+          <text>D29</text>
+        </name>
+      </transition><transition id="0678b7fe-691f-4568-a4c2-1b864642cc43_Charge_office_Department"><name>
+          <text>D26</text>
+        </name>
+      </transition><transition id="c4bb6b46-ecdb-4063-964d-08a9bc814ec9_Charge_office_Department"><name>
+          <text>D27</text>
+        </name>
+      </transition><arc id="14735592656_Record_Room" source="p_7_Record_Room" target="e3a65f48-a338-4f9c-aae2-823d19589ea2_Record_Room"><identifier><text>d</text></identifier></arc><arc id="14735590672_Record_Room" source="3050cdbb-4016-4a5b-abc9-d35c8f891854_Record_Room" target="p_4_Record_Room"><identifier><text>d</text></identifier></arc><arc id="14735591120_Record_Room" source="p_4_Record_Room" target="9defe3ee-b8b8-46a3-9a12-2f53755b6ec1_Record_Room"><identifier><text>d</text></identifier></arc><arc id="14735590544_Record_Room" source="p_3_Record_Room" target="3050cdbb-4016-4a5b-abc9-d35c8f891854_Record_Room"><identifier><text>d</text></identifier></arc><arc id="4685755856_Record_Room" source="8db8e349-866f-436b-90bd-79922a44ad9a_Record_Room" target="p_3_Record_Room"><identifier><text>d</text></identifier></arc><arc id="14735591248_Record_Room" source="9defe3ee-b8b8-46a3-9a12-2f53755b6ec1_Record_Room" target="p_5_Record_Room"><identifier><text>d</text></identifier></arc><arc id="14735591696_Record_Room" source="p_5_Record_Room" target="a776a30d-20a0-4d96-b514-c664b8b7ea4d_Record_Room"><identifier><text>d</text></identifier></arc><arc id="14735591824_Record_Room" source="a776a30d-20a0-4d96-b514-c664b8b7ea4d_Record_Room" target="p_6_Record_Room"><identifier><text>d</text></identifier></arc><arc id="14735592272_Record_Room" source="p_6_Record_Room" target="acf6c230-3520-4e96-90d6-ba1dbb3204a2_Record_Room"><identifier><text>d</text></identifier></arc><arc id="14735592400_Record_Room" source="acf6c230-3520-4e96-90d6-ba1dbb3204a2_Record_Room" target="p_7_Record_Room"><identifier><text>d</text></identifier></arc><arc id="4307620112_Receptionist_Department" source="p_3_Receptionist_Department" target="bb4e4d1d-e726-4351-b27a-d78baf0c8dfa_Receptionist_Department"><identifier><text>e</text></identifier></arc><arc id="14198760912_Receptionist_Department" source="p_4_Receptionist_Department" target="3dcace2c-5e84-4720-bb27-e7f92adf6cc5_Receptionist_Department"><identifier><text>e</text></identifier></arc><arc id="14012012176_Receptionist_Department" source="8d02a56f-3315-4ce2-a539-a11b6e7fabf4_Receptionist_Department" target="p_3_Receptionist_Department"><identifier><text>e</text></identifier></arc><arc id="14529474768_Receptionist_Department" source="bb4e4d1d-e726-4351-b27a-d78baf0c8dfa_Receptionist_Department" target="p_4_Receptionist_Department"><identifier><text>e</text></identifier></arc><arc id="14674385552_Fever_Out-patient_Department" source="p_4_Fever_Out-patient_Department" target="25261496-1372-498e-b44c-be48b07a3665_Fever_Out-patient_Department"><identifier><text>v</text></identifier></arc><arc id="14674384976_Fever_Out-patient_Department" source="p_3_Fever_Out-patient_Department" target="c1f42572-6458-46eb-a8be-31867c6bf83e_Fever_Out-patient_Department"><identifier><text>v</text></identifier></arc><arc id="14674384528_Fever_Out-patient_Department" source="f2a7e44f-515e-425c-aa35-ca7e0e90f9f8_Fever_Out-patient_Department" target="p_3_Fever_Out-patient_Department"><identifier><text>v</text></identifier></arc><arc id="14674385104_Fever_Out-patient_Department" source="c1f42572-6458-46eb-a8be-31867c6bf83e_Fever_Out-patient_Department" target="p_4_Fever_Out-patient_Department"><identifier><text>v</text></identifier></arc><arc id="14674385680_Fever_Out-patient_Department" source="25261496-1372-498e-b44c-be48b07a3665_Fever_Out-patient_Department" target="p_5_Fever_Out-patient_Department"><identifier><text>v</text></identifier></arc><arc id="14674386192_Fever_Out-patient_Department" source="p_5_Fever_Out-patient_Department" target="145a0a88-fce5-4d03-8b09-2d0580df8d8f_Fever_Out-patient_Department"><identifier><text>v</text></identifier></arc><arc id="14674386320_Fever_Out-patient_Department" source="145a0a88-fce5-4d03-8b09-2d0580df8d8f_Fever_Out-patient_Department" target="p_6_Fever_Out-patient_Department"><identifier><text>v</text></identifier></arc><arc id="14674386576_Fever_Out-patient_Department" source="p_6_Fever_Out-patient_Department" target="58d39857-f55e-4451-a657-2200007998ee_Fever_Out-patient_Department"><identifier><text>v</text></identifier></arc><arc id="14905325328_General_Out-patient_Department" source="fb8a2c4d-e1f7-49d5-a5b1-4dbc670ed8e4_General_Out-patient_Department" target="p_10_General_Out-patient_Department"><identifier><text>z</text></identifier></arc><arc id="14905324048_General_Out-patient_Department" source="054d21c7-2f90-49fa-9191-ffe887dd5421_General_Out-patient_Department" target="p_9_General_Out-patient_Department"><identifier><text>z</text></identifier></arc><arc id="14905325072_General_Out-patient_Department" source="p_9_General_Out-patient_Department" target="fb8a2c4d-e1f7-49d5-a5b1-4dbc670ed8e4_General_Out-patient_Department"><identifier><text>z</text></identifier></arc><arc id="14905322128_General_Out-patient_Department" source="44b9dc0a-1247-48fd-beb6-9e4976bc0596_General_Out-patient_Department" target="p_8_General_Out-patient_Department"><identifier><text>z</text></identifier></arc><arc id="14905323792_General_Out-patient_Department" source="p_4_General_Out-patient_Department" target="054d21c7-2f90-49fa-9191-ffe887dd5421_General_Out-patient_Department"><identifier><text>z</text></identifier></arc><arc id="14905322896_General_Out-patient_Department" source="2c6283c2-f879-46d9-a5bc-f3df9cb6c1e2_General_Out-patient_Department" target="p_4_General_Out-patient_Department"><identifier><text>z</text></identifier></arc><arc id="14905311760_General_Out-patient_Department" source="p_3_General_Out-patient_Department" target="3bca562f-c21a-44b2-be4b-2cc9ca8c4164_General_Out-patient_Department"><identifier><text>z</text></identifier></arc><arc id="14905312912_General_Out-patient_Department" source="3bca562f-c21a-44b2-be4b-2cc9ca8c4164_General_Out-patient_Department" target="p_5_General_Out-patient_Department"><identifier><text>z</text></identifier></arc><arc id="14905319440_General_Out-patient_Department" source="32130f1a-d8ac-4171-9f8a-0f4d928d2d8d_General_Out-patient_Department" target="p_4_General_Out-patient_Department"><identifier><text>z</text></identifier></arc><arc id="14905322640_General_Out-patient_Department" source="p_8_General_Out-patient_Department" target="2c6283c2-f879-46d9-a5bc-f3df9cb6c1e2_General_Out-patient_Department"><identifier><text>z</text></identifier></arc><arc id="14905321872_General_Out-patient_Department" source="p_7_General_Out-patient_Department" target="44b9dc0a-1247-48fd-beb6-9e4976bc0596_General_Out-patient_Department"><identifier><text>z</text></identifier></arc><arc id="14905325968_General_Out-patient_Department" source="p_10_General_Out-patient_Department" target="e435fbb5-16f0-4420-8730-b9e88df319d1_General_Out-patient_Department"><identifier><text>z</text></identifier></arc><arc id="14905321040_General_Out-patient_Department" source="9e89f9a1-d75a-430d-9d9a-5ce2d93b3967_General_Out-patient_Department" target="p_7_General_Out-patient_Department"><identifier><text>z</text></identifier></arc><arc id="14905315664_General_Out-patient_Department" source="bf15845e-c736-4916-8bda-6ddb504a154f_General_Out-patient_Department" target="p_3_General_Out-patient_Department"><identifier><text>z</text></identifier></arc><arc id="14905318864_General_Out-patient_Department" source="p_5_General_Out-patient_Department" target="32130f1a-d8ac-4171-9f8a-0f4d928d2d8d_General_Out-patient_Department"><identifier><text>z</text></identifier></arc><arc id="14905319888_General_Out-patient_Department" source="p_3_General_Out-patient_Department" target="23fdfc08-c462-4074-b548-a09e24832858_General_Out-patient_Department"><identifier><text>z</text></identifier></arc><arc id="14905320016_General_Out-patient_Department" source="23fdfc08-c462-4074-b548-a09e24832858_General_Out-patient_Department" target="p_6_General_Out-patient_Department"><identifier><text>z</text></identifier></arc><arc id="14905320272_General_Out-patient_Department" source="p_6_General_Out-patient_Department" target="fc77cb93-7b7d-413b-bfab-4700a7a2ca5d_General_Out-patient_Department"><identifier><text>z</text></identifier></arc><arc id="14905320400_General_Out-patient_Department" source="fc77cb93-7b7d-413b-bfab-4700a7a2ca5d_General_Out-patient_Department" target="p_4_General_Out-patient_Department"><identifier><text>z</text></identifier></arc><arc id="14905320912_General_Out-patient_Department" source="p_3_General_Out-patient_Department" target="9e89f9a1-d75a-430d-9d9a-5ce2d93b3967_General_Out-patient_Department"><identifier><text>z</text></identifier></arc><arc id="14528426512_Pharmacy_Department" source="p_4_Pharmacy_Department" target="bd4473b5-42fa-4c3f-bfbd-808405816469_Pharmacy_Department"><identifier><text>s</text></identifier></arc><arc id="14528425552_Pharmacy_Department" source="700bb65a-0176-4df1-b064-33caa86155f3_Pharmacy_Department" target="p_3_Pharmacy_Department"><identifier><text>s</text></identifier></arc><arc id="14528426064_Pharmacy_Department" source="p_3_Pharmacy_Department" target="360703c9-90b1-4104-951d-5278c0638961_Pharmacy_Department"><identifier><text>s</text></identifier></arc><arc id="14528426192_Pharmacy_Department" source="360703c9-90b1-4104-951d-5278c0638961_Pharmacy_Department" target="p_4_Pharmacy_Department"><identifier><text>s</text></identifier></arc><arc id="14450927632_Charge_office_Department" source="0678b7fe-691f-4568-a4c2-1b864642cc43_Charge_office_Department" target="p_3_Charge_office_Department"><identifier><text>o</text></identifier></arc><arc id="14450927952_Charge_office_Department" source="p_3_Charge_office_Department" target="c4bb6b46-ecdb-4063-964d-08a9bc814ec9_Charge_office_Department"><identifier><text>o</text></identifier></arc></page></net></pnml>

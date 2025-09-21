@@ -1,0 +1,2708 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<log xes.version="1849-2016" xes.features="nested-attributes" xmlns="http://www.xes-standard.org/">
+	<extension name="Organizational" prefix="org" uri="http://www.xes-standard.org/org.xesext" />
+	<extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext" />
+	<extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext" />
+	<extension name="Identity" prefix="identity" uri="http://www.xes-standard.org/identity.xesext" />
+	<string key="concept:name" value="collog" />
+	<trace>
+		<string key="concept:name" value="case_44" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_48" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:06:46.314000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:06:48.722000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_49" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:06:51.008000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_254" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_273" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:41:28.481000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:41:29.106000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_274" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:41:33.797000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_354" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_386" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:58:54.007000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:58:57.814000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_387" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:59:05.446000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_169" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_172" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:24:49.612000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:24:50.404000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_173" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:24:51.699000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_184" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_184" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:26:31.596000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:26:33.420000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_185" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:26:37.840000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_339" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_371" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:56:47.335000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:56:51.134000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_372" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:56:51.256000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_9" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_5" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T10:59:39.631000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T10:59:40.155000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_6" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T10:59:40.237000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_209" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_216" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:32:15.545000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:32:16.767000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_217" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:32:20.915000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_359" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_393" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:00:06.622000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T12:00:07.160000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_394" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T12:00:09.796000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_189" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_191" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:27:42.221000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:27:44.939000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_192" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:27:48.575000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_29" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_30" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:03:56.606000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:04:01.145000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_31" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:04:05.470000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_314" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_336" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:51:15.756000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:51:16.629000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_337" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:51:18.860000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_459" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_500" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:17:25.734000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T12:17:25.951000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_501" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T12:17:27.998000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_434" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_477" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:13:27.201000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T12:13:31.873000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_478" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T12:13:32.274000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_114" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_113" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:15:40.187000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:15:44.652000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_114" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:15:47.832000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_379" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_418" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:04:30.128000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T12:04:33.097000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_419" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T12:04:36.242000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_39" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_41" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:05:44.761000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:05:47.822000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_42" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:05:51.551000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_389" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_429" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:06:06.919000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T12:06:08.210000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_430" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T12:06:10.515000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_414" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_455" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:09:53.367000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T12:09:53.992000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_456" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T12:09:54.731000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_474" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_515" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:19:48.587000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T12:19:51.483000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_516" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T12:19:51.700000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_109" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_109" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:15:07.964000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:15:11.186000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_110" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:15:15.425000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_404" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_444" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:08:02.066000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T12:08:02.219000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_445" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T12:08:05.463000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_229" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_241" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:35:55.213000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:36:00.806000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_242" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:36:12.656000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_409" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_448" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:08:30.065000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T12:08:34.024000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_449" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T12:08:34.327000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_94" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_94" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:13:16.729000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:13:17.318000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_95" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:13:22.273000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_329" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_357" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:54:32.001000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:54:33.049000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_358" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:54:33.785000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_159" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_158" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:22:23.715000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:22:27.381000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_159" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:22:30.470000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_59" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_63" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:09:08.280000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:09:09.139000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_64" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:09:13.124000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_64" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_67" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:09:36.854000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:09:37.515000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_68" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:09:39.426000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_439" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_481" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:14:01.998000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T12:14:05.069000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_482" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T12:14:09.713000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_399" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_440" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:07:24.567000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T12:07:28.422000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_441" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T12:07:34.225000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_149" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_150" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:21:09.012000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:21:11.484000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_151" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:21:14.258000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_124" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_124" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:17:21.057000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:17:24.149000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_125" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:17:26.566000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_349" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_382" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:58:29.754000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:58:30.210000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_383" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:58:32.778000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_484" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_529" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:21:59.826000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T12:22:04.027000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_530" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T12:22:08.080000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_19" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_16" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:01:26.069000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:01:27.930000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_17" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:01:31.464000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_449" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_492" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:16:04.334000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T12:16:12.934000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_493" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T12:16:15.387000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_139" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_139" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:19:16.078000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:19:19.488000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_140" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:19:20.751000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_49" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_52" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:07:20.292000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:07:24.686000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_53" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:07:28.435000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_259" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_280" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:42:44.751000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:42:45.873000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_281" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:42:47.739000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_249" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_266" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:40:16.415000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:40:21.405000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_267" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:40:25.932000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_74" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_75" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:10:32.638000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:10:34.628000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_76" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:10:39.513000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_469" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_508" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:18:41.223000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T12:18:45.060000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_509" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T12:18:49.255000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_429" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_473" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:12:53.741000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T12:12:57.901000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_474" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T12:13:01.130000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_394" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_436" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:06:57.001000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T12:06:59.182000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_437" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T12:07:01.541000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_69" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_71" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:10:00.261000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:10:01.891000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_72" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:10:03.986000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_334" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_364" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:55:35.802000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:55:40.036000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_365" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:55:41.345000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_479" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_522" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:20:55.811000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T12:20:58.830000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_523" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T12:21:01.658000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_289" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_310" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:47:30.155000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:47:33.236000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_311" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:47:36.951000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_294" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_314" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:48:04.318000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:48:04.857000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_315" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:48:09.592000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_369" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_407" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:02:41.866000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T12:02:46.672000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_408" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T12:02:47.826000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_264" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_284" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:43:15.027000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:43:18.505000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_285" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:43:22.539000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_104" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_105" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:14:35.517000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:14:36.921000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_106" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:14:41.903000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_199" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_205" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:30:33.900000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:30:42.059000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_206" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:30:42.809000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_344" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_378" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:57:54.803000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:58:00.601000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_379" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:58:08.265000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_384" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_425" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:05:39.086000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T12:05:41.042000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_426" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T12:05:41.490000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_244" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_262" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:39:48.657000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:39:49+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_263" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:39:49.159000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_284" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_303" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:46:08.412000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:46:16.359000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_304" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:46:26.750000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_79" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_82" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:11:42.618000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:11:43.092000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_83" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:11:43.295000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_194" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_198" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:29:12.449000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:29:23.718000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_199" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:29:28.108000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_319" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_343" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:52:25.627000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:52:29.831000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_344" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:52:31.700000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_34" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_37" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:05:17.975000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:05:19.227000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_38" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:05:20.671000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_274" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_292" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:44:47.959000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:44:49.316000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_293" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:44:50.980000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_134" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_135" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:18:53.281000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:18:56.419000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_136" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:18:59.957000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_499" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_544" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:24:12.535000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T12:24:14.617000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_545" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T12:24:18.474000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_224" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_234" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:34:42.313000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:34:46.232000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_235" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:34:46.654000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_299" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_318" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:48:38.753000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:48:41.467000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_319" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:48:46.357000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_364" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_400" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:01:27.090000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T12:01:30.469000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_401" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T12:01:35.774000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_454" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_496" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:16:45.924000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T12:16:50.205000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_497" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T12:16:50.950000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_494" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_540" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:23:38.588000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T12:23:42.209000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_541" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T12:23:42.602000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_99" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_98" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:13:48.093000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:13:50.629000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_99" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:13:53.338000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_144" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_146" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:20:33.958000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:20:34.079000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_147" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:20:38.045000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_444" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_485" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:14:42.320000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T12:14:43.648000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_486" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T12:14:45.308000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_374" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_411" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:03:23.355000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T12:03:27.277000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_412" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T12:03:30.735000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_464" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_504" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:18:02.849000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T12:18:04.901000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_505" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T12:18:07.457000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_54" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_56" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:07:56.402000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:07:59.958000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_57" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:08:03.399000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_154" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_154" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:21:49.720000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:21:52.084000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_155" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:21:56.388000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_214" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_223" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:33:23.615000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:33:24.252000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_224" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:33:25.195000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_14" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_9" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:00:15.501000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:00:20.236000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_10" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:00:23.570000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_24" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_23" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:02:44.697000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:02:49.607000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_24" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:02:54.533000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_419" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_459" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:10:27.811000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T12:10:31.458000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_460" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T12:10:33.338000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_129" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_128" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:17:57.669000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:18:00.251000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_129" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:18:01.053000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_239" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_255" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:38:47.220000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:38:47.356000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_256" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:38:49.433000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_324" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_350" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:53:27.746000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:53:33.330000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_351" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:53:36.033000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_119" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_120" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:16:44.041000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:16:49.035000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_121" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:16:49.811000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_204" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_212" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:31:40.622000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:31:44.510000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_213" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:31:46.758000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_164" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_165" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:23:42.936000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:23:44.155000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_166" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:23:47.792000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_279" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_296" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:45:13.830000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:45:14.716000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_297" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:45:14.944000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_269" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_288" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:43:54.109000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:44:00.144000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_289" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:44:03.867000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_234" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_248" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:37:39.858000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:37:44.243000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_249" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:37:45.701000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_174" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_176" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:25:19.994000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:25:24.006000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_177" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:25:25.993000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_179" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_180" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:25:54.803000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:25:59.619000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_181" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:26:04.481000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_219" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_227" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:33:47.453000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:33:48.722000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_228" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:33:52.348000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_309" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_332" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:50:45.229000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:50:46.824000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_333" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:50:47.141000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_489" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_533" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:22:41.694000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T12:22:44.682000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_534" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T12:22:47.299000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_424" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_466" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T12:11:47.151000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T12:11:55.436000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_467" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T12:11:56.945000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_304" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_325" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:49:35.135000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:49:37.604000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_326" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:49:39.145000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_84" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_86" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:12:06.375000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:12:08.797000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_87" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:12:09.871000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_4" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_1" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T10:59:16.880000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T10:59:16.972000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_2" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T10:59:21.575000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_89" />
+		<event>
+			<string key="msgInstanceID" value="blood sample_90" />
+			<string key="msgRole" value="receive" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Receive blood sample" />
+			<string key="eventType" value="start" />
+			<date key="time:timestamp" value="2021-06-17T11:12:39.901000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="blood sample" />
+		</event>
+		<event>
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Analyse blood sample" />
+			<date key="time:timestamp" value="2021-06-17T11:12:41.372000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceID" value="results_91" />
+			<string key="msgRole" value="send" />
+			<string key="org:group" value="Laboratory" />
+			<string key="concept:name" value="Send results" />
+			<date key="time:timestamp" value="2021-06-17T11:12:45.351000+00:00" />
+			<string key="msgProtocol" value="P2P" />
+			<string key="msgName" value="results" />
+		</event>
+	</trace>
+</log>

@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml><net id="composed_real4_collectivelog" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel"><name><text>composed_real4_collectivelog</text></name><page id="composed_page"><place id="p_5_Visitor"><name>
+          <text>p_5</text>
+        </name>
+      <type><text>Visitor</text></type></place><place id="p_4_Visitor"><name>
+          <text>p_4</text>
+        </name>
+      <type><text>Visitor</text></type></place><place id="p_3_Visitor"><name>
+          <text>p_3</text>
+        </name>
+      <type><text>Visitor</text></type></place><place id="p_6_Visitor"><name>
+          <text>p_6</text>
+        </name>
+      <type><text>Visitor</text></type></place><place id="p_7_Visitor"><name>
+          <text>p_7</text>
+        </name>
+      <type><text>Visitor</text></type></place><place id="p_19_Zoo"><name>
+          <text>p_19</text>
+        </name>
+      <type><text>Zoo</text></type></place><place id="p_12_Zoo"><name>
+          <text>p_12</text>
+        </name>
+      <type><text>Zoo</text></type></place><place id="p_6_Zoo"><name>
+          <text>p_6</text>
+        </name>
+      <type><text>Zoo</text></type></place><place id="p_7_Zoo"><name>
+          <text>p_7</text>
+        </name>
+      <type><text>Zoo</text></type></place><place id="p_8_Zoo"><name>
+          <text>p_8</text>
+        </name>
+      <type><text>Zoo</text></type></place><place id="p_9_Zoo"><name>
+          <text>p_9</text>
+        </name>
+      <type><text>Zoo</text></type></place><place id="p_10_Zoo"><name>
+          <text>p_10</text>
+        </name>
+      <type><text>Zoo</text></type></place><place id="p_16_Zoo"><name>
+          <text>p_16</text>
+        </name>
+      <type><text>Zoo</text></type></place><place id="p_13_Zoo"><name>
+          <text>p_13</text>
+        </name>
+      <type><text>Zoo</text></type></place><place id="p_18_Zoo"><name>
+          <text>p_18</text>
+        </name>
+      <type><text>Zoo</text></type></place><place id="p_5_Zoo"><name>
+          <text>p_5</text>
+        </name>
+      <type><text>Zoo</text></type></place><place id="p_3_Zoo"><name>
+          <text>p_3</text>
+        </name>
+      <type><text>Zoo</text></type></place><place id="p_11_Zoo"><name>
+          <text>p_11</text>
+        </name>
+      <type><text>Zoo</text></type></place><place id="p_17_Zoo"><name>
+          <text>p_17</text>
+        </name>
+      <type><text>Zoo</text></type></place><place id="p_3_Bank"><name>
+          <text>p_3</text>
+        </name>
+      <type><text>Bank</text></type></place><place id="p_4_Bank"><name>
+          <text>p_4</text>
+        </name>
+      <type><text>Bank</text></type></place><transition id="fdca768a-f549-40b3-b8d0-cf10ba75e68d_Visitor"><name>
+          <text>Decide individual or family ticket</text>
+        </name>
+      </transition><transition id="1896010e-d63f-4ec7-9449-f3ec555d68b9_Visitor"><name>
+          <text>Wait for card</text>
+        </name>
+      </transition><transition id="c362d39a-7498-41a3-8cc4-f125481eeea1_Visitor"><name>
+          <text>Send information to the ZooClub department</text>
+        </name>
+      </transition><transition id="ae666a17-143c-4d99-b023-9cb20551367b_Visitor"><name>
+          <text>Prepare family's information</text>
+        </name>
+      </transition><transition id="e7dff9cf-ed26-4f08-8fb7-1831601b71ea_Visitor"><name>
+          <text>Prepare personal information</text>
+        </name>
+      </transition><transition id="1aa8bfbe-c373-4039-8cb1-f8739ea9ba13_Visitor"><name>
+          <text>Card received?</text>
+        </name>
+      </transition><transition id="48bd8039-f9c5-4f0c-8955-20217f9f0ad0_Visitor"><name>
+          <text>Go home</text>
+        </name>
+      </transition><transition id="4cc6163a-0d35-4bb5-b0dc-b79df72db7ad_Zoo"><name>
+          <text>Payment confirmed</text>
+        </name>
+      </transition><transition id="25a5e908-fc50-4eef-afa7-93b55fa66857_Zoo"><name>
+          <text>Mail ZooClub magazine</text>
+        </name>
+      </transition><transition id="a7fd3987-3cc6-4071-8859-fa234aa197e6_Zoo"><name>
+          <text>Receive visitor information</text>
+        </name>
+      </transition><transition id="tauJoin_2_Zoo"><name>
+          <text>tauJoin_2</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="a8002a6a-9be0-4860-aa14-ad48076a8219" />
+      </transition><transition id="90134167-0440-4f50-a2bb-e1e7f81ce883_Zoo"><name>
+          <text>Send request to billing department </text>
+        </name>
+      </transition><transition id="419cb399-7ff5-4f43-87a9-1d3e888c92f9_Zoo"><name>
+          <text>Enter customer data into the system</text>
+        </name>
+      </transition><transition id="debb3418-5590-40f5-b994-67da960c19ba_Zoo"><name>
+          <text>Send payment request</text>
+        </name>
+      </transition><transition id="703e1b61-1529-4cfe-b43d-7b9b26243b35_Zoo"><name>
+          <text>Wait fot payment </text>
+        </name>
+      </transition><transition id="f97f3930-e138-4e5c-a9e9-a4f5f502489b_Zoo"><name>
+          <text>Deliver Zooclub card</text>
+        </name>
+      </transition><transition id="b12601ec-5f64-4b31-84e7-c06d6ab029eb_Zoo"><name>
+          <text>Forward information to making department</text>
+        </name>
+      </transition><transition id="c2aa44c0-30f7-4a45-b500-f4aa69694b04_Bank"><name>
+          <text>Receive payment request</text>
+        </name>
+      </transition><transition id="ed358f2a-6aec-4727-bb7b-9521b8d496c6_Bank"><name>
+          <text>Change account</text>
+        </name>
+      </transition><transition id="cc104805-de37-418f-8fd1-aa0e93694acf_Bank"><name>
+          <text>Process payment information</text>
+        </name>
+      </transition><arc id="4889917072_Visitor" source="p_6_Visitor" target="1aa8bfbe-c373-4039-8cb1-f8739ea9ba13_Visitor"><identifier><text>v</text></identifier></arc><arc id="4889917200_Visitor" source="1aa8bfbe-c373-4039-8cb1-f8739ea9ba13_Visitor" target="p_7_Visitor"><identifier><text>v</text></identifier></arc><arc id="4889912912_Visitor" source="e7dff9cf-ed26-4f08-8fb7-1831601b71ea_Visitor" target="p_4_Visitor"><identifier><text>v</text></identifier></arc><arc id="4889913168_Visitor" source="p_3_Visitor" target="e7dff9cf-ed26-4f08-8fb7-1831601b71ea_Visitor"><identifier><text>v</text></identifier></arc><arc id="4889912272_Visitor" source="p_3_Visitor" target="ae666a17-143c-4d99-b023-9cb20551367b_Visitor"><identifier><text>v</text></identifier></arc><arc id="4854081232_Visitor" source="fdca768a-f549-40b3-b8d0-cf10ba75e68d_Visitor" target="p_3_Visitor"><identifier><text>v</text></identifier></arc><arc id="4889912016_Visitor" source="ae666a17-143c-4d99-b023-9cb20551367b_Visitor" target="p_4_Visitor"><identifier><text>v</text></identifier></arc><arc id="4889915920_Visitor" source="p_4_Visitor" target="c362d39a-7498-41a3-8cc4-f125481eeea1_Visitor"><identifier><text>v</text></identifier></arc><arc id="4889916048_Visitor" source="c362d39a-7498-41a3-8cc4-f125481eeea1_Visitor" target="p_5_Visitor"><identifier><text>v</text></identifier></arc><arc id="4889916496_Visitor" source="p_5_Visitor" target="1896010e-d63f-4ec7-9449-f3ec555d68b9_Visitor"><identifier><text>v</text></identifier></arc><arc id="4889916624_Visitor" source="1896010e-d63f-4ec7-9449-f3ec555d68b9_Visitor" target="p_6_Visitor"><identifier><text>v</text></identifier></arc><arc id="4889917456_Visitor" source="p_7_Visitor" target="48bd8039-f9c5-4f0c-8955-20217f9f0ad0_Visitor"><identifier><text>v</text></identifier></arc><arc id="4890808272_Zoo" source="p_16_Zoo" target="4cc6163a-0d35-4bb5-b0dc-b79df72db7ad_Zoo"><identifier><text>t</text></identifier></arc><arc id="4890738448_Zoo" source="p_10_Zoo" target="tauJoin_2_Zoo"><identifier><text>t</text></identifier></arc><arc id="4890810640_Zoo" source="p_19_Zoo" target="tauJoin_2_Zoo"><identifier><text>t</text></identifier></arc><arc id="4890735504_Zoo" source="debb3418-5590-40f5-b994-67da960c19ba_Zoo" target="p_8_Zoo"><identifier><text>t</text></identifier></arc><arc id="4890810512_Zoo" source="p_17_Zoo" target="tauJoin_2_Zoo"><identifier><text>t</text></identifier></arc><arc id="4890810384_Zoo" source="b12601ec-5f64-4b31-84e7-c06d6ab029eb_Zoo" target="p_18_Zoo"><identifier><text>t</text></identifier></arc><arc id="4890730256_Zoo" source="p_6_Zoo" target="tauJoin_2_Zoo"><identifier><text>t</text></identifier></arc><arc id="4890736400_Zoo" source="p_5_Zoo" target="90134167-0440-4f50-a2bb-e1e7f81ce883_Zoo"><identifier><text>t</text></identifier></arc><arc id="4890735632_Zoo" source="90134167-0440-4f50-a2bb-e1e7f81ce883_Zoo" target="p_6_Zoo"><identifier><text>t</text></identifier></arc><arc id="4890809616_Zoo" source="b12601ec-5f64-4b31-84e7-c06d6ab029eb_Zoo" target="p_16_Zoo"><identifier><text>t</text></identifier></arc><arc id="4890806544_Zoo" source="p_13_Zoo" target="b12601ec-5f64-4b31-84e7-c06d6ab029eb_Zoo"><identifier><text>t</text></identifier></arc><arc id="4890808400_Zoo" source="4cc6163a-0d35-4bb5-b0dc-b79df72db7ad_Zoo" target="p_17_Zoo"><identifier><text>t</text></identifier></arc><arc id="4890805072_Zoo" source="p_12_Zoo" target="tauJoin_2_Zoo"><identifier><text>t</text></identifier></arc><arc id="4890809296_Zoo" source="p_18_Zoo" target="25a5e908-fc50-4eef-afa7-93b55fa66857_Zoo"><identifier><text>t</text></identifier></arc><arc id="4890805328_Zoo" source="p_11_Zoo" target="f97f3930-e138-4e5c-a9e9-a4f5f502489b_Zoo"><identifier><text>t</text></identifier></arc><arc id="4890809424_Zoo" source="25a5e908-fc50-4eef-afa7-93b55fa66857_Zoo" target="p_19_Zoo"><identifier><text>t</text></identifier></arc><arc id="4890805456_Zoo" source="f97f3930-e138-4e5c-a9e9-a4f5f502489b_Zoo" target="p_12_Zoo"><identifier><text>t</text></identifier></arc><arc id="4890809936_Zoo" source="419cb399-7ff5-4f43-87a9-1d3e888c92f9_Zoo" target="p_13_Zoo"><identifier><text>t</text></identifier></arc><arc id="4890810064_Zoo" source="419cb399-7ff5-4f43-87a9-1d3e888c92f9_Zoo" target="p_11_Zoo"><identifier><text>t</text></identifier></arc><arc id="4890810192_Zoo" source="419cb399-7ff5-4f43-87a9-1d3e888c92f9_Zoo" target="p_9_Zoo"><identifier><text>t</text></identifier></arc><arc id="4890728016_Zoo" source="p_7_Zoo" target="debb3418-5590-40f5-b994-67da960c19ba_Zoo"><identifier><text>t</text></identifier></arc><arc id="4890809808_Zoo" source="419cb399-7ff5-4f43-87a9-1d3e888c92f9_Zoo" target="p_7_Zoo"><identifier><text>t</text></identifier></arc><arc id="4890804432_Zoo" source="703e1b61-1529-4cfe-b43d-7b9b26243b35_Zoo" target="p_10_Zoo"><identifier><text>t</text></identifier></arc><arc id="4890731600_Zoo" source="p_3_Zoo" target="419cb399-7ff5-4f43-87a9-1d3e888c92f9_Zoo"><identifier><text>t</text></identifier></arc><arc id="4890809680_Zoo" source="419cb399-7ff5-4f43-87a9-1d3e888c92f9_Zoo" target="p_5_Zoo"><identifier><text>t</text></identifier></arc><arc id="4890737616_Zoo" source="a7fd3987-3cc6-4071-8859-fa234aa197e6_Zoo" target="p_3_Zoo"><identifier><text>t</text></identifier></arc><arc id="4890804304_Zoo" source="p_9_Zoo" target="703e1b61-1529-4cfe-b43d-7b9b26243b35_Zoo"><identifier><text>t</text></identifier></arc><arc id="4890729936_Zoo" source="p_8_Zoo" target="tauJoin_2_Zoo"><identifier><text>t</text></identifier></arc><arc id="4890704336_Bank" source="p_4_Bank" target="ed358f2a-6aec-4727-bb7b-9521b8d496c6_Bank"><identifier><text>f</text></identifier></arc><arc id="4890704720_Bank" source="c2aa44c0-30f7-4a45-b500-f4aa69694b04_Bank" target="p_3_Bank"><identifier><text>f</text></identifier></arc><arc id="4890705552_Bank" source="p_3_Bank" target="cc104805-de37-418f-8fd1-aa0e93694acf_Bank"><identifier><text>f</text></identifier></arc><arc id="4890705872_Bank" source="cc104805-de37-418f-8fd1-aa0e93694acf_Bank" target="p_4_Bank"><identifier><text>f</text></identifier></arc></page></net></pnml>

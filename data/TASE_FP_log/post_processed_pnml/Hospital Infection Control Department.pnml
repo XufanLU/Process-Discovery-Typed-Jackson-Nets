@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_1758457275.494911" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1758457275.494911</text>
+    </name>
+    <page id="n0">
+      <place id="p_4">
+        <name>
+          <text>p_4</text>
+        </name>
+      <type><text>Hospital Infection Control Department</text></type></place>
+      <place id="p_3">
+        <name>
+          <text>p_3</text>
+        </name>
+      <type><text>Hospital Infection Control Department</text></type></place>
+      <transition id="37d96bbf-a0d8-49ca-9965-32910e42aa14">
+        <name>
+          <text>F18</text>
+        </name>
+      </transition>
+      <transition id="a531f726-fe62-4385-bc21-de7cc3621c58">
+        <name>
+          <text>F20</text>
+        </name>
+      </transition>
+      <transition id="a1668018-9dfe-4083-89f0-eb734a9f968b">
+        <name>
+          <text>F19</text>
+        </name>
+      </transition>
+      <arc id="14456630544" source="37d96bbf-a0d8-49ca-9965-32910e42aa14" target="p_3"><identifier><text>v</text></identifier></arc>
+      <arc id="14456631056" source="p_3" target="a1668018-9dfe-4083-89f0-eb734a9f968b"><identifier><text>v</text></identifier></arc>
+      <arc id="14456631184" source="a1668018-9dfe-4083-89f0-eb734a9f968b" target="p_4"><identifier><text>v</text></identifier></arc>
+      <arc id="14456631504" source="p_4" target="a531f726-fe62-4385-bc21-de7cc3621c58"><identifier><text>v</text></identifier></arc>
+      </page>
+    </net>
+</pnml>

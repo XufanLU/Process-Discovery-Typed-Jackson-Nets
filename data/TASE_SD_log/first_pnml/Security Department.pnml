@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_1758457635.949107" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1758457635.949107</text>
+    </name>
+    <page id="n0">
+      <place id="source">
+        <name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      <type><text>Security Department</text></type></place>
+      <place id="sink">
+        <name>
+          <text>sink</text>
+        </name>
+      <type><text>Security Department</text></type></place>
+      <place id="p_5">
+        <name>
+          <text>p_5</text>
+        </name>
+      <type><text>Security Department</text></type></place>
+      <place id="p_6">
+        <name>
+          <text>p_6</text>
+        </name>
+      <type><text>Security Department</text></type></place>
+      <place id="p_7">
+        <name>
+          <text>p_7</text>
+        </name>
+      <type><text>Security Department</text></type></place>
+      <place id="p_8">
+        <name>
+          <text>p_8</text>
+        </name>
+      <type><text>Security Department</text></type></place>
+      <place id="p_9">
+        <name>
+          <text>p_9</text>
+        </name>
+      <type><text>Security Department</text></type></place>
+      <place id="p_10">
+        <name>
+          <text>p_10</text>
+        </name>
+      <type><text>Security Department</text></type></place>
+      <place id="p_11">
+        <name>
+          <text>p_11</text>
+        </name>
+      <type><text>Security Department</text></type></place>
+      <transition id="fba02b10-a9e8-4955-ae46-6e2d90775c8a">
+        <name>
+          <text>s7</text>
+        </name>
+      </transition>
+      <transition id="e852c041-0d2a-466f-b794-d2927b9a02af">
+        <name>
+          <text>s8</text>
+        </name>
+      </transition>
+      <transition id="f0134398-725b-4ed6-8568-12f1aa6cadb9">
+        <name>
+          <text>s9</text>
+        </name>
+      </transition>
+      <transition id="497ed34f-5f1f-483f-9969-61cce8b2c22e">
+        <name>
+          <text>s10</text>
+        </name>
+      </transition>
+      <transition id="2d30b8c3-d873-48e8-b552-68361800b53e">
+        <name>
+          <text>s11</text>
+        </name>
+      </transition>
+      <transition id="c2869265-f122-4055-82c0-33229a6d4c8d">
+        <name>
+          <text>s12</text>
+        </name>
+      </transition>
+      <transition id="c677d3f4-7720-4764-802d-4a7e835ed0c2">
+        <name>
+          <text>s13</text>
+        </name>
+      </transition>
+      <arc id="14872842512" source="c2869265-f122-4055-82c0-33229a6d4c8d" target="p_11"><identifier><text>w</text></identifier></arc>
+      <arc id="14872840848" source="497ed34f-5f1f-483f-9969-61cce8b2c22e" target="p_10"><identifier><text>w</text></identifier></arc>
+      <arc id="14814658064" source="source" target="fba02b10-a9e8-4955-ae46-6e2d90775c8a"><identifier><text>w</text></identifier></arc>
+      <arc id="14872841232" source="fba02b10-a9e8-4955-ae46-6e2d90775c8a" target="p_5"><identifier><text>w</text></identifier></arc>
+      <arc id="14872845072" source="f0134398-725b-4ed6-8568-12f1aa6cadb9" target="p_6"><identifier><text>w</text></identifier></arc>
+      <arc id="14872854416" source="p_8" target="c2869265-f122-4055-82c0-33229a6d4c8d"><identifier><text>w</text></identifier></arc>
+      <arc id="14872848400" source="p_11" target="c677d3f4-7720-4764-802d-4a7e835ed0c2"><identifier><text>w</text></identifier></arc>
+      <arc id="14872839568" source="p_10" target="2d30b8c3-d873-48e8-b552-68361800b53e"><identifier><text>w</text></identifier></arc>
+      <arc id="14872840016" source="c677d3f4-7720-4764-802d-4a7e835ed0c2" target="sink"><identifier><text>w</text></identifier></arc>
+      <arc id="14872842832" source="e852c041-0d2a-466f-b794-d2927b9a02af" target="p_9"><identifier><text>w</text></identifier></arc>
+      <arc id="14872840528" source="2d30b8c3-d873-48e8-b552-68361800b53e" target="p_8"><identifier><text>w</text></identifier></arc>
+      <arc id="14872853456" source="p_5" target="f0134398-725b-4ed6-8568-12f1aa6cadb9"><identifier><text>w</text></identifier></arc>
+      <arc id="14872848848" source="fba02b10-a9e8-4955-ae46-6e2d90775c8a" target="p_7"><identifier><text>w</text></identifier></arc>
+      <arc id="14872845520" source="p_9" target="497ed34f-5f1f-483f-9969-61cce8b2c22e"><identifier><text>w</text></identifier></arc>
+      <arc id="14872853200" source="p_6" target="c2869265-f122-4055-82c0-33229a6d4c8d"><identifier><text>w</text></identifier></arc>
+      <arc id="14872839632" source="p_7" target="e852c041-0d2a-466f-b794-d2927b9a02af"><identifier><text>w</text></identifier></arc>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink">
+          <text>1</text>
+        <type><text>Security Department</text></type></place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_1758219715.664799" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1758219715.664799</text>
+    </name>
+    <page id="n0">
+      <place id="p_11">
+        <name>
+          <text>p_11</text>
+        </name>
+      <type><text>Gynecologist</text></type></place>
+      <place id="source">
+        <name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      <type><text>Gynecologist</text></type></place>
+      <place id="p_4">
+        <name>
+          <text>p_4</text>
+        </name>
+      <type><text>Gynecologist</text></type></place>
+      <place id="sink">
+        <name>
+          <text>sink</text>
+        </name>
+      <type><text>Gynecologist</text></type></place>
+      <place id="p_5">
+        <name>
+          <text>p_5</text>
+        </name>
+      <type><text>Gynecologist</text></type></place>
+      <place id="p_6">
+        <name>
+          <text>p_6</text>
+        </name>
+      <type><text>Gynecologist</text></type></place>
+      <place id="p_7">
+        <name>
+          <text>p_7</text>
+        </name>
+      <type><text>Gynecologist</text></type></place>
+      <place id="p_8">
+        <name>
+          <text>p_8</text>
+        </name>
+      <type><text>Gynecologist</text></type></place>
+      <place id="p_9">
+        <name>
+          <text>p_9</text>
+        </name>
+      <type><text>Gynecologist</text></type></place>
+      <place id="p_10">
+        <name>
+          <text>p_10</text>
+        </name>
+      <type><text>Gynecologist</text></type></place>
+      <place id="p_12">
+        <name>
+          <text>p_12</text>
+        </name>
+      <type><text>Gynecologist</text></type></place>
+      <transition id="9fe08c30-7232-486c-99cb-94d16b8d0421">
+        <name>
+          <text>Forward patient analysis results</text>
+        </name>
+      </transition>
+      <transition id="8da04139-5f14-4f7f-a3c1-fb1e67f3f017">
+        <name>
+          <text>Receive disease info</text>
+        </name>
+      </transition>
+      <transition id="tauJoin_2">
+        <name>
+          <text>tauJoin_2</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="e75807f6-9ed1-43e2-8733-5a171db262b5" />
+      </transition>
+      <transition id="387dc1a2-ef12-44e0-951a-e44490855e68">
+        <name>
+          <text>Blood draw</text>
+        </name>
+      </transition>
+      <transition id="e1284e5d-3ac4-4a71-9f77-54566d81ccaa">
+        <name>
+          <text>Examine patient</text>
+        </name>
+      </transition>
+      <transition id="a2f75240-8fd5-4e88-a500-fd1b75daf150">
+        <name>
+          <text>Send blood sample</text>
+        </name>
+      </transition>
+      <transition id="7c3ac220-f838-4d05-a691-006b2d73dcd8">
+        <name>
+          <text>Receive blood analysis results</text>
+        </name>
+      </transition>
+      <transition id="8bba006a-21d2-4e5c-bbc5-f28d1c92705c">
+        <name>
+          <text>Send prescription</text>
+        </name>
+      </transition>
+      <transition id="03f78816-2208-4c91-a61a-bff88ca7a7fd">
+        <name>
+          <text>Communicate the need to hospitalise</text>
+        </name>
+      </transition>
+      <transition id="6ceb7064-3e48-4693-b3da-dee8006d7594">
+        <name>
+          <text>Require patient admission</text>
+        </name>
+      </transition>
+      <arc id="5153896720" source="p_4" target="8bba006a-21d2-4e5c-bbc5-f28d1c92705c"><identifier><text>x</text></identifier></arc>
+      <arc id="5153895312" source="p_7" target="387dc1a2-ef12-44e0-951a-e44490855e68"><identifier><text>x</text></identifier></arc>
+      <arc id="5153895440" source="387dc1a2-ef12-44e0-951a-e44490855e68" target="p_9"><identifier><text>x</text></identifier></arc>
+      <arc id="5153896848" source="8bba006a-21d2-4e5c-bbc5-f28d1c92705c" target="sink"><identifier><text>x</text></identifier></arc>
+      <arc id="5153897872" source="p_11" target="6ceb7064-3e48-4693-b3da-dee8006d7594"><identifier><text>x</text></identifier></arc>
+      <arc id="5153898000" source="6ceb7064-3e48-4693-b3da-dee8006d7594" target="p_12"><identifier><text>x</text></identifier></arc>
+      <arc id="5153898256" source="p_12" target="9fe08c30-7232-486c-99cb-94d16b8d0421"><identifier><text>x</text></identifier></arc>
+      <arc id="5153931600" source="8da04139-5f14-4f7f-a3c1-fb1e67f3f017" target="p_7"><identifier><text>x</text></identifier></arc>
+      <arc id="5153894864" source="p_8" target="tauJoin_2"><identifier><text>x</text></identifier></arc>
+      <arc id="5153895888" source="p_9" target="a2f75240-8fd5-4e88-a500-fd1b75daf150"><identifier><text>x</text></identifier></arc>
+      <arc id="5153898384" source="9fe08c30-7232-486c-99cb-94d16b8d0421" target="sink"><identifier><text>x</text></identifier></arc>
+      <arc id="5153896016" source="a2f75240-8fd5-4e88-a500-fd1b75daf150" target="p_10"><identifier><text>x</text></identifier></arc>
+      <arc id="5153896272" source="p_10" target="7c3ac220-f838-4d05-a691-006b2d73dcd8"><identifier><text>x</text></identifier></arc>
+      <arc id="5153897296" source="p_4" target="03f78816-2208-4c91-a61a-bff88ca7a7fd"><identifier><text>x</text></identifier></arc>
+      <arc id="5153896400" source="7c3ac220-f838-4d05-a691-006b2d73dcd8" target="p_8"><identifier><text>x</text></identifier></arc>
+      <arc id="5153889744" source="source" target="8da04139-5f14-4f7f-a3c1-fb1e67f3f017"><identifier><text>x</text></identifier></arc>
+      <arc id="5153893200" source="tauJoin_2" target="p_4"><identifier><text>x</text></identifier></arc>
+      <arc id="5153931472" source="8da04139-5f14-4f7f-a3c1-fb1e67f3f017" target="p_5"><identifier><text>x</text></identifier></arc>
+      <arc id="5153893840" source="p_6" target="tauJoin_2"><identifier><text>x</text></identifier></arc>
+      <arc id="5153894096" source="p_5" target="e1284e5d-3ac4-4a71-9f77-54566d81ccaa"><identifier><text>x</text></identifier></arc>
+      <arc id="5153894224" source="e1284e5d-3ac4-4a71-9f77-54566d81ccaa" target="p_6"><identifier><text>x</text></identifier></arc>
+      <arc id="5153897424" source="03f78816-2208-4c91-a61a-bff88ca7a7fd" target="p_11"><identifier><text>x</text></identifier></arc>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink">
+          <text>1</text>
+        <type><text>Gynecologist</text></type></place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_1758219847.968886" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1758219847.968886</text>
+    </name>
+    <page id="n0">
+      <place id="source">
+        <name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      <type><text>PartyA</text></type></place>
+      <place id="p_5">
+        <name>
+          <text>p_5</text>
+        </name>
+      <type><text>PartyA</text></type></place>
+      <place id="p_4">
+        <name>
+          <text>p_4</text>
+        </name>
+      <type><text>PartyA</text></type></place>
+      <place id="p_3">
+        <name>
+          <text>p_3</text>
+        </name>
+      <type><text>PartyA</text></type></place>
+      <place id="sink">
+        <name>
+          <text>sink</text>
+        </name>
+      <type><text>PartyA</text></type></place>
+      <place id="p_6">
+        <name>
+          <text>p_6</text>
+        </name>
+      <type><text>PartyA</text></type></place>
+      <transition id="e8c22966-ca2b-4ad7-b8e2-680f2b484393">
+        <name>
+          <text>Activity A</text>
+        </name>
+      </transition>
+      <transition id="92185044-da3b-4e77-8db4-5a504f70bb7b">
+        <name>
+          <text>Activity B</text>
+        </name>
+      </transition>
+      <transition id="3cfec8f4-dcbc-472f-808d-b6da47bdec8b">
+        <name>
+          <text>Activity D</text>
+        </name>
+      </transition>
+      <transition id="ce70e289-3fec-4e0d-9741-2efd71819e8d">
+        <name>
+          <text>Activity E</text>
+        </name>
+      </transition>
+      <transition id="635861cc-b347-470f-8047-2567cfa24d54">
+        <name>
+          <text>Activity C</text>
+        </name>
+      </transition>
+      <transition id="85c701f1-5aa6-40c5-8d2f-fe48c65553ab">
+        <name>
+          <text>Activity F</text>
+        </name>
+      </transition>
+      <arc id="4930685648" source="p_6" target="85c701f1-5aa6-40c5-8d2f-fe48c65553ab"><identifier><text>x</text></identifier></arc>
+      <arc id="4930685776" source="85c701f1-5aa6-40c5-8d2f-fe48c65553ab" target="sink"><identifier><text>x</text></identifier></arc>
+      <arc id="4930878032" source="source" target="e8c22966-ca2b-4ad7-b8e2-680f2b484393"><identifier><text>x</text></identifier></arc>
+      <arc id="4930683920" source="p_3" target="635861cc-b347-470f-8047-2567cfa24d54"><identifier><text>x</text></identifier></arc>
+      <arc id="4930683472" source="p_3" target="3cfec8f4-dcbc-472f-808d-b6da47bdec8b"><identifier><text>x</text></identifier></arc>
+      <arc id="4930683024" source="e8c22966-ca2b-4ad7-b8e2-680f2b484393" target="p_3"><identifier><text>x</text></identifier></arc>
+      <arc id="4930683600" source="3cfec8f4-dcbc-472f-808d-b6da47bdec8b" target="p_4"><identifier><text>x</text></identifier></arc>
+      <arc id="4930684048" source="635861cc-b347-470f-8047-2567cfa24d54" target="p_4"><identifier><text>x</text></identifier></arc>
+      <arc id="4930684560" source="p_4" target="92185044-da3b-4e77-8db4-5a504f70bb7b"><identifier><text>x</text></identifier></arc>
+      <arc id="4930684688" source="92185044-da3b-4e77-8db4-5a504f70bb7b" target="p_5"><identifier><text>x</text></identifier></arc>
+      <arc id="4930685200" source="p_5" target="ce70e289-3fec-4e0d-9741-2efd71819e8d"><identifier><text>x</text></identifier></arc>
+      <arc id="4930685328" source="ce70e289-3fec-4e0d-9741-2efd71819e8d" target="p_6"><identifier><text>x</text></identifier></arc>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink">
+          <text>1</text>
+        <type><text>PartyA</text></type></place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

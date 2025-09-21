@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_1758220346.285698" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1758220346.285698</text>
+    </name>
+    <page id="n0">
+      <place id="source">
+        <name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      <type><text>Rex</text></type></place>
+      <place id="p_4">
+        <name>
+          <text>p_4</text>
+        </name>
+      <type><text>Rex</text></type></place>
+      <place id="p_3">
+        <name>
+          <text>p_3</text>
+        </name>
+      <type><text>Rex</text></type></place>
+      <place id="sink">
+        <name>
+          <text>sink</text>
+        </name>
+      <type><text>Rex</text></type></place>
+      <transition id="cbe499a2-3bc7-4f5b-9b00-c1770718134c">
+        <name>
+          <text>Rex_Explore</text>
+        </name>
+      </transition>
+      <transition id="a4b01582-5865-4f4e-be3e-3353f99efafb">
+        <name>
+          <text>Rex_target_found</text>
+        </name>
+      </transition>
+      <transition id="5632af3e-6046-4d5f-921e-8918636d98a8">
+        <name>
+          <text>Rex_done</text>
+        </name>
+      </transition>
+      <arc id="4959936784" source="source" target="cbe499a2-3bc7-4f5b-9b00-c1770718134c"><identifier><text>n</text></identifier></arc>
+      <arc id="5134766032" source="p_4" target="5632af3e-6046-4d5f-921e-8918636d98a8"><identifier><text>n</text></identifier></arc>
+      <arc id="5134764880" source="cbe499a2-3bc7-4f5b-9b00-c1770718134c" target="p_3"><identifier><text>n</text></identifier></arc>
+      <arc id="5134765648" source="p_3" target="a4b01582-5865-4f4e-be3e-3353f99efafb"><identifier><text>n</text></identifier></arc>
+      <arc id="5134765776" source="a4b01582-5865-4f4e-be3e-3353f99efafb" target="p_4"><identifier><text>n</text></identifier></arc>
+      <arc id="5134766160" source="5632af3e-6046-4d5f-921e-8918636d98a8" target="sink"><identifier><text>n</text></identifier></arc>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink">
+          <text>1</text>
+        <type><text>Rex</text></type></place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

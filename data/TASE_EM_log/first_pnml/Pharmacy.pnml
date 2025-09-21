@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_1758450282.817684" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1758450282.817684</text>
+    </name>
+    <page id="n0">
+      <place id="source">
+        <name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      <type><text>Pharmacy</text></type></place>
+      <place id="p_4">
+        <name>
+          <text>p_4</text>
+        </name>
+      <type><text>Pharmacy</text></type></place>
+      <place id="p_3">
+        <name>
+          <text>p_3</text>
+        </name>
+      <type><text>Pharmacy</text></type></place>
+      <place id="sink">
+        <name>
+          <text>sink</text>
+        </name>
+      <type><text>Pharmacy</text></type></place>
+      <transition id="b0a93064-b729-47e5-b91b-a5a871cca569">
+        <name>
+          <text>t13</text>
+        </name>
+      </transition>
+      <transition id="d6d48f24-d54f-4bac-8091-51aa141ecc2b">
+        <name>
+          <text>t15</text>
+        </name>
+      </transition>
+      <transition id="8b1e3364-dfc3-4504-a426-47b6b05c9b99">
+        <name>
+          <text>t14</text>
+        </name>
+      </transition>
+      <arc id="13888134224" source="source" target="b0a93064-b729-47e5-b91b-a5a871cca569"><identifier><text>e</text></identifier></arc>
+      <arc id="13888134864" source="p_3" target="8b1e3364-dfc3-4504-a426-47b6b05c9b99"><identifier><text>e</text></identifier></arc>
+      <arc id="13888134992" source="8b1e3364-dfc3-4504-a426-47b6b05c9b99" target="p_4"><identifier><text>e</text></identifier></arc>
+      <arc id="13888135312" source="p_4" target="d6d48f24-d54f-4bac-8091-51aa141ecc2b"><identifier><text>e</text></identifier></arc>
+      <arc id="13888134352" source="b0a93064-b729-47e5-b91b-a5a871cca569" target="p_3"><identifier><text>e</text></identifier></arc>
+      <arc id="13888135440" source="d6d48f24-d54f-4bac-8091-51aa141ecc2b" target="sink"><identifier><text>e</text></identifier></arc>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink">
+          <text>1</text>
+        <type><text>Pharmacy</text></type></place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>

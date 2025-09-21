@@ -1,0 +1,2580 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<log xes.version="1849-2016" xes.features="nested-attributes" xmlns="http://www.xes-standard.org/">
+	<extension name="Organizational" prefix="org" uri="http://www.xes-standard.org/org.xesext" />
+	<extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext" />
+	<extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext" />
+	<extension name="Identity" prefix="identity" uri="http://www.xes-standard.org/identity.xesext" />
+	<string key="concept:name" value="collog" />
+	<trace>
+		<string key="concept:name" value="case_55" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_63" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:50:31.741000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_65" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:50:56.479000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_127" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_152" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:16:15.759000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_155" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:17:02.592000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_156" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:17:47.149000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_99" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_118" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:06:44.807000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_120" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:07:11.960000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_115" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_137" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:11:26.722000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_139" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:11:39.071000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_139" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_167" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:20:00.509000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_168" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:20:13.492000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_103" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_122" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:07:29.947000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_125" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:08:22.838000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_125" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:08:49.227000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_126" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:09:05.940000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_235" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_283" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:53:27.810000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_286" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:54:20.386000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_287" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:54:22.615000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_383" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_468" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:47:16.243000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_469" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:47:18.103000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_211" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_251" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:44:33.497000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_254" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:45:07.651000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_254" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:45:37.834000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_254" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:46:20.969000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_255" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:46:31.347000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_283" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_346" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:09:58.359000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_348" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:10:03.987000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_27" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_28" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:39:20.513000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_31" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T16:39:51.399000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_31" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T16:40:54.445000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_32" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:41:02.596000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_219" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_263" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:48:25.555000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_265" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:48:42.531000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_67" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_77" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:53:46.083000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_79" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:53:51.429000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_159" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_189" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:25:27.365000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_192" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:26:10.454000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_192" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:26:57.717000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_193" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:27:33.698000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_87" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_102" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:01:37.560000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_104" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:01:54.764000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_239" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_289" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:54:55.346000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_292" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:56:00.905000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_292" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:56:21.132000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_293" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:56:40.213000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_163" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_195" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:28:29.766000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_198" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:29:06.837000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_199" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:29:28.769000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_179" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_212" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:32:10.787000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_215" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:32:56.058000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_215" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:33:38.571000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_216" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:34:18.386000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_7" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_4" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:35:05.463000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_7" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T16:35:42.918000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_8" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:36:06.266000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_227" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_273" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:50:50.318000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_275" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:51:26.786000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_183" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_218" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:34:54.312000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_220" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:35:13.810000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_299" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_364" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:15:32.852000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_367" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T18:16:20.081000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_367" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T18:17:14.668000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_368" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:17:44.941000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_203" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_242" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:42:54.387000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_243" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:43:02.073000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_147" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_176" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:22:27.648000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_178" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:22:38.805000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_199" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_238" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:42:22.120000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_240" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:42:33.589000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_143" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_170" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:20:24.235000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_173" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:21:03.397000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_173" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:21:26.234000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_174" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:21:43.178000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_399" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_486" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:51:21.406000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_489" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T18:51:59.611000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_489" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T18:53:01.909000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_489" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T18:53:06.745000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_489" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T18:53:24.110000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_490" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:53:28.781000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_375" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_460" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:45:53.561000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_462" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:46:06.934000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_59" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_67" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:51:20.961000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_69" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:51:43.918000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_187" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_222" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:35:29.865000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_225" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:36:05.355000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_225" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:36:44.586000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_225" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:37:11.408000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_226" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:37:29.139000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_23" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_24" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:38:48.508000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_26" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:39:05.514000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_331" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_404" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:29:48.602000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_407" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T18:30:34.828000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_408" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:31:01.739000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_259" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_317" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:03:16.029000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_319" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:03:28.838000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_247" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_301" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:58:55.491000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_304" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:59:40.902000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_305" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:00:01.423000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_271" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_331" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:06:28.929000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_334" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T18:07:09.747000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_334" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T18:07:38.823000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_335" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:08:08.051000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_91" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_106" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:02:24.407000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_109" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:03:21.983000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_110" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:04:01.145000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_335" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_410" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:31:38.435000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_412" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:31:43.206000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_339" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_414" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:32:19.262000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_417" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T18:33:00.832000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_417" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T18:33:24.697000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_417" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T18:34:29.103000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_418" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:35:10.283000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_343" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_420" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:35:48.917000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_422" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:36:17.907000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_95" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_112" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:05:40.838000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_115" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:06:20.341000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_116" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:06:21.233000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_371" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_456" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:45:10.413000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_458" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:45:26.650000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_275" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_337" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:08:42.064000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_338" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:08:50.797000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_11" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_10" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:36:29.289000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_11" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:36:34.366000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_19" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_18" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:37:39.788000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_21" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T16:38:18.469000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_22" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:38:34.797000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_303" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_370" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:18:10.216000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_372" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:18:19.585000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_47" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_53" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:46:15.784000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_55" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:46:24.731000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_123" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_147" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:15:23.494000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_149" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:15:41.210000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_79" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_90" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:56:29.618000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_93" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T16:57:09.866000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_93" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T16:57:40.242000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_93" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T16:58:16.927000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_93" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T16:58:50.070000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_94" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:59:19.691000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_359" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_440" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:40:16.545000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_443" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T18:41:06.653000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_444" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:41:24.612000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_387" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_472" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:47:41.736000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_474" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:47:54.975000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_3" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_0" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:34:06.564000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_2" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:34:20.768000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_255" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_313" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:02:53.518000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_314" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:02:58.704000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_311" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_378" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:19:26.347000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_380" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:19:44.179000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_315" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_382" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:20:11.358000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_385" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T18:20:35.082000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_385" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T18:20:51.694000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_385" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T18:21:15.977000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_385" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T18:21:48.906000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_385" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T18:24:05.178000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_386" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:24:21.614000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_279" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_341" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:09:19.332000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_342" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:09:25.903000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_351" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_429" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:37:41.768000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_432" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T18:38:17.366000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_432" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T18:38:45.669000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_433" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:38:48.464000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_107" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_128" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:09:37.172000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_129" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:09:51.802000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_319" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_388" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:24:52.938000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_389" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:25:00.318000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_215" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_257" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:46:58.358000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_260" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:47:37.910000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_261" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:47:46.301000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_75" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_84" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:54:39.551000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_87" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T16:55:49.502000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_88" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:55:56.382000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_367" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_450" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:42:47.739000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_453" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T18:43:24.135000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_454" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:43:38.058000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_191" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_228" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:38:13.768000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_231" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:39:09.692000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_231" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:40:05.856000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_231" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:40:26.662000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_232" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:41:02.689000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_231" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_277" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:52:05.159000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_281" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:52:44.645000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_355" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_435" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:39:36.216000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_437" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:39:46.890000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_243" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_295" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:57:05.339000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_298" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:57:50.664000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_299" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:57:59.397000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_207" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_245" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:43:12.512000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_248" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:43:43.187000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_248" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:43:53.746000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_249" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:44:02.836000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_175" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_208" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:31:26.212000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_210" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:31:37.362000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_83" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_96" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:59:44.970000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_99" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:00:20.119000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_99" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:00:47.676000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_100" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:00:53.673000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_363" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_446" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:42:17.209000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_448" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:42:39.314000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_131" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_158" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:18:16.659000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_161" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:18:48.138000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_162" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:19:05.115000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_39" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_43" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:42:56.986000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_45" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:43:19.296000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_195" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_234" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:41:44.314000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_236" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:42:04.052000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_35" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_38" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:42:25.738000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_39" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:42:30.920000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_295" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_360" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:15:03.195000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_361" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:15:07.623000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_63" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_71" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:51:50.572000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_74" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T16:52:30.286000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_75" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:52:38.270000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_119" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_141" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:12:19.244000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_144" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:13:03.706000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_144" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:13:36.604000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_144" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:14:45.614000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_145" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:14:56.721000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_323" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_392" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:25:28.728000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_395" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T18:26:17.805000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_395" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T18:27:25.475000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_396" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:27:28.034000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_31" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_34" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:41:34.712000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_36" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:41:58.207000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_223" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_267" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:49:01.673000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_270" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:49:52.809000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_271" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:50:07.574000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_267" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_327" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:06:04.111000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_328" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:06:11.017000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_167" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_201" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:30:25.633000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_202" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:30:34.734000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_395" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_480" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:48:47.920000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_483" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T18:50:02.365000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_484" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:50:10.338000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_71" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_81" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:54:10.920000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_82" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:54:23.455000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_327" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_398" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:28:24.501000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_401" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T18:29:18.875000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_402" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:29:32.045000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_171" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_204" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:30:41.875000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_206" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:31:08.883000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_307" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_374" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:18:51.718000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_376" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:19:01.705000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_379" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_464" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:46:34.359000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_466" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:46:40.704000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_51" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_57" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:46:59.334000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_60" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T16:47:28.356000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_60" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T16:48:26.187000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_60" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T16:49:28.035000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_60" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T16:50:04.806000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_61" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:50:12.107000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_151" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_180" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:23:15.108000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_182" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:23:20.755000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_135" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_164" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:19:31.692000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_165" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:19:46.267000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_391" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_476" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:48:12.142000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_478" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:48:28.995000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_155" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_184" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:24:06.376000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_186" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:24:46.104000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_15" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_14" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:36:58.389000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_16" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:37:10.769000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_263" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_321" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:03:42.757000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_324" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T18:04:31.607000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_325" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:04:37.479000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_43" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_47" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:43:41.023000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_50" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T16:44:40.640000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_50" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T16:44:54.875000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_51" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T16:45:35.207000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_111" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_131" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:09:58.100000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_134" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T17:10:52.458000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_135" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T17:11:13.742000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_347" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_424" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:36:37.489000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_426" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:36:56.125000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_287" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_350" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:10:30.497000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_353" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T18:11:08.119000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_353" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T18:11:39.809000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_353" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T18:12:27.337000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_353" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T18:13:21.699000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_354" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:13:37.737000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_251" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_307" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:00:39.653000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="temperature_310" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Check Environment Temperature" />
+			<date key="time:timestamp" value="2021-06-17T18:02:04.039000+00:00" />
+			<string key="msgFlow" value="temperature" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_311" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:02:26.745000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_291" />
+		<event>
+			<string key="msgInstanceId" value="termostat_on_356" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Set Up Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:14:01.598000+00:00" />
+			<string key="msgFlow" value="termostat_on" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="termostat_off_358" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="User" />
+			<string key="concept:name" value="Switch Off Thermostat" />
+			<date key="time:timestamp" value="2021-06-17T18:14:24.375000+00:00" />
+			<string key="msgFlow" value="termostat_off" />
+		</event>
+	</trace>
+</log>

@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="imdf_net_1758219872.379182" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>imdf_net_1758219872.379182</text>
+    </name>
+    <page id="n0">
+      <place id="source">
+        <name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      <type><text>PartyA</text></type></place>
+      <place id="sink">
+        <name>
+          <text>sink</text>
+        </name>
+      <type><text>PartyA</text></type></place>
+      <place id="p_5">
+        <name>
+          <text>p_5</text>
+        </name>
+      <type><text>PartyA</text></type></place>
+      <place id="p_3">
+        <name>
+          <text>p_3</text>
+        </name>
+      <type><text>PartyA</text></type></place>
+      <place id="p_4">
+        <name>
+          <text>p_4</text>
+        </name>
+      <type><text>PartyA</text></type></place>
+      <place id="p_6">
+        <name>
+          <text>p_6</text>
+        </name>
+      <type><text>PartyA</text></type></place>
+      <transition id="dfb87a47-1780-4956-8319-903bf2f49f15">
+        <name>
+          <text>Activity A</text>
+        </name>
+      </transition>
+      <transition id="7ec61432-c1fa-4009-9460-57b9e174038a">
+        <name>
+          <text>Activity E</text>
+        </name>
+      </transition>
+      <transition id="28d7c27c-b51b-4b0c-9715-b5263cc2a445">
+        <name>
+          <text>Activity C</text>
+        </name>
+      </transition>
+      <transition id="b0477c05-bb95-43db-afe9-ae293f308497">
+        <name>
+          <text>Activity D</text>
+        </name>
+      </transition>
+      <transition id="c2ce1907-e445-4a7d-aec0-0d15a35bc1c4">
+        <name>
+          <text>Activity B</text>
+        </name>
+      </transition>
+      <transition id="9b113a6a-69cd-43ec-bac4-2d2bb8450ceb">
+        <name>
+          <text>Activity F</text>
+        </name>
+      </transition>
+      <arc id="4717938256" source="p_6" target="9b113a6a-69cd-43ec-bac4-2d2bb8450ceb"><identifier><text>w</text></identifier></arc>
+      <arc id="4717917520" source="source" target="dfb87a47-1780-4956-8319-903bf2f49f15"><identifier><text>w</text></identifier></arc>
+      <arc id="4717919504" source="b0477c05-bb95-43db-afe9-ae293f308497" target="p_4"><identifier><text>w</text></identifier></arc>
+      <arc id="4717913104" source="p_3" target="28d7c27c-b51b-4b0c-9715-b5263cc2a445"><identifier><text>w</text></identifier></arc>
+      <arc id="4717919632" source="p_3" target="b0477c05-bb95-43db-afe9-ae293f308497"><identifier><text>w</text></identifier></arc>
+      <arc id="4708083408" source="dfb87a47-1780-4956-8319-903bf2f49f15" target="p_3"><identifier><text>w</text></identifier></arc>
+      <arc id="4717919952" source="28d7c27c-b51b-4b0c-9715-b5263cc2a445" target="p_4"><identifier><text>w</text></identifier></arc>
+      <arc id="4717936912" source="p_4" target="c2ce1907-e445-4a7d-aec0-0d15a35bc1c4"><identifier><text>w</text></identifier></arc>
+      <arc id="4717937360" source="c2ce1907-e445-4a7d-aec0-0d15a35bc1c4" target="p_5"><identifier><text>w</text></identifier></arc>
+      <arc id="4717937872" source="p_5" target="7ec61432-c1fa-4009-9460-57b9e174038a"><identifier><text>w</text></identifier></arc>
+      <arc id="4717938000" source="7ec61432-c1fa-4009-9460-57b9e174038a" target="p_6"><identifier><text>w</text></identifier></arc>
+      <arc id="4717937808" source="9b113a6a-69cd-43ec-bac4-2d2bb8450ceb" target="sink"><identifier><text>w</text></identifier></arc>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink">
+          <text>1</text>
+        <type><text>PartyA</text></type></place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>
