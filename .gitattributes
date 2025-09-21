@@ -3,6 +3,6 @@ data/original_xes_file/TASE_FP_Log.xes filter=lfs diff=lfs merge=lfs -text
 data/original_xes_file/TASE_ID_Log.xes filter=lfs diff=lfs merge=lfs -text
 data/original_xes_file/TASE_SD_Log.xes filter=lfs diff=lfs merge=lfs -text
 data/TASE_ID_log/projected_xes/* filter=lfs diff=lfs merge=lfs -text
-data/TASE_FP_log/projected_xes/ filter=lfs diff=lfs merge=lfs -text
-data/TASE_EM_log/projected_xes/ filter=lfs diff=lfs merge=lfs -text
-data/TASE_SD_log/projected_xes/ filter=lfs diff=lfs merge=lfs -text
+data/TASE_SD_log/projected_xes/* filter=lfs diff=lfs merge=lfs -text
+data/TASE_EM_log/projected_xes/* filter=lfs diff=lfs merge=lfs -text
+data/TASE_FP_log/projected_xes/* filter=lfs diff=lfs merge=lfs -text
