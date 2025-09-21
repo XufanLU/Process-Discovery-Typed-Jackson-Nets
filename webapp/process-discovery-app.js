@@ -1177,7 +1177,7 @@ class ProcessDiscoveryApp {
           strokeWidth: 2
         },
         label: {
-          text: name,
+          text: name + '\n' + type,
           fontSize: 10,
           fontFamily: 'Times, serif',
           fill: 'black'
