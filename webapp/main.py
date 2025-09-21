@@ -289,15 +289,6 @@ async def get_related_models(log_name: str):
                 if model:
                     models.append(model)
         
-        # # Check first_pnml folder
-        # first_folder = os.path.join(log_folder_path, "first_pnml")
-        # if os.path.exists(first_folder):
-        #     pnml_files = glob.glob(os.path.join(first_folder, "*.pnml"))
-        #     print(f"Found {len(pnml_files)} first PNML files")
-        #     for pnml_file in pnml_files:
-        #         model = create_model_info(pnml_file, "first_pnml", log_name)
-        #         if model:
-        #             models.append(model)
         
         print(f"Total models found: {len(models)}")
         return JSONResponse({
@@ -464,5 +455,5 @@ def get_model_statistics(log_name):
 if __name__ == '__main__':
     import uvicorn
     uvicorn.run(
-        'main:app', reload=True, reload_dirs=[str(THIS_DIR)], host="0.0.0.0", port=8000
+        'main:app', reload=True, reload_dirs=[str(THIS_DIR)], host="127.0.0.1", port=8000
     )

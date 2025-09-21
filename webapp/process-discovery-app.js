@@ -441,14 +441,7 @@ class ProcessDiscoveryApp {
     document.getElementById('collaboration-count').textContent = 
       modelData.collaborations?.length || 0;
     
-    // Show organization info for analyzed models
-    // if (modelData.organization) {
-    //   document.getElementById('model-organization').textContent = modelData.organization;
-    //   document.getElementById('model-type').textContent = 'TJN Analysis';
-    //   document.getElementById('model-info').style.display = 'block';
-    // } else {
-    //   document.getElementById('model-info').style.display = 'none';
-    // }
+
   }
 
   enableExportButtons() {
@@ -632,10 +625,6 @@ class ProcessDiscoveryApp {
               ${model.has_visualization ? '<span class="badge bg-success ms-1"><i class="fas fa-eye"></i> SVG</span>' : ''}
             </div>
             <div class="text-muted small mt-1">
-              ${model.statistics && !model.statistics.error ? 
-                `${model.statistics.places} places, ${model.statistics.transitions} transitions` : 
-                'Statistics unavailable'
-              }
               ${model.file_size ? ` • ${model.file_size} KB` : ''}
             </div>
           </div>
@@ -699,10 +688,6 @@ class ProcessDiscoveryApp {
               ${file.size_mb ? `<span class="badge bg-info ms-1">${file.size_mb} MB</span>` : ''}
             </div>
             <div class="text-muted small mt-1">
-              ${file.log_statistics && !file.log_statistics.error ? 
-                `${file.log_statistics.traces} traces, ${file.log_statistics.events} events` : 
-                'Statistics unavailable'
-              }
               ${file.log_statistics && file.log_statistics.unique_activities ? 
                 ` • ${file.log_statistics.unique_activities} activities` : ''
               }
@@ -719,11 +704,6 @@ class ProcessDiscoveryApp {
                     data-file-name="${file.filename}"
                     title="Select this XES file">
               <i class="fas fa-check"></i> Select
-            </button>
-            <button class="btn btn-sm btn-outline-info" 
-                    onclick="alert('File info: ${file.filename}')" 
-                    title="File Info">
-              <i class="fas fa-info"></i>
             </button>
           </div>
         </div>
