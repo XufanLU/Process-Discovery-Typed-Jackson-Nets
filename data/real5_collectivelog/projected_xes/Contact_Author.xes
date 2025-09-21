@@ -1,0 +1,3271 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<log xes.version="1849-2016" xes.features="nested-attributes" xmlns="http://www.xes-standard.org/">
+	<extension name="Organizational" prefix="org" uri="http://www.xes-standard.org/org.xesext" />
+	<extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext" />
+	<extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext" />
+	<extension name="Identity" prefix="identity" uri="http://www.xes-standard.org/identity.xesext" />
+	<string key="concept:name" value="collog" />
+	<trace>
+		<string key="concept:name" value="case_39" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:34:44.994000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:34:45.690000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_30" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:34:49.779000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_34" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:35:27.694000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:35:29.964000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T12:35:34.185000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_399" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:32:58.612000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T13:33:02.499000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_115" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:46:20.495000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T12:46:23.059000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Apply Changes" />
+			<date key="time:timestamp" value="2021-06-22T12:46:23.247000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_90" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:46:24.349000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_94" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:46:58.696000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:47:03.026000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T12:47:06.284000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_375" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:29:29.167000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T13:29:32.427000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Apply Changes" />
+			<date key="time:timestamp" value="2021-06-22T13:29:32.992000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_325" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:29:36.124000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_329" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:30:07.998000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:30:10.292000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T13:30:15.810000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_219" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:02:31.217000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T13:02:32.781000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Apply Changes" />
+			<date key="time:timestamp" value="2021-06-22T13:02:37.381000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_185" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:02:42.293000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_189" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:03:33.167000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:03:34.357000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T13:03:35.094000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_111" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:45:27.235000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:45:27.943000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_85" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:45:31.161000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_89" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:46:12.228000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:46:14.612000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T12:46:16.474000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_259" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:08:35.249000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T13:08:38.242000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_335" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:23:22.959000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T13:23:25.768000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_271" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:10:16.470000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T13:10:20.598000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Apply Changes" />
+			<date key="time:timestamp" value="2021-06-22T13:10:20.983000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_225" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:10:23.173000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_229" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:10:56.639000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:11:01.242000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T13:11:05.145000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_239" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:05:44.453000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T13:05:48.981000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_55" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:37:29.346000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:37:32.454000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_45" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:37:34.732000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_49" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:38:04.294000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:38:18.633000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T12:38:21.551000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_359" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:28:10.805000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:28:15.097000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_320" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:28:16.335000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_324" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:28:46.391000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:28:57.572000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T13:29:13.667000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_99" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:43:46.152000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T12:43:47.104000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_187" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:56:19.645000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:56:24.001000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_150" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:56:24.266000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_154" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:56:51.295000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:56:51.985000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T12:56:53.300000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_263" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:08:41.317000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:08:41.914000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_215" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:08:42.409000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_219" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:09:15.880000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:09:20.354000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T13:09:22.017000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_27" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:32:55.522000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T12:32:56.465000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_379" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:30:17.013000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:30:21.969000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_330" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:30:22.283000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_334" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:30:59.639000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:30:59.876000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T13:31:00.621000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_295" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:15:26.644000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T13:15:26.981000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Apply Changes" />
+			<date key="time:timestamp" value="2021-06-22T13:15:29.121000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_255" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:15:30.376000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_259" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:16:03.851000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:16:14.304000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T13:16:19.428000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_327" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:21:12.263000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:21:16.230000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_285" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:21:19.149000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_289" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:21:58.001000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:22:05.609000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T13:22:11.842000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_383" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:31:04.602000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T13:31:08.376000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_15" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:30:27.329000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:30:30.137000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_5" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:30:31.777000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_9" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:30:54.414000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:31:05.993000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T12:31:09.655000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_51" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:36:36.878000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:36:36.878000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_40" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:36:37.617000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_44" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:37:21.452000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:37:23.362000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T12:37:27.325000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_91" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:41:46.827000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:41:49.404000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_65" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:41:54.037000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_69" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:42:39.177000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:42:43.357000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T12:42:46.597000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_351" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:25:58.192000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:26:02.993000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_310" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:26:07.570000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_314" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:26:39.368000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:26:44.665000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T13:26:57.158000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_275" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:11:07.830000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T13:11:08.532000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Apply Changes" />
+			<date key="time:timestamp" value="2021-06-22T13:11:12.271000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_230" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:11:14.090000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_234" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:11:57.274000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:12:01.020000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T13:12:05.726000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_7" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:29:16.502000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:29:18.496000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_0" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:29:23.166000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_4" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:30:10.472000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:30:15.349000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T12:30:17.332000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_395" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:32:07.299000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:32:07.356000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_340" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:32:12.012000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_344" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:32:53.103000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:32:56.723000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T13:32:57.750000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_367" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:29:22.429000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T13:29:22.885000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_43" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:35:39.174000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T12:35:43.003000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Apply Changes" />
+			<date key="time:timestamp" value="2021-06-22T12:35:44.822000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_35" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:35:45.450000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_39" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:36:12.633000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:36:33.189000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T12:36:36.263000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_191" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:56:56.514000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:56:57.961000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_155" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:56:59.656000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_159" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:57:39.907000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:57:44.372000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T12:57:45.226000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_227" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:03:43.933000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T13:03:45.034000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Apply Changes" />
+			<date key="time:timestamp" value="2021-06-22T13:03:49.704000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_190" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:03:52.923000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_194" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:04:33.562000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:04:34.967000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T13:04:36.824000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_291" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:14:31.033000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:14:31.129000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_250" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:14:33.654000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_254" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:15:07.903000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:15:20.715000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T13:15:25.192000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_207" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:00:31.660000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T13:00:34.375000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Apply Changes" />
+			<date key="time:timestamp" value="2021-06-22T13:00:38.343000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_175" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:00:41.778000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_179" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:01:26.665000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:01:31.183000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T13:01:33.496000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_331" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:22:15.456000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T13:22:18.403000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Apply Changes" />
+			<date key="time:timestamp" value="2021-06-22T13:22:22.869000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_290" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:22:26.494000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_294" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:23:03.179000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:23:08.817000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T13:23:18.932000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_195" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:57:46.005000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:57:49.588000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_160" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:57:52.221000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_164" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:58:25.487000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:58:30.021000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T12:58:30.961000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_243" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:05:53.526000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T13:05:58.360000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Apply Changes" />
+			<date key="time:timestamp" value="2021-06-22T13:05:59.937000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_200" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:06:03.098000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_204" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:06:44.477000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:06:48.008000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T13:06:52.335000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_67" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:38:36.577000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T12:38:37.103000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_279" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:12:08.878000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:12:10.497000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_235" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:12:11.254000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_239" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:12:51.727000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:12:59.430000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T13:13:02.707000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_87" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:41:41.022000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T12:41:42.111000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_23" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:32:10.223000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:32:10.833000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_15" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:32:12.789000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_19" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:32:49.591000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:32:50.494000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T12:32:55.049000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_171" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:54:21.316000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:54:24.676000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_140" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:54:25.846000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_144" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:55:09.309000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:55:10.658000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T12:55:14.920000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_311" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:19:07.530000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:19:10.666000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_275" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:19:13.289000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_279" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:19:51.223000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:19:52.305000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T13:19:54.004000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_183" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:56:14.307000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T12:56:18.790000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_299" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:16:22.631000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:16:23.498000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_260" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:16:26.118000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_264" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:17:13.450000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:17:17.311000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T13:17:20.890000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_251" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:07:01.487000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:07:06.098000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_205" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:07:10.548000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_209" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:07:39.589000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:07:41.097000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T13:07:45.092000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_75" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:39:41.378000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T12:39:43.049000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_131" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:48:40.262000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:48:40.976000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_105" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:48:45.522000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_109" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:49:14.702000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:49:16.353000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T12:49:16.691000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_143" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:51:00.324000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T12:51:05.247000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_63" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:38:27.336000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T12:38:31.688000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_231" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:04:37.566000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T13:04:38.066000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Apply Changes" />
+			<date key="time:timestamp" value="2021-06-22T13:04:40.584000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_195" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:04:42.577000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_199" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:05:10.175000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:05:21.319000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T13:05:31.341000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_147" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:51:05.372000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T12:51:06.944000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_123" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:47:15.827000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:47:16.929000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_95" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:47:21.356000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_99" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:47:49.460000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:47:49.895000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T12:47:50.743000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_319" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:21:01.644000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T13:21:05.780000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_179" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:55:23.028000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T12:55:24.342000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Apply Changes" />
+			<date key="time:timestamp" value="2021-06-22T12:55:26.453000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_145" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:55:29.069000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_149" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:56:02.955000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:56:12.227000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T12:56:12.271000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_355" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:27:05.146000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T13:27:07.508000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Apply Changes" />
+			<date key="time:timestamp" value="2021-06-22T13:27:12.264000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_315" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:27:15.676000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_319" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:28:00.150000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:28:04.176000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T13:28:06.729000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_103" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:43:50.235000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:43:54.906000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_75" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:43:59.394000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_79" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:44:30.095000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:44:30.242000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T12:44:33.450000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_223" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:03:39.593000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T13:03:42.219000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_47" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:36:36.600000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T12:36:36.781000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_323" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:21:07.697000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T13:21:07.873000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_199" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:58:35.293000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:58:39.816000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_165" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:58:41.429000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_169" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:59:09.430000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:59:20.664000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T12:59:22.724000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_19" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:31:14.529000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:31:17.928000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_10" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:31:21.668000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_14" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:31:55.062000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:32:06.195000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T12:32:08.173000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_315" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:19:55.849000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T13:19:59.024000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Apply Changes" />
+			<date key="time:timestamp" value="2021-06-22T13:19:59.471000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_280" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:20:04.063000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_284" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:20:41.509000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:20:46.058000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T13:20:50.524000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_303" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:17:23.780000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:17:25.895000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_265" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:17:26.214000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_269" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:18:02.881000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:18:05.799000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T13:18:10.092000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_391" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:31:16.603000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:31:21.438000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_335" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:31:21.716000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_339" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:31:53.975000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:31:57.513000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T13:32:04.358000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_167" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:53:31.922000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T12:53:34.209000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Apply Changes" />
+			<date key="time:timestamp" value="2021-06-22T12:53:37.471000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_135" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:53:37.514000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_139" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:54:12.031000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:54:13.926000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T12:54:16.476000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_267" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:09:25.331000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:09:28.878000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_220" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:09:33.516000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_224" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:10:07.921000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:10:15.453000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T13:10:16.218000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_155" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:51:55.918000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T12:52:00.679000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_83" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:40:41.246000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:40:42.432000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_60" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:40:45.109000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_64" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:41:29.890000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:41:33.554000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T12:41:37.634000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_215" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:02:29.824000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T13:02:30.879000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_175" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:55:19.169000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T12:55:22.769000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_135" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:49:20.086000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:49:21.449000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_110" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:49:25.206000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_114" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:49:56.886000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:49:58.106000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T12:50:02.354000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_35" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:33:47.166000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T12:33:50.571000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Apply Changes" />
+			<date key="time:timestamp" value="2021-06-22T12:33:55.167000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_25" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:33:56.661000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_29" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:34:20.575000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:34:32.857000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T12:34:42.387000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_235" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:05:38.804000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T13:05:39.877000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_343" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:24:18.453000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:24:20.288000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_300" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:24:24.532000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_304" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:24:51.400000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:25:00.944000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T13:25:05.912000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_283" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:13:04.063000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:13:08.839000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_240" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:13:09.122000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_244" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:13:43.758000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:13:48.630000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T13:13:50.488000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_139" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:50:06.855000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:50:11.393000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_115" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:50:12.406000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_119" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:50:54.031000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:50:56.128000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T12:50:58.147000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_203" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:59:23.025000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T12:59:27.843000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Apply Changes" />
+			<date key="time:timestamp" value="2021-06-22T12:59:27.926000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_170" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:59:32.820000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_174" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:00:18.448000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:00:23.051000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T13:00:27.194000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_307" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:18:13.520000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:18:18.176000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_270" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:18:18.694000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_274" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:18:57.089000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:19:00.228000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T13:19:03.794000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_163" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:52:46.199000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:52:49.203000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_130" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:52:50.351000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_134" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:53:24.166000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:53:28.331000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T12:53:29.703000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_107" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:44:36.589000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:44:40.768000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_80" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:44:41.658000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_84" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:45:15.741000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:45:19.369000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T12:45:24.231000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_387" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:31:13.042000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T13:31:14.734000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_95" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:42:49.271000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:42:49.355000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_70" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:42:52.898000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_74" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:43:34.885000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:43:39.259000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T12:43:41.174000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_211" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:01:35.414000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:01:40.259000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_180" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:01:43.596000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_184" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:02:20.698000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:02:24.465000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T13:02:25.474000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_11" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:30:21.471000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T12:30:24.101000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_151" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:51:10.754000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T12:51:14.028000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Apply Changes" />
+			<date key="time:timestamp" value="2021-06-22T12:51:17.790000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_120" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:51:21.844000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_124" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:51:52.396000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:51:53.981000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T12:51:55.189000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_363" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:29:14.027000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T13:29:18.781000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_347" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:25:07.074000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:25:11.496000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_305" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:25:14.507000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_309" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:25:52.343000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:25:56.737000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T13:25:57.901000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_287" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:13:54.198000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:13:54.712000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_245" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:13:55.658000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_249" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:14:26.463000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:14:29.181000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T13:14:30.340000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_127" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:47:51.334000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:47:53.477000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_100" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:47:56.166000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_104" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:48:27.006000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:48:34.075000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T12:48:37.809000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_3" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:29:12.903000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T12:29:14.357000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_255" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:07:47.997000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:07:49.439000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_210" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:07:53.461000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_214" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:08:25.405000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:08:27.217000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T13:08:31.954000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_71" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:38:40.930000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:38:42.112000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_50" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:38:44.222000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_54" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:39:31.525000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:39:32.767000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T12:39:38.457000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_119" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:47:08.668000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T12:47:11.991000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_371" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:29:23.445000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T13:29:26.602000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_159" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:52:00.978000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:52:04.511000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_125" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:52:04.839000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_129" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:52:41.180000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:52:42.617000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T12:52:43.546000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_31" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:32:58.438000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:33:01.660000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_20" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:33:04.902000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_24" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:33:35.010000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:33:38.528000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T12:33:42.951000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_59" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:38:24.329000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T12:38:27.286000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_247" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:06:57.177000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T13:06:59.756000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_79" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T12:39:46.085000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Check Journal Submission Guide" />
+			<date key="time:timestamp" value="2021-06-22T12:39:49.487000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Apply Changes" />
+			<date key="time:timestamp" value="2021-06-22T12:39:50.768000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_55" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T12:39:54.738000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_59" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T12:40:34.993000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T12:40:36.922000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Revise For Resubmission" />
+			<date key="time:timestamp" value="2021-06-22T12:40:37.700000+00:00" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="case_339" />
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Write Paper" />
+			<date key="time:timestamp" value="2021-06-22T13:23:27.738000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Finalize Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:23:28.291000+00:00" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Manuscript_295" />
+			<string key="msgType" value="send" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Submit Manuscript" />
+			<date key="time:timestamp" value="2021-06-22T13:23:28.396000+00:00" />
+			<string key="msgFlow" value="Manuscript" />
+		</event>
+		<event>
+			<string key="msgInstanceId" value="Notification_299" />
+			<string key="msgType" value="receive" />
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Notification Received" />
+			<string key="eventType" value="notification" />
+			<date key="time:timestamp" value="2021-06-22T13:23:55.443000+00:00" />
+			<string key="msgFlow" value="Notification" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Read Notification" />
+			<date key="time:timestamp" value="2021-06-22T13:24:01.332000+00:00" />
+		</event>
+		<event>
+			<string key="org:group" value="Contact_Author" />
+			<string key="concept:name" value="Prepare Camera Ready" />
+			<date key="time:timestamp" value="2021-06-22T13:24:13.457000+00:00" />
+		</event>
+	</trace>
+</log>
