@@ -64,11 +64,8 @@ Note: graphviz also needs to be installed on the device . Please check if it is 
 ```
 dot -V 
 ```
-### 3. Run process discovery algorithm
-```
-python main.py
-```
-### 4. Run webapp (frontend + backend)
+
+### 3. Run webapp (frontend + backend)
 ```
 python webapp/main.py
 ```
